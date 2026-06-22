@@ -55,13 +55,6 @@
 				{#if item.isSeries}<Tv class="size-6" />{:else}<Film class="size-6" />{/if}
 			</div>
 		{/if}
-		{#if isWatched}
-			<span
-				class="absolute right-1 top-1 grid size-5 place-items-center rounded-full bg-accent text-on-accent"
-			>
-				<Check class="size-3.5" aria-hidden="true" />
-			</span>
-		{/if}
 	</div>
 
 	<div class="flex min-w-0 flex-1 flex-col gap-1 p-3 lg:p-4">
@@ -88,7 +81,7 @@
 
 		{#if canTrack}
 			<button
-				class="absolute right-2 top-2 grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
+				class="absolute bottom-2 right-2 grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
 					? 'border-accent bg-accent text-on-accent'
 					: isPartial
 						? 'border-accent bg-surface/90 text-accent'

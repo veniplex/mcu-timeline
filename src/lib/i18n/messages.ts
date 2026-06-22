@@ -32,7 +32,8 @@ export const messages = {
 		'detail.viewTmdb': 'View on TMDB',
 		'detail.episodes': 'Episodes',
 		'empty.title': 'Nothing here yet',
-		'empty.body': 'The timeline data is being assembled.'
+		'empty.body': 'The timeline data is being assembled.',
+		'timeline.end': 'To be continued…'
 	},
 	de: {
 		'app.title': 'MCU-Zeitleiste',
@@ -60,7 +61,8 @@ export const messages = {
 		'detail.viewTmdb': 'Auf TMDB ansehen',
 		'detail.episodes': 'Episoden',
 		'empty.title': 'Noch nichts vorhanden',
-		'empty.body': 'Die Zeitleisten-Daten werden gerade zusammengestellt.'
+		'empty.body': 'Die Zeitleisten-Daten werden gerade zusammengestellt.',
+		'timeline.end': 'Fortsetzung folgt …'
 	}
 } as const;
 

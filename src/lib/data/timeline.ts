@@ -107,24 +107,30 @@ function orderPhaseItems(items: TimelineItem[], sort: SortMode): TimelineItem[] 
 /**
  * Build the timeline view model for the active sort + locale.
  *
- * Phase is the dominant grouping: bands are emitted strictly Phase 1 → 6, so
- * every item precedes all items of any later phase. Within a phase, order is by
- * the active sort — curated in-universe `order` (chronological) or release/air
- * date (release, with adjacent same-series seasons merged into one block).
+ * - chronological: Phase is the dominant grouping — bands are emitted strictly
+ *   Phase 1 → 6, every item precedes all items of any later phase; within a
+ *   phase, items follow the curated in-universe `order`.
+ * - release: phases are irrelevant — a single flat band sorted globally by
+ *   release/air date, with adjacent same-series seasons merged into one block.
  */
 export function buildTimeline(sort: SortMode, locale: Locale): PhaseBand[] {
+	const items = chronology
+		.map((e) => toItem(e.id, locale))
+		.filter((i): i is TimelineItem => i !== null);
+
+	if (sort === 'release') {
+		return [{ phase: 1, items: orderPhaseItems(items, 'release') }];
+	}
+
 	const byPhase = new Map<Phase, TimelineItem[]>();
-	for (const entry of chronology) {
-		const item = toItem(entry.id, locale);
-		if (!item) continue;
+	for (const item of items) {
 		const list = byPhase.get(item.phase) ?? [];
 		list.push(item);
 		byPhase.set(item.phase, list);
 	}
-
 	return [...byPhase.keys()]
 		.sort((a, b) => a - b)
-		.map((phase) => ({ phase, items: orderPhaseItems(byPhase.get(phase)!, sort) }));
+		.map((phase) => ({ phase, items: orderPhaseItems(byPhase.get(phase)!, 'chronological') }));
 }
 
 export const TOTAL_ENTRIES = chronology.length;
