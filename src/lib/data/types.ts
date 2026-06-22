@@ -1,6 +1,16 @@
 /** Phases of the MCU. Each timeline entry belongs to exactly one. */
 export type Phase = 1 | 2 | 3 | 4 | 5 | 6;
 
+/** Distinct accent color per phase — marks each as its own chapter. */
+export const PHASE_COLORS: Record<Phase, string> = {
+	1: '#5b9dff', // blue
+	2: '#1fb8a6', // teal
+	3: '#a673ff', // purple
+	4: '#ff5e8a', // pink
+	5: '#f5a524', // amber
+	6: '#4ade80' // green
+};
+
 export const PHASE_LABELS: Record<Phase, { en: string; de: string }> = {
 	1: { en: 'Phase One', de: 'Phase Eins' },
 	2: { en: 'Phase Two', de: 'Phase Zwei' },

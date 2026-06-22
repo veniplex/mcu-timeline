@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { X, Check, Film, Tv } from 'lucide-svelte';
-	import { backdropUrl, posterUrl } from '$lib/tmdb';
+	import { X, Check, Film, Tv, ExternalLink } from 'lucide-svelte';
+	import { backdropUrl, posterUrl, tmdbPageUrl } from '$lib/tmdb';
 	import type { TimelineItem } from '$lib/data/timeline';
 	import { PHASE_LABELS } from '$lib/data/types';
 	import { watched, setWatchedMany } from '$lib/stores/watched';
@@ -80,23 +80,33 @@
 					<p class="text-sm leading-relaxed text-muted-foreground">{item.overview}</p>
 				{/if}
 
-				{#if canTrack}
-					<button
-						class="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition-colors {isWatched
-							? 'border-accent bg-accent text-on-accent'
-							: 'border-border hover:bg-muted'}"
-						aria-pressed={isWatched}
-						onclick={() => setWatchedMany(item!.entryIds, !isWatched)}
+				<div class="flex flex-wrap items-center gap-3">
+					{#if canTrack}
+						<button
+							class="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition-colors {isWatched
+								? 'border-accent bg-accent text-on-accent'
+								: 'border-border hover:bg-muted'}"
+							aria-pressed={isWatched}
+							onclick={() => setWatchedMany(item!.entryIds, !isWatched)}
+						>
+							<Check class="size-4" aria-hidden="true" />
+							{isWatched ? $t('watched.unmark') : $t('watched.mark')}
+						</button>
+					{/if}
+					<a
+						href={tmdbPageUrl(item.isSeries ? 'tv' : 'movie', item.tmdbId)}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-muted"
 					>
-						<Check class="size-4" aria-hidden="true" />
-						{isWatched ? $t('watched.unmark') : $t('watched.mark')}
-					</button>
-				{/if}
+						{$t('detail.viewTmdb')} <ExternalLink class="size-4" aria-hidden="true" />
+					</a>
+				</div>
 
 				{#if item.isSeries && item.episodes.length}
 					<div>
 						<h3 class="mb-2 text-sm font-semibold">
-							{item.episodeCount} {$t('filter.series')}
+							{item.episodeCount} {$t('detail.episodes')}
 						</h3>
 						<ol class="divide-y divide-border rounded-lg border border-border">
 							{#each item.episodes as ep (ep.number + ep.title)}

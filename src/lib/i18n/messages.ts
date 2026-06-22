@@ -29,6 +29,8 @@ export const messages = {
 		'filter.series': 'Series',
 		'filter.hideWatched': 'Hide watched',
 		'phase.label': 'Phase',
+		'detail.viewTmdb': 'View on TMDB',
+		'detail.episodes': 'Episodes',
 		'empty.title': 'Nothing here yet',
 		'empty.body': 'The timeline data is being assembled.'
 	},
@@ -55,6 +57,8 @@ export const messages = {
 		'filter.series': 'Serien',
 		'filter.hideWatched': 'Gesehene ausblenden',
 		'phase.label': 'Phase',
+		'detail.viewTmdb': 'Auf TMDB ansehen',
+		'detail.episodes': 'Episoden',
 		'empty.title': 'Noch nichts vorhanden',
 		'empty.body': 'Die Zeitleisten-Daten werden gerade zusammengestellt.'
 	}
