@@ -1,0 +1,10 @@
+rules_version = '2';
+
+// Watched-state is private to each user. No public reads/writes.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/watched/{entryId} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}

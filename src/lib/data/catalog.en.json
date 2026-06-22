@@ -1,0 +1,1603 @@
+{
+  "captain-america-the-first-avenger": {
+    "id": "captain-america-the-first-avenger",
+    "tmdbId": 1771,
+    "tmdbType": "movie",
+    "title": "Captain America: The First Avenger",
+    "overview": "During World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull – Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.",
+    "releaseDate": "2011-07-22",
+    "runtime": 124,
+    "poster": "/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+    "backdrop": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg"
+  },
+  "agent-carter-s1": {
+    "id": "agent-carter-s1",
+    "tmdbId": 61550,
+    "tmdbType": "tv",
+    "title": "Marvel's Agent Carter",
+    "overview": "Years before Agent Phil Coulson and his S.H.I.E.L.D. team swore to protect those who cannot protect themselves from threats they cannot conceive, there was Agent Peggy Carter, who pledged the same oath but lived in a different time, when women weren't recognized as being as smart or as tough as their male counterparts. But no one should ever underestimate Peggy.",
+    "releaseDate": "2015-01-06",
+    "runtime": 43,
+    "poster": "/gqyjmfFOrKY8iouNTXWj9KW7cC5.jpg",
+    "backdrop": "/MaQ7hbNsiJ30p14UgRdEnXDGMH.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Now Is Not the End",
+        "airDate": "2015-01-06"
+      },
+      {
+        "number": 2,
+        "title": "Bridge and Tunnel",
+        "airDate": "2015-01-06"
+      },
+      {
+        "number": 3,
+        "title": "Time and Tide",
+        "airDate": "2015-01-13"
+      },
+      {
+        "number": 4,
+        "title": "The Blitzkrieg Button",
+        "airDate": "2015-01-27"
+      },
+      {
+        "number": 5,
+        "title": "The Iron Ceiling",
+        "airDate": "2015-02-03"
+      },
+      {
+        "number": 6,
+        "title": "A Sin to Err",
+        "airDate": "2015-02-10"
+      },
+      {
+        "number": 7,
+        "title": "SNAFU",
+        "airDate": "2015-02-17"
+      },
+      {
+        "number": 8,
+        "title": "Valediction",
+        "airDate": "2015-02-24"
+      }
+    ]
+  },
+  "agent-carter-s2": {
+    "id": "agent-carter-s2",
+    "tmdbId": 61550,
+    "tmdbType": "tv",
+    "title": "Marvel's Agent Carter",
+    "overview": "Dedicated to the fight against new Atomic Age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles and she's about to find out that the bright lights of the post-war Hollywood mask a more sinister threat to everyone she is sworn to protect.",
+    "releaseDate": "2016-01-19",
+    "runtime": 43,
+    "poster": "/h3yPRRiWZk6HrFD2oo3xqpLt6bc.jpg",
+    "backdrop": "/MaQ7hbNsiJ30p14UgRdEnXDGMH.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "The Lady in the Lake",
+        "airDate": "2016-01-19"
+      },
+      {
+        "number": 2,
+        "title": "A View in the Dark",
+        "airDate": "2016-01-19"
+      },
+      {
+        "number": 3,
+        "title": "Better Angels",
+        "airDate": "2016-01-26"
+      },
+      {
+        "number": 4,
+        "title": "Smoke and Mirrors",
+        "airDate": "2016-02-02"
+      },
+      {
+        "number": 5,
+        "title": "The Atomic Job",
+        "airDate": "2016-02-09"
+      },
+      {
+        "number": 6,
+        "title": "Life of the Party",
+        "airDate": "2016-02-16"
+      },
+      {
+        "number": 7,
+        "title": "Monsters",
+        "airDate": "2016-02-16"
+      },
+      {
+        "number": 8,
+        "title": "The Edge of Mystery",
+        "airDate": "2016-02-23"
+      },
+      {
+        "number": 9,
+        "title": "A Little Song and Dance",
+        "airDate": "2016-02-23"
+      },
+      {
+        "number": 10,
+        "title": "Hollywood Ending",
+        "airDate": "2016-03-01"
+      }
+    ]
+  },
+  "captain-marvel": {
+    "id": "captain-marvel",
+    "tmdbId": 299537,
+    "tmdbType": "movie",
+    "title": "Captain Marvel",
+    "overview": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+    "releaseDate": "2019-03-06",
+    "runtime": 124,
+    "poster": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+    "backdrop": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg"
+  },
+  "iron-man": {
+    "id": "iron-man",
+    "tmdbId": 1726,
+    "tmdbType": "movie",
+    "title": "Iron Man",
+    "overview": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    "releaseDate": "2008-04-30",
+    "runtime": 126,
+    "poster": "/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+    "backdrop": "/cyecB7godJ6kNHGONFjUyVN9OX5.jpg"
+  },
+  "iron-man-2": {
+    "id": "iron-man-2",
+    "tmdbId": 10138,
+    "tmdbType": "movie",
+    "title": "Iron Man 2",
+    "overview": "With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony Stark faces pressure from the government, the press and the public to share his technology with the military. Unwilling to let go of his invention, Stark, with Pepper Potts and James 'Rhodey' Rhodes at his side, must forge new alliances – and confront powerful enemies.",
+    "releaseDate": "2010-04-28",
+    "runtime": 124,
+    "poster": "/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
+    "backdrop": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg"
+  },
+  "the-incredible-hulk": {
+    "id": "the-incredible-hulk",
+    "tmdbId": 1724,
+    "tmdbType": "movie",
+    "title": "The Incredible Hulk",
+    "overview": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+    "releaseDate": "2008-06-12",
+    "runtime": 114,
+    "poster": "/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "backdrop": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg"
+  },
+  "thor": {
+    "id": "thor",
+    "tmdbId": 10195,
+    "tmdbType": "movie",
+    "title": "Thor",
+    "overview": "Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
+    "releaseDate": "2011-04-21",
+    "runtime": 115,
+    "poster": "/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+    "backdrop": "/jWAJlgICJbn2kyohrokteRoD3cZ.jpg"
+  },
+  "the-avengers": {
+    "id": "the-avengers",
+    "tmdbId": 24428,
+    "tmdbType": "movie",
+    "title": "The Avengers",
+    "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+    "releaseDate": "2012-04-25",
+    "runtime": 143,
+    "poster": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg"
+  },
+  "iron-man-3": {
+    "id": "iron-man-3",
+    "tmdbId": 68721,
+    "tmdbType": "movie",
+    "title": "Iron Man 3",
+    "overview": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+    "releaseDate": "2013-04-18",
+    "runtime": 130,
+    "poster": "/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
+    "backdrop": "/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg"
+  },
+  "thor-the-dark-world": {
+    "id": "thor-the-dark-world",
+    "tmdbId": 76338,
+    "tmdbType": "movie",
+    "title": "Thor: The Dark World",
+    "overview": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+    "releaseDate": "2013-10-30",
+    "runtime": 112,
+    "poster": "/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
+    "backdrop": "/5QEOy0QEpad9QsXeMxuGHPXMale.jpg"
+  },
+  "captain-america-the-winter-soldier": {
+    "id": "captain-america-the-winter-soldier",
+    "tmdbId": 100402,
+    "tmdbType": "movie",
+    "title": "Captain America: The Winter Soldier",
+    "overview": "After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America is living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy—the Winter Soldier.",
+    "releaseDate": "2014-03-20",
+    "runtime": 136,
+    "poster": "/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
+    "backdrop": "/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg"
+  },
+  "agents-of-shield-s1": {
+    "id": "agents-of-shield-s1",
+    "tmdbId": 1403,
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "Season one begins where the “Marvel's The Avengers” left off. It's just after the battle of New York, and now that the existence of superheroes and aliens has become public knowledge, the world is trying to come to grips with this new reality. Agent Phil Coulson is back in action and now has his eye on a mysterious group called The Rising Tide. In order to track this unseen, unknown enemy, he has assembled a small, highly select group of Agents from the worldwide law-enforcement organization known as S.H.I.E.L.D.",
+    "releaseDate": "2013-09-24",
+    "runtime": null,
+    "poster": "/1CaKyPcZvzzMSwbNFJObxNsxTkK.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Pilot",
+        "airDate": "2013-09-24"
+      },
+      {
+        "number": 2,
+        "title": "0-8-4",
+        "airDate": "2013-10-01"
+      },
+      {
+        "number": 3,
+        "title": "The Asset",
+        "airDate": "2013-10-08"
+      },
+      {
+        "number": 4,
+        "title": "Eye Spy",
+        "airDate": "2013-10-15"
+      },
+      {
+        "number": 5,
+        "title": "Girl in the Flower Dress",
+        "airDate": "2013-10-22"
+      },
+      {
+        "number": 6,
+        "title": "FZZT",
+        "airDate": "2013-11-05"
+      },
+      {
+        "number": 7,
+        "title": "The Hub",
+        "airDate": "2013-11-12"
+      },
+      {
+        "number": 8,
+        "title": "The Well",
+        "airDate": "2013-11-19"
+      },
+      {
+        "number": 9,
+        "title": "Repairs",
+        "airDate": "2013-11-26"
+      },
+      {
+        "number": 10,
+        "title": "The Bridge",
+        "airDate": "2013-12-10"
+      },
+      {
+        "number": 11,
+        "title": "The Magical Place",
+        "airDate": "2014-01-07"
+      },
+      {
+        "number": 12,
+        "title": "Seeds",
+        "airDate": "2014-01-14"
+      },
+      {
+        "number": 13,
+        "title": "T.R.A.C.K.S.",
+        "airDate": "2014-02-04"
+      },
+      {
+        "number": 14,
+        "title": "T.A.H.I.T.I.",
+        "airDate": "2014-03-04"
+      },
+      {
+        "number": 15,
+        "title": "Yes Men",
+        "airDate": "2014-03-11"
+      },
+      {
+        "number": 16,
+        "title": "End of the Beginning",
+        "airDate": "2014-04-01"
+      },
+      {
+        "number": 17,
+        "title": "Turn, Turn, Turn",
+        "airDate": "2014-04-08"
+      },
+      {
+        "number": 18,
+        "title": "Providence",
+        "airDate": "2014-04-15"
+      },
+      {
+        "number": 19,
+        "title": "The Only Light in the Darkness",
+        "airDate": "2014-04-22"
+      },
+      {
+        "number": 20,
+        "title": "Nothing Personal",
+        "airDate": "2014-04-29"
+      },
+      {
+        "number": 21,
+        "title": "Ragtag",
+        "airDate": "2014-05-06"
+      },
+      {
+        "number": 22,
+        "title": "Beginning of the End",
+        "airDate": "2014-05-13"
+      }
+    ]
+  },
+  "guardians-of-the-galaxy": {
+    "id": "guardians-of-the-galaxy",
+    "tmdbId": 118340,
+    "tmdbType": "movie",
+    "title": "Guardians of the Galaxy",
+    "overview": "Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.",
+    "releaseDate": "2014-07-30",
+    "runtime": 121,
+    "poster": "/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+    "backdrop": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg"
+  },
+  "guardians-of-the-galaxy-vol-2": {
+    "id": "guardians-of-the-galaxy-vol-2",
+    "tmdbId": 283995,
+    "tmdbType": "movie",
+    "title": "Guardians of the Galaxy Vol. 2",
+    "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+    "releaseDate": "2017-04-25",
+    "runtime": 137,
+    "poster": "/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+    "backdrop": "/bW93ycPSSi3Hxx1NvlMX5qm2mQu.jpg"
+  },
+  "daredevil-s1": {
+    "id": "daredevil-s1",
+    "tmdbId": 61889,
+    "tmdbType": "tv",
+    "title": "Marvel's Daredevil",
+    "overview": "Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the superhero Daredevil in Hell's Kitchen, New York City.",
+    "releaseDate": "2015-04-10",
+    "runtime": null,
+    "poster": "/zFmJQzl6bFrdpHhDkxXmboyykqD.jpg",
+    "backdrop": "/pPALpad1Fh14g7ejyQjqKzlhrBw.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Into the Ring",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 2,
+        "title": "Cut Man",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 3,
+        "title": "Rabbit in a Snowstorm",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 4,
+        "title": "In the Blood",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 5,
+        "title": "World on Fire",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 6,
+        "title": "Condemned",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 7,
+        "title": "Stick",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 8,
+        "title": "Shadows in the Glass",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 9,
+        "title": "Speak of the Devil",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 10,
+        "title": "Nelson v. Murdock",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 11,
+        "title": "The Path of the Righteous",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 12,
+        "title": "The Ones We Leave Behind",
+        "airDate": "2015-04-10"
+      },
+      {
+        "number": 13,
+        "title": "Daredevil",
+        "airDate": "2015-04-10"
+      }
+    ]
+  },
+  "jessica-jones-s1": {
+    "id": "jessica-jones-s1",
+    "tmdbId": 38472,
+    "tmdbType": "tv",
+    "title": "Marvel's Jessica Jones",
+    "overview": "Haunted by a traumatic past, Jessica Jones uses her gifts as a private eye to find her tormentor before he can harm anyone else in Hell's Kitchen.",
+    "releaseDate": "2015-11-20",
+    "runtime": null,
+    "poster": "/9wwfowgVJDouHQdUsIcNhgbIUlG.jpg",
+    "backdrop": "/fjEOQhzZk2Or7VYUBeMx5ZIwU95.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "AKA Ladies Night",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 2,
+        "title": "AKA Crush Syndrome",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 3,
+        "title": "AKA It's Called Whiskey",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 4,
+        "title": "AKA 99 Friends",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 5,
+        "title": "AKA The Sandwich Saved Me",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 6,
+        "title": "AKA You're a Winner!",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 7,
+        "title": "AKA Top Shelf Perverts",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 8,
+        "title": "AKA WWJD?",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 9,
+        "title": "AKA Sin Bin",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 10,
+        "title": "AKA 1,000 Cuts",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 11,
+        "title": "AKA I've Got the Blues",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 12,
+        "title": "AKA Take a Bloody Number",
+        "airDate": "2015-11-20"
+      },
+      {
+        "number": 13,
+        "title": "AKA Smile",
+        "airDate": "2015-11-20"
+      }
+    ]
+  },
+  "avengers-age-of-ultron": {
+    "id": "avengers-age-of-ultron",
+    "tmdbId": 99861,
+    "tmdbType": "movie",
+    "title": "Avengers: Age of Ultron",
+    "overview": "When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
+    "releaseDate": "2015-04-22",
+    "runtime": 141,
+    "poster": "/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+    "backdrop": "/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg"
+  },
+  "ant-man": {
+    "id": "ant-man",
+    "tmdbId": 102899,
+    "tmdbType": "movie",
+    "title": "Ant-Man",
+    "overview": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
+    "releaseDate": "2015-07-14",
+    "runtime": 117,
+    "poster": "/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
+    "backdrop": "/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg"
+  },
+  "captain-america-civil-war": {
+    "id": "captain-america-civil-war",
+    "tmdbId": 271110,
+    "tmdbType": "movie",
+    "title": "Captain America: Civil War",
+    "overview": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+    "releaseDate": "2016-04-27",
+    "runtime": 147,
+    "poster": "/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+    "backdrop": "/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg"
+  },
+  "black-widow": {
+    "id": "black-widow",
+    "tmdbId": 497698,
+    "tmdbType": "movie",
+    "title": "Black Widow",
+    "overview": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+    "releaseDate": "2021-07-07",
+    "runtime": 134,
+    "poster": "/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+    "backdrop": "/6azpBJGcLx9SKif8h9VMnflBfa.jpg"
+  },
+  "spider-man-homecoming": {
+    "id": "spider-man-homecoming",
+    "tmdbId": 315635,
+    "tmdbType": "movie",
+    "title": "Spider-Man: Homecoming",
+    "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+    "releaseDate": "2017-07-05",
+    "runtime": 133,
+    "poster": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    "backdrop": "/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg"
+  },
+  "black-panther": {
+    "id": "black-panther",
+    "tmdbId": 284054,
+    "tmdbType": "movie",
+    "title": "Black Panther",
+    "overview": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+    "releaseDate": "2018-02-13",
+    "runtime": 135,
+    "poster": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "backdrop": "/19Ed4XgjahPm4U8JT7SnntERIlt.jpg"
+  },
+  "doctor-strange": {
+    "id": "doctor-strange",
+    "tmdbId": 284052,
+    "tmdbType": "movie",
+    "title": "Doctor Strange",
+    "overview": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+    "releaseDate": "2016-10-25",
+    "runtime": 115,
+    "poster": "/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg",
+    "backdrop": "/3zvZ699gMW2RhWc0GisIukzq0Ls.jpg"
+  },
+  "thor-ragnarok": {
+    "id": "thor-ragnarok",
+    "tmdbId": 284053,
+    "tmdbType": "movie",
+    "title": "Thor: Ragnarok",
+    "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
+    "releaseDate": "2017-10-02",
+    "runtime": 131,
+    "poster": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+    "backdrop": "/wBzMnQ01R9w58W6ucltdYfOyP4j.jpg"
+  },
+  "ant-man-and-the-wasp": {
+    "id": "ant-man-and-the-wasp",
+    "tmdbId": 363088,
+    "tmdbType": "movie",
+    "title": "Ant-Man and the Wasp",
+    "overview": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
+    "releaseDate": "2018-07-04",
+    "runtime": 119,
+    "poster": "/cFQEO687n1K6umXbInzocxcnAQz.jpg",
+    "backdrop": "/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg"
+  },
+  "avengers-infinity-war": {
+    "id": "avengers-infinity-war",
+    "tmdbId": 299536,
+    "tmdbType": "movie",
+    "title": "Avengers: Infinity War",
+    "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+    "releaseDate": "2018-04-25",
+    "runtime": 149,
+    "poster": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg"
+  },
+  "avengers-endgame": {
+    "id": "avengers-endgame",
+    "tmdbId": 299534,
+    "tmdbType": "movie",
+    "title": "Avengers: Endgame",
+    "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+    "releaseDate": "2019-04-24",
+    "runtime": 181,
+    "poster": "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg"
+  },
+  "loki-s1": {
+    "id": "loki-s1",
+    "tmdbId": 84958,
+    "tmdbType": "tv",
+    "title": "Loki",
+    "overview": "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of \"Avengers: Endgame.\"",
+    "releaseDate": "2021-06-09",
+    "runtime": null,
+    "poster": "/8uVqe9ThcuYVNdh4O0kuijIWMLL.jpg",
+    "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Glorious Purpose",
+        "airDate": "2021-06-09"
+      },
+      {
+        "number": 2,
+        "title": "The Variant",
+        "airDate": "2021-06-16"
+      },
+      {
+        "number": 3,
+        "title": "Lamentis",
+        "airDate": "2021-06-23"
+      },
+      {
+        "number": 4,
+        "title": "The Nexus Event",
+        "airDate": "2021-06-30"
+      },
+      {
+        "number": 5,
+        "title": "Journey into Mystery",
+        "airDate": "2021-07-07"
+      },
+      {
+        "number": 6,
+        "title": "For All Time. Always.",
+        "airDate": "2021-07-14"
+      }
+    ]
+  },
+  "loki-s2": {
+    "id": "loki-s2",
+    "tmdbId": 84958,
+    "tmdbType": "tv",
+    "title": "Loki",
+    "overview": "In the aftermath of Season 1, Loki finds himself in a battle for the soul of the Time Variance Authority. Along with Mobius, Hunter B-15 and a team of new and returning characters, Loki navigates an ever-expanding and increasingly dangerous multiverse in search of Sylvie, Judge Renslayer, Miss Minutes and the truth of what it means to possess free will and glorious purpose.",
+    "releaseDate": "2023-10-05",
+    "runtime": null,
+    "poster": "/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
+    "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Ouroboros",
+        "airDate": "2023-10-05"
+      },
+      {
+        "number": 2,
+        "title": "Breaking Brad",
+        "airDate": "2023-10-12"
+      },
+      {
+        "number": 3,
+        "title": "1893",
+        "airDate": "2023-10-19"
+      },
+      {
+        "number": 4,
+        "title": "Heart of the TVA",
+        "airDate": "2023-10-26"
+      },
+      {
+        "number": 5,
+        "title": "Science/Fiction",
+        "airDate": "2023-11-02"
+      },
+      {
+        "number": 6,
+        "title": "Glorious Purpose",
+        "airDate": "2023-11-09"
+      }
+    ]
+  },
+  "what-if-s1": {
+    "id": "what-if-s1",
+    "tmdbId": 91363,
+    "tmdbType": "tv",
+    "title": "What If...?",
+    "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
+    "releaseDate": "2021-08-11",
+    "runtime": null,
+    "poster": "/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
+    "backdrop": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "What If... Captain Carter Were the First Avenger?",
+        "airDate": "2021-08-11"
+      },
+      {
+        "number": 2,
+        "title": "What If... T'Challa Became a Star-Lord?",
+        "airDate": "2021-08-18"
+      },
+      {
+        "number": 3,
+        "title": "What If... The World Lost Its Mightiest Heroes?",
+        "airDate": "2021-08-25"
+      },
+      {
+        "number": 4,
+        "title": "What If... Doctor Strange Lost His Heart Instead of His Hands?",
+        "airDate": "2021-09-01"
+      },
+      {
+        "number": 5,
+        "title": "What If... Zombies!?",
+        "airDate": "2021-09-08"
+      },
+      {
+        "number": 6,
+        "title": "What If... Killmonger Rescued Tony Stark?",
+        "airDate": "2021-09-15"
+      },
+      {
+        "number": 7,
+        "title": "What If... Thor Were an Only Child?",
+        "airDate": "2021-09-22"
+      },
+      {
+        "number": 8,
+        "title": "What If... Ultron Won?",
+        "airDate": "2021-09-29"
+      },
+      {
+        "number": 9,
+        "title": "What If... The Watcher Broke His Oath?",
+        "airDate": "2021-10-06"
+      }
+    ]
+  },
+  "wandavision": {
+    "id": "wandavision",
+    "tmdbId": 85271,
+    "tmdbType": "tv",
+    "title": "WandaVision",
+    "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
+    "releaseDate": "2021-01-15",
+    "runtime": null,
+    "poster": "/8BSVNGpZwZDScVv8e5S1c8XIjeJ.jpg",
+    "backdrop": "/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Filmed Before a Live Studio Audience",
+        "airDate": "2021-01-15"
+      },
+      {
+        "number": 2,
+        "title": "Don't Touch That Dial",
+        "airDate": "2021-01-15"
+      },
+      {
+        "number": 3,
+        "title": "Now in Color",
+        "airDate": "2021-01-22"
+      },
+      {
+        "number": 4,
+        "title": "We Interrupt This Program",
+        "airDate": "2021-01-29"
+      },
+      {
+        "number": 5,
+        "title": "On a Very Special Episode...",
+        "airDate": "2021-02-05"
+      },
+      {
+        "number": 6,
+        "title": "All-New Halloween Spooktacular!",
+        "airDate": "2021-02-12"
+      },
+      {
+        "number": 7,
+        "title": "Breaking the Fourth Wall",
+        "airDate": "2021-02-19"
+      },
+      {
+        "number": 8,
+        "title": "Previously On",
+        "airDate": "2021-02-26"
+      },
+      {
+        "number": 9,
+        "title": "The Series Finale",
+        "airDate": "2021-03-05"
+      }
+    ]
+  },
+  "the-falcon-and-the-winter-soldier": {
+    "id": "the-falcon-and-the-winter-soldier",
+    "tmdbId": 88396,
+    "tmdbType": "tv",
+    "title": "The Falcon and the Winter Soldier",
+    "overview": "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+    "releaseDate": "2021-03-19",
+    "runtime": null,
+    "poster": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+    "backdrop": "/aTjbqMONy77fHJrIYu14g1F0d5h.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "New World Order",
+        "airDate": "2021-03-19"
+      },
+      {
+        "number": 2,
+        "title": "The Star-Spangled Man",
+        "airDate": "2021-03-26"
+      },
+      {
+        "number": 3,
+        "title": "Power Broker",
+        "airDate": "2021-04-02"
+      },
+      {
+        "number": 4,
+        "title": "The Whole World Is Watching",
+        "airDate": "2021-04-09"
+      },
+      {
+        "number": 5,
+        "title": "Truth",
+        "airDate": "2021-04-16"
+      },
+      {
+        "number": 6,
+        "title": "One World, One People",
+        "airDate": "2021-04-23"
+      }
+    ]
+  },
+  "shang-chi": {
+    "id": "shang-chi",
+    "tmdbId": 566525,
+    "tmdbType": "movie",
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+    "releaseDate": "2021-09-01",
+    "runtime": 132,
+    "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
+    "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg"
+  },
+  "eternals": {
+    "id": "eternals",
+    "tmdbId": 524434,
+    "tmdbType": "movie",
+    "title": "Eternals",
+    "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
+    "releaseDate": "2021-11-03",
+    "runtime": 156,
+    "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+    "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg"
+  },
+  "spider-man-far-from-home": {
+    "id": "spider-man-far-from-home",
+    "tmdbId": 429617,
+    "tmdbType": "movie",
+    "title": "Spider-Man: Far From Home",
+    "overview": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
+    "releaseDate": "2019-06-28",
+    "runtime": 129,
+    "poster": "/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
+    "backdrop": "/34jW8LvjRplM8Pv06cBFDpLlenR.jpg"
+  },
+  "hawkeye": {
+    "id": "hawkeye",
+    "tmdbId": 88329,
+    "tmdbType": "tv",
+    "title": "Hawkeye",
+    "overview": "Former Avenger Clint Barton has a seemingly simple mission: get back to his family for Christmas. Possible? Maybe with the help of Kate Bishop, a 22-year-old archer with dreams of becoming a superhero. The two are forced to work together when a presence from Barton’s past threatens to derail far more than the festive spirit.",
+    "releaseDate": "2021-11-24",
+    "runtime": null,
+    "poster": "/nGcqeKieycPFvsxOeLJssCTt3mL.jpg",
+    "backdrop": "/1R68vl3d5s86JsS2NPjl8UoMqIS.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Never Meet Your Heroes",
+        "airDate": "2021-11-24"
+      },
+      {
+        "number": 2,
+        "title": "Hide and Seek",
+        "airDate": "2021-11-24"
+      },
+      {
+        "number": 3,
+        "title": "Echoes",
+        "airDate": "2021-12-01"
+      },
+      {
+        "number": 4,
+        "title": "Partners, Am I Right?",
+        "airDate": "2021-12-08"
+      },
+      {
+        "number": 5,
+        "title": "Ronin",
+        "airDate": "2021-12-15"
+      },
+      {
+        "number": 6,
+        "title": "So This Is Christmas?",
+        "airDate": "2021-12-22"
+      }
+    ]
+  },
+  "spider-man-no-way-home": {
+    "id": "spider-man-no-way-home",
+    "tmdbId": 634649,
+    "tmdbType": "movie",
+    "title": "Spider-Man: No Way Home",
+    "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+    "releaseDate": "2021-12-15",
+    "runtime": 148,
+    "poster": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "backdrop": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg"
+  },
+  "doctor-strange-multiverse-of-madness": {
+    "id": "doctor-strange-multiverse-of-madness",
+    "tmdbId": 453395,
+    "tmdbType": "movie",
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "overview": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+    "releaseDate": "2022-05-04",
+    "runtime": 126,
+    "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
+    "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg"
+  },
+  "moon-knight": {
+    "id": "moon-knight",
+    "tmdbId": 92749,
+    "tmdbType": "tv",
+    "title": "Moon Knight",
+    "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+    "releaseDate": "2022-03-30",
+    "runtime": null,
+    "poster": "/zPFm8ZbvdzoViRHnLi8cH7TBS1B.jpg",
+    "backdrop": "/iux1vKPT7Vw1AzetZb4Jz6wfYsm.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "The Goldfish Problem",
+        "airDate": "2022-03-30"
+      },
+      {
+        "number": 2,
+        "title": "Summon the Suit",
+        "airDate": "2022-04-06"
+      },
+      {
+        "number": 3,
+        "title": "The Friendly Type",
+        "airDate": "2022-04-13"
+      },
+      {
+        "number": 4,
+        "title": "The Tomb",
+        "airDate": "2022-04-20"
+      },
+      {
+        "number": 5,
+        "title": "Asylum",
+        "airDate": "2022-04-27"
+      },
+      {
+        "number": 6,
+        "title": "Gods and Monsters",
+        "airDate": "2022-05-04"
+      }
+    ]
+  },
+  "ms-marvel": {
+    "id": "ms-marvel",
+    "tmdbId": 92782,
+    "tmdbType": "tv",
+    "title": "Ms. Marvel",
+    "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+    "releaseDate": "2022-06-08",
+    "runtime": null,
+    "poster": "/4qoFtoPvFGjlIXYfFVNKhOwZ6zD.jpg",
+    "backdrop": "/mfcLUWASJghU8MTNK38eYktfE83.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Generation Why",
+        "airDate": "2022-06-08"
+      },
+      {
+        "number": 2,
+        "title": "Crushed",
+        "airDate": "2022-06-15"
+      },
+      {
+        "number": 3,
+        "title": "Destined",
+        "airDate": "2022-06-22"
+      },
+      {
+        "number": 4,
+        "title": "Seeing Red",
+        "airDate": "2022-06-29"
+      },
+      {
+        "number": 5,
+        "title": "Time and Again",
+        "airDate": "2022-07-06"
+      },
+      {
+        "number": 6,
+        "title": "No Normal",
+        "airDate": "2022-07-13"
+      }
+    ]
+  },
+  "thor-love-and-thunder": {
+    "id": "thor-love-and-thunder",
+    "tmdbId": 616037,
+    "tmdbType": "movie",
+    "title": "Thor: Love and Thunder",
+    "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+    "releaseDate": "2022-07-06",
+    "runtime": 119,
+    "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+    "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg"
+  },
+  "she-hulk": {
+    "id": "she-hulk",
+    "tmdbId": 92783,
+    "tmdbType": "tv",
+    "title": "She-Hulk: Attorney at Law",
+    "overview": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered hulk.",
+    "releaseDate": "2022-08-18",
+    "runtime": null,
+    "poster": "/41Iekrap0j80u808Z2004t88r6o.jpg",
+    "backdrop": "/eljErfkQUcFUgQkI4I1soZcH8MW.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "A Normal Amount of Rage",
+        "airDate": "2022-08-18"
+      },
+      {
+        "number": 2,
+        "title": "Superhuman Law",
+        "airDate": "2022-08-25"
+      },
+      {
+        "number": 3,
+        "title": "The People vs. Emil Blonsky",
+        "airDate": "2022-09-01"
+      },
+      {
+        "number": 4,
+        "title": "Is This Not Real Magic?",
+        "airDate": "2022-09-08"
+      },
+      {
+        "number": 5,
+        "title": "Mean, Green, and Straight Poured into These Jeans",
+        "airDate": "2022-09-15"
+      },
+      {
+        "number": 6,
+        "title": "Just Jen",
+        "airDate": "2022-09-22"
+      },
+      {
+        "number": 7,
+        "title": "The Retreat",
+        "airDate": "2022-09-29"
+      },
+      {
+        "number": 8,
+        "title": "Ribbit and Rip It",
+        "airDate": "2022-10-06"
+      },
+      {
+        "number": 9,
+        "title": "Whose Show Is This?",
+        "airDate": "2022-10-13"
+      }
+    ]
+  },
+  "werewolf-by-night": {
+    "id": "werewolf-by-night",
+    "tmdbId": 894205,
+    "tmdbType": "movie",
+    "title": "Werewolf by Night",
+    "overview": "On a dark and somber night, a secret cabal of monster hunters emerge from the shadows and gather at the foreboding Bloodstone Temple following the death of their leader. In a strange and macabre memorial to the leader’s life, the attendees are thrust into a mysterious and deadly competition for a powerful relic—a hunt that will ultimately bring them face to face with a dangerous monster.",
+    "releaseDate": "2022-09-25",
+    "runtime": 55,
+    "poster": "/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
+    "backdrop": "/pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg"
+  },
+  "black-panther-wakanda-forever": {
+    "id": "black-panther-wakanda-forever",
+    "tmdbId": 505642,
+    "tmdbType": "movie",
+    "title": "Black Panther: Wakanda Forever",
+    "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+    "releaseDate": "2022-11-09",
+    "runtime": 162,
+    "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg"
+  },
+  "guardians-holiday-special": {
+    "id": "guardians-holiday-special",
+    "tmdbId": 774752,
+    "tmdbType": "movie",
+    "title": "The Guardians of the Galaxy Holiday Special",
+    "overview": "On a mission to make Christmas unforgettable for Quill, the Guardians head to Earth in search of the perfect present.",
+    "releaseDate": "2022-11-24",
+    "runtime": 45,
+    "poster": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
+    "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg"
+  },
+  "ant-man-quantumania": {
+    "id": "ant-man-quantumania",
+    "tmdbId": 640146,
+    "tmdbType": "movie",
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+    "releaseDate": "2023-02-15",
+    "runtime": 125,
+    "poster": "/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+    "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg"
+  },
+  "guardians-of-the-galaxy-vol-3": {
+    "id": "guardians-of-the-galaxy-vol-3",
+    "tmdbId": 447365,
+    "tmdbType": "movie",
+    "title": "Guardians of the Galaxy Vol. 3",
+    "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+    "releaseDate": "2023-05-03",
+    "runtime": 150,
+    "poster": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+    "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg"
+  },
+  "secret-invasion": {
+    "id": "secret-invasion",
+    "tmdbId": 114472,
+    "tmdbType": "tv",
+    "title": "Secret Invasion",
+    "overview": "Nick Fury and Talos discover a faction of shapeshifting Skrulls who have been infiltrating Earth for years.",
+    "releaseDate": "2023-06-21",
+    "runtime": null,
+    "poster": "/8fQckSuTR8NEN3mXeledSQCISZJ.jpg",
+    "backdrop": "/6mOK9j99OFlxGc3ird2jWUeUha9.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Resurrection",
+        "airDate": "2023-06-21"
+      },
+      {
+        "number": 2,
+        "title": "Promises",
+        "airDate": "2023-06-28"
+      },
+      {
+        "number": 3,
+        "title": "Betrayed",
+        "airDate": "2023-07-05"
+      },
+      {
+        "number": 4,
+        "title": "Beloved",
+        "airDate": "2023-07-12"
+      },
+      {
+        "number": 5,
+        "title": "Harvest",
+        "airDate": "2023-07-19"
+      },
+      {
+        "number": 6,
+        "title": "Home",
+        "airDate": "2023-07-26"
+      }
+    ]
+  },
+  "the-marvels": {
+    "id": "the-marvels",
+    "tmdbId": 609681,
+    "tmdbType": "movie",
+    "title": "The Marvels",
+    "overview": "When her duties send her to an anomalous wormhole linked to a Kree revolutionary, Carol's powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol's estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+    "releaseDate": "2023-11-08",
+    "runtime": 105,
+    "poster": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+    "backdrop": "/w4pRLYYbhHn3sh9kqRgPZM6GjyS.jpg"
+  },
+  "echo": {
+    "id": "echo",
+    "tmdbId": 122226,
+    "tmdbType": "tv",
+    "title": "Echo",
+    "overview": "Pursued by Wilson Fisk's criminal empire, Maya's journey brings her home and she must confront her own family and legacy.",
+    "releaseDate": "2024-01-09",
+    "runtime": null,
+    "poster": "/eVqz9zgvGYVqvHOg1QlHWrGTpz3.jpg",
+    "backdrop": "/u3ySnWqSjM3jedYgJZTR7RWRDDm.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Chafa",
+        "airDate": "2024-01-09"
+      },
+      {
+        "number": 2,
+        "title": "Lowak",
+        "airDate": "2024-01-09"
+      },
+      {
+        "number": 3,
+        "title": "Tuklo",
+        "airDate": "2024-01-09"
+      },
+      {
+        "number": 4,
+        "title": "Taloa",
+        "airDate": "2024-01-09"
+      },
+      {
+        "number": 5,
+        "title": "Maya",
+        "airDate": "2024-01-09"
+      }
+    ]
+  },
+  "agatha-all-along": {
+    "id": "agatha-all-along",
+    "tmdbId": 138501,
+    "tmdbType": "tv",
+    "title": "Agatha All Along",
+    "overview": "The infamous Agatha Harkness finds herself down and out of power after a suspicious goth Teen helps break her free from a distorted spell. Her interest is piqued when he begs her to take him on the legendary Witches' Road, a magical gauntlet of trials that, if survived, rewards a witch with what they're missing. Together, Agatha and this mysterious Teen pull together a desperate coven, and set off down, down, down the Road...",
+    "releaseDate": "2024-09-18",
+    "runtime": null,
+    "poster": "/cXEE6EsLJNwEwOCedX04Uixfq5O.jpg",
+    "backdrop": "/tYLXJW1sZQU09VWY1BhSVPKGIwc.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Seekest Thou the Road",
+        "airDate": "2024-09-18"
+      },
+      {
+        "number": 2,
+        "title": "Circle Sewn with Fate / Unlock Thy Hidden Gate",
+        "airDate": "2024-09-18"
+      },
+      {
+        "number": 3,
+        "title": "Through Many Miles / Of Tricks and Trials",
+        "airDate": "2024-09-25"
+      },
+      {
+        "number": 4,
+        "title": "If I Can't Reach You / Let My Song Teach You",
+        "airDate": "2024-10-02"
+      },
+      {
+        "number": 5,
+        "title": "Darkest Hour / Wake Thy Power",
+        "airDate": "2024-10-09"
+      },
+      {
+        "number": 6,
+        "title": "Familiar by Thy Side",
+        "airDate": "2024-10-16"
+      },
+      {
+        "number": 7,
+        "title": "Death's Hand in Mine",
+        "airDate": "2024-10-23"
+      },
+      {
+        "number": 8,
+        "title": "Follow Me My Friend / To Glory at the End",
+        "airDate": "2024-10-30"
+      },
+      {
+        "number": 9,
+        "title": "Maiden Mother Crone",
+        "airDate": "2024-10-30"
+      }
+    ]
+  },
+  "deadpool-and-wolverine": {
+    "id": "deadpool-and-wolverine",
+    "tmdbId": 533535,
+    "tmdbType": "movie",
+    "title": "Deadpool & Wolverine",
+    "overview": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+    "releaseDate": "2024-07-24",
+    "runtime": 128,
+    "poster": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    "backdrop": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg"
+  },
+  "captain-america-brave-new-world": {
+    "id": "captain-america-brave-new-world",
+    "tmdbId": 822119,
+    "tmdbType": "movie",
+    "title": "Captain America: Brave New World",
+    "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+    "releaseDate": "2025-02-12",
+    "runtime": 119,
+    "poster": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+    "backdrop": "/8eifdha9GQeZAkexgtD45546XKx.jpg"
+  },
+  "daredevil-born-again-s1": {
+    "id": "daredevil-born-again-s1",
+    "tmdbId": 202555,
+    "tmdbType": "tv",
+    "title": "Daredevil: Born Again",
+    "overview": "It has been a year since Matt Murdock retired from crime fighting as Daredevil. Wilson Fisk has been elected mayor of New York City after running on an anti-vigilante platform. The Kingpin may force Daredevil to come out of retirement.",
+    "releaseDate": "2025-03-02",
+    "runtime": null,
+    "poster": "/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
+    "backdrop": "/v2cTiLNlviotwugnDKqY21xGmSv.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Heaven's Half Hour",
+        "airDate": "2025-03-04"
+      },
+      {
+        "number": 2,
+        "title": "Optics",
+        "airDate": "2025-03-04"
+      },
+      {
+        "number": 3,
+        "title": "The Hollow of His Hand",
+        "airDate": "2025-03-11"
+      },
+      {
+        "number": 4,
+        "title": "Sic Semper Systema",
+        "airDate": "2025-03-18"
+      },
+      {
+        "number": 5,
+        "title": "With Interest",
+        "airDate": "2025-03-25"
+      },
+      {
+        "number": 6,
+        "title": "Excessive Force",
+        "airDate": "2025-03-25"
+      },
+      {
+        "number": 7,
+        "title": "Art for Art's Sake",
+        "airDate": "2025-04-01"
+      },
+      {
+        "number": 8,
+        "title": "Isle of Joy",
+        "airDate": "2025-04-08"
+      },
+      {
+        "number": 9,
+        "title": "Straight to Hell",
+        "airDate": "2025-04-15"
+      }
+    ]
+  },
+  "thunderbolts": {
+    "id": "thunderbolts",
+    "tmdbId": 986056,
+    "tmdbType": "movie",
+    "title": "Thunderbolts*",
+    "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+    "releaseDate": "2025-04-30",
+    "runtime": 127,
+    "poster": "/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
+    "backdrop": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg"
+  },
+  "ironheart": {
+    "id": "ironheart",
+    "tmdbId": 114471,
+    "tmdbType": "tv",
+    "title": "Ironheart",
+    "overview": "After the events of Black Panther: Wakanda Forever, technology is pitted against magic when Riri Williams, a young, genius inventor determined to make her mark on the world, returns to her hometown of Chicago. Her unique take on building iron suits is brilliant, but in pursuit of her ambitions, she finds herself wrapped up with the mysterious yet charming Parker Robbins aka \"The Hood.\"",
+    "releaseDate": "2025-06-24",
+    "runtime": null,
+    "poster": "/1V4rcxP9Dk0TKHkVAc2sigcdDXc.jpg",
+    "backdrop": "/kiOEVg5BkzLE0pWoPKecXd7wZ2Q.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "Take Me Home",
+        "airDate": "2025-06-24"
+      },
+      {
+        "number": 2,
+        "title": "Will the Real Natalie Please Stand Up?",
+        "airDate": "2025-06-24"
+      },
+      {
+        "number": 3,
+        "title": "We in Danger, Girl",
+        "airDate": "2025-06-24"
+      },
+      {
+        "number": 4,
+        "title": "Bad Magic",
+        "airDate": "2025-07-01"
+      },
+      {
+        "number": 5,
+        "title": "Karma's a Glitch",
+        "airDate": "2025-07-01"
+      },
+      {
+        "number": 6,
+        "title": "The Past Is the Past",
+        "airDate": "2025-07-01"
+      }
+    ]
+  },
+  "the-fantastic-four-first-steps": {
+    "id": "the-fantastic-four-first-steps",
+    "tmdbId": 617126,
+    "tmdbType": "movie",
+    "title": "The Fantastic 4: First Steps",
+    "overview": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+    "releaseDate": "2025-07-23",
+    "runtime": 115,
+    "poster": "/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
+    "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg"
+  },
+  "x-men-97-s1": {
+    "id": "x-men-97-s1",
+    "tmdbId": 138502,
+    "tmdbType": "tv",
+    "title": "X-Men '97",
+    "overview": "Picking up where 'X-Men' left off, the X-Men are in a period of transition, struggling with the loss of Professor X. And while their world is in a strained state of calm when it comes to mutant-human relations—everyone knows that's likely temporary.",
+    "releaseDate": "2024-03-20",
+    "runtime": null,
+    "poster": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
+    "backdrop": "/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "number": 1,
+        "title": "To Me, My X-Men",
+        "airDate": "2024-03-20"
+      },
+      {
+        "number": 2,
+        "title": "Mutant Liberation Begins",
+        "airDate": "2024-03-20"
+      },
+      {
+        "number": 3,
+        "title": "Fire Made Flesh",
+        "airDate": "2024-03-27"
+      },
+      {
+        "number": 4,
+        "title": "Motendo / Lifedeath (1)",
+        "airDate": "2024-04-03"
+      },
+      {
+        "number": 5,
+        "title": "Remember It",
+        "airDate": "2024-04-10"
+      },
+      {
+        "number": 6,
+        "title": "Lifedeath (2)",
+        "airDate": "2024-04-17"
+      },
+      {
+        "number": 7,
+        "title": "Bright Eyes",
+        "airDate": "2024-04-24"
+      },
+      {
+        "number": 8,
+        "title": "Tolerance Is Extinction (1)",
+        "airDate": "2024-05-01"
+      },
+      {
+        "number": 9,
+        "title": "Tolerance Is Extinction (2)",
+        "airDate": "2024-05-08"
+      },
+      {
+        "number": 10,
+        "title": "Tolerance Is Extinction (3)",
+        "airDate": "2024-05-15"
+      }
+    ]
+  },
+  "venom": {
+    "id": "venom",
+    "tmdbId": 335983,
+    "tmdbType": "movie",
+    "title": "Venom",
+    "overview": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
+    "releaseDate": "2018-09-28",
+    "runtime": 112,
+    "poster": "/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+    "backdrop": "/hNsYUryiwxcdeTMkaBcPF3iEg0p.jpg"
+  },
+  "venom-let-there-be-carnage": {
+    "id": "venom-let-there-be-carnage",
+    "tmdbId": 580489,
+    "tmdbType": "movie",
+    "title": "Venom: Let There Be Carnage",
+    "overview": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
+    "releaseDate": "2021-09-30",
+    "runtime": 97,
+    "poster": "/pzKsRuKLFmYrW5Q0q8E8G78Tcgo.jpg",
+    "backdrop": "/eENEf62tMXbhyVvdcXlnQz2wcuT.jpg"
+  }
+}
