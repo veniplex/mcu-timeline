@@ -14,48 +14,75 @@
 
 	const showProgress = $derived(firebaseEnabled && !!$auth.user);
 
-	function bandProgress(band: PhaseBand): { done: number; total: number } {
-		let done = 0;
-		for (const item of band.items) {
-			if (item.entryIds.every((id) => $watched.has(id))) done++;
-		}
-		return { done, total: band.items.length };
+	const isItemWatched = (item: TimelineItem) => item.entryIds.every((id) => $watched.has(id));
+
+	function bandProgress(band: PhaseBand): { done: number; total: number; pct: number } {
+		const done = band.items.filter(isItemWatched).length;
+		const total = band.items.length;
+		return { done, total, pct: total ? (done / total) * 100 : 0 };
 	}
 </script>
 
-<div class="space-y-12">
-	{#each bands as band (band.phase + '-' + band.items[0].key)}
+<div class="relative mx-auto max-w-5xl pb-8">
+	<!-- Central spine -->
+	<div
+		class="absolute bottom-0 left-4 top-0 w-0.5 -translate-x-1/2 bg-gradient-to-b from-primary/50 via-border to-primary/50 md:left-1/2"
+		aria-hidden="true"
+	></div>
+
+	{#each bands as band (band.phase)}
 		{@const p = bandProgress(band)}
 		<section>
-			<div
-				class="sticky top-16 z-30 -mx-4 mb-5 flex items-center gap-3 border-b border-border bg-background/85 px-4 py-2 backdrop-blur-md sm:-mx-6 sm:px-6"
-			>
-				<span class="size-2.5 rounded-full bg-primary" aria-hidden="true"></span>
-				<h2 class="text-lg font-bold tracking-tight">
-					{$t('phase.label')} {band.phase}
-					<span class="font-normal text-muted-foreground">· {PHASE_LABELS[band.phase][$locale]}</span>
-				</h2>
-				{#if showProgress}
-					<div class="ml-auto flex items-center gap-2">
-						<span class="text-xs tabular-nums text-muted-foreground">{p.done}/{p.total}</span>
-						<div class="h-1.5 w-24 overflow-hidden rounded-full bg-muted">
-							<div
-								class="h-full rounded-full bg-accent transition-[width] duration-300"
-								style="width: {p.total ? (p.done / p.total) * 100 : 0}%"
-							></div>
+			<!-- Phase milestone -->
+			<div class="relative z-10 flex flex-col items-center py-8 first:pt-2">
+				<div
+					class="w-[min(20rem,90%)] rounded-2xl border border-accent/40 bg-surface px-6 py-4 text-center shadow-lg ring-1 ring-black/5"
+				>
+					<span class="block text-[0.7rem] font-semibold uppercase tracking-[0.35em] text-accent">
+						{$t('phase.label')} {band.phase}
+					</span>
+					<span class="mt-0.5 block text-2xl font-black tracking-tight sm:text-3xl">
+						{PHASE_LABELS[band.phase][$locale]}
+					</span>
+					{#if showProgress}
+						<div class="mt-3 flex items-center gap-2">
+							<div class="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
+								<div
+									class="h-full rounded-full bg-accent transition-[width] duration-300"
+									style="width: {p.pct}%"
+								></div>
+							</div>
+							<span class="text-xs tabular-nums text-muted-foreground">{p.done}/{p.total}</span>
 						</div>
-					</div>
-				{/if}
-			</div>
-
-			<div class="relative pl-4">
-				<div class="absolute bottom-2 left-0 top-2 w-px bg-border" aria-hidden="true"></div>
-				<div class="flex flex-wrap gap-4">
-					{#each band.items as item (item.key)}
-						<TimelineNode {item} onopen={(i) => (active = i)} />
-					{/each}
+					{/if}
 				</div>
 			</div>
+
+			<!-- Leaves -->
+			<ol class="space-y-5 md:space-y-6">
+				{#each band.items as item, i (item.key)}
+					<li class="relative grid grid-cols-1 md:grid-cols-2">
+						<!-- dot on the spine -->
+						<span
+							class="absolute left-4 top-6 z-10 size-3 -translate-x-1/2 rounded-full border-2 md:left-1/2 {isItemWatched(
+								item
+							)
+								? 'border-accent bg-accent'
+								: 'border-primary bg-background'}"
+							aria-hidden="true"
+						></span>
+						<div
+							class="pl-10 md:px-8 {i % 2 === 0
+								? 'md:col-start-1 md:justify-self-end'
+								: 'md:col-start-2 md:justify-self-start'}"
+						>
+							<div class="w-full max-w-sm">
+								<TimelineNode {item} onopen={(it) => (active = it)} />
+							</div>
+						</div>
+					</li>
+				{/each}
+			</ol>
 		</section>
 	{/each}
 </div>

@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { Sun, Moon, Clapperboard, CalendarDays, Clock } from 'lucide-svelte';
+	import { Sun, Moon, Clapperboard } from 'lucide-svelte';
 	import { theme } from '$lib/stores/theme';
 	import { locale, LOCALES } from '$lib/stores/locale';
-	import { sortMode } from '$lib/stores/sortMode';
 	import { t } from '$lib/i18n/messages';
 	import AuthButton from './AuthButton.svelte';
 </script>
@@ -15,36 +14,6 @@
 			<Clapperboard class="size-5 text-primary" aria-hidden="true" />
 			<span>{$t('app.title')}</span>
 		</a>
-
-		<!-- Sort toggle -->
-		<div
-			class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm"
-			role="group"
-			aria-label={$t('sort.label')}
-		>
-			<button
-				class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {$sortMode ===
-				'chronological'
-					? 'bg-primary text-on-primary'
-					: 'text-muted-foreground hover:text-foreground'}"
-				aria-pressed={$sortMode === 'chronological'}
-				onclick={() => sortMode.set('chronological')}
-			>
-				<Clock class="size-4" aria-hidden="true" />
-				<span class="hidden sm:inline">{$t('sort.chronological')}</span>
-			</button>
-			<button
-				class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {$sortMode ===
-				'release'
-					? 'bg-primary text-on-primary'
-					: 'text-muted-foreground hover:text-foreground'}"
-				aria-pressed={$sortMode === 'release'}
-				onclick={() => sortMode.set('release')}
-			>
-				<CalendarDays class="size-4" aria-hidden="true" />
-				<span class="hidden sm:inline">{$t('sort.release')}</span>
-			</button>
-		</div>
 
 		<!-- Language -->
 		<div

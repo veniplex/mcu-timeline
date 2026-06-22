@@ -81,48 +81,50 @@ function mergeSeriesSeasons(a: TimelineItem, b: TimelineItem): TimelineItem {
 	};
 }
 
-/** Group an already-ordered item list into consecutive same-phase bands. */
-function toBands(items: TimelineItem[]): PhaseBand[] {
-	const bands: PhaseBand[] = [];
-	for (const item of items) {
-		const last = bands[bands.length - 1];
-		if (last && last.phase === item.phase) last.items.push(item);
-		else bands.push({ phase: item.phase, items: [item] });
+const orderOf = new Map(chronology.map((e) => [e.id, e.order]));
+
+/** Sort a single phase's items by the active mode, merging release-view seasons. */
+function orderPhaseItems(items: TimelineItem[], sort: SortMode): TimelineItem[] {
+	if (sort === 'chronological') {
+		return [...items].sort(
+			(a, b) => orderOf.get(a.entryIds[0])! - orderOf.get(b.entryIds[0])!
+		);
 	}
-	return bands;
+	const sorted = [...items].sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
+	// Merge adjacent same-series seasons (nothing else released between them).
+	const merged: TimelineItem[] = [];
+	for (const item of sorted) {
+		const prev = merged[merged.length - 1];
+		if (prev && prev.isSeries && item.isSeries && prev.tmdbId === item.tmdbId) {
+			merged[merged.length - 1] = mergeSeriesSeasons(prev, item);
+		} else {
+			merged.push(item);
+		}
+	}
+	return merged;
 }
 
 /**
  * Build the timeline view model for the active sort + locale.
  *
- * - chronological: entries in curated `order`; each season-block stands alone.
- * - release: entries sorted by release/air date; adjacent seasons of the SAME
- *   series merge into one block when nothing else releases between them.
+ * Phase is the dominant grouping: bands are emitted strictly Phase 1 → 6, so
+ * every item precedes all items of any later phase. Within a phase, order is by
+ * the active sort — curated in-universe `order` (chronological) or release/air
+ * date (release, with adjacent same-series seasons merged into one block).
  */
 export function buildTimeline(sort: SortMode, locale: Locale): PhaseBand[] {
-	let items = chronology
-		.map((e) => toItem(e.id, locale))
-		.filter((i): i is TimelineItem => i !== null);
-
-	if (sort === 'chronological') {
-		const orderOf = new Map(chronology.map((e) => [e.id, e.order]));
-		items.sort((a, b) => (orderOf.get(a.entryIds[0])! - orderOf.get(b.entryIds[0])!));
-	} else {
-		items.sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
-		// Merge adjacent same-series seasons (nothing else released between them).
-		const merged: TimelineItem[] = [];
-		for (const item of items) {
-			const prev = merged[merged.length - 1];
-			if (prev && prev.isSeries && item.isSeries && prev.tmdbId === item.tmdbId) {
-				merged[merged.length - 1] = mergeSeriesSeasons(prev, item);
-			} else {
-				merged.push(item);
-			}
-		}
-		items = merged;
+	const byPhase = new Map<Phase, TimelineItem[]>();
+	for (const entry of chronology) {
+		const item = toItem(entry.id, locale);
+		if (!item) continue;
+		const list = byPhase.get(item.phase) ?? [];
+		list.push(item);
+		byPhase.set(item.phase, list);
 	}
 
-	return toBands(items);
+	return [...byPhase.keys()]
+		.sort((a, b) => a - b)
+		.map((phase) => ({ phase, items: orderPhaseItems(byPhase.get(phase)!, sort) }));
 }
 
 export const TOTAL_ENTRIES = chronology.length;

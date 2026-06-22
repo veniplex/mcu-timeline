@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Film, Tv, LayoutGrid, EyeOff } from 'lucide-svelte';
+	import { Film, Tv, LayoutGrid, EyeOff, Clock, CalendarDays } from 'lucide-svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
 	import { buildTimeline, TOTAL_ENTRIES, type PhaseBand } from '$lib/data/timeline';
 	import { sortMode } from '$lib/stores/sortMode';
@@ -63,6 +63,37 @@
 </section>
 
 <div class="mb-8 flex flex-wrap items-center gap-3">
+	<!-- Sort -->
+	<div
+		class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm"
+		role="group"
+		aria-label={$t('sort.label')}
+	>
+		<button
+			class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {$sortMode ===
+			'chronological'
+				? 'bg-primary text-on-primary'
+				: 'text-muted-foreground hover:text-foreground'}"
+			aria-pressed={$sortMode === 'chronological'}
+			onclick={() => sortMode.set('chronological')}
+		>
+			<Clock class="size-4" aria-hidden="true" />
+			<span>{$t('sort.chronological')}</span>
+		</button>
+		<button
+			class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {$sortMode ===
+			'release'
+				? 'bg-primary text-on-primary'
+				: 'text-muted-foreground hover:text-foreground'}"
+			aria-pressed={$sortMode === 'release'}
+			onclick={() => sortMode.set('release')}
+		>
+			<CalendarDays class="size-4" aria-hidden="true" />
+			<span>{$t('sort.release')}</span>
+		</button>
+	</div>
+
+	<!-- Media type -->
 	<div class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm">
 		{#each filters as f (f.key)}
 			<button
