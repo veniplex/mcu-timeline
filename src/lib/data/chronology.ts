@@ -8,17 +8,19 @@ import type { ChronologyEntry } from './types';
  * fill gaps. `order` is sparse (step 10) so future inserts don't renumber.
  *
  * `phase` is the canonical Marvel Studios Phase each title belongs to. Legacy
- * ABC/Netflix TV and non-Studios tie-ins are mapped to the Phase matching their
- * release era (flagged in `source`). The timeline groups consecutive same-phase
- * entries into labeled bands in whichever sort is active.
+ * ABC/Netflix/Hulu/Freeform TV, animation and non-Studios tie-ins are mapped to
+ * the Phase matching their RELEASE era (flagged in `source`) — Marvel never gave
+ * most of them precise in-universe dates, so these are grouped by air-date, not
+ * pinned to a story year. The timeline groups consecutive same-phase entries
+ * into labeled bands in whichever sort is active.
  *
- * Series are single season-blocks unless their events interleave with other
- * titles at episode granularity (none currently do in the core MCU).
+ * Series are single season-blocks. `order` for legacy TV reflects premiere date
+ * so seasons stay consecutive and read in airing order within their phase band.
  *
  * Coverage: complete theatrical slate (Phases 1-6) + all Marvel Studios Disney+
- * series & specials, plus a representative set of legacy TV, animation and the
- * Sony tie-ins. The long tail (every AoS / Netflix episode-season, Hulu/Freeform
- * shows) extends here without code changes.
+ * series & specials + full legacy Marvel Television run (Agents of S.H.I.E.L.D.
+ * S1-7, the Netflix Defenders Saga, Inhumans, Runaways, Cloak & Dagger, Helstrom),
+ * the animated slate, and the loosely-connected Sony tie-ins.
  */
 export const chronology: ChronologyEntry[] = [
 	{
@@ -28,7 +30,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Captain America: The First Avenger', year: 2011 },
 		eraTag: 'WWII',
-		source: 'Official timeline (1943-45)'
+		source: 'Official timeline (1943-45)',
+		rtSlug: 'm/captain_america_the_first_avenger'
 	},
 	{
 		id: 'agent-carter-s1',
@@ -55,7 +58,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Captain Marvel', year: 2019 },
 		eraTag: '1995',
-		source: 'Official timeline (1995)'
+		source: 'Official timeline (1995)',
+		rtSlug: 'm/captain_marvel'
 	},
 	{
 		id: 'iron-man',
@@ -64,7 +68,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Iron Man', year: 2008 },
 		eraTag: 'Modern era',
-		source: 'Official timeline (2010)'
+		source: 'Official timeline (2010)',
+		rtSlug: 'm/iron_man'
 	},
 	{
 		id: 'iron-man-2',
@@ -72,7 +77,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 1,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Iron Man 2', year: 2010 },
-		source: 'Official timeline (2011)'
+		source: 'Official timeline (2011)',
+		rtSlug: 'm/iron_man_2'
 	},
 	{
 		id: 'the-incredible-hulk',
@@ -80,7 +86,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 1,
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Incredible Hulk', year: 2008 },
-		source: 'Official timeline (2011), concurrent with Iron Man 2'
+		source: 'Official timeline (2011), concurrent with Iron Man 2',
+		rtSlug: 'm/incredible_hulk'
 	},
 	{
 		id: 'thor',
@@ -88,7 +95,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 1,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Thor', year: 2011 },
-		source: 'Official timeline (2011)'
+		source: 'Official timeline (2011)',
+		rtSlug: 'm/thor'
 	},
 	{
 		id: 'the-avengers',
@@ -97,7 +105,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Avengers', year: 2012 },
 		eraTag: 'Battle of New York',
-		source: 'Official timeline (2012)'
+		source: 'Official timeline (2012)',
+		rtSlug: 'm/marvels_the_avengers'
 	},
 	{
 		id: 'iron-man-3',
@@ -105,7 +114,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 2,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Iron Man 3', year: 2013 },
-		source: 'Official timeline (2012, Christmas)'
+		source: 'Official timeline (2012, Christmas)',
+		rtSlug: 'm/iron_man_3'
 	},
 	{
 		id: 'thor-the-dark-world',
@@ -113,7 +123,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 2,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Thor: The Dark World', year: 2013 },
-		source: 'Official timeline (2013)'
+		source: 'Official timeline (2013)',
+		rtSlug: 'm/thor_the_dark_world'
 	},
 	{
 		id: 'captain-america-the-winter-soldier',
@@ -121,7 +132,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 2,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Captain America: The Winter Soldier', year: 2014 },
-		source: 'Official timeline (2014)'
+		source: 'Official timeline (2014)',
+		rtSlug: 'm/captain_america_the_winter_soldier'
 	},
 	{
 		id: 'agents-of-shield-s1',
@@ -132,12 +144,21 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Legacy ABC TV; S1 climax ties to Winter Soldier (Phase 2)'
 	},
 	{
+		id: 'agents-of-shield-s2',
+		order: 135,
+		phase: 2,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 2 },
+		source: 'Legacy ABC TV; aired 2014-15, Phase 2 release era'
+	},
+	{
 		id: 'guardians-of-the-galaxy',
 		order: 140,
 		phase: 2,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Guardians of the Galaxy', year: 2014 },
-		source: 'Official timeline (2014)'
+		source: 'Official timeline (2014)',
+		rtSlug: 'm/guardians_of_the_galaxy'
 	},
 	{
 		id: 'guardians-of-the-galaxy-vol-2',
@@ -145,7 +166,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Guardians of the Galaxy Vol. 2', year: 2017 },
-		source: 'Official timeline (2014, months after Vol. 1)'
+		source: 'Official timeline (2014, months after Vol. 1)',
+		rtSlug: 'm/guardians_of_the_galaxy_vol_2'
 	},
 	{
 		id: 'daredevil-s1',
@@ -171,7 +193,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 2,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Avengers: Age of Ultron', year: 2015 },
-		source: 'Official timeline (2015)'
+		source: 'Official timeline (2015)',
+		rtSlug: 'm/avengers_age_of_ultron'
 	},
 	{
 		id: 'ant-man',
@@ -179,7 +202,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 2,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Ant-Man', year: 2015 },
-		source: 'Official timeline (2015)'
+		source: 'Official timeline (2015)',
+		rtSlug: 'm/ant_man'
 	},
 	{
 		id: 'captain-america-civil-war',
@@ -187,7 +211,16 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Captain America: Civil War', year: 2016 },
-		source: 'Official timeline (2016)'
+		source: 'Official timeline (2016)',
+		rtSlug: 'm/captain_america_civil_war'
+	},
+	{
+		id: 'black-panther',
+		order: 205,
+		phase: 3,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Black Panther', year: 2018 },
+		source: 'Official timeline (2016, ~one week after Civil War — precedes Homecoming)'
 	},
 	{
 		id: 'black-widow',
@@ -203,15 +236,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Spider-Man: Homecoming', year: 2017 },
-		source: 'Official timeline (2016)'
-	},
-	{
-		id: 'black-panther',
-		order: 230,
-		phase: 3,
-		kind: 'movie',
-		query: { type: 'movie', title: 'Black Panther', year: 2018 },
-		source: 'Official timeline (2017, week after Civil War)'
+		source: 'Official timeline (2016, eight months after the Battle of New York salvage)',
+		rtSlug: 'm/spider_man_homecoming'
 	},
 	{
 		id: 'doctor-strange',
@@ -227,7 +253,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Thor: Ragnarok', year: 2017 },
-		source: 'Official timeline (2017)'
+		source: 'Official timeline (2017)',
+		rtSlug: 'm/thor_ragnarok'
 	},
 	{
 		id: 'ant-man-and-the-wasp',
@@ -235,7 +262,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Ant-Man and the Wasp', year: 2018 },
-		source: 'Official timeline (2018, during Infinity War)'
+		source: 'Official timeline (2018, during Infinity War)',
+		rtSlug: 'm/ant_man_and_the_wasp'
 	},
 	{
 		id: 'avengers-infinity-war',
@@ -244,7 +272,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Avengers: Infinity War', year: 2018 },
 		eraTag: 'The Blip',
-		source: 'Official timeline (2018)'
+		source: 'Official timeline (2018)',
+		rtSlug: 'm/avengers_infinity_war'
 	},
 	{
 		id: 'avengers-endgame',
@@ -253,7 +282,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Avengers: Endgame', year: 2019 },
 		eraTag: 'The Blip / 2023',
-		source: 'Official timeline (2018 & 2023 after 5-year jump)'
+		source: 'Official timeline (2018 & 2023 after 5-year jump)',
+		rtSlug: 'm/avengers_endgame'
 	},
 	{
 		id: 'loki-s1',
@@ -306,7 +336,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Shang-Chi and the Legend of the Ten Rings', year: 2021 },
-		source: 'Official timeline (2024)'
+		source: 'Official timeline (2024)',
+		rtSlug: 'm/shang_chi_and_the_legend_of_the_ten_rings'
 	},
 	{
 		id: 'eternals',
@@ -314,7 +345,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Eternals', year: 2021 },
-		source: 'Official timeline (2024)'
+		source: 'Official timeline (2024)',
+		rtSlug: 'm/eternals'
 	},
 	{
 		id: 'spider-man-far-from-home',
@@ -322,7 +354,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Spider-Man: Far From Home', year: 2019 },
-		source: 'Official timeline (2024, 8 months after Endgame)'
+		source: 'Official timeline (2024, 8 months after Endgame)',
+		rtSlug: 'm/spider_man_far_from_home'
 	},
 	{
 		id: 'hawkeye',
@@ -339,7 +372,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Spider-Man: No Way Home', year: 2021 },
-		source: 'Official timeline (2024, after Far From Home)'
+		source: 'Official timeline (2024, after Far From Home)',
+		rtSlug: 'm/spider_man_no_way_home'
 	},
 	{
 		id: 'doctor-strange-multiverse-of-madness',
@@ -347,7 +381,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Doctor Strange in the Multiverse of Madness', year: 2022 },
-		source: 'Official timeline (2025, after No Way Home & WandaVision)'
+		source: 'Official timeline (2025, after No Way Home & WandaVision)',
+		rtSlug: 'm/doctor_strange_in_the_multiverse_of_madness'
 	},
 	{
 		id: 'moon-knight',
@@ -371,7 +406,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Thor: Love and Thunder', year: 2022 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/thor_love_and_thunder'
 	},
 	{
 		id: 'she-hulk',
@@ -395,7 +431,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Black Panther: Wakanda Forever', year: 2022 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/black_panther_wakanda_forever'
 	},
 	{
 		id: 'guardians-holiday-special',
@@ -407,12 +444,31 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Disney+ special presentation'
 	},
 	{
+		id: 'agents-of-shield-s7',
+		order: 462,
+		phase: 4,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 7 },
+		eraTag: 'Time travel',
+		source: 'Legacy ABC TV; final season aired 2020, post-Phase-3 release gap'
+	},
+	{
+		id: 'helstrom',
+		order: 464,
+		phase: 4,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Helstrom', year: 2020, season: 1, tmdbId: 88987 },
+		eraTag: 'Marvel Television',
+		source: 'Legacy Hulu; final Marvel Television series, 2020 release era'
+	},
+	{
 		id: 'ant-man-quantumania',
 		order: 470,
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Ant-Man and the Wasp: Quantumania', year: 2023 },
-		source: 'Official timeline (opens Phase 5)'
+		source: 'Official timeline (opens Phase 5)',
+		rtSlug: 'm/ant_man_and_the_wasp_quantumania'
 	},
 	{
 		id: 'guardians-of-the-galaxy-vol-3',
@@ -420,7 +476,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Guardians of the Galaxy Vol. 3', year: 2023 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/guardians_of_the_galaxy_vol_3'
 	},
 	{
 		id: 'secret-invasion',
@@ -461,7 +518,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Deadpool & Wolverine', year: 2024 },
 		eraTag: 'Multiverse / TVA',
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/deadpool_and_wolverine'
 	},
 	{
 		id: 'captain-america-brave-new-world',
@@ -505,21 +563,249 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Official timeline (opens Phase 6)'
 	},
 
-	/* ---- Animation ---- */
+	/* ---- Legacy Marvel Television: Defenders Saga (Netflix) + ABC/Hulu/Freeform,
+	   Phase 3 release era. Ordered by premiere date; no official in-universe dates,
+	   so grouped at the tail of the Phase 3 band. ---- */
+	{
+		id: 'agents-of-shield-s3',
+		order: 600,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 3 },
+		source: 'Legacy ABC TV; aired 2015-16, Phase 3 release era'
+	},
+	{
+		id: 'daredevil-s2',
+		order: 605,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Daredevil', year: 2015, season: 2 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2016, Phase 3 release era'
+	},
+	{
+		id: 'agents-of-shield-s4',
+		order: 610,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 4 },
+		source: 'Legacy ABC TV; aired 2016-17, Phase 3 release era'
+	},
+	{
+		id: 'luke-cage-s1',
+		order: 615,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Luke Cage', year: 2016, season: 1, tmdbId: 62126 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2016, Phase 3 release era'
+	},
+	{
+		id: 'iron-fist-s1',
+		order: 620,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Iron Fist', year: 2017, season: 1, tmdbId: 62127 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2017, Phase 3 release era'
+	},
+	{
+		id: 'the-defenders',
+		order: 625,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s The Defenders', year: 2017, season: 1, tmdbId: 62285 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; crossover miniseries, aired 2017'
+	},
+	{
+		id: 'inhumans',
+		order: 630,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Inhumans', year: 2017, season: 1, tmdbId: 68716 },
+		source: 'Legacy ABC TV; aired 2017, Phase 3 release era'
+	},
+	{
+		id: 'the-punisher-s1',
+		order: 635,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s The Punisher', year: 2017, season: 1, tmdbId: 67178 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; Daredevil spin-off, aired 2017'
+	},
+	{
+		id: 'runaways-s1',
+		order: 640,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Runaways', year: 2017, season: 1, tmdbId: 67466 },
+		source: 'Legacy Hulu; aired 2017, Phase 3 release era'
+	},
+	{
+		id: 'agents-of-shield-s5',
+		order: 645,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 5 },
+		source: 'Legacy ABC TV; aired 2017-18, Phase 3 release era'
+	},
+	{
+		id: 'jessica-jones-s2',
+		order: 650,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Jessica Jones', year: 2015, season: 2 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2018, Phase 3 release era'
+	},
+	{
+		id: 'cloak-and-dagger-s1',
+		order: 655,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Cloak & Dagger', year: 2018, season: 1, tmdbId: 66190 },
+		source: 'Legacy Freeform; aired 2018, Phase 3 release era'
+	},
+	{
+		id: 'luke-cage-s2',
+		order: 660,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Luke Cage', year: 2016, season: 2, tmdbId: 62126 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2018, Phase 3 release era'
+	},
+	{
+		id: 'iron-fist-s2',
+		order: 665,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Iron Fist', year: 2017, season: 2, tmdbId: 62127 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2018, Phase 3 release era'
+	},
+	{
+		id: 'daredevil-s3',
+		order: 670,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Daredevil', year: 2015, season: 3 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2018, Phase 3 release era'
+	},
+	{
+		id: 'runaways-s2',
+		order: 675,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Runaways', year: 2017, season: 2, tmdbId: 67466 },
+		source: 'Legacy Hulu; aired 2018, Phase 3 release era'
+	},
+	{
+		id: 'the-punisher-s2',
+		order: 680,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s The Punisher', year: 2017, season: 2, tmdbId: 67178 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; aired 2019, Phase 3 release era'
+	},
+	{
+		id: 'cloak-and-dagger-s2',
+		order: 685,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Cloak & Dagger', year: 2018, season: 2, tmdbId: 66190 },
+		source: 'Legacy Freeform; aired 2019, Phase 3 release era'
+	},
+	{
+		id: 'agents-of-shield-s6',
+		order: 690,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 6 },
+		source: 'Legacy ABC TV; aired 2019, Phase 3 release era'
+	},
+	{
+		id: 'jessica-jones-s3',
+		order: 695,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Jessica Jones', year: 2015, season: 3 },
+		eraTag: 'Defenders Saga',
+		source: 'Legacy Netflix; final Netflix season, aired 2019'
+	},
+	{
+		id: 'runaways-s3',
+		order: 700,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Runaways', year: 2017, season: 3, tmdbId: 67466 },
+		source: 'Legacy Hulu; final season, aired 2019'
+	},
+
+	/* ---- Animation (alternate continuities), grouped by release Phase ---- */
+	{
+		id: 'what-if-s2',
+		order: 740,
+		phase: 5,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'What If...?', year: 2021, season: 2 },
+		eraTag: 'Multiverse',
+		source: 'Animated; aired Dec 2023, Phase 5 release era'
+	},
+	{
+		id: 'what-if-s3',
+		order: 745,
+		phase: 5,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'What If...?', year: 2021, season: 3 },
+		eraTag: 'Multiverse',
+		source: 'Animated; final season, aired Dec 2024'
+	},
 	{
 		id: 'x-men-97-s1',
-		order: 600,
+		order: 750,
 		phase: 5,
 		kind: 'series-block',
 		query: { type: 'tv', title: 'X-Men \'97', year: 2024, season: 1 },
 		eraTag: 'Alternate universe',
 		source: 'Animated revival; separate continuity, grouped by Phase 5 release'
 	},
+	{
+		id: 'your-friendly-neighborhood-spider-man-s1',
+		order: 755,
+		phase: 5,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Your Friendly Neighborhood Spider-Man', year: 2025, season: 1 },
+		eraTag: 'Alternate universe',
+		source: 'Animated; aired 2025, Phase 5 release era'
+	},
+	{
+		id: 'marvel-zombies',
+		order: 760,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel Zombies', year: 2025, season: 1 },
+		eraTag: 'Alternate universe',
+		source: 'Animated What If...? spin-off; aired 2025, Phase 6 release era'
+	},
+	{
+		id: 'eyes-of-wakanda',
+		order: 765,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Eyes of Wakanda', year: 2025, season: 1 },
+		eraTag: 'Alternate continuity',
+		source: 'Animated; aired 2025, Phase 6 release era'
+	},
 
-	/* ---- Sony tie-ins (SSU — contested/loose canon) ---- */
+	/* ---- Sony tie-ins (SSU — loose/contested canon, MCU-connected entries only) ---- */
 	{
 		id: 'venom',
-		order: 700,
+		order: 800,
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Venom', year: 2018 },
@@ -528,11 +814,20 @@ export const chronology: ChronologyEntry[] = [
 	},
 	{
 		id: 'venom-let-there-be-carnage',
-		order: 710,
+		order: 810,
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Venom: Let There Be Carnage', year: 2021 },
 		eraTag: 'Sony tie-in',
 		source: 'Sony SSU; mid-credits crosses into MCU (No Way Home)'
+	},
+	{
+		id: 'morbius',
+		order: 820,
+		phase: 4,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Morbius', year: 2022 },
+		eraTag: 'Sony tie-in',
+		source: 'Sony SSU; post-credits ties to Vulture via the No Way Home multiverse rift'
 	}
 ];

@@ -22,6 +22,10 @@ export interface TimelineItem {
 	/** Underlying chronology entry ids this item covers (for watched aggregation). */
 	entryIds: string[];
 	tmdbId: number;
+	/** IMDb id (e.g. "tt0371746"); null when TMDB has no external id. */
+	imdbId: string | null;
+	/** Rotten Tomatoes path (e.g. "m/iron_man"); undefined → UI uses a search link. */
+	rtSlug?: string;
 	isSeries: boolean;
 	phase: Phase;
 	title: string;
@@ -59,6 +63,8 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 		key: entry.id,
 		entryIds: [entry.id],
 		tmdbId: item.tmdbId,
+		imdbId: item.imdbId ?? null,
+		rtSlug: entry.rtSlug,
 		isSeries,
 		phase: entry.phase,
 		title: item.title,

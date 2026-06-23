@@ -2,6 +2,7 @@
   "captain-america-the-first-avenger": {
     "id": "captain-america-the-first-avenger",
     "tmdbId": 1771,
+    "imdbId": "tt0458339",
     "tmdbType": "movie",
     "title": "Captain America: The First Avenger",
     "overview": "During World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull – Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.",
@@ -13,6 +14,7 @@
   "agent-carter-s1": {
     "id": "agent-carter-s1",
     "tmdbId": 61550,
+    "imdbId": "tt3475734",
     "tmdbType": "tv",
     "title": "Marvel's Agent Carter",
     "overview": "Years before Agent Phil Coulson and his S.H.I.E.L.D. team swore to protect those who cannot protect themselves from threats they cannot conceive, there was Agent Peggy Carter, who pledged the same oath but lived in a different time, when women weren't recognized as being as smart or as tough as their male counterparts. But no one should ever underestimate Peggy.",
@@ -75,6 +77,7 @@
   "agent-carter-s2": {
     "id": "agent-carter-s2",
     "tmdbId": 61550,
+    "imdbId": "tt3475734",
     "tmdbType": "tv",
     "title": "Marvel's Agent Carter",
     "overview": "Dedicated to the fight against new Atomic Age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles and she's about to find out that the bright lights of the post-war Hollywood mask a more sinister threat to everyone she is sworn to protect.",
@@ -149,6 +152,7 @@
   "captain-marvel": {
     "id": "captain-marvel",
     "tmdbId": 299537,
+    "imdbId": "tt4154664",
     "tmdbType": "movie",
     "title": "Captain Marvel",
     "overview": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
@@ -160,6 +164,7 @@
   "iron-man": {
     "id": "iron-man",
     "tmdbId": 1726,
+    "imdbId": "tt0371746",
     "tmdbType": "movie",
     "title": "Iron Man",
     "overview": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
@@ -171,6 +176,7 @@
   "iron-man-2": {
     "id": "iron-man-2",
     "tmdbId": 10138,
+    "imdbId": "tt1228705",
     "tmdbType": "movie",
     "title": "Iron Man 2",
     "overview": "With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony Stark faces pressure from the government, the press and the public to share his technology with the military. Unwilling to let go of his invention, Stark, with Pepper Potts and James 'Rhodey' Rhodes at his side, must forge new alliances – and confront powerful enemies.",
@@ -182,6 +188,7 @@
   "the-incredible-hulk": {
     "id": "the-incredible-hulk",
     "tmdbId": 1724,
+    "imdbId": "tt0800080",
     "tmdbType": "movie",
     "title": "The Incredible Hulk",
     "overview": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
@@ -193,6 +200,7 @@
   "thor": {
     "id": "thor",
     "tmdbId": 10195,
+    "imdbId": "tt0800369",
     "tmdbType": "movie",
     "title": "Thor",
     "overview": "Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
@@ -204,6 +212,7 @@
   "the-avengers": {
     "id": "the-avengers",
     "tmdbId": 24428,
+    "imdbId": "tt0848228",
     "tmdbType": "movie",
     "title": "The Avengers",
     "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
@@ -215,6 +224,7 @@
   "iron-man-3": {
     "id": "iron-man-3",
     "tmdbId": 68721,
+    "imdbId": "tt1300854",
     "tmdbType": "movie",
     "title": "Iron Man 3",
     "overview": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
@@ -226,6 +236,7 @@
   "thor-the-dark-world": {
     "id": "thor-the-dark-world",
     "tmdbId": 76338,
+    "imdbId": "tt1981115",
     "tmdbType": "movie",
     "title": "Thor: The Dark World",
     "overview": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
@@ -237,6 +248,7 @@
   "captain-america-the-winter-soldier": {
     "id": "captain-america-the-winter-soldier",
     "tmdbId": 100402,
+    "imdbId": "tt1843866",
     "tmdbType": "movie",
     "title": "Captain America: The Winter Soldier",
     "overview": "After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America is living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy—the Winter Soldier.",
@@ -248,6 +260,7 @@
   "agents-of-shield-s1": {
     "id": "agents-of-shield-s1",
     "tmdbId": 1403,
+    "imdbId": "tt2364582",
     "tmdbType": "tv",
     "title": "Marvel's Agents of S.H.I.E.L.D.",
     "overview": "Season one begins where the “Marvel's The Avengers” left off. It's just after the battle of New York, and now that the existence of superheroes and aliens has become public knowledge, the world is trying to come to grips with this new reality. Agent Phil Coulson is back in action and now has his eye on a mysterious group called The Rising Tide. In order to track this unseen, unknown enemy, he has assembled a small, highly select group of Agents from the worldwide law-enforcement organization known as S.H.I.E.L.D.",
@@ -391,9 +404,157 @@
       }
     ]
   },
+  "agents-of-shield-s2": {
+    "id": "agents-of-shield-s2",
+    "tmdbId": 1403,
+    "imdbId": "tt2364582",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "In the second season, Coulson and his team look to restore trust from the government and public following S.H.I.E.L.D.'s collapse. ",
+    "releaseDate": "2014-09-23",
+    "runtime": null,
+    "poster": "/p8Qy60OIf0OaJ29KPw6ld51MSP7.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Shadows",
+        "airDate": "2014-09-23"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Heavy Is the Head",
+        "airDate": "2014-09-30"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Making Friends and Influencing People",
+        "airDate": "2014-10-07"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Face My Enemy",
+        "airDate": "2014-10-14"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "A Hen in the Wolf House",
+        "airDate": "2014-10-21"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "A Fractured House",
+        "airDate": "2014-10-28"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "The Writing on the Wall",
+        "airDate": "2014-11-11"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "The Things We Bury",
+        "airDate": "2014-11-18"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "...Ye Who Enter Here",
+        "airDate": "2014-12-02"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "What They Become",
+        "airDate": "2014-12-09"
+      },
+      {
+        "season": 2,
+        "number": 11,
+        "title": "Aftershocks",
+        "airDate": "2015-03-03"
+      },
+      {
+        "season": 2,
+        "number": 12,
+        "title": "Who You Really Are",
+        "airDate": "2015-03-10"
+      },
+      {
+        "season": 2,
+        "number": 13,
+        "title": "One of Us",
+        "airDate": "2015-03-17"
+      },
+      {
+        "season": 2,
+        "number": 14,
+        "title": "Love in the Time of Hydra",
+        "airDate": "2015-03-24"
+      },
+      {
+        "season": 2,
+        "number": 15,
+        "title": "One Door Closes",
+        "airDate": "2015-03-31"
+      },
+      {
+        "season": 2,
+        "number": 16,
+        "title": "Afterlife",
+        "airDate": "2015-04-07"
+      },
+      {
+        "season": 2,
+        "number": 17,
+        "title": "Melinda",
+        "airDate": "2015-04-14"
+      },
+      {
+        "season": 2,
+        "number": 18,
+        "title": "The Frenemy of My Enemy",
+        "airDate": "2015-04-21"
+      },
+      {
+        "season": 2,
+        "number": 19,
+        "title": "The Dirty Half Dozen",
+        "airDate": "2015-04-28"
+      },
+      {
+        "season": 2,
+        "number": 20,
+        "title": "Scars",
+        "airDate": "2015-05-05"
+      },
+      {
+        "season": 2,
+        "number": 21,
+        "title": "S.O.S. (1)",
+        "airDate": "2015-05-12"
+      },
+      {
+        "season": 2,
+        "number": 22,
+        "title": "S.O.S. (2)",
+        "airDate": "2015-05-12"
+      }
+    ]
+  },
   "guardians-of-the-galaxy": {
     "id": "guardians-of-the-galaxy",
     "tmdbId": 118340,
+    "imdbId": "tt2015381",
     "tmdbType": "movie",
     "title": "Guardians of the Galaxy",
     "overview": "Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.",
@@ -405,6 +566,7 @@
   "guardians-of-the-galaxy-vol-2": {
     "id": "guardians-of-the-galaxy-vol-2",
     "tmdbId": 283995,
+    "imdbId": "tt3896198",
     "tmdbType": "movie",
     "title": "Guardians of the Galaxy Vol. 2",
     "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
@@ -416,6 +578,7 @@
   "daredevil-s1": {
     "id": "daredevil-s1",
     "tmdbId": 61889,
+    "imdbId": "tt3322312",
     "tmdbType": "tv",
     "title": "Marvel's Daredevil",
     "overview": "Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the superhero Daredevil in Hell's Kitchen, New York City.",
@@ -508,6 +671,7 @@
   "jessica-jones-s1": {
     "id": "jessica-jones-s1",
     "tmdbId": 38472,
+    "imdbId": "tt2357547",
     "tmdbType": "tv",
     "title": "Marvel's Jessica Jones",
     "overview": "Haunted by a traumatic past, Jessica Jones uses her gifts as a private eye to find her tormentor before he can harm anyone else in Hell's Kitchen.",
@@ -600,6 +764,7 @@
   "avengers-age-of-ultron": {
     "id": "avengers-age-of-ultron",
     "tmdbId": 99861,
+    "imdbId": "tt2395427",
     "tmdbType": "movie",
     "title": "Avengers: Age of Ultron",
     "overview": "When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
@@ -611,6 +776,7 @@
   "ant-man": {
     "id": "ant-man",
     "tmdbId": 102899,
+    "imdbId": "tt0478970",
     "tmdbType": "movie",
     "title": "Ant-Man",
     "overview": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
@@ -622,6 +788,7 @@
   "captain-america-civil-war": {
     "id": "captain-america-civil-war",
     "tmdbId": 271110,
+    "imdbId": "tt3498820",
     "tmdbType": "movie",
     "title": "Captain America: Civil War",
     "overview": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
@@ -630,9 +797,22 @@
     "poster": "/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
     "backdrop": "/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg"
   },
+  "black-panther": {
+    "id": "black-panther",
+    "tmdbId": 284054,
+    "imdbId": "tt1825683",
+    "tmdbType": "movie",
+    "title": "Black Panther",
+    "overview": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+    "releaseDate": "2018-02-13",
+    "runtime": 135,
+    "poster": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "backdrop": "/19Ed4XgjahPm4U8JT7SnntERIlt.jpg"
+  },
   "black-widow": {
     "id": "black-widow",
     "tmdbId": 497698,
+    "imdbId": "tt3480822",
     "tmdbType": "movie",
     "title": "Black Widow",
     "overview": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
@@ -644,6 +824,7 @@
   "spider-man-homecoming": {
     "id": "spider-man-homecoming",
     "tmdbId": 315635,
+    "imdbId": "tt2250912",
     "tmdbType": "movie",
     "title": "Spider-Man: Homecoming",
     "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
@@ -652,20 +833,10 @@
     "poster": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
     "backdrop": "/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg"
   },
-  "black-panther": {
-    "id": "black-panther",
-    "tmdbId": 284054,
-    "tmdbType": "movie",
-    "title": "Black Panther",
-    "overview": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
-    "releaseDate": "2018-02-13",
-    "runtime": 135,
-    "poster": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
-    "backdrop": "/19Ed4XgjahPm4U8JT7SnntERIlt.jpg"
-  },
   "doctor-strange": {
     "id": "doctor-strange",
     "tmdbId": 284052,
+    "imdbId": "tt1211837",
     "tmdbType": "movie",
     "title": "Doctor Strange",
     "overview": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
@@ -677,6 +848,7 @@
   "thor-ragnarok": {
     "id": "thor-ragnarok",
     "tmdbId": 284053,
+    "imdbId": "tt3501632",
     "tmdbType": "movie",
     "title": "Thor: Ragnarok",
     "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
@@ -688,6 +860,7 @@
   "ant-man-and-the-wasp": {
     "id": "ant-man-and-the-wasp",
     "tmdbId": 363088,
+    "imdbId": "tt5095030",
     "tmdbType": "movie",
     "title": "Ant-Man and the Wasp",
     "overview": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
@@ -699,6 +872,7 @@
   "avengers-infinity-war": {
     "id": "avengers-infinity-war",
     "tmdbId": 299536,
+    "imdbId": "tt4154756",
     "tmdbType": "movie",
     "title": "Avengers: Infinity War",
     "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
@@ -710,6 +884,7 @@
   "avengers-endgame": {
     "id": "avengers-endgame",
     "tmdbId": 299534,
+    "imdbId": "tt4154796",
     "tmdbType": "movie",
     "title": "Avengers: Endgame",
     "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
@@ -721,6 +896,7 @@
   "loki-s1": {
     "id": "loki-s1",
     "tmdbId": 84958,
+    "imdbId": "tt9140554",
     "tmdbType": "tv",
     "title": "Loki",
     "overview": "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of \"Avengers: Endgame.\"",
@@ -771,6 +947,7 @@
   "loki-s2": {
     "id": "loki-s2",
     "tmdbId": 84958,
+    "imdbId": "tt9140554",
     "tmdbType": "tv",
     "title": "Loki",
     "overview": "In the aftermath of Season 1, Loki finds himself in a battle for the soul of the Time Variance Authority. Along with Mobius, Hunter B-15 and a team of new and returning characters, Loki navigates an ever-expanding and increasingly dangerous multiverse in search of Sylvie, Judge Renslayer, Miss Minutes and the truth of what it means to possess free will and glorious purpose.",
@@ -821,6 +998,7 @@
   "what-if-s1": {
     "id": "what-if-s1",
     "tmdbId": 91363,
+    "imdbId": "tt10168312",
     "tmdbType": "tv",
     "title": "What If...?",
     "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
@@ -889,6 +1067,7 @@
   "wandavision": {
     "id": "wandavision",
     "tmdbId": 85271,
+    "imdbId": "tt9140560",
     "tmdbType": "tv",
     "title": "WandaVision",
     "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
@@ -957,6 +1136,7 @@
   "the-falcon-and-the-winter-soldier": {
     "id": "the-falcon-and-the-winter-soldier",
     "tmdbId": 88396,
+    "imdbId": "tt9208876",
     "tmdbType": "tv",
     "title": "The Falcon and the Winter Soldier",
     "overview": "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
@@ -1007,6 +1187,7 @@
   "shang-chi": {
     "id": "shang-chi",
     "tmdbId": 566525,
+    "imdbId": "tt9376612",
     "tmdbType": "movie",
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
@@ -1018,6 +1199,7 @@
   "eternals": {
     "id": "eternals",
     "tmdbId": 524434,
+    "imdbId": "tt9032400",
     "tmdbType": "movie",
     "title": "Eternals",
     "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
@@ -1029,6 +1211,7 @@
   "spider-man-far-from-home": {
     "id": "spider-man-far-from-home",
     "tmdbId": 429617,
+    "imdbId": "tt6320628",
     "tmdbType": "movie",
     "title": "Spider-Man: Far From Home",
     "overview": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
@@ -1040,6 +1223,7 @@
   "hawkeye": {
     "id": "hawkeye",
     "tmdbId": 88329,
+    "imdbId": "tt10160804",
     "tmdbType": "tv",
     "title": "Hawkeye",
     "overview": "Former Avenger Clint Barton has a seemingly simple mission: get back to his family for Christmas. Possible? Maybe with the help of Kate Bishop, a 22-year-old archer with dreams of becoming a superhero. The two are forced to work together when a presence from Barton’s past threatens to derail far more than the festive spirit.",
@@ -1090,6 +1274,7 @@
   "spider-man-no-way-home": {
     "id": "spider-man-no-way-home",
     "tmdbId": 634649,
+    "imdbId": "tt10872600",
     "tmdbType": "movie",
     "title": "Spider-Man: No Way Home",
     "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
@@ -1101,6 +1286,7 @@
   "doctor-strange-multiverse-of-madness": {
     "id": "doctor-strange-multiverse-of-madness",
     "tmdbId": 453395,
+    "imdbId": "tt9419884",
     "tmdbType": "movie",
     "title": "Doctor Strange in the Multiverse of Madness",
     "overview": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
@@ -1112,6 +1298,7 @@
   "moon-knight": {
     "id": "moon-knight",
     "tmdbId": 92749,
+    "imdbId": "tt10234724",
     "tmdbType": "tv",
     "title": "Moon Knight",
     "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
@@ -1162,6 +1349,7 @@
   "ms-marvel": {
     "id": "ms-marvel",
     "tmdbId": 92782,
+    "imdbId": "tt10857164",
     "tmdbType": "tv",
     "title": "Ms. Marvel",
     "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
@@ -1212,6 +1400,7 @@
   "thor-love-and-thunder": {
     "id": "thor-love-and-thunder",
     "tmdbId": 616037,
+    "imdbId": "tt10648342",
     "tmdbType": "movie",
     "title": "Thor: Love and Thunder",
     "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
@@ -1223,6 +1412,7 @@
   "she-hulk": {
     "id": "she-hulk",
     "tmdbId": 92783,
+    "imdbId": "tt10857160",
     "tmdbType": "tv",
     "title": "She-Hulk: Attorney at Law",
     "overview": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered hulk.",
@@ -1291,6 +1481,7 @@
   "werewolf-by-night": {
     "id": "werewolf-by-night",
     "tmdbId": 894205,
+    "imdbId": "tt15318872",
     "tmdbType": "movie",
     "title": "Werewolf by Night",
     "overview": "On a dark and somber night, a secret cabal of monster hunters emerge from the shadows and gather at the foreboding Bloodstone Temple following the death of their leader. In a strange and macabre memorial to the leader’s life, the attendees are thrust into a mysterious and deadly competition for a powerful relic—a hunt that will ultimately bring them face to face with a dangerous monster.",
@@ -1302,6 +1493,7 @@
   "black-panther-wakanda-forever": {
     "id": "black-panther-wakanda-forever",
     "tmdbId": 505642,
+    "imdbId": "tt9114286",
     "tmdbType": "movie",
     "title": "Black Panther: Wakanda Forever",
     "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
@@ -1313,6 +1505,7 @@
   "guardians-holiday-special": {
     "id": "guardians-holiday-special",
     "tmdbId": 774752,
+    "imdbId": "tt13623136",
     "tmdbType": "movie",
     "title": "The Guardians of the Galaxy Holiday Special",
     "overview": "On a mission to make Christmas unforgettable for Quill, the Guardians head to Earth in search of the perfect present.",
@@ -1321,9 +1514,178 @@
     "poster": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
     "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg"
   },
+  "agents-of-shield-s7": {
+    "id": "agents-of-shield-s7",
+    "tmdbId": 1403,
+    "imdbId": "tt2364582",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "Coulson and the Agents of S.H.I.E.L.D. are thrust backward in time and stranded in 1931 New York City. With the all-new Zephyr set to time-jump at any moment, the team must hurry to find out exactly what happened. If they fail, it would mean disaster for the past, present and future of the world.",
+    "releaseDate": "2020-05-27",
+    "runtime": null,
+    "poster": "/qM95u55G8xVyfgoSZ2qTlY3MDl6.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 7,
+    "episodes": [
+      {
+        "season": 7,
+        "number": 1,
+        "title": "The New Deal",
+        "airDate": "2020-05-27"
+      },
+      {
+        "season": 7,
+        "number": 2,
+        "title": "Know Your Onions",
+        "airDate": "2020-06-03"
+      },
+      {
+        "season": 7,
+        "number": 3,
+        "title": "Alien Commies from the Future!",
+        "airDate": "2020-06-10"
+      },
+      {
+        "season": 7,
+        "number": 4,
+        "title": "Out of the Past",
+        "airDate": "2020-06-17"
+      },
+      {
+        "season": 7,
+        "number": 5,
+        "title": "A Trout in the Milk",
+        "airDate": "2020-06-24"
+      },
+      {
+        "season": 7,
+        "number": 6,
+        "title": "Adapt or Die",
+        "airDate": "2020-07-01"
+      },
+      {
+        "season": 7,
+        "number": 7,
+        "title": "The Totally Excellent Adventures of Mack and The D",
+        "airDate": "2020-07-08"
+      },
+      {
+        "season": 7,
+        "number": 8,
+        "title": "After, Before",
+        "airDate": "2020-07-15"
+      },
+      {
+        "season": 7,
+        "number": 9,
+        "title": "As I Have Always Been",
+        "airDate": "2020-07-22"
+      },
+      {
+        "season": 7,
+        "number": 10,
+        "title": "Stolen",
+        "airDate": "2020-07-29"
+      },
+      {
+        "season": 7,
+        "number": 11,
+        "title": "Brand New Day",
+        "airDate": "2020-08-05"
+      },
+      {
+        "season": 7,
+        "number": 12,
+        "title": "The End Is at Hand",
+        "airDate": "2020-08-12"
+      },
+      {
+        "season": 7,
+        "number": 13,
+        "title": "What We're Fighting For",
+        "airDate": "2020-08-12"
+      }
+    ]
+  },
+  "helstrom": {
+    "id": "helstrom",
+    "tmdbId": 88987,
+    "imdbId": "tt10266874",
+    "tmdbType": "tv",
+    "title": "Helstrom",
+    "overview": "Daimon and Ana Helstrom are the son and daughter of a mysterious and powerful serial killer. The siblings have a complicated dynamic as they track down the terrorizing worst of humanity — each with their attitude and skills.",
+    "releaseDate": "2020-10-16",
+    "runtime": 50,
+    "poster": "/8fPIcaRIZgsoBcgA5yAm3GNz61M.jpg",
+    "backdrop": "/qCReQONjNVaW4QFN2V5vCOzPvex.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Mother’s Little Helpers",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Viaticum",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "The One Who Got Away",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Containment",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Committed",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Leviathan",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Scars",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Underneath",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "Vessels",
+        "airDate": "2020-10-16"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "Hell Storm",
+        "airDate": "2020-10-16"
+      }
+    ]
+  },
   "ant-man-quantumania": {
     "id": "ant-man-quantumania",
     "tmdbId": 640146,
+    "imdbId": "tt10954600",
     "tmdbType": "movie",
     "title": "Ant-Man and the Wasp: Quantumania",
     "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
@@ -1335,6 +1697,7 @@
   "guardians-of-the-galaxy-vol-3": {
     "id": "guardians-of-the-galaxy-vol-3",
     "tmdbId": 447365,
+    "imdbId": "tt6791350",
     "tmdbType": "movie",
     "title": "Guardians of the Galaxy Vol. 3",
     "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
@@ -1346,6 +1709,7 @@
   "secret-invasion": {
     "id": "secret-invasion",
     "tmdbId": 114472,
+    "imdbId": "tt13157618",
     "tmdbType": "tv",
     "title": "Secret Invasion",
     "overview": "Nick Fury and Talos discover a faction of shapeshifting Skrulls who have been infiltrating Earth for years.",
@@ -1396,6 +1760,7 @@
   "the-marvels": {
     "id": "the-marvels",
     "tmdbId": 609681,
+    "imdbId": "tt10676048",
     "tmdbType": "movie",
     "title": "The Marvels",
     "overview": "When her duties send her to an anomalous wormhole linked to a Kree revolutionary, Carol's powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol's estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
@@ -1407,6 +1772,7 @@
   "echo": {
     "id": "echo",
     "tmdbId": 122226,
+    "imdbId": "tt13966962",
     "tmdbType": "tv",
     "title": "Echo",
     "overview": "Pursued by Wilson Fisk's criminal empire, Maya's journey brings her home and she must confront her own family and legacy.",
@@ -1451,6 +1817,7 @@
   "agatha-all-along": {
     "id": "agatha-all-along",
     "tmdbId": 138501,
+    "imdbId": "tt15571732",
     "tmdbType": "tv",
     "title": "Agatha All Along",
     "overview": "The infamous Agatha Harkness finds herself down and out of power after a suspicious goth Teen helps break her free from a distorted spell. Her interest is piqued when he begs her to take him on the legendary Witches' Road, a magical gauntlet of trials that, if survived, rewards a witch with what they're missing. Together, Agatha and this mysterious Teen pull together a desperate coven, and set off down, down, down the Road...",
@@ -1519,6 +1886,7 @@
   "deadpool-and-wolverine": {
     "id": "deadpool-and-wolverine",
     "tmdbId": 533535,
+    "imdbId": "tt6263850",
     "tmdbType": "movie",
     "title": "Deadpool & Wolverine",
     "overview": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
@@ -1530,6 +1898,7 @@
   "captain-america-brave-new-world": {
     "id": "captain-america-brave-new-world",
     "tmdbId": 822119,
+    "imdbId": "tt14513804",
     "tmdbType": "movie",
     "title": "Captain America: Brave New World",
     "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
@@ -1541,6 +1910,7 @@
   "daredevil-born-again-s1": {
     "id": "daredevil-born-again-s1",
     "tmdbId": 202555,
+    "imdbId": "tt18923754",
     "tmdbType": "tv",
     "title": "Daredevil: Born Again",
     "overview": "It has been a year since Matt Murdock retired from crime fighting as Daredevil. Wilson Fisk has been elected mayor of New York City after running on an anti-vigilante platform. The Kingpin may force Daredevil to come out of retirement.",
@@ -1609,6 +1979,7 @@
   "thunderbolts": {
     "id": "thunderbolts",
     "tmdbId": 986056,
+    "imdbId": "tt20969586",
     "tmdbType": "movie",
     "title": "Thunderbolts*",
     "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
@@ -1620,6 +1991,7 @@
   "ironheart": {
     "id": "ironheart",
     "tmdbId": 114471,
+    "imdbId": "tt13623126",
     "tmdbType": "tv",
     "title": "Ironheart",
     "overview": "After the events of Black Panther: Wakanda Forever, technology is pitted against magic when Riri Williams, a young, genius inventor determined to make her mark on the world, returns to her hometown of Chicago. Her unique take on building iron suits is brilliant, but in pursuit of her ambitions, she finds herself wrapped up with the mysterious yet charming Parker Robbins aka \"The Hood.\"",
@@ -1670,6 +2042,7 @@
   "the-fantastic-four-first-steps": {
     "id": "the-fantastic-four-first-steps",
     "tmdbId": 617126,
+    "imdbId": "tt10676052",
     "tmdbType": "movie",
     "title": "The Fantastic 4: First Steps",
     "overview": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
@@ -1678,9 +2051,2107 @@
     "poster": "/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
     "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg"
   },
+  "agents-of-shield-s3": {
+    "id": "agents-of-shield-s3",
+    "tmdbId": 1403,
+    "imdbId": "tt2364582",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "Many months after their war with a rogue group of Inhumans, the team is still reeling. Coulson is again trying to put the pieces of his once revered organization back together while also dealing with the loss of his hand. His confidante and second in command, Agent Melinda May, has yet to return from an impromptu vacation with ex-husband Andrew; deadly superspy Agent Bobbi Morse is recovering from her traumatic torture at the hands of Grant Ward; Fitz is obsessed with discovering the truth behind the mysterious disappearance of Simmons; and all are on high-alert for the next move from Ward and Hydra.",
+    "releaseDate": "2015-09-29",
+    "runtime": null,
+    "poster": "/y0cxxcvCk9lEG4DEorTz5GxC9sj.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 3,
+    "episodes": [
+      {
+        "season": 3,
+        "number": 1,
+        "title": "Laws of Nature",
+        "airDate": "2015-09-29"
+      },
+      {
+        "season": 3,
+        "number": 2,
+        "title": "Purpose in the Machine",
+        "airDate": "2015-10-06"
+      },
+      {
+        "season": 3,
+        "number": 3,
+        "title": "A Wanted (Inhu)man",
+        "airDate": "2015-10-13"
+      },
+      {
+        "season": 3,
+        "number": 4,
+        "title": "Devils You Know",
+        "airDate": "2015-10-20"
+      },
+      {
+        "season": 3,
+        "number": 5,
+        "title": "4,722 Hours",
+        "airDate": "2015-10-27"
+      },
+      {
+        "season": 3,
+        "number": 6,
+        "title": "Among Us Hide...",
+        "airDate": "2015-11-03"
+      },
+      {
+        "season": 3,
+        "number": 7,
+        "title": "Chaos Theory",
+        "airDate": "2015-11-10"
+      },
+      {
+        "season": 3,
+        "number": 8,
+        "title": "Many Heads, One Tale",
+        "airDate": "2015-11-17"
+      },
+      {
+        "season": 3,
+        "number": 9,
+        "title": "Closure",
+        "airDate": "2015-12-01"
+      },
+      {
+        "season": 3,
+        "number": 10,
+        "title": "Maveth",
+        "airDate": "2015-12-08"
+      },
+      {
+        "season": 3,
+        "number": 11,
+        "title": "Bouncing Back",
+        "airDate": "2016-03-08"
+      },
+      {
+        "season": 3,
+        "number": 12,
+        "title": "The Inside Man",
+        "airDate": "2016-03-15"
+      },
+      {
+        "season": 3,
+        "number": 13,
+        "title": "Parting Shot",
+        "airDate": "2016-03-22"
+      },
+      {
+        "season": 3,
+        "number": 14,
+        "title": "Watchdogs",
+        "airDate": "2016-03-29"
+      },
+      {
+        "season": 3,
+        "number": 15,
+        "title": "Spacetime",
+        "airDate": "2016-04-05"
+      },
+      {
+        "season": 3,
+        "number": 16,
+        "title": "Paradise Lost",
+        "airDate": "2016-04-12"
+      },
+      {
+        "season": 3,
+        "number": 17,
+        "title": "The Team",
+        "airDate": "2016-04-19"
+      },
+      {
+        "season": 3,
+        "number": 18,
+        "title": "The Singularity",
+        "airDate": "2016-04-26"
+      },
+      {
+        "season": 3,
+        "number": 19,
+        "title": "Failed Experiments",
+        "airDate": "2016-05-03"
+      },
+      {
+        "season": 3,
+        "number": 20,
+        "title": "Emancipation",
+        "airDate": "2016-05-10"
+      },
+      {
+        "season": 3,
+        "number": 21,
+        "title": "Absolution (1)",
+        "airDate": "2016-05-17"
+      },
+      {
+        "season": 3,
+        "number": 22,
+        "title": "Ascension (2)",
+        "airDate": "2016-05-17"
+      }
+    ]
+  },
+  "daredevil-s2": {
+    "id": "daredevil-s2",
+    "tmdbId": 61889,
+    "imdbId": "tt3322312",
+    "tmdbType": "tv",
+    "title": "Marvel's Daredevil",
+    "overview": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
+    "releaseDate": "2016-03-18",
+    "runtime": null,
+    "poster": "/opHoslNCxkgoCaGhfO66fvCSH83.jpg",
+    "backdrop": "/pPALpad1Fh14g7ejyQjqKzlhrBw.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Bang",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Dogs to a Gunfight",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "New York's Finest",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Penny and Dime",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "Kinbaku",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "Regrets Only",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "Semper Fidelis",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "Guilty as Sin",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "Seven Minutes in Heaven",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "The Man in the Box",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 11,
+        "title": ".380",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 12,
+        "title": "The Dark at the End of the Tunnel",
+        "airDate": "2016-03-18"
+      },
+      {
+        "season": 2,
+        "number": 13,
+        "title": "A Cold Day in Hell's Kitchen",
+        "airDate": "2016-03-18"
+      }
+    ]
+  },
+  "agents-of-shield-s4": {
+    "id": "agents-of-shield-s4",
+    "tmdbId": 1403,
+    "imdbId": "tt2364582",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "Vengeance runs rampant this season as Coulson is a mere agent again, and Daisy has gone rogue after being under Hive's control. How will S.H.I.E.L.D. deal with the arrival of The Ghost Rider?",
+    "releaseDate": "2016-09-20",
+    "runtime": null,
+    "poster": "/jdrLY7fniUAjz34Jhssoky831cB.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 4,
+    "episodes": [
+      {
+        "season": 4,
+        "number": 1,
+        "title": "The Ghost",
+        "airDate": "2016-09-20"
+      },
+      {
+        "season": 4,
+        "number": 2,
+        "title": "Meet the New Boss",
+        "airDate": "2016-09-27"
+      },
+      {
+        "season": 4,
+        "number": 3,
+        "title": "Uprising",
+        "airDate": "2016-10-11"
+      },
+      {
+        "season": 4,
+        "number": 4,
+        "title": "Let Me Stand Next to Your Fire",
+        "airDate": "2016-10-18"
+      },
+      {
+        "season": 4,
+        "number": 5,
+        "title": "Lockup",
+        "airDate": "2016-10-25"
+      },
+      {
+        "season": 4,
+        "number": 6,
+        "title": "The Good Samaritan",
+        "airDate": "2016-11-01"
+      },
+      {
+        "season": 4,
+        "number": 7,
+        "title": "Deals with Our Devils",
+        "airDate": "2016-11-29"
+      },
+      {
+        "season": 4,
+        "number": 8,
+        "title": "The Laws of Inferno Dynamics",
+        "airDate": "2016-12-06"
+      },
+      {
+        "season": 4,
+        "number": 9,
+        "title": "Broken Promises",
+        "airDate": "2017-01-10"
+      },
+      {
+        "season": 4,
+        "number": 10,
+        "title": "The Patriot",
+        "airDate": "2017-01-17"
+      },
+      {
+        "season": 4,
+        "number": 11,
+        "title": "Wake Up",
+        "airDate": "2017-01-24"
+      },
+      {
+        "season": 4,
+        "number": 12,
+        "title": "Hot Potato Soup",
+        "airDate": "2017-01-31"
+      },
+      {
+        "season": 4,
+        "number": 13,
+        "title": "BOOM",
+        "airDate": "2017-02-07"
+      },
+      {
+        "season": 4,
+        "number": 14,
+        "title": "The Man Behind the Shield",
+        "airDate": "2017-02-14"
+      },
+      {
+        "season": 4,
+        "number": 15,
+        "title": "Self Control",
+        "airDate": "2017-02-21"
+      },
+      {
+        "season": 4,
+        "number": 16,
+        "title": "What If...",
+        "airDate": "2017-04-04"
+      },
+      {
+        "season": 4,
+        "number": 17,
+        "title": "Identity and Change",
+        "airDate": "2017-04-11"
+      },
+      {
+        "season": 4,
+        "number": 18,
+        "title": "No Regrets",
+        "airDate": "2017-04-18"
+      },
+      {
+        "season": 4,
+        "number": 19,
+        "title": "All the Madame's Men",
+        "airDate": "2017-04-25"
+      },
+      {
+        "season": 4,
+        "number": 20,
+        "title": "Farewell, Cruel World!",
+        "airDate": "2017-05-02"
+      },
+      {
+        "season": 4,
+        "number": 21,
+        "title": "The Return",
+        "airDate": "2017-05-09"
+      },
+      {
+        "season": 4,
+        "number": 22,
+        "title": "World's End",
+        "airDate": "2017-05-16"
+      }
+    ]
+  },
+  "luke-cage-s1": {
+    "id": "luke-cage-s1",
+    "tmdbId": 62126,
+    "imdbId": "tt3322314",
+    "tmdbType": "tv",
+    "title": "Marvel's Luke Cage",
+    "overview": "As the bulletproof defender of Harlem, Luke Cage battles corrupt politicians, ruthless gangsters and demons from his own past.",
+    "releaseDate": "2016-09-30",
+    "runtime": 46,
+    "poster": "/hBbPrnlkpxod0Zq14wsPlaLOemG.jpg",
+    "backdrop": "/bJOmop22SGTHPo1tiuVAFf4U7B9.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Moment of Truth",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Code of the Streets",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Who's Gonna Take the Weight?",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Step in the Arena",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Just to Get a Rep",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Suckas Need Bodyguards",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Manifest",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Blowin' Up the Spot",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "DWYCK",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "Take It Personal",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 11,
+        "title": "Now You're Mine",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 12,
+        "title": "Soliloquy of Chaos",
+        "airDate": "2016-09-30"
+      },
+      {
+        "season": 1,
+        "number": 13,
+        "title": "You Know My Steez",
+        "airDate": "2016-09-30"
+      }
+    ]
+  },
+  "iron-fist-s1": {
+    "id": "iron-fist-s1",
+    "tmdbId": 62127,
+    "imdbId": "tt3322310",
+    "tmdbType": "tv",
+    "title": "Marvel's Iron Fist",
+    "overview": "Fifteen years after being presumed dead in a plane crash, Danny Rand mysteriously returns to New York City determined to reclaim his birthright and family company. However, when a long-destined enemy rises in New York, this living weapon is forced to choose between his family’s legacy and his duties as the Iron Fist.",
+    "releaseDate": "2017-03-17",
+    "runtime": null,
+    "poster": "/usGfoL4RfX15f1sQcX3Sgw4YRf4.jpg",
+    "backdrop": "/cuckn6IFp9OKu9H8AgD0iEANxhc.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Snow Gives Way",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Shadow Hawk Takes Flight",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Rolling Thunder Cannon Punch",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Eight Diagram Dragon Palm",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Under Leaf Pluck Lotus",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Immortal Emerges from Cave",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Felling Tree with Roots",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "The Blessing of Many Fractures",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "The Mistress of All Agonies",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "Black Tiger Steals Heart",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 11,
+        "title": "Lead Horse Back to Stable",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 12,
+        "title": "Bar the Big Boss",
+        "airDate": "2017-03-17"
+      },
+      {
+        "season": 1,
+        "number": 13,
+        "title": "Dragon Plays with Fire",
+        "airDate": "2017-03-17"
+      }
+    ]
+  },
+  "the-defenders": {
+    "id": "the-defenders",
+    "tmdbId": 62285,
+    "imdbId": "tt4230076",
+    "tmdbType": "tv",
+    "title": "Marvel's The Defenders",
+    "overview": "Daredevil, Jessica Jones, Luke Cage and Iron Fist join forces to take on common enemies as a sinister conspiracy threatens New York City.",
+    "releaseDate": "2017-08-18",
+    "runtime": null,
+    "poster": "/tksYAmz3QLmfjts246V9YEs9Squ.jpg",
+    "backdrop": "/ycAWXhAhyaE7g3JBAaierK4LgNg.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "The H Word",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Mean Right Hook",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Worst Behavior",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Royal Dragon",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Take Shelter",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Ashes, Ashes",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Fish in the Jailhouse",
+        "airDate": "2017-08-18"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "The Defenders",
+        "airDate": "2017-08-18"
+      }
+    ]
+  },
+  "inhumans": {
+    "id": "inhumans",
+    "tmdbId": 68716,
+    "imdbId": "tt4154858",
+    "tmdbType": "tv",
+    "title": "Marvel's Inhumans",
+    "overview": "After the Royal Family of Inhumans is splintered by a military coup, they barely escape to Hawaii where their surprising interactions with the lush world and humanity around them may prove to not only save them, but Earth itself.",
+    "releaseDate": "2017-09-29",
+    "runtime": null,
+    "poster": "/doCIoaV9ffAJbK3TW2AsGp4ytOQ.jpg",
+    "backdrop": "/5W9YCPMDF5TCudct2guf6b8iRFz.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Behold...The Inhumans",
+        "airDate": "2017-09-29"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Those Who Would Destroy Us",
+        "airDate": "2017-09-29"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Divide and Conquer",
+        "airDate": "2017-10-06"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Make Way For... Medusa",
+        "airDate": "2017-10-13"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Something Inhuman This Way Comes...",
+        "airDate": "2017-10-20"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "The Gentleman's Name Is Gorgon",
+        "airDate": "2017-10-27"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Havoc in the Hidden Land",
+        "airDate": "2017-11-03"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "...And Finally: Black Bolt",
+        "airDate": "2017-11-10"
+      }
+    ]
+  },
+  "the-punisher-s1": {
+    "id": "the-punisher-s1",
+    "tmdbId": 67178,
+    "imdbId": "tt5675620",
+    "tmdbType": "tv",
+    "title": "Marvel's The Punisher",
+    "overview": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
+    "releaseDate": "2017-11-17",
+    "runtime": 53,
+    "poster": "/dOkJ6TJKQjsz2XwXyp2VYpkeE5g.jpg",
+    "backdrop": "/jBGjbSDRxOEudW9rmQbWDzJUKq9.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "3AM",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Two Dead Men",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Kandahar",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Resupply",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Gunner",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "The Judas Goat",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Crosshairs",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Cold Steel",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "Front Toward Enemy",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "Virtue of the Vicious",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 11,
+        "title": "Danger Close",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 12,
+        "title": "Home",
+        "airDate": "2017-11-17"
+      },
+      {
+        "season": 1,
+        "number": 13,
+        "title": "Memento Mori",
+        "airDate": "2017-11-17"
+      }
+    ]
+  },
+  "runaways-s1": {
+    "id": "runaways-s1",
+    "tmdbId": 67466,
+    "imdbId": "tt1236246",
+    "tmdbType": "tv",
+    "title": "Marvel's Runaways",
+    "overview": "Every teenager thinks their parents are evil. What if you found out they actually were? Six diverse teenagers who can barely stand each other must unite against a common foe – their parents.",
+    "releaseDate": "2017-11-20",
+    "runtime": 50,
+    "poster": "/6B2Z1GaKSBezXmsdjavfeqkg56g.jpg",
+    "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Reunion",
+        "airDate": "2017-11-21"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Rewind",
+        "airDate": "2017-11-21"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Destiny",
+        "airDate": "2017-11-21"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Fifteen",
+        "airDate": "2017-11-28"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Kingdom",
+        "airDate": "2017-12-05"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Metamorphosis",
+        "airDate": "2017-12-12"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Refraction",
+        "airDate": "2017-12-19"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Tsunami",
+        "airDate": "2017-12-26"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "Doomsday",
+        "airDate": "2018-01-02"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "Hostile",
+        "airDate": "2018-01-09"
+      }
+    ]
+  },
+  "agents-of-shield-s5": {
+    "id": "agents-of-shield-s5",
+    "tmdbId": 1403,
+    "imdbId": "tt2364582",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "Agent Coulson and the team escaped LMD Aida’s Framework and awakened in the real world. Little did they know that Aida was now fully human – and with multiple Inhuman abilities – with the dangerous notion that, with Fitz by her side, she could change the world. After defeating her with the aid of Ghost Rider, the team went out for a celebration but were interrupted by a mysterious man who rendered them frozen. The next thing we see is Coulson onboard a ship … in space. Coulson will discover that some, but not all, of his S.H.I.E.L.D. colleagues were taken with him and placed onboard the ship. As they come in contact with some of the vessel’s inhabitants, it becomes abundantly clear that something has gone terribly awry, and the team will need to figure out their role and delve deeper into this nightmarish mystery to try to right what has gone incredibly wrong.",
+    "releaseDate": "2017-12-01",
+    "runtime": null,
+    "poster": "/zndNDiqH0SvIlFHURYCWY060qE8.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 5,
+    "episodes": [
+      {
+        "season": 5,
+        "number": 1,
+        "title": "Orientation (1)",
+        "airDate": "2017-12-01"
+      },
+      {
+        "season": 5,
+        "number": 2,
+        "title": "Orientation (2)",
+        "airDate": "2017-12-01"
+      },
+      {
+        "season": 5,
+        "number": 3,
+        "title": "A Life Spent",
+        "airDate": "2017-12-08"
+      },
+      {
+        "season": 5,
+        "number": 4,
+        "title": "A Life Earned",
+        "airDate": "2017-12-15"
+      },
+      {
+        "season": 5,
+        "number": 5,
+        "title": "Rewind",
+        "airDate": "2017-12-22"
+      },
+      {
+        "season": 5,
+        "number": 6,
+        "title": "Fun & Games",
+        "airDate": "2018-01-05"
+      },
+      {
+        "season": 5,
+        "number": 7,
+        "title": "Together or Not at All",
+        "airDate": "2018-01-12"
+      },
+      {
+        "season": 5,
+        "number": 8,
+        "title": "The Last Day",
+        "airDate": "2018-01-19"
+      },
+      {
+        "season": 5,
+        "number": 9,
+        "title": "Best Laid Plans",
+        "airDate": "2018-01-26"
+      },
+      {
+        "season": 5,
+        "number": 10,
+        "title": "Past Life",
+        "airDate": "2018-02-02"
+      },
+      {
+        "season": 5,
+        "number": 11,
+        "title": "All the Comforts of Home",
+        "airDate": "2018-03-02"
+      },
+      {
+        "season": 5,
+        "number": 12,
+        "title": "The Real Deal",
+        "airDate": "2018-03-09"
+      },
+      {
+        "season": 5,
+        "number": 13,
+        "title": "Principia",
+        "airDate": "2018-03-16"
+      },
+      {
+        "season": 5,
+        "number": 14,
+        "title": "The Devil Complex",
+        "airDate": "2018-03-23"
+      },
+      {
+        "season": 5,
+        "number": 15,
+        "title": "Rise and Shine",
+        "airDate": "2018-03-30"
+      },
+      {
+        "season": 5,
+        "number": 16,
+        "title": "Inside Voices",
+        "airDate": "2018-04-06"
+      },
+      {
+        "season": 5,
+        "number": 17,
+        "title": "The Honeymoon",
+        "airDate": "2018-04-13"
+      },
+      {
+        "season": 5,
+        "number": 18,
+        "title": "All Roads Lead…",
+        "airDate": "2018-04-20"
+      },
+      {
+        "season": 5,
+        "number": 19,
+        "title": "Option Two",
+        "airDate": "2018-04-27"
+      },
+      {
+        "season": 5,
+        "number": 20,
+        "title": "The One Who Will Save Us All",
+        "airDate": "2018-05-04"
+      },
+      {
+        "season": 5,
+        "number": 21,
+        "title": "The Force of Gravity",
+        "airDate": "2018-05-11"
+      },
+      {
+        "season": 5,
+        "number": 22,
+        "title": "The End",
+        "airDate": "2018-05-18"
+      }
+    ]
+  },
+  "jessica-jones-s2": {
+    "id": "jessica-jones-s2",
+    "tmdbId": 38472,
+    "imdbId": "tt2357547",
+    "tmdbType": "tv",
+    "title": "Marvel's Jessica Jones",
+    "overview": "Drowning in anger, Jessica Jones is forced to reckon with her past, her powers and her newfound fame as she dishes out her own messy form of justice. Finally ready to face her past, Jessica hunts down the source of her powers and uncovers a link to a shadowy killer who's terrorizing the city.",
+    "releaseDate": "2018-03-08",
+    "runtime": null,
+    "poster": "/tKirVNmDmwYjqehjPpyjr1n3U2F.jpg",
+    "backdrop": "/fjEOQhzZk2Or7VYUBeMx5ZIwU95.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "AKA Start at the Beginning",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "AKA Freak Accident",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "AKA Sole Survivor",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "AKA God Help the Hobo",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "AKA The Octopus",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "AKA Facetime",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "AKA I Want Your Cray Cray",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "AKA Ain't We Got Fun",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "AKA Shark in the Bathtub, Monster in the Bed",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "AKA Pork Chop",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 11,
+        "title": "AKA Three Lives and Counting",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 12,
+        "title": "AKA Pray for My Patsy",
+        "airDate": "2018-03-08"
+      },
+      {
+        "season": 2,
+        "number": 13,
+        "title": "AKA Playland",
+        "airDate": "2018-03-08"
+      }
+    ]
+  },
+  "cloak-and-dagger-s1": {
+    "id": "cloak-and-dagger-s1",
+    "tmdbId": 66190,
+    "imdbId": "tt5614844",
+    "tmdbType": "tv",
+    "title": "Marvel's Cloak & Dagger",
+    "overview": "Two teenagers from very different backgrounds awaken to newly acquired superpowers which mysteriously link them to one another.",
+    "releaseDate": "2018-06-07",
+    "runtime": 44,
+    "poster": "/nluzawv8wEo0AeECpnLo3wO2YLZ.jpg",
+    "backdrop": "/4amkATUf2mh5QL9OQ3WmHQqx9wk.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "First Light",
+        "airDate": "2018-06-07"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Suicide Sprints",
+        "airDate": "2018-06-07"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Stained Glass",
+        "airDate": "2018-06-14"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Call/Response",
+        "airDate": "2018-06-21"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Princeton Offense",
+        "airDate": "2018-06-28"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Funhouse Mirrors",
+        "airDate": "2018-07-05"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Lotus Eaters",
+        "airDate": "2018-07-12"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Ghost Stories",
+        "airDate": "2018-07-19"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "Back Breaker",
+        "airDate": "2018-07-26"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "Colony Collapse",
+        "airDate": "2018-08-02"
+      }
+    ]
+  },
+  "luke-cage-s2": {
+    "id": "luke-cage-s2",
+    "tmdbId": 62126,
+    "imdbId": "tt3322314",
+    "tmdbType": "tv",
+    "title": "Marvel's Luke Cage",
+    "overview": "As his fame and responsibility soar, Luke Cage finds his life upended by a mysterious newcomer with powers of his own -- and a plan to take over Harlem.",
+    "releaseDate": "2018-06-22",
+    "runtime": 46,
+    "poster": "/xe9VGtjJ1vsSKtAnoXEnVdUqyxb.jpg",
+    "backdrop": "/bJOmop22SGTHPo1tiuVAFf4U7B9.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Soul Brother #1",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Straighten It Out",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Wig Out",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "I Get Physical",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "All Souled Out",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "The Basement",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "On and On",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "If It Ain't Rough, It Ain't Right",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "For Pete's Sake",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "The Main Ingredient",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 11,
+        "title": "The Creator",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 12,
+        "title": "Can't Front on Me",
+        "airDate": "2018-06-22"
+      },
+      {
+        "season": 2,
+        "number": 13,
+        "title": "They Reminisce Over You",
+        "airDate": "2018-06-22"
+      }
+    ]
+  },
+  "iron-fist-s2": {
+    "id": "iron-fist-s2",
+    "tmdbId": 62127,
+    "imdbId": "tt3322310",
+    "tmdbType": "tv",
+    "title": "Marvel's Iron Fist",
+    "overview": "As a gang war brews in New York's Chinatown, Danny and Colleen strive to protect the innocent while battling fearsome enemies both old and new.",
+    "releaseDate": "2018-09-07",
+    "runtime": null,
+    "poster": "/vXYvfCWvz5W0rErCpNIq09urhzW.jpg",
+    "backdrop": "/cuckn6IFp9OKu9H8AgD0iEANxhc.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "The Fury of Iron Fist",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "The City's Not for Burning",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "This Deadly Secret...",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Target: Iron Fist",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "Heart of the Dragon",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "The Dragon Dies at Dawn",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "Morning of the Mindstorm",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "Citadel on the Edge of Vengeance",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "War Without End",
+        "airDate": "2018-09-07"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "A Duel of Iron",
+        "airDate": "2018-09-07"
+      }
+    ]
+  },
+  "daredevil-s3": {
+    "id": "daredevil-s3",
+    "tmdbId": 61889,
+    "imdbId": "tt3322312",
+    "tmdbType": "tv",
+    "title": "Marvel's Daredevil",
+    "overview": "Missing for months, Matt Murdock reemerges a broken man, putting into question his future as both vigilante Daredevil and lawyer Matthew Murdock. But when his archenemy Wilson Fisk is released from prison, Matt must choose between hiding from the world, or embracing his destiny as a hero.",
+    "releaseDate": "2018-10-19",
+    "runtime": null,
+    "poster": "/zH6sgePlr1XX0jSZypbfQmr70Lf.jpg",
+    "backdrop": "/pPALpad1Fh14g7ejyQjqKzlhrBw.jpg",
+    "season": 3,
+    "episodes": [
+      {
+        "season": 3,
+        "number": 1,
+        "title": "Resurrection",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 2,
+        "title": "Please",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 3,
+        "title": "No Good Deed",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 4,
+        "title": "Blindsided",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 5,
+        "title": "The Perfect Game",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 6,
+        "title": "The Devil You Know",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 7,
+        "title": "Aftermath",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 8,
+        "title": "Upstairs/Downstairs",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 9,
+        "title": "Revelations",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 10,
+        "title": "Karen",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 11,
+        "title": "Reunion",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 12,
+        "title": "One Last Shot",
+        "airDate": "2018-10-19"
+      },
+      {
+        "season": 3,
+        "number": 13,
+        "title": "A New Napkin",
+        "airDate": "2018-10-19"
+      }
+    ]
+  },
+  "runaways-s2": {
+    "id": "runaways-s2",
+    "tmdbId": 67466,
+    "imdbId": "tt1236246",
+    "tmdbType": "tv",
+    "title": "Marvel's Runaways",
+    "overview": "The Runaways have left their homes (and evil parents) behind and now have to learn to live on their own. As they scavenge for food, search for shelter, and take care of one another, our kids begin to realize that, for better or worse, they’re stuck with each other. And it’s up to them to take down PRIDE once and for all. But someone sent a mysterious message to Jonah… Is there a mole in the Runaways? Meanwhile PRIDE is focused on finding their children, and Jonah has his own dangerous plan in mind.",
+    "releaseDate": "2018-12-20",
+    "runtime": 50,
+    "poster": "/r2e50wFzTsMgsSVLAyIB8uX1EGu.jpg",
+    "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Gimme Shelter",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Radio On",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Double Zeros",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Old School",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "Rock Bottom",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "Bury Another",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "Last Rites",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "Past Life",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "Big Shot",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "Hostile Takeover",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 11,
+        "title": "Last Waltz",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 12,
+        "title": "Earth Angel",
+        "airDate": "2018-12-21"
+      },
+      {
+        "season": 2,
+        "number": 13,
+        "title": "Split Up",
+        "airDate": "2018-12-21"
+      }
+    ]
+  },
+  "the-punisher-s2": {
+    "id": "the-punisher-s2",
+    "tmdbId": 67178,
+    "imdbId": "tt5675620",
+    "tmdbType": "tv",
+    "title": "Marvel's The Punisher",
+    "overview": "Frank strives to protect a teenager caught in a sinister conspiracy while doing whatever it takes -- and then some -- to end Russo once and for all.",
+    "releaseDate": "2019-01-18",
+    "runtime": 53,
+    "poster": "/agNYq5XZnGfmYetUMyyM2RdPY70.jpg",
+    "backdrop": "/jBGjbSDRxOEudW9rmQbWDzJUKq9.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Roadhouse Blues",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Fight or Flight",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Trouble the Water",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Scar Tissue",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "One-Eyed Jacks",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "Nakazat",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "One Bad Day",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "My Brother's Keeper",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "Flustercluck",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "The Dark Hearts of Men",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 11,
+        "title": "The Abyss",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 12,
+        "title": "Collision Course",
+        "airDate": "2019-01-18"
+      },
+      {
+        "season": 2,
+        "number": 13,
+        "title": "The Whirlwind",
+        "airDate": "2019-01-18"
+      }
+    ]
+  },
+  "cloak-and-dagger-s2": {
+    "id": "cloak-and-dagger-s2",
+    "tmdbId": 66190,
+    "imdbId": "tt5614844",
+    "tmdbType": "tv",
+    "title": "Marvel's Cloak & Dagger",
+    "overview": "Season two turns the heat up on our young heroes as Tyrone and Tandy try to find their place as more active heroes in this world. As they learn and grow emotionally, so will their skills. With enhanced powers and a decision to make about the type of heroes they want to be, they make the choice to run into the danger, head first. They tackle a heartless vigilante and uncover an evil that’s been preying on the young women of the city, as the show takes on more serious topics like gang violence and human trafficking.",
+    "releaseDate": "2019-04-04",
+    "runtime": 44,
+    "poster": "/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg",
+    "backdrop": "/4amkATUf2mh5QL9OQ3WmHQqx9wk.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Restless Energy",
+        "airDate": "2019-04-04"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "White Lines",
+        "airDate": "2019-04-04"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Shadow Selves",
+        "airDate": "2019-04-11"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Rabbit Hold",
+        "airDate": "2019-04-18"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "Alignment Chart",
+        "airDate": "2019-04-25"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "B Sides",
+        "airDate": "2019-05-02"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "Vikingtown Sound",
+        "airDate": "2019-05-09"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "Two Player",
+        "airDate": "2019-05-16"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "Blue Note",
+        "airDate": "2019-05-23"
+      },
+      {
+        "season": 2,
+        "number": 10,
+        "title": "Level Up",
+        "airDate": "2019-05-30"
+      }
+    ]
+  },
+  "agents-of-shield-s6": {
+    "id": "agents-of-shield-s6",
+    "tmdbId": 1403,
+    "imdbId": "tt2364582",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "overview": "Last season, the team leaped forward in time to a dystopian future they soon realized must be prevented. While facing multiple timelines and new enemies from faraway planets, they found family, friends, teammates and the courage to pull off their biggest challenge yet. Their next challenge? Coming to grips with the knowledge that bending the laws of space and time may have saved the planet, but it couldn’t save Fitz or Coulson.",
+    "releaseDate": "2019-05-10",
+    "runtime": null,
+    "poster": "/QU0NjcvDonZLKhjRuxRv6AVo5l.jpg",
+    "backdrop": "/iWopHyAvuIDjGX10Yc3nn6UEebW.jpg",
+    "season": 6,
+    "episodes": [
+      {
+        "season": 6,
+        "number": 1,
+        "title": "Missing Pieces",
+        "airDate": "2019-05-10"
+      },
+      {
+        "season": 6,
+        "number": 2,
+        "title": "Window of Opportunity",
+        "airDate": "2019-05-17"
+      },
+      {
+        "season": 6,
+        "number": 3,
+        "title": "Fear and Loathing on the Planet of Kitson",
+        "airDate": "2019-05-24"
+      },
+      {
+        "season": 6,
+        "number": 4,
+        "title": "Code Yellow",
+        "airDate": "2019-05-31"
+      },
+      {
+        "season": 6,
+        "number": 5,
+        "title": "The Other Thing",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 6,
+        "number": 6,
+        "title": "Inescapable",
+        "airDate": "2019-06-21"
+      },
+      {
+        "season": 6,
+        "number": 7,
+        "title": "Toldja",
+        "airDate": "2019-06-28"
+      },
+      {
+        "season": 6,
+        "number": 8,
+        "title": "Collision Course (1)",
+        "airDate": "2019-07-05"
+      },
+      {
+        "season": 6,
+        "number": 9,
+        "title": "Collision Course (2)",
+        "airDate": "2019-07-12"
+      },
+      {
+        "season": 6,
+        "number": 10,
+        "title": "Leap",
+        "airDate": "2019-07-19"
+      },
+      {
+        "season": 6,
+        "number": 11,
+        "title": "From the Ashes",
+        "airDate": "2019-07-26"
+      },
+      {
+        "season": 6,
+        "number": 12,
+        "title": "The Sign",
+        "airDate": "2019-08-02"
+      },
+      {
+        "season": 6,
+        "number": 13,
+        "title": "New Life",
+        "airDate": "2019-08-02"
+      }
+    ]
+  },
+  "jessica-jones-s3": {
+    "id": "jessica-jones-s3",
+    "tmdbId": 38472,
+    "imdbId": "tt2357547",
+    "tmdbType": "tv",
+    "title": "Marvel's Jessica Jones",
+    "overview": "Jessica matches wits with a calculating serial killer, and a newly powered Trish goes to extremes to stamp out evil.",
+    "releaseDate": "2019-06-14",
+    "runtime": null,
+    "poster": "/dOPx3bj3x6eXYXQJUUIHXvWRSSB.jpg",
+    "backdrop": "/fjEOQhzZk2Or7VYUBeMx5ZIwU95.jpg",
+    "season": 3,
+    "episodes": [
+      {
+        "season": 3,
+        "number": 1,
+        "title": "AKA The Perfect Burger",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 2,
+        "title": "AKA You're Welcome",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 3,
+        "title": "AKA I Have No Spleen",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 4,
+        "title": "AKA Customer Service is Standing By",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 5,
+        "title": "AKA I Wish",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 6,
+        "title": "AKA Sorry Face",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 7,
+        "title": "AKA The Double Half-Wappinger",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 8,
+        "title": "AKA Camera Friendly",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 9,
+        "title": "AKA I Did Something Today",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 10,
+        "title": "AKA Hero Pants",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 11,
+        "title": "AKA Hellcat",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 12,
+        "title": "AKA A Lotta Worms",
+        "airDate": "2019-06-14"
+      },
+      {
+        "season": 3,
+        "number": 13,
+        "title": "AKA Everything",
+        "airDate": "2019-06-14"
+      }
+    ]
+  },
+  "runaways-s3": {
+    "id": "runaways-s3",
+    "tmdbId": 67466,
+    "imdbId": "tt1236246",
+    "tmdbType": "tv",
+    "title": "Marvel's Runaways",
+    "overview": "The Runaways frantically search for their captured friends Chase, Gert and Karolina. The kids go head to head with an unstoppable enemy who has targeted Leslie - or more accurately, the child she's carrying. Nico draws them all into a dark realm where its ruler Morgan le Fay, is much more nefarious than anyone the kids have yet to face.",
+    "releaseDate": "2019-12-12",
+    "runtime": 50,
+    "poster": "/m83skvEvoFQoo1szIMpFQ6kbCe6.jpg",
+    "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
+    "season": 3,
+    "episodes": [
+      {
+        "season": 3,
+        "number": 1,
+        "title": "Smoke and Mirrors",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 2,
+        "title": "The Great Escape",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 3,
+        "title": "Lord of Lies",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 4,
+        "title": "Rite of Thunder",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 5,
+        "title": "Enter the Dreamland",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 6,
+        "title": "Merry Meet Again",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 7,
+        "title": "Left-Hand Path",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 8,
+        "title": "Devil's Torture Chamber",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 9,
+        "title": "The Broken Circle",
+        "airDate": "2019-12-13"
+      },
+      {
+        "season": 3,
+        "number": 10,
+        "title": "Cheat the Gallows",
+        "airDate": "2019-12-13"
+      }
+    ]
+  },
+  "what-if-s2": {
+    "id": "what-if-s2",
+    "tmdbId": 91363,
+    "imdbId": "tt10168312",
+    "tmdbType": "tv",
+    "title": "What If...?",
+    "overview": "Season two continues the journey as The Watcher guides viewers through the vast multiverse, introducing brand new and familiar faces throughout the MCU.",
+    "releaseDate": "2023-12-22",
+    "runtime": null,
+    "poster": "/3yhoq5LVMgKy9rEriH6ytq9BoJV.jpg",
+    "backdrop": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "What If... Nebula Joined the Nova Corps?",
+        "airDate": "2023-12-22"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "What If... Peter Quill Attacked Earth's Mightiest Heroes?",
+        "airDate": "2023-12-23"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "What If... Happy Hogan Saved Christmas?",
+        "airDate": "2023-12-24"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "What If... Iron Man Crashed Into the Grandmaster?",
+        "airDate": "2023-12-25"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "What If... Captain Carter Fought the Hydra Stomper?",
+        "airDate": "2023-12-26"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "What If... Kahhori Reshaped the World?",
+        "airDate": "2023-12-27"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "What If... Hela Found the Ten Rings?",
+        "airDate": "2023-12-28"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "What If... The Avengers Assembled in 1602?",
+        "airDate": "2023-12-29"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "What If... Strange Supreme Intervened?",
+        "airDate": "2023-12-30"
+      }
+    ]
+  },
+  "what-if-s3": {
+    "id": "what-if-s3",
+    "tmdbId": 91363,
+    "imdbId": "tt10168312",
+    "tmdbType": "tv",
+    "title": "What If...?",
+    "overview": "Season 3 follows classic characters as they make unexpected choices that will mutate their worlds into spectacular alternate versions of the MCU.",
+    "releaseDate": "2024-12-22",
+    "runtime": null,
+    "poster": "/bbGeKXKoualYRYqvFYiv8fPZK0d.jpg",
+    "backdrop": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+    "season": 3,
+    "episodes": [
+      {
+        "season": 3,
+        "number": 1,
+        "title": "What If... The Hulk Fought the Mech Avengers?",
+        "airDate": "2024-12-22"
+      },
+      {
+        "season": 3,
+        "number": 2,
+        "title": "What If... Agatha Went to Hollywood?",
+        "airDate": "2024-12-23"
+      },
+      {
+        "season": 3,
+        "number": 3,
+        "title": "What If... The Red Guardian Stopped the Winter Soldier?",
+        "airDate": "2024-12-24"
+      },
+      {
+        "season": 3,
+        "number": 4,
+        "title": "What If... Howard the Duck Got Hitched?",
+        "airDate": "2024-12-25"
+      },
+      {
+        "season": 3,
+        "number": 5,
+        "title": "What If... The Emergence Destroyed the Earth?",
+        "airDate": "2024-12-26"
+      },
+      {
+        "season": 3,
+        "number": 6,
+        "title": "What If... 1872?",
+        "airDate": "2024-12-27"
+      },
+      {
+        "season": 3,
+        "number": 7,
+        "title": "What If... The Watcher Disappeared? (1)",
+        "airDate": "2024-12-28"
+      },
+      {
+        "season": 3,
+        "number": 8,
+        "title": "What If... What If? (2)",
+        "airDate": "2024-12-29"
+      }
+    ]
+  },
   "x-men-97-s1": {
     "id": "x-men-97-s1",
     "tmdbId": 138502,
+    "imdbId": "tt16026746",
     "tmdbType": "tv",
     "title": "X-Men '97",
     "overview": "Picking up where 'X-Men' left off, the X-Men are in a period of transition, struggling with the loss of Professor X. And while their world is in a strained state of calm when it comes to mutant-human relations—everyone knows that's likely temporary.",
@@ -1752,9 +4223,163 @@
       }
     ]
   },
+  "your-friendly-neighborhood-spider-man-s1": {
+    "id": "your-friendly-neighborhood-spider-man-s1",
+    "tmdbId": 138503,
+    "imdbId": "tt16027074",
+    "tmdbType": "tv",
+    "title": "Your Friendly Neighborhood Spider-Man",
+    "overview": "Peter Parker is on his way to becoming a hero, but his path to get there is anything but ordinary.",
+    "releaseDate": "2025-01-27",
+    "runtime": null,
+    "poster": "/bifTEU63VFt2ugUte9LqNBb1Dno.jpg",
+    "backdrop": "/kkT2B2gmynoh9kZMo1gromLNeqy.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Amazing Fantasy",
+        "airDate": "2025-01-29"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "The Parker Luck",
+        "airDate": "2025-01-29"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Secret Identity Crisis",
+        "airDate": "2025-02-05"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Hitting the Big Time",
+        "airDate": "2025-02-05"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "The Unicorn Unleashed",
+        "airDate": "2025-02-05"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Duel with the Devil",
+        "airDate": "2025-02-12"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Scorpion Rising",
+        "airDate": "2025-02-12"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Tangled Web",
+        "airDate": "2025-02-12"
+      },
+      {
+        "season": 1,
+        "number": 9,
+        "title": "Hero or Menace",
+        "airDate": "2025-02-19"
+      },
+      {
+        "season": 1,
+        "number": 10,
+        "title": "If This Be My Destiny...",
+        "airDate": "2025-02-19"
+      }
+    ]
+  },
+  "marvel-zombies": {
+    "id": "marvel-zombies",
+    "tmdbId": 138505,
+    "imdbId": "tt16027014",
+    "tmdbType": "tv",
+    "title": "Marvel Zombies",
+    "overview": "After the Avengers are overtaken by a zombie plague, a desperate group of survivors discover the key to bringing an end to the super-powered undead, racing across a dystopian landscape and risking life and limb to save their world.",
+    "releaseDate": "2025-09-24",
+    "runtime": null,
+    "poster": "/wofiHMsXxmp0lTafcBrgciSxBVx.jpg",
+    "backdrop": "/lxQMxqao3vs2ehxESrkQU6acU86.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Episode 1",
+        "airDate": "2025-09-24"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Episode 2",
+        "airDate": "2025-09-24"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Episode 3",
+        "airDate": "2025-09-24"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Episode 4",
+        "airDate": "2025-09-24"
+      }
+    ]
+  },
+  "eyes-of-wakanda": {
+    "id": "eyes-of-wakanda",
+    "tmdbId": 241388,
+    "imdbId": "tt13968252",
+    "tmdbType": "tv",
+    "title": "Eyes of Wakanda",
+    "overview": "Follow the adventures of brave Wakandan warriors throughout history in this globe-trotting adventure, where they must carry out dangerous missions to retrieve Vibranium artifacts from the enemies of Wakanda. They are the Hatut Zaraze and this is their story.",
+    "releaseDate": "2025-08-01",
+    "runtime": null,
+    "poster": "/64RsvJMVUfhs5CDV7xXRjiLK4w6.jpg",
+    "backdrop": "/cWO5NDkKqpOuwxu4vFc4PtL8aNF.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Into the Lion's Den",
+        "airDate": "2025-08-01"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Legends and Lies",
+        "airDate": "2025-08-01"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Lost and Found",
+        "airDate": "2025-08-01"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "The Last Panther",
+        "airDate": "2025-08-01"
+      }
+    ]
+  },
   "venom": {
     "id": "venom",
     "tmdbId": 335983,
+    "imdbId": "tt1270797",
     "tmdbType": "movie",
     "title": "Venom",
     "overview": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
@@ -1766,6 +4391,7 @@
   "venom-let-there-be-carnage": {
     "id": "venom-let-there-be-carnage",
     "tmdbId": 580489,
+    "imdbId": "tt7097896",
     "tmdbType": "movie",
     "title": "Venom: Let There Be Carnage",
     "overview": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
@@ -1773,5 +4399,17 @@
     "runtime": 97,
     "poster": "/pzKsRuKLFmYrW5Q0q8E8G78Tcgo.jpg",
     "backdrop": "/eENEf62tMXbhyVvdcXlnQz2wcuT.jpg"
+  },
+  "morbius": {
+    "id": "morbius",
+    "tmdbId": 526896,
+    "imdbId": "tt5108870",
+    "tmdbType": "movie",
+    "title": "Morbius",
+    "overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+    "releaseDate": "2022-03-30",
+    "runtime": 105,
+    "poster": "/Av8Z2jZhEm1FLkFzMThzz9hndJF.jpg",
+    "backdrop": "/jzWT0zd8U77fqWg5WgUfYaMzSFz.jpg"
   }
 }

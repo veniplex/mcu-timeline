@@ -7,6 +7,8 @@
     posterUrl,
     tmdbPageUrl,
     tmdbEpisodeUrl,
+    imdbUrl,
+    rtUrl,
   } from "$lib/tmdb";
   import {
     episodeKey,
@@ -211,8 +213,33 @@
               rel="noopener noreferrer"
               class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-muted"
             >
-              {$t("detail.viewTmdb")}
+              TMDB
               <ExternalLink class="size-4" aria-hidden="true" />
+            </a>
+            {#if imdbUrl(item.imdbId)}
+              <a
+                href={imdbUrl(item.imdbId)}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+              >
+                <Star
+                  class="size-4 fill-[#f5c518] text-[#f5c518]"
+                  aria-hidden="true"
+                />
+                IMDb
+                <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
+              </a>
+            {/if}
+            <a
+              href={rtUrl(item.rtSlug, item.title)}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+            >
+              <span class="text-base leading-none" aria-hidden="true">🍅</span>
+              Rotten Tomatoes
+              <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
             </a>
           </div>
 

@@ -34,6 +34,9 @@ export interface TmdbQuery {
 	season?: number;
 	/** Specific episode numbers (within `season`); omit for a whole-season block. */
 	episodes?: number[];
+	/** Pin the exact TMDB id, bypassing title search (avoids wrong matches for
+	 * ambiguous titles like "Daredevil" or "The Punisher"). */
+	tmdbId?: number;
 }
 
 /** One ordered slot on the curated chronology. */
@@ -49,6 +52,10 @@ export interface ChronologyEntry {
 	/** Provenance of the ordering: official timeline vs fan consensus. */
 	source: string;
 	notes?: string;
+	/** Rotten Tomatoes path (after rottentomatoes.com/), e.g. "m/iron_man" or
+	 * "tv/loki". Hand-curated — RT has no public API. Omit to fall back to an RT
+	 * search link. */
+	rtSlug?: string;
 }
 
 /** IMDB + Rotten Tomatoes rating snapshot (populated by scripts/fetch-ratings.ts). */
@@ -61,6 +68,8 @@ export interface Ratings {
 export interface CatalogItem {
 	id: string;
 	tmdbId: number;
+	/** IMDb id (e.g. "tt0371746"), from TMDB external_ids. Language-independent. */
+	imdbId?: string | null;
 	tmdbType: 'movie' | 'tv';
 	title: string;
 	overview: string;

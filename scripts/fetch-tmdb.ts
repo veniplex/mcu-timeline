@@ -36,7 +36,9 @@ async function tmdb(path: string, params: Record<string, string> = {}) {
 }
 
 async function resolveId(entry: ChronologyEntry): Promise<number | null> {
-	const { type, title, year } = entry.query;
+	const { type, title, year, tmdbId } = entry.query;
+	// Pinned id wins — bypass search entirely for ambiguous titles.
+	if (tmdbId) return tmdbId;
 	const params: Record<string, string> = { query: title, language: 'en-US' };
 	if (type === 'movie') params.year = String(year);
 	else params.first_air_date_year = String(year);
@@ -49,9 +51,20 @@ async function resolveId(entry: ChronologyEntry): Promise<number | null> {
 	return first.id as number;
 }
 
+/** Language-independent IMDb id via TMDB external_ids. */
+async function fetchImdbId(type: 'movie' | 'tv', tmdbId: number): Promise<string | null> {
+	try {
+		const data = await tmdb(`/${type}/${tmdbId}/external_ids`);
+		return (data.imdb_id as string) || null;
+	} catch {
+		return null;
+	}
+}
+
 async function buildItem(
 	entry: ChronologyEntry,
 	tmdbId: number,
+	imdbId: string | null,
 	lang: Lang
 ): Promise<CatalogItem> {
 	const { type, season } = entry.query;
@@ -61,6 +74,7 @@ async function buildItem(
 		return {
 			id: entry.id,
 			tmdbId,
+			imdbId,
 			tmdbType: 'movie',
 			title: m.title || m.original_title,
 			overview: m.overview ?? '',
@@ -85,6 +99,7 @@ async function buildItem(
 	return {
 		id: entry.id,
 		tmdbId,
+		imdbId,
 		tmdbType: 'tv',
 		title: show.name || show.original_name,
 		overview: s.overview || show.overview || '',
@@ -110,13 +125,15 @@ async function main() {
 				console.log('skipped');
 				continue;
 			}
-			en[entry.id] = await buildItem(entry, id, 'en-US');
-			de[entry.id] = await buildItem(entry, id, 'de-DE');
+			const imdbId = await fetchImdbId(entry.query.type, id);
+			en[entry.id] = await buildItem(entry, id, imdbId, 'en-US');
+			de[entry.id] = await buildItem(entry, id, imdbId, 'de-DE');
 			// de overview/title can be empty on TMDB — fall back to en.
 			if (!de[entry.id].overview) de[entry.id].overview = en[entry.id].overview;
 			if (!de[entry.id].title) de[entry.id].title = en[entry.id].title;
 			resolved++;
-			console.log(`ok (tmdb ${id})`);
+			// Log resolved title so wrong matches are easy to spot in the run output.
+			console.log(`ok (tmdb ${id}, imdb ${imdbId ?? '–'}) → "${en[entry.id].title}"`);
 		} catch (err) {
 			console.log(`FAILED: ${(err as Error).message}`);
 		}

@@ -21,13 +21,26 @@ if (!API_KEY) {
 }
 
 const here = dirname(fileURLToPath(import.meta.url));
-const RATINGS_PATH = resolve(here, '../src/lib/data/ratings.json');
+const DATA_DIR = resolve(here, '../src/lib/data');
+const RATINGS_PATH = resolve(DATA_DIR, 'ratings.json');
+const CATALOG_PATH = resolve(DATA_DIR, 'catalog.en.json');
 
-async function fetchRating(title: string, year: number, type: 'movie' | 'series'): Promise<Ratings | null> {
+async function fetchRating(
+	title: string,
+	year: number,
+	type: 'movie' | 'series',
+	imdbId?: string | null
+): Promise<Ratings | null> {
 	const url = new URL('https://www.omdbapi.com/');
-	url.searchParams.set('t', title);
-	url.searchParams.set('y', String(year));
-	url.searchParams.set('type', type);
+	// Prefer an exact lookup by IMDb id (avoids title-prefix mismatches like
+	// "Marvel's Daredevil" vs OMDb's "Daredevil"); fall back to title+year.
+	if (imdbId) {
+		url.searchParams.set('i', imdbId);
+	} else {
+		url.searchParams.set('t', title);
+		url.searchParams.set('y', String(year));
+		url.searchParams.set('type', type);
+	}
 	url.searchParams.set('apikey', API_KEY!);
 
 	const res = await fetch(url);
@@ -57,22 +70,36 @@ async function main() {
 		// fresh start
 	}
 
+	// IMDb ids from the catalog (written by fetch-tmdb) — for exact OMDb lookups.
+	let catalog: Record<string, { imdbId?: string | null }> = {};
+	try {
+		catalog = JSON.parse(await readFile(CATALOG_PATH, 'utf8'));
+	} catch {
+		console.warn('catalog.en.json not found — run fetch-tmdb first for exact IMDb-id lookups.');
+	}
+
 	const result: Record<string, Ratings> = { ...existing };
 	let updated = 0;
-	let skipped = 0;
 
-	// Deduplicate: one rating per unique tmdbId (multiple chronology entries share a show)
-	const seen = new Set<string>();
+	// Fetch once per unique show, keyed by imdbId (falls back to title:year), then
+	// apply the show-level rating to every entry that shares it (all seasons).
+	const cache = new Map<string, Ratings | null>();
 
 	for (const entry of chronology) {
-		const titleKey = `${entry.query.title}:${entry.query.year}`;
-		if (seen.has(titleKey)) { skipped++; continue; }
-		seen.add(titleKey);
-
+		const imdbId = catalog[entry.id]?.imdbId ?? null;
+		const cacheKey = imdbId ?? `${entry.query.title}:${entry.query.year}`;
 		process.stdout.write(`• ${entry.id} … `);
 		try {
-			const type = entry.query.type === 'movie' ? 'movie' : 'series';
-			const ratings = await fetchRating(entry.query.title, entry.query.year, type);
+			let ratings: Ratings | null;
+			if (cache.has(cacheKey)) {
+				ratings = cache.get(cacheKey)!;
+			} else {
+				const type = entry.query.type === 'movie' ? 'movie' : 'series';
+				ratings = await fetchRating(entry.query.title, entry.query.year, type, imdbId);
+				cache.set(cacheKey, ratings);
+				// OMDb free tier: 1000 req/day, ~1 req/sec is safe
+				await new Promise(r => setTimeout(r, 250));
+			}
 			if (ratings) {
 				result[entry.id] = ratings;
 				updated++;
@@ -80,15 +107,13 @@ async function main() {
 			} else {
 				console.log('no data');
 			}
-			// OMDb free tier: 1000 req/day, ~1 req/sec is safe
-			await new Promise(r => setTimeout(r, 250));
 		} catch (err) {
 			console.log(`FAILED: ${(err as Error).message}`);
 		}
 	}
 
 	await writeFile(RATINGS_PATH, JSON.stringify(result, null, 2));
-	console.log(`\nDone. Updated ${updated} entries, skipped ${skipped} duplicates.`);
+	console.log(`\nDone. Updated ${updated} entries.`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

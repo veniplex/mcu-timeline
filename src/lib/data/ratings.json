@@ -200,5 +200,117 @@
   "venom-let-there-be-carnage": {
     "imdb": "5.9",
     "rt": "58"
+  },
+  "loki-s2": {
+    "imdb": "8.2"
+  },
+  "helstrom": {
+    "imdb": "6.7"
+  },
+  "what-if-s2": {
+    "imdb": "7.3"
+  },
+  "what-if-s3": {
+    "imdb": "7.3"
+  },
+  "your-friendly-neighborhood-spider-man-s1": {
+    "imdb": "7.5"
+  },
+  "marvel-zombies": {
+    "imdb": "7.0"
+  },
+  "eyes-of-wakanda": {
+    "imdb": "6.2"
+  },
+  "morbius": {
+    "imdb": "5.1",
+    "rt": "15"
+  },
+  "agent-carter-s1": {
+    "imdb": "7.8"
+  },
+  "agent-carter-s2": {
+    "imdb": "7.8"
+  },
+  "agents-of-shield-s1": {
+    "imdb": "7.5"
+  },
+  "agents-of-shield-s2": {
+    "imdb": "7.5"
+  },
+  "daredevil-s1": {
+    "imdb": "8.6"
+  },
+  "jessica-jones-s1": {
+    "imdb": "7.8"
+  },
+  "agents-of-shield-s7": {
+    "imdb": "7.5"
+  },
+  "echo": {
+    "imdb": "5.9"
+  },
+  "agents-of-shield-s3": {
+    "imdb": "7.5"
+  },
+  "daredevil-s2": {
+    "imdb": "8.6"
+  },
+  "agents-of-shield-s4": {
+    "imdb": "7.5"
+  },
+  "luke-cage-s1": {
+    "imdb": "7.2"
+  },
+  "iron-fist-s1": {
+    "imdb": "6.4"
+  },
+  "the-defenders": {
+    "imdb": "7.2"
+  },
+  "inhumans": {
+    "imdb": "4.9"
+  },
+  "the-punisher-s1": {
+    "imdb": "8.4"
+  },
+  "runaways-s1": {
+    "imdb": "6.8"
+  },
+  "agents-of-shield-s5": {
+    "imdb": "7.5"
+  },
+  "jessica-jones-s2": {
+    "imdb": "7.8"
+  },
+  "cloak-and-dagger-s1": {
+    "imdb": "6.6"
+  },
+  "luke-cage-s2": {
+    "imdb": "7.2"
+  },
+  "iron-fist-s2": {
+    "imdb": "6.4"
+  },
+  "daredevil-s3": {
+    "imdb": "8.6"
+  },
+  "runaways-s2": {
+    "imdb": "6.8"
+  },
+  "the-punisher-s2": {
+    "imdb": "8.4"
+  },
+  "cloak-and-dagger-s2": {
+    "imdb": "6.6"
+  },
+  "agents-of-shield-s6": {
+    "imdb": "7.5"
+  },
+  "jessica-jones-s3": {
+    "imdb": "7.8"
+  },
+  "runaways-s3": {
+    "imdb": "6.8"
   }
 }
