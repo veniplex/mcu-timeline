@@ -86,7 +86,7 @@
 	</div>
 
 	<div class="flex min-w-0 flex-1 flex-col gap-1 p-3 lg:p-4">
-		<h3 class="line-clamp-2 text-sm font-bold leading-tight lg:text-base">{item.title}</h3>
+		<h3 class="line-clamp-2 text-sm font-bold leading-tight lg:text-base xl:text-lg">{item.title}</h3>
 		<div
 			class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground tabular-nums lg:text-sm"
 		>
@@ -123,7 +123,7 @@
 		{/if}
 
 		{#if item.overview}
-			<p class="mt-1 line-clamp-3 text-xs leading-snug text-muted-foreground max-lg:hidden">{item.overview}</p>
+			<p class="mt-1 line-clamp-3 text-xs leading-snug text-muted-foreground max-lg:hidden lg:text-sm">{item.overview}</p>
 		{/if}
 
 		{#if item.eraTag}
