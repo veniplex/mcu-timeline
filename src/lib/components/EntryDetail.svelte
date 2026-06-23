@@ -183,7 +183,7 @@
           {/if}
 
           {#if item.overview}
-            <p class="text-sm leading-relaxed text-muted-foreground">
+            <p class="selectable text-sm leading-relaxed text-muted-foreground">
               {item.overview}
             </p>
           {/if}
@@ -206,7 +206,7 @@
               </button>
             {/if}
             <a
-              href={tmdbPageUrl(item.isSeries ? "tv" : "movie", item.tmdbId)}
+              href={tmdbPageUrl(item.isSeries ? "tv" : "movie", item.tmdbId, item.title)}
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-muted"

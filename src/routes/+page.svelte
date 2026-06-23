@@ -24,8 +24,7 @@
 				items: band.items.filter((item) => {
 					if (mediaFilter === 'films' && item.isSeries) return false;
 					if (mediaFilter === 'series' && !item.isSeries) return false;
-					if (hideWatched && signedIn && isFullyWatched(item, $watched))
-						return false;
+					if (hideWatched && signedIn && isFullyWatched(item, $watched)) return false;
 					return true;
 				})
 			}))
@@ -39,6 +38,7 @@
 			0
 		)
 	);
+	const watchPct = $derived(totalItems ? (totalWatched / totalItems) * 100 : 0);
 
 	const filters: { key: MediaFilter; label: () => string; icon: typeof Film }[] = [
 		{ key: 'all', label: () => $t('filter.all'), icon: LayoutGrid },
@@ -47,28 +47,28 @@
 	];
 </script>
 
-<section class="mb-8">
-	<h1 class="text-3xl font-bold tracking-tight sm:text-4xl">{$t('app.title')}</h1>
-	<p class="mt-2 max-w-prose text-muted-foreground">{$t('app.tagline')}</p>
-
-	{#if signedIn}
-		<div class="mt-4 flex max-w-md items-center gap-3">
-			<div class="h-2 flex-1 overflow-hidden rounded-full bg-muted">
+<!-- Sticky progress bar — full-width strip that stays below the nav when scrolling -->
+{#if signedIn}
+	<div
+		class="sticky top-14 z-30 -mx-4 border-b border-border bg-background/95 backdrop-blur sm:-mx-6"
+		aria-label="Watch progress"
+	>
+		<div class="flex items-center gap-3 px-4 py-2 sm:px-6">
+			<div class="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
 				<div
-					class="h-full rounded-full bg-accent transition-[width] duration-300"
-					style="width: {totalItems ? (totalWatched / totalItems) * 100 : 0}%"
+					class="h-full rounded-full bg-accent transition-[width] duration-500"
+					style="width: {watchPct}%"
 				></div>
 			</div>
-			<span class="shrink-0 text-sm tabular-nums text-muted-foreground">
+			<span class="shrink-0 text-xs tabular-nums text-muted-foreground">
 				{$t('watched.progress', { done: totalWatched, total: totalItems })}
 			</span>
 		</div>
-	{:else if firebaseEnabled}
-		<p class="mt-3 text-sm text-muted-foreground">{$t('auth.trackPrompt')}</p>
-	{/if}
-</section>
+	</div>
+{/if}
 
-<div class="mb-8 flex flex-wrap items-center gap-3">
+<!-- Filter row -->
+<div class="mb-6 mt-6 flex flex-wrap items-center gap-3">
 	<!-- Sort -->
 	<div
 		class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm"

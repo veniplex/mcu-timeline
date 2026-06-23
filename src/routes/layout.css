@@ -74,10 +74,24 @@ html {
 	color: var(--color-foreground);
 	font-family: var(--font-sans);
 	-webkit-font-smoothing: antialiased;
+	/* Prevent accidental text selection on touch/mouse interactions */
+	user-select: none;
 }
 
 body {
 	min-height: 100dvh;
+}
+
+/* Restore selection for prose content in modals */
+.selectable {
+	user-select: text;
+}
+
+/* Pointer cursor on all interactive elements */
+button,
+a,
+[role="button"] {
+	cursor: pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {

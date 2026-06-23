@@ -56,7 +56,7 @@
 </script>
 
 <div
-	class="group relative flex h-28 w-full cursor-pointer overflow-hidden rounded-xl border text-left transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--card-hover-bg)] sm:h-32 lg:h-40 {isWatched
+	class="group relative flex h-32 w-full cursor-pointer overflow-hidden rounded-xl border text-left transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--card-hover-bg)] sm:h-40 lg:h-52 {isWatched
 		? 'border-accent/50'
 		: 'border-border'}"
 	style="
@@ -104,11 +104,21 @@
 			{/if}
 		</div>
 
-		<!-- IMDB rating badge -->
-		{#if item.ratings?.imdb}
-			<div class="mt-0.5 flex items-center gap-1 text-xs text-muted-foreground">
-				<Star class="size-3 fill-[#f5c518] text-[#f5c518]" aria-hidden="true" />
-				<span class="tabular-nums font-medium">{item.ratings.imdb}</span>
+		<!-- Ratings badges -->
+		{#if item.ratings?.imdb || item.ratings?.rt}
+			<div class="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-muted-foreground">
+				{#if item.ratings?.imdb}
+					<span class="inline-flex items-center gap-1">
+						<Star class="size-3 fill-[#f5c518] text-[#f5c518]" aria-hidden="true" />
+						<span class="tabular-nums font-medium">{item.ratings.imdb}</span>
+					</span>
+				{/if}
+				{#if item.ratings?.rt}
+					<span class="inline-flex items-center gap-1">
+						<span aria-hidden="true" class="leading-none">🍅</span>
+						<span class="tabular-nums font-medium">{item.ratings.rt}%</span>
+					</span>
+				{/if}
 			</div>
 		{/if}
 

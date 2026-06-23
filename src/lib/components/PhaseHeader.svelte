@@ -37,27 +37,20 @@
 <div bind:this={sentinel} class="h-px w-px" aria-hidden="true"></div>
 
 <div class="sticky top-[72px] z-30 flex justify-center">
-	<!--
-		Single container that morphs between card and pill.
-		Border-radius and padding transition via inline style (numerical values).
-		overflow-hidden is intentionally omitted — border-radius alone clips the
-		visible background; the text content never bleeds outside the padding box.
-	-->
 	<div
 		class="border-2 bg-surface/95 backdrop-blur {stuck ? 'shadow-md' : 'shadow-xl'}"
 		style="
 			border-color: {color};
 			border-radius: {stuck ? '9999px' : '1rem'};
 			width: min(22rem, 90vw);
-			padding: {stuck ? '0.4rem 1.25rem' : '1.25rem 1.5rem'};
+			padding: {stuck ? '0.35rem 1.25rem' : '1.25rem 1.5rem'};
 			transition: border-radius 350ms cubic-bezier(0.22,1,0.36,1),
 			            padding 350ms cubic-bezier(0.22,1,0.36,1);
 			animation: phaseEnter 500ms cubic-bezier(0.22,1,0.36,1) both;
 		"
 	>
-		<!-- Grid overlay: both states occupy the same grid cell, opacity cross-fades -->
 		<div style="display:grid">
-			<!-- Full card (not stuck) -->
+			<!-- Full card: just the phase number, big + bold. Saga shown by SagaHeader banner above. -->
 			<div
 				class="text-center"
 				style="
@@ -70,9 +63,8 @@
 			>
 				<div class="flex items-center justify-center gap-1.5">
 					<span class="size-2 shrink-0 rounded-full" style="background-color: {color}"></span>
-					<span class="text-xs font-medium" style="color: {color}">{sagaName}</span>
 				</div>
-				<span class="mt-2 block text-2xl font-black tracking-tight [text-wrap:balance] sm:text-3xl lg:text-4xl">
+				<span class="mt-2 block text-2xl font-black tracking-tight sm:text-3xl lg:text-4xl">
 					{$t('phase.label')} {phase}
 				</span>
 				{#if showProgress}
@@ -88,9 +80,9 @@
 				{/if}
 			</div>
 
-			<!-- Compact pill (stuck) -->
+			<!-- Compact sticky pill: saga name (small) stacked above phase (bold) -->
 			<div
-				class="flex items-center gap-2 whitespace-nowrap"
+				class="flex flex-col items-center justify-center gap-0"
 				style="
 					grid-area: 1/1;
 					opacity: {stuck ? 1 : 0};
@@ -99,11 +91,16 @@
 					visibility: {stuck ? 'visible' : 'hidden'};
 				"
 			>
-				<span class="size-2 shrink-0 rounded-full" style="background-color: {color}"></span>
-				<span class="text-sm font-bold">{sagaName} · {$t('phase.label')} {phase}</span>
-				{#if showProgress}
-					<span class="ml-auto pl-2 text-xs tabular-nums text-muted-foreground">{done}/{total}</span>
-				{/if}
+				<span class="text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+					{sagaName}
+				</span>
+				<div class="flex items-center gap-1.5">
+					<span class="size-1.5 shrink-0 rounded-full" style="background-color: {color}"></span>
+					<span class="text-sm font-bold tracking-tight">{$t('phase.label')} {phase}</span>
+					{#if showProgress}
+						<span class="text-xs tabular-nums text-muted-foreground opacity-70">· {done}/{total}</span>
+					{/if}
+				</div>
 			</div>
 		</div>
 	</div>
