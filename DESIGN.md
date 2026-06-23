@@ -23,29 +23,28 @@ colors:
   phase-6-emerald: "#4ade80"
 typography:
   display:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Barlow Condensed, ui-sans-serif, system-ui, sans-serif"
     fontSize: "clamp(1.75rem, 4vw, 2.5rem)"
     fontWeight: 700
     lineHeight: 1.1
-    letterSpacing: "-0.02em"
+    letterSpacing: "-0.01em"
   headline:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Barlow Condensed, ui-sans-serif, system-ui, sans-serif"
     fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)"
     fontWeight: 600
     lineHeight: 1.2
-    letterSpacing: "-0.01em"
   title:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Barlow, ui-sans-serif, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 600
     lineHeight: 1.3
   body:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Barlow, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Barlow, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.75rem"
     fontWeight: 500
     lineHeight: 1.4
@@ -119,7 +118,7 @@ This system explicitly rejects generic SaaS grey and fan-wiki information overlo
 - Phase identity colors are the primary brand differentiator — six distinct eras, each with a named hue
 - Dark mode is the cinematic default; light mode is editorial clarity
 - Tonal depth: surfaces layer from background → surface → raised — no drop shadows
-- Typography is single-family (Inter), differentiated by weight and size only
+- Typography uses Barlow Condensed for display/headings and Barlow for body/UI — width contrast, not typeface contrast
 - Poster art and backdrop images do the visual heavy lifting
 - The timeline spine is a structural element, not a decoration
 
@@ -157,19 +156,20 @@ A dual-register palette: rich deep navy void in dark, editorial off-white in lig
 
 ## 3. Typography
 
-**Body Font:** Inter (with `ui-sans-serif, system-ui, sans-serif` fallback)
+**Display Font:** Barlow Condensed (with `ui-sans-serif, system-ui, sans-serif` fallback) — phase headings, saga names, nav brand
+**Body Font:** Barlow (with `ui-sans-serif, system-ui, sans-serif` fallback) — card titles, metadata, filters, all UI text
 
-**Character:** A single humanist sans-serif, weight-differentiated. No display pairing — the MCU universe has enough visual richness from its imagery. Type stays functional, confident, never decorative. Weight and size create the entire hierarchy.
+**Character:** Two widths of the same family — condensed display for dramatic chapter headings, regular for dense UI text. Barlow's slightly cinematic geometry suits the MCU context without being decorative. The width contrast creates hierarchy across the spine without resorting to a second typeface.
 
 ### Hierarchy
-- **Display** (700, `clamp(1.75rem, 4vw, 2.5rem)`, lh 1.1, ls -0.02em): Page title and phase milestone labels. Tight, commanding.
-- **Headline** (600, `clamp(1.25rem, 2.5vw, 1.75rem)`, lh 1.2, ls -0.01em): Modal title, section headers.
-- **Title** (600, `1rem`, lh 1.3): Card titles, season headers in detail modal.
-- **Body** (400, `0.875rem`, lh 1.6): Overviews, descriptions. Max 65ch.
-- **Label** (500, `0.75rem`, lh 1.4, ls 0.01em): Phase badge, metadata chips, year pills on spine. Tabular nums for dates/counts.
+- **Display** (Barlow Condensed 700, `clamp(1.75rem, 4vw, 2.5rem)`, lh 1.1, ls -0.01em): Phase milestone labels. Condensed, commanding.
+- **Headline** (Barlow Condensed 600, `clamp(1.25rem, 2.5vw, 1.75rem)`, lh 1.2): Saga headers, modal titles.
+- **Title** (Barlow 600, `1rem`, lh 1.3): Card titles, season headers in detail modal.
+- **Body** (Barlow 400, `0.875rem`, lh 1.6): Overviews, descriptions. Max 65ch.
+- **Label** (Barlow 500, `0.75rem`, lh 1.4, ls 0.01em): Phase badge, metadata chips, year pills on spine. Tabular nums for dates/counts.
 
 ### Named Rules
-**The Weight Rule.** Never use font-weight 300 (light). Inter Light reads as uncertain at small sizes. The floor is 400; anything below is prohibited.
+**The Weight Rule.** Never use font-weight 300 (light). Barlow Light reads as uncertain at small sizes. The floor is 400; anything below is prohibited.
 
 ## 4. Elevation
 
@@ -218,7 +218,7 @@ In dark mode: `#0f172a` → `#14182b` → `#1c2235`. In light mode: `#f7f7fb` �
 
 ### Navigation
 - Sticky top-0, `height: 64px`. Background: `surface/80` with `backdrop-blur`. Border-bottom `border-border`.
-- Logo: bold, Inter 600. Lang toggle (EN/DE), theme toggle, auth buttons: icon-only, 36px hit areas.
+- Logo: bold, Barlow Condensed 600. Lang toggle (EN/DE), theme toggle, auth buttons: icon-only, 36px hit areas.
 - Auth: Two separate icon-only buttons (Google SVG + GitHub SVG). When signed in: avatar circle + dropdown sign-out.
 
 ### Year Pills (Release View)

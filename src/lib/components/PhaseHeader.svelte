@@ -61,8 +61,12 @@
 					visibility: {stuck ? 'hidden' : 'visible'};
 				"
 			>
-				<span class="block text-2xl font-black tracking-tight sm:text-3xl lg:text-4xl">
-					{$t('phase.label')} {phase}
+				<span
+					class="block text-2xl sm:text-3xl lg:text-4xl"
+					style="font-family: var(--font-display); font-weight: 700; letter-spacing: -0.01em"
+				>
+					<span style="font-weight: 500; opacity: 0.75">{$t('phase.label')}</span>
+					{' '}{phase}
 				</span>
 				{#if showProgress}
 					<div class="mt-3 flex items-center gap-2">
@@ -93,7 +97,7 @@
 				</span>
 				<div class="flex items-center gap-1.5">
 					<span class="size-1.5 shrink-0 rounded-full" style="background-color: {color}"></span>
-					<span class="text-sm font-bold tracking-tight">{$t('phase.label')} {phase}</span>
+					<span class="text-sm tracking-tight" style="font-family: var(--font-display); font-weight: 700">{$t('phase.label')} {phase}</span>
 					{#if showProgress}
 						<span class="text-xs tabular-nums text-muted-foreground opacity-70">· {done}/{total}</span>
 					{/if}

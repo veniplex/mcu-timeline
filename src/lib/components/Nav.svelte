@@ -10,7 +10,7 @@
 	class="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-md"
 >
 	<nav class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
-		<a href="/" class="mr-auto flex items-center gap-2 font-semibold tracking-tight">
+		<a href="/" class="mr-auto flex items-center gap-2 tracking-tight" style="font-family: var(--font-display); font-weight: 600; letter-spacing: 0.01em">
 			<Clapperboard class="size-5 text-primary" aria-hidden="true" />
 			<span>{$t('app.title')}</span>
 		</a>
