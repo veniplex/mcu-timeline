@@ -1,9 +1,9 @@
 <script lang="ts">
-	let { name }: { name: string; phases: number[] } = $props();
+	let { name, color = 'var(--color-muted-foreground)' }: { name: string; phases: number[]; color?: string } = $props();
 </script>
 
 <div class="relative mb-4 mt-2 flex items-center gap-4" aria-label={name}>
-	<div class="h-px flex-1 bg-muted-foreground/20"></div>
-	<h2 class="text-lg font-black tracking-tight sm:text-xl">{name}</h2>
-	<div class="h-px flex-1 bg-muted-foreground/20"></div>
+	<div class="h-px flex-1" style="background-color: color-mix(in srgb, {color} 30%, transparent)"></div>
+	<h2 class="text-lg font-black tracking-tight sm:text-xl" style="color: {color}">{name}</h2>
+	<div class="h-px flex-1" style="background-color: color-mix(in srgb, {color} 30%, transparent)"></div>
 </div>

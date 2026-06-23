@@ -150,8 +150,11 @@
 		<div class="grid grid-cols-2 divide-x divide-border">
 			{#each Object.entries(SAGAS) as [sagaId, saga]}
 				<div>
-					<div class="border-b border-border px-4 py-2">
-						<span class="text-xs font-medium text-muted-foreground">{saga[$locale]}</span>
+					<div
+						class="border-b border-border px-4 py-2"
+						style="background-color: color-mix(in srgb, {saga.color} 8%, var(--color-surface))"
+					>
+						<span class="text-xs font-semibold" style="color: {saga.color}">{saga[$locale]}</span>
 					</div>
 					<div class="flex gap-1 p-2">
 						{#each saga.phases as phase}

@@ -36,9 +36,10 @@
 <div class="relative mx-auto mt-8 max-w-5xl pb-4">
 	<!-- One continuous spine behind everything -->
 	<div
-		class="absolute bottom-0 left-5 w-0.5 -translate-x-1/2 bg-border md:left-1/2 {grouped
-			? 'top-20'
-			: 'top-2'}"
+		class="absolute bottom-0 left-5 w-0.5 -translate-x-1/2 md:left-1/2 {grouped ? 'top-20' : 'top-2'}"
+		style={grouped
+			? `background: linear-gradient(to bottom, ${PHASE_COLORS[1]}50, ${PHASE_COLORS[2]}50, ${PHASE_COLORS[3]}50, ${PHASE_COLORS[4]}50, ${PHASE_COLORS[5]}50, ${PHASE_COLORS[6]}50)`
+			: 'background-color: var(--color-border)'}
 		aria-hidden="true"
 	></div>
 
@@ -51,7 +52,7 @@
 		<section id={grouped ? `phase-${band.phase}` : undefined} class={grouped ? 'scroll-mt-24 pt-12 first:pt-0 lg:pt-16' : ''}>
 			{#if grouped}
 				{#if isFirstOfSaga(band, bandIdx)}
-					<SagaHeader name={sagaName} phases={saga.phases} />
+					<SagaHeader name={sagaName} phases={saga.phases} color={saga.color} />
 				{/if}
 				<PhaseHeader
 					phase={band.phase}
@@ -102,10 +103,13 @@
 		</section>
 	{/each}
 
-	<!-- End marker -->
+	<!-- End marker — tinted with Phase 6 color to feel like a continuation of the final phase -->
 	<div class="relative flex justify-center pt-14 lg:pt-20">
-		<div class="relative z-10 rounded-2xl border border-dashed border-border bg-surface px-6 py-4 text-center">
-			<span class="text-sm font-semibold text-muted-foreground">To be continued…</span>
+		<div
+			class="relative z-10 rounded-2xl border px-6 py-4 text-center"
+			style="border-color: color-mix(in srgb, {PHASE_COLORS[6]} 35%, transparent); background-color: color-mix(in srgb, {PHASE_COLORS[6]} 5%, var(--color-surface))"
+		>
+			<span class="text-sm font-semibold" style="color: color-mix(in srgb, {PHASE_COLORS[6]} 70%, var(--color-muted-foreground))">To be continued…</span>
 		</div>
 	</div>
 </div>

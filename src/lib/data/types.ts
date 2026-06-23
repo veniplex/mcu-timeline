@@ -13,9 +13,9 @@ export const PHASE_COLORS: Record<Phase, string> = {
 
 export type SagaId = 1 | 2;
 
-export const SAGAS: Record<SagaId, { en: string; de: string; phases: Phase[] }> = {
-	1: { en: 'The Infinity Saga', de: 'Die Infinity-Saga', phases: [1, 2, 3] },
-	2: { en: 'The Multiverse Saga', de: 'Die Multiversum-Saga', phases: [4, 5, 6] }
+export const SAGAS: Record<SagaId, { en: string; de: string; phases: Phase[]; color: string }> = {
+	1: { en: 'The Infinity Saga', de: 'Die Infinity-Saga', phases: [1, 2, 3], color: '#5b9dff' },
+	2: { en: 'The Multiverse Saga', de: 'Die Multiversum-Saga', phases: [4, 5, 6], color: '#ff5e8a' }
 };
 
 /** Returns which saga a phase belongs to. */
