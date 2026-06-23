@@ -1,13 +1,25 @@
 <script lang="ts">
-	import { Film, Tv, LayoutGrid, EyeOff, Clock, CalendarDays } from 'lucide-svelte';
+	import { Film, Tv, LayoutGrid, EyeOff, Clock, CalendarDays, ArrowUp } from 'lucide-svelte';
+	import { fly } from 'svelte/transition';
 	import Timeline from '$lib/components/Timeline.svelte';
 	import { buildTimeline, isFullyWatched, type PhaseBand } from '$lib/data/timeline';
+	import { PHASE_COLORS, SAGAS } from '$lib/data/types';
 	import { sortMode } from '$lib/stores/sortMode';
 	import { locale } from '$lib/stores/locale';
 	import { watched } from '$lib/stores/watched';
 	import { firebaseEnabled } from '$lib/firebase';
 	import { auth } from '$lib/stores/auth';
 	import { t } from '$lib/i18n/messages';
+
+	let scrollY = $state(0);
+
+	function jumpToPhase(phase: number) {
+		document.getElementById(`phase-${phase}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	}
+
+	function backToTop() {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
 
 	type MediaFilter = 'all' | 'films' | 'series';
 	let mediaFilter = $state<MediaFilter>('all');
@@ -47,6 +59,8 @@
 	];
 </script>
 
+<svelte:window bind:scrollY />
+
 <!-- Sticky progress bar — full-width strip that stays below the nav when scrolling -->
 {#if signedIn}
 	<div
@@ -68,7 +82,7 @@
 {/if}
 
 <!-- Filter row -->
-<div class="mb-6 mt-6 flex flex-wrap items-center gap-3">
+<div class="mb-4 mt-6 flex flex-wrap items-center gap-3">
 	<!-- Sort -->
 	<div
 		class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm"
@@ -130,6 +144,33 @@
 	{/if}
 </div>
 
+<!-- Phase navigation tab bar — only in story order mode -->
+{#if $sortMode === 'chronological'}
+	<div class="mb-8 overflow-hidden rounded-2xl border border-border bg-surface">
+		<div class="grid grid-cols-2 divide-x divide-border">
+			{#each Object.entries(SAGAS) as [sagaId, saga]}
+				<div>
+					<div class="border-b border-border px-4 py-2">
+						<span class="text-xs font-medium text-muted-foreground">{saga[$locale]}</span>
+					</div>
+					<div class="flex gap-1 p-2">
+						{#each saga.phases as phase}
+							<button
+								class="flex flex-1 items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-semibold transition-colors hover:bg-muted"
+								style="color: {PHASE_COLORS[phase]}"
+								onclick={() => jumpToPhase(phase)}
+							>
+								<span class="size-1.5 shrink-0 rounded-full" style="background-color: {PHASE_COLORS[phase]}"></span>
+								<span>{$t('phase.label')} {phase}</span>
+							</button>
+						{/each}
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+{/if}
+
 {#if bands.length}
 	<Timeline {bands} />
 {:else}
@@ -139,4 +180,17 @@
 		<h2 class="text-lg font-semibold">{$t('empty.title')}</h2>
 		<p class="mt-1 text-sm text-muted-foreground">{$t('empty.body')}</p>
 	</div>
+{/if}
+
+<!-- Back to top -->
+{#if scrollY > 500}
+	<button
+		in:fly={{ y: 12, duration: 200 }}
+		out:fly={{ y: 12, duration: 150 }}
+		class="fixed bottom-6 right-6 z-40 grid size-11 place-items-center rounded-full border border-border bg-surface shadow-lg transition-colors hover:bg-muted"
+		aria-label="Back to top"
+		onclick={backToTop}
+	>
+		<ArrowUp class="size-5 text-muted-foreground" aria-hidden="true" />
+	</button>
 {/if}

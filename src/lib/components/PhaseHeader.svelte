@@ -61,10 +61,7 @@
 					visibility: {stuck ? 'hidden' : 'visible'};
 				"
 			>
-				<div class="flex items-center justify-center gap-1.5">
-					<span class="size-2 shrink-0 rounded-full" style="background-color: {color}"></span>
-				</div>
-				<span class="mt-2 block text-2xl font-black tracking-tight sm:text-3xl lg:text-4xl">
+				<span class="block text-2xl font-black tracking-tight sm:text-3xl lg:text-4xl">
 					{$t('phase.label')} {phase}
 				</span>
 				{#if showProgress}

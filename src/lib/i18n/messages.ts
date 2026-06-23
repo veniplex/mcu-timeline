@@ -9,7 +9,7 @@ export const messages = {
 	en: {
 		'app.title': 'MCU Timeline',
 		'app.tagline': 'Explore the Marvel Cinematic Universe in order',
-		'sort.chronological': 'Chronological',
+		'sort.chronological': 'Story Order',
 		'sort.release': 'Release date',
 		'sort.label': 'Sort by',
 		'theme.toggle': 'Toggle theme',
@@ -33,13 +33,13 @@ export const messages = {
 		'detail.episodes': 'Episodes',
 		'detail.season': 'Season',
 		'empty.title': 'Nothing here yet',
-		'empty.body': 'The timeline data is being assembled.',
+		'empty.body': 'Try adjusting your filters.',
 		'timeline.end': 'To be continued…'
 	},
 	de: {
 		'app.title': 'MCU-Zeitleiste',
 		'app.tagline': 'Erkunde das Marvel Cinematic Universe in der richtigen Reihenfolge',
-		'sort.chronological': 'Chronologisch',
+		'sort.chronological': 'Story-Reihenfolge',
 		'sort.release': 'Veröffentlichung',
 		'sort.label': 'Sortieren nach',
 		'theme.toggle': 'Design wechseln',
@@ -63,7 +63,7 @@ export const messages = {
 		'detail.episodes': 'Episoden',
 		'detail.season': 'Staffel',
 		'empty.title': 'Noch nichts vorhanden',
-		'empty.body': 'Die Zeitleisten-Daten werden gerade zusammengestellt.',
+		'empty.body': 'Versuche, deine Filter anzupassen.',
 		'timeline.end': 'Fortsetzung folgt …'
 	}
 } as const;

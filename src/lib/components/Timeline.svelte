@@ -48,7 +48,7 @@
 		{@const sagaId = sagaOf(band.phase)}
 		{@const saga = SAGAS[sagaId]}
 		{@const sagaName = saga[$locale]}
-		<section class={grouped ? 'pt-12 first:pt-0 lg:pt-16' : ''}>
+		<section id={grouped ? `phase-${band.phase}` : undefined} class={grouped ? 'scroll-mt-24 pt-12 first:pt-0 lg:pt-16' : ''}>
 			{#if grouped}
 				{#if isFirstOfSaga(band, bandIdx)}
 					<SagaHeader name={sagaName} phases={saga.phases} />

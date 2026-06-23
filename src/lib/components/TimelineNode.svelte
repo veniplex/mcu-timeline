@@ -92,8 +92,8 @@
 		>
 			{#if item.year}<span>{item.year}</span>{/if}
 			{#if item.isSeries}
-				<span class="inline-flex items-center gap-1">
-					<Tv class="size-3.5" />
+				<span class="inline-flex shrink-0 items-center gap-1 whitespace-nowrap">
+					<Tv class="size-3.5 shrink-0" />
 					{#if seasonLabel}<span>{seasonLabel}</span>{/if}
 					<span>{item.episodeCount} ep</span>
 				</span>
