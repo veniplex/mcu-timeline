@@ -56,12 +56,12 @@
 </script>
 
 <div
-	class="group relative flex h-32 w-full cursor-pointer overflow-hidden rounded-xl border text-left transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--card-hover-bg)] sm:h-40 lg:h-52 {isWatched
+	class="group relative flex h-40 w-full cursor-pointer overflow-hidden rounded-xl border text-left transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--card-hover-bg)] sm:h-52 lg:h-64 {isWatched
 		? 'border-accent/50'
 		: 'border-border'}"
 	style="
-		--card-bg: color-mix(in srgb, {isWatched ? 'var(--color-accent)' : color} 6%, var(--color-surface));
-		--card-hover-bg: color-mix(in srgb, {isWatched ? 'var(--color-accent)' : color} 12%, var(--color-surface));
+		--card-bg: color-mix(in srgb, {isWatched ? 'var(--color-accent)' : color} 10%, var(--color-surface));
+		--card-hover-bg: color-mix(in srgb, {isWatched ? 'var(--color-accent)' : color} 18%, var(--color-surface));
 		background-color: var(--card-bg);
 	"
 	role="button"
@@ -120,6 +120,10 @@
 					</span>
 				{/if}
 			</div>
+		{/if}
+
+		{#if item.overview}
+			<p class="mt-1 line-clamp-3 text-xs leading-snug text-muted-foreground max-lg:hidden">{item.overview}</p>
 		{/if}
 
 		{#if item.eraTag}

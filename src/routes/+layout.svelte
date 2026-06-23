@@ -4,9 +4,11 @@
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import Nav from '$lib/components/Nav.svelte';
+	import { initUserPrefs } from '$lib/stores/userPrefs';
 
 	injectAnalytics();
 	injectSpeedInsights();
+	initUserPrefs();
 
 	let { children } = $props();
 </script>

@@ -82,7 +82,7 @@
 {/if}
 
 <!-- Filter row -->
-<div class="mb-4 mt-6 flex flex-wrap items-center gap-3">
+<div class="mb-6 mt-8 flex flex-wrap items-center justify-center gap-3">
 	<!-- Sort -->
 	<div
 		class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm"
@@ -146,15 +146,15 @@
 
 <!-- Phase navigation tab bar — only in story order mode -->
 {#if $sortMode === 'chronological'}
-	<div class="mb-8 overflow-hidden rounded-2xl border border-border bg-surface">
+	<div class="mb-12 overflow-hidden rounded-2xl border border-border bg-surface">
 		<div class="grid grid-cols-2 divide-x divide-border">
 			{#each Object.entries(SAGAS) as [sagaId, saga]}
 				<div>
 					<div
-						class="border-b border-border px-4 py-2"
+						class="border-b border-border px-4 py-2.5 text-center"
 						style="background-color: color-mix(in srgb, {saga.color} 8%, var(--color-surface))"
 					>
-						<span class="text-xs font-semibold tracking-wide" style="font-family: var(--font-display); color: {saga.color}">{saga[$locale]}</span>
+						<span class="text-sm font-semibold tracking-wide" style="font-family: var(--font-display); color: {saga.color}">{saga[$locale]}</span>
 					</div>
 					<div class="flex gap-1 p-2">
 						{#each saga.phases as phase}
@@ -163,7 +163,6 @@
 								style="color: {PHASE_COLORS[phase]}"
 								onclick={() => jumpToPhase(phase)}
 							>
-								<span class="hidden size-1.5 shrink-0 rounded-full sm:inline-block" style="background-color: {PHASE_COLORS[phase]}"></span>
 								<span class="hidden sm:inline">{$t('phase.label')} {phase}</span>
 								<span class="sm:hidden">{phase}</span>
 							</button>

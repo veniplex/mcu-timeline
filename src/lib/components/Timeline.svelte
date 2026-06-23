@@ -33,23 +33,23 @@
 	}
 </script>
 
-<div class="relative mx-auto mt-8 max-w-5xl pb-4">
+<div class="relative mt-8 pb-4">
 	<!-- One continuous spine behind everything -->
 	<div
-		class="absolute bottom-0 left-5 w-0.5 -translate-x-1/2 md:left-1/2 {grouped ? 'top-20' : 'top-2'}"
+		class="absolute bottom-0 left-5 w-px -translate-x-1/2 md:left-1/2 md:w-0.5 {grouped ? 'top-20' : 'top-2'}"
 		style={grouped
-			? `background: linear-gradient(to bottom, ${PHASE_COLORS[1]}50, ${PHASE_COLORS[2]}50, ${PHASE_COLORS[3]}50, ${PHASE_COLORS[4]}50, ${PHASE_COLORS[5]}50, ${PHASE_COLORS[6]}50)`
+			? `background: linear-gradient(to bottom, ${PHASE_COLORS[1]}99, ${PHASE_COLORS[2]}99, ${PHASE_COLORS[3]}99, ${PHASE_COLORS[4]}99, ${PHASE_COLORS[5]}99, ${PHASE_COLORS[6]}99)`
 			: 'background-color: var(--color-border)'}
 		aria-hidden="true"
 	></div>
 
 	{#each bands as band, bandIdx (band.phase + '-' + band.items[0]?.key)}
 		{@const p = progress(band.items)}
-		{@const color = grouped ? PHASE_COLORS[band.phase] : 'var(--color-primary)'}
+		{@const color = grouped ? PHASE_COLORS[band.phase] : 'var(--color-muted-foreground)'}
 		{@const sagaId = sagaOf(band.phase)}
 		{@const saga = SAGAS[sagaId]}
 		{@const sagaName = saga[$locale]}
-		<section id={grouped ? `phase-${band.phase}` : undefined} class={grouped ? 'scroll-mt-24 pt-12 first:pt-0 lg:pt-16' : ''}>
+		<section id={grouped ? `phase-${band.phase}` : undefined} class={grouped ? 'scroll-mt-24 pt-16 first:pt-0 lg:pt-24' : ''}>
 			{#if grouped}
 				{#if isFirstOfSaga(band, bandIdx)}
 					<SagaHeader name={sagaName} phases={saga.phases} color={saga.color} />
@@ -65,7 +65,7 @@
 				/>
 			{/if}
 
-			<ol class="space-y-6 lg:space-y-8 {grouped ? 'pt-12 lg:pt-16' : 'pt-2'}">
+			<ol class="space-y-8 lg:space-y-12 {grouped ? 'pt-14 lg:pt-20' : 'pt-2'}">
 				{#each band.items as item, i (item.key)}
 					{#if !grouped && item.year !== band.items[i - 1]?.year}
 						<!-- year marker on the spine (release view) -->
@@ -89,11 +89,11 @@
 							aria-hidden="true"
 						></span>
 						<div
-							class="flex pl-12 md:px-10 {i % 2 === 0
-								? 'md:col-start-1 md:justify-end'
-								: 'md:col-start-2 md:justify-start'}"
+							class="flex pl-12 {i % 2 === 0
+								? 'md:col-start-1 md:pl-0 md:pr-10 lg:pr-14'
+								: 'md:col-start-2 md:pl-10 lg:pl-14 md:pr-0'}"
 						>
-							<div class="w-full max-w-sm lg:max-w-md">
+							<div class="w-full">
 								<TimelineNode {item} {color} onopen={(it) => (active = it)} />
 							</div>
 						</div>

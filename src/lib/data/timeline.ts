@@ -90,15 +90,7 @@ function mergeSeriesSeasons(a: TimelineItem, b: TimelineItem): TimelineItem {
 
 const orderOf = new Map(chronology.map((e) => [e.id, e.order]));
 
-/** Sort a single phase's items by the active mode, merging release-view seasons. */
-function orderPhaseItems(items: TimelineItem[], sort: SortMode): TimelineItem[] {
-	if (sort === 'chronological') {
-		return [...items].sort(
-			(a, b) => orderOf.get(a.entryIds[0])! - orderOf.get(b.entryIds[0])!
-		);
-	}
-	const sorted = [...items].sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
-	// Merge adjacent same-series seasons (nothing else released between them).
+function mergeAdjacent(sorted: TimelineItem[]): TimelineItem[] {
 	const merged: TimelineItem[] = [];
 	for (const item of sorted) {
 		const prev = merged[merged.length - 1];
@@ -109,6 +101,18 @@ function orderPhaseItems(items: TimelineItem[], sort: SortMode): TimelineItem[] 
 		}
 	}
 	return merged;
+}
+
+/** Sort a single phase's items by the active mode, merging adjacent seasons. */
+function orderPhaseItems(items: TimelineItem[], sort: SortMode): TimelineItem[] {
+	if (sort === 'chronological') {
+		const sorted = [...items].sort(
+			(a, b) => orderOf.get(a.entryIds[0])! - orderOf.get(b.entryIds[0])!
+		);
+		return mergeAdjacent(sorted);
+	}
+	const sorted = [...items].sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
+	return mergeAdjacent(sorted);
 }
 
 /**
