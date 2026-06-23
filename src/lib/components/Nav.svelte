@@ -24,7 +24,7 @@
 			{#each LOCALES as l (l)}
 				<button
 					class="rounded-full px-2.5 py-1.5 uppercase transition-colors {$locale === l
-						? 'bg-accent text-on-accent'
+						? 'bg-primary text-on-primary'
 						: 'text-muted-foreground hover:text-foreground'}"
 					aria-pressed={$locale === l}
 					onclick={() => locale.set(l)}

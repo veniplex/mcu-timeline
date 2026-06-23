@@ -1,15 +1,16 @@
 <script lang="ts">
-	import { isFullyWatched, type PhaseBand, type TimelineItem } from '$lib/data/timeline';
-	import { PHASE_LABELS, PHASE_COLORS } from '$lib/data/types';
+	import { isFullyWatched, sagaOf, type PhaseBand, type TimelineItem } from '$lib/data/timeline';
+	import { PHASE_COLORS, SAGAS } from '$lib/data/types';
 	import TimelineNode from './TimelineNode.svelte';
 	import PhaseHeader from './PhaseHeader.svelte';
+	import SagaHeader from './SagaHeader.svelte';
 	import EntryDetail from './EntryDetail.svelte';
 	import { watched } from '$lib/stores/watched';
 	import { firebaseEnabled } from '$lib/firebase';
 	import { auth } from '$lib/stores/auth';
 	import { locale } from '$lib/stores/locale';
 	import { sortMode } from '$lib/stores/sortMode';
-	import { t } from '$lib/i18n/messages';
+	import { reveal } from '$lib/actions/reveal';
 
 	let { bands }: { bands: PhaseBand[] } = $props();
 	let active = $state<TimelineItem | null>(null);
@@ -23,11 +24,17 @@
 		const total = items.length;
 		return { done, total, pct: total ? (done / total) * 100 : 0 };
 	}
+
+	/** True when this band is the first phase of its saga in the current band list. */
+	function isFirstOfSaga(band: PhaseBand, index: number): boolean {
+		if (!grouped) return false;
+		const saga = sagaOf(band.phase);
+		return index === 0 || sagaOf(bands[index - 1].phase) !== saga;
+	}
 </script>
 
 <div class="relative mx-auto mt-8 max-w-5xl pb-4">
-	<!-- One continuous spine behind everything; starts inside the first
-	     milestone (hidden behind it) so no stub shows above the first label -->
+	<!-- One continuous spine behind everything -->
 	<div
 		class="absolute bottom-0 left-5 w-0.5 -translate-x-1/2 bg-border md:left-1/2 {grouped
 			? 'top-20'
@@ -35,14 +42,20 @@
 		aria-hidden="true"
 	></div>
 
-	{#each bands as band (band.phase + '-' + band.items[0]?.key)}
+	{#each bands as band, bandIdx (band.phase + '-' + band.items[0]?.key)}
 		{@const p = progress(band.items)}
 		{@const color = grouped ? PHASE_COLORS[band.phase] : 'var(--color-primary)'}
+		{@const sagaId = sagaOf(band.phase)}
+		{@const saga = SAGAS[sagaId]}
+		{@const sagaName = saga[$locale]}
 		<section class={grouped ? 'pt-12 first:pt-0 lg:pt-16' : ''}>
 			{#if grouped}
+				{#if isFirstOfSaga(band, bandIdx)}
+					<SagaHeader name={sagaName} phases={saga.phases} />
+				{/if}
 				<PhaseHeader
 					phase={band.phase}
-					label={PHASE_LABELS[band.phase][$locale]}
+					{sagaName}
 					{color}
 					{showProgress}
 					done={p.done}
@@ -63,7 +76,10 @@
 							</span>
 						</li>
 					{/if}
-					<li class="relative grid grid-cols-1 md:grid-cols-2">
+					<li
+						class="relative grid grid-cols-1 md:grid-cols-2"
+						use:reveal={{ from: i % 2 === 0 ? 'left' : 'right', delay: Math.min(i, 4) * 40 }}
+					>
 						<span
 							class="absolute left-5 top-1/2 z-10 size-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 md:left-1/2 lg:size-4"
 							style="border-color: {color}; background-color: {isItemWatched(item)
@@ -89,7 +105,7 @@
 	<!-- End marker -->
 	<div class="relative flex justify-center pt-14 lg:pt-20">
 		<div class="relative z-10 rounded-2xl border border-dashed border-border bg-surface px-6 py-4 text-center">
-			<span class="text-sm font-semibold text-muted-foreground">{$t('timeline.end')}</span>
+			<span class="text-sm font-semibold text-muted-foreground">To be continued…</span>
 		</div>
 	</div>
 </div>

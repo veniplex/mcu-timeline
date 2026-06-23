@@ -24,7 +24,7 @@
 				items: band.items.filter((item) => {
 					if (mediaFilter === 'films' && item.isSeries) return false;
 					if (mediaFilter === 'series' && !item.isSeries) return false;
-					if (hideWatched && signedIn && item.entryIds.every((id) => $watched.has(id)))
+					if (hideWatched && signedIn && isFullyWatched(item, $watched))
 						return false;
 					return true;
 				})

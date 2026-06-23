@@ -11,14 +11,17 @@ export const PHASE_COLORS: Record<Phase, string> = {
 	6: '#4ade80' // green
 };
 
-export const PHASE_LABELS: Record<Phase, { en: string; de: string }> = {
-	1: { en: 'Phase One', de: 'Phase Eins' },
-	2: { en: 'Phase Two', de: 'Phase Zwei' },
-	3: { en: 'Phase Three', de: 'Phase Drei' },
-	4: { en: 'Phase Four', de: 'Phase Vier' },
-	5: { en: 'Phase Five', de: 'Phase Fünf' },
-	6: { en: 'Phase Six', de: 'Phase Sechs' }
+export type SagaId = 1 | 2;
+
+export const SAGAS: Record<SagaId, { en: string; de: string; phases: Phase[] }> = {
+	1: { en: 'The Infinity Saga', de: 'Die Infinity-Saga', phases: [1, 2, 3] },
+	2: { en: 'The Multiverse Saga', de: 'Die Multiversum-Saga', phases: [4, 5, 6] }
 };
+
+/** Returns which saga a phase belongs to. */
+export function sagaOf(phase: Phase): SagaId {
+	return phase <= 3 ? 1 : 2;
+}
 
 export type EntryKind = 'movie' | 'series-block' | 'episode-range' | 'episode';
 
@@ -46,6 +49,12 @@ export interface ChronologyEntry {
 	/** Provenance of the ordering: official timeline vs fan consensus. */
 	source: string;
 	notes?: string;
+}
+
+/** IMDB + Rotten Tomatoes rating snapshot (populated by scripts/fetch-ratings.ts). */
+export interface Ratings {
+	imdb?: string; // e.g. "7.4"
+	rt?: string; // e.g. "78" (percentage, without %)
 }
 
 /** Localized display payload, produced by the build script per entry id. */

@@ -1,9 +1,14 @@
 import { chronology } from './chronology';
-import type { CatalogItem, Phase } from './types';
+import type { CatalogItem, Phase, Ratings } from './types';
 import catalogEn from './catalog.en.json';
 import catalogDe from './catalog.de.json';
+import ratingsData from './ratings.json';
 import type { Locale } from '$lib/stores/locale';
 import type { SortMode } from '$lib/stores/sortMode';
+
+export { sagaOf } from './types';
+
+const ratings = ratingsData as Record<string, Ratings>;
 
 const catalogs: Record<Locale, Record<string, CatalogItem>> = {
 	en: catalogEn as Record<string, CatalogItem>,
@@ -31,6 +36,7 @@ export interface TimelineItem {
 	seasons: number[];
 	episodes: { season: number; number: number; title: string; airDate: string | null }[];
 	episodeCount: number;
+	ratings?: Ratings;
 }
 
 export interface PhaseBand {
@@ -65,7 +71,8 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 		eraTag: entry.eraTag,
 		seasons: item.season != null ? [item.season] : [],
 		episodes: item.episodes ?? [],
-		episodeCount: item.episodes?.length ?? 0
+		episodeCount: item.episodes?.length ?? 0,
+		ratings: ratings[entry.id]
 	};
 }
 

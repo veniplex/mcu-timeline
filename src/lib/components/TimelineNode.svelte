@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Check, Film, Tv, Clock } from 'lucide-svelte';
+	import { Check, Film, Tv, Clock, Star } from 'lucide-svelte';
 	import { posterUrl } from '$lib/tmdb';
 	import {
 		isFullyWatched,
@@ -24,9 +24,20 @@
 	const isPartial = $derived(done > 0 && !isWatched);
 	const canTrack = $derived(firebaseEnabled && !!$auth.user);
 	const poster = $derived(posterUrl(item.poster, 'w342'));
-	const showRing = $derived(item.isSeries && total > 1);
 
-	// ring geometry
+	// Show the arc-progress ring only when there is partial or full progress on a series
+	const showRing = $derived(item.isSeries && total > 1 && done > 0);
+
+	// Season label: "S1", "S1–3", etc.
+	const seasonLabel = $derived.by(() => {
+		if (!item.isSeries || item.seasons.length === 0) return null;
+		if (item.seasons.length === 1) return `S${item.seasons[0]}`;
+		const min = Math.min(...item.seasons);
+		const max = Math.max(...item.seasons);
+		return `S${min}–${max}`;
+	});
+
+	// Ring geometry
 	const R = 9;
 	const C = 2 * Math.PI * R;
 	const dashoffset = $derived(C * (1 - (total ? done / total : 0)));
@@ -45,10 +56,14 @@
 </script>
 
 <div
-	class="group relative flex h-28 w-full cursor-pointer overflow-hidden rounded-xl border bg-surface text-left shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg sm:h-32 lg:h-40 {isWatched
-		? 'border-accent'
+	class="group relative flex h-28 w-full cursor-pointer overflow-hidden rounded-xl border text-left transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--card-hover-bg)] sm:h-32 lg:h-40 {isWatched
+		? 'border-accent/50'
 		: 'border-border'}"
-	style="border-left: 4px solid {isWatched ? 'var(--color-accent)' : color}"
+	style="
+		--card-bg: color-mix(in srgb, {isWatched ? 'var(--color-accent)' : color} 6%, var(--color-surface));
+		--card-hover-bg: color-mix(in srgb, {isWatched ? 'var(--color-accent)' : color} 12%, var(--color-surface));
+		background-color: var(--card-bg);
+	"
 	role="button"
 	tabindex="0"
 	aria-label={item.title}
@@ -77,24 +92,35 @@
 		>
 			{#if item.year}<span>{item.year}</span>{/if}
 			{#if item.isSeries}
-				<span class="inline-flex items-center gap-1"
-					><Tv class="size-3.5" />{item.episodeCount} ep</span
-				>
+				<span class="inline-flex items-center gap-1">
+					<Tv class="size-3.5" />
+					{#if seasonLabel}<span>{seasonLabel}</span>{/if}
+					<span>{item.episodeCount} ep</span>
+				</span>
 			{:else if item.runtime}
-				<span class="inline-flex items-center gap-1"
-					><Clock class="size-3.5" />{item.runtime}m</span
-				>
+				<span class="inline-flex items-center gap-1">
+					<Clock class="size-3.5" />{item.runtime}m
+				</span>
 			{/if}
 		</div>
+
+		<!-- IMDB rating badge -->
+		{#if item.ratings?.imdb}
+			<div class="mt-0.5 flex items-center gap-1 text-xs text-muted-foreground">
+				<Star class="size-3 fill-[#f5c518] text-[#f5c518]" aria-hidden="true" />
+				<span class="tabular-nums font-medium">{item.ratings.imdb}</span>
+			</div>
+		{/if}
+
 		{#if item.eraTag}
-			<span class="mt-auto w-fit rounded bg-muted px-1.5 py-0.5 text-xs text-muted-foreground"
-				>{item.eraTag}</span
-			>
+			<span class="mt-auto w-fit rounded bg-muted px-1.5 py-0.5 text-xs text-muted-foreground">
+				{item.eraTag}
+			</span>
 		{/if}
 
 		{#if canTrack}
 			{#if showRing}
-				<!-- series: ring fills with episodes watched; click toggles all -->
+				<!-- Series with progress: arc ring fills with episodes watched -->
 				<button
 					class="absolute bottom-2 right-2 grid size-8 place-items-center rounded-full bg-surface/90 lg:size-9"
 					aria-pressed={isWatched}
@@ -114,6 +140,7 @@
 							stroke-linecap="round"
 							stroke-dasharray={C}
 							stroke-dashoffset={dashoffset}
+							style="transition: stroke-dashoffset 400ms cubic-bezier(0.22, 1, 0.36, 1)"
 						/>
 					</svg>
 					{#if isWatched}
@@ -121,7 +148,7 @@
 					{/if}
 				</button>
 			{:else}
-				<!-- movie / single: plain check toggle -->
+				<!-- Movie or series with no progress: plain check toggle (consistent) -->
 				<button
 					class="absolute bottom-2 right-2 grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
 						? 'border-accent bg-accent text-on-accent'

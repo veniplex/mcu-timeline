@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-23T00:00:00Z",
+  "title": "Design System: MCU Timeline",
+  "extensions": {
+    "colorMeta": {
+      "crimson-primary": {
+        "role": "primary",
+        "displayName": "Void Crimson",
+        "canonical": "#b11313",
+        "tonalRamp": ["#3a0404", "#5c0909", "#7f0e0e", "#a11111", "#b11313", "#c93333", "#db6060", "#f0a0a0"]
+      },
+      "gold-accent": {
+        "role": "secondary",
+        "displayName": "Antique Gold",
+        "canonical": "#b8860b",
+        "tonalRamp": ["#3b2a02", "#5e4304", "#8a6208", "#b8860b", "#d4a020", "#e8c050", "#f0d88a", "#f8efc8"]
+      },
+      "void-background": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "#0f172a",
+        "tonalRamp": ["#050810", "#0a1020", "#0f172a", "#1a2340", "#243054", "#3a4a6a", "#607090", "#a0b0c8"]
+      },
+      "phase-1-sapphire": {
+        "role": "phase",
+        "displayName": "Phase I Sapphire",
+        "canonical": "#5b9dff",
+        "tonalRamp": ["#0a1f40", "#102e60", "#1a4080", "#2a5aaa", "#3d7ad0", "#5b9dff", "#8fbeff", "#c0d8ff"]
+      },
+      "phase-2-teal": {
+        "role": "phase",
+        "displayName": "Phase II Teal",
+        "canonical": "#1fb8a6",
+        "tonalRamp": ["#053028", "#0a4840", "#0f6258", "#159080", "#1fb8a6", "#3cd4c2", "#70e4d8", "#aaf0ec"]
+      },
+      "phase-3-violet": {
+        "role": "phase",
+        "displayName": "Phase III Violet",
+        "canonical": "#a673ff",
+        "tonalRamp": ["#1a0838", "#2e1060", "#4820a0", "#6840d0", "#8a5af0", "#a673ff", "#c09cff", "#dcc8ff"]
+      },
+      "phase-4-rose": {
+        "role": "phase",
+        "displayName": "Phase IV Rose",
+        "canonical": "#ff5e8a",
+        "tonalRamp": ["#3a0818", "#5e1028", "#881840", "#b82050", "#e03868", "#ff5e8a", "#ff90b0", "#ffc0d4"]
+      },
+      "phase-5-amber": {
+        "role": "phase",
+        "displayName": "Phase V Amber",
+        "canonical": "#f5a524",
+        "tonalRamp": ["#3a2004", "#5e3808", "#8a5210", "#c07a14", "#e09018", "#f5a524", "#f8c060", "#fcdea0"]
+      },
+      "phase-6-emerald": {
+        "role": "phase",
+        "displayName": "Phase VI Emerald",
+        "canonical": "#4ade80",
+        "tonalRamp": ["#052815", "#0a4028", "#106038", "#1a8850", "#2cb568", "#4ade80", "#80eaa8", "#b8f8d0"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Phase milestone headers, page title." },
+      "headline": { "displayName": "Headline", "purpose": "Modal titles, section headers." },
+      "title": { "displayName": "Title", "purpose": "Card titles, season headers." },
+      "body": { "displayName": "Body", "purpose": "Overviews, descriptions. Max 65ch." },
+      "label": { "displayName": "Label", "purpose": "Phase badges, metadata, year pills. Tabular nums." }
+    },
+    "shadows": [
+      { "name": "surface-containment", "value": "none (border only)", "purpose": "Cards and modals use border for containment, not box-shadow. Flat by default." },
+      { "name": "year-pill", "value": "0 4px 12px rgba(0,0,0,0.12)", "purpose": "Year markers on the timeline spine in release-date view." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default easing for color/bg transitions (300ms)." },
+      { "name": "ease-morph", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Phase header full→pill morph (250ms)." },
+      { "name": "ease-ring", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Progress ring stroke-dashoffset animation (300ms)." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA. Used for 'Sign in', primary modal actions.",
+      "html": "<button class=\"ds-btn-primary\">Mark as watched</button>",
+      "css": ".ds-btn-primary { background: #b11313; color: #ffffff; padding: 8px 20px; border-radius: 9999px; border: none; font-size: 14px; font-weight: 500; font-family: Inter, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background 0.2s cubic-bezier(0.4,0,0.2,1); line-height: 1.4; display: inline-flex; align-items: center; gap: 8px; } .ds-btn-primary:hover { background: #a01010; } .ds-btn-primary:focus-visible { outline: 2px solid #b11313; outline-offset: 2px; }"
+    },
+    {
+      "name": "Watched Button (active)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary button in 'watched' / active state. Uses gold accent.",
+      "html": "<button class=\"ds-btn-watched\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"></polyline></svg>Watched</button>",
+      "css": ".ds-btn-watched { background: #b8860b; color: #ffffff; padding: 8px 20px; border-radius: 9999px; border: none; font-size: 14px; font-weight: 500; font-family: Inter, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background 0.2s cubic-bezier(0.4,0,0.2,1); line-height: 1.4; display: inline-flex; align-items: center; gap: 8px; } .ds-btn-watched:hover { background: #a07508; } .ds-btn-watched:focus-visible { outline: 2px solid #b8860b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Chip (Segment Toggle)",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Sort / media filter toggle segments inside a pill container.",
+      "html": "<div class=\"ds-chip-group\"><button class=\"ds-chip ds-chip-active\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"3\"></circle><circle cx=\"12\" cy=\"12\" r=\"9\"></circle></svg>All</button><button class=\"ds-chip\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"2\"></rect></svg>Films</button><button class=\"ds-chip\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"15\" rx=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline></svg>Series</button></div>",
+      "css": ".ds-chip-group { display: inline-flex; align-items: center; border: 1px solid rgba(15,23,42,0.12); border-radius: 9999px; padding: 2px; background: #ffffff; font-family: Inter, ui-sans-serif, system-ui, sans-serif; } .ds-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 9999px; border: none; background: transparent; color: #4b5563; font-size: 14px; font-weight: 400; cursor: pointer; transition: background 0.2s, color 0.2s; } .ds-chip:hover { color: #0f172a; } .ds-chip.ds-chip-active { background: #b11313; color: #ffffff; font-weight: 500; }"
+    },
+    {
+      "name": "Timeline Card",
+      "kind": "card",
+      "refersTo": "card-timeline-node",
+      "description": "Core timeline unit. Fixed height, left phase-accent border, poster thumbnail.",
+      "html": "<div class=\"ds-card\" style=\"--phase-color: #5b9dff;\"><div class=\"ds-card-poster\"><div class=\"ds-card-poster-bg\"></div></div><div class=\"ds-card-body\"><p class=\"ds-card-label\">Phase 1</p><h3 class=\"ds-card-title\">Iron Man</h3><p class=\"ds-card-meta\">2008 · 126m</p></div><div class=\"ds-card-check\"><svg class=\"ds-card-check-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"14\" height=\"14\"><polyline points=\"20 6 9 17 4 12\"></polyline></svg></div></div>",
+      "css": ".ds-card { position: relative; display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid rgba(15,23,42,0.12); border-radius: 16px; padding: 16px; height: 112px; overflow: hidden; cursor: pointer; transition: background 0.2s; border-left: 3px solid var(--phase-color, #5b9dff); font-family: Inter, ui-sans-serif, system-ui, sans-serif; } .ds-card:hover { background: #f0f0f8; } .ds-card-poster { width: 60px; height: 80px; border-radius: 8px; overflow: hidden; flex-shrink: 0; background: #e9e9f1; } .ds-card-poster-bg { width: 100%; height: 100%; background: linear-gradient(135deg, #e9e9f1 0%, #d0d0e0 100%); } .ds-card-body { flex: 1; min-width: 0; } .ds-card-label { font-size: 10px; font-weight: 500; color: #9aa3b2; letter-spacing: 0.01em; margin: 0 0 2px; } .ds-card-title { font-size: 14px; font-weight: 600; color: #0f172a; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-card-meta { font-size: 12px; color: #4b5563; margin: 0; font-variant-numeric: tabular-nums; } .ds-card-check { position: absolute; bottom: 12px; right: 12px; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid rgba(15,23,42,0.12); display: grid; place-items: center; color: transparent; } .ds-card-check-icon { display: block; }"
+    },
+    {
+      "name": "Phase Milestone Header",
+      "kind": "custom",
+      "refersTo": "phase-header-full",
+      "description": "Sticky phase header — full card → slim pill morph on scroll.",
+      "html": "<div class=\"ds-phase-header\" style=\"--phase-color: #a673ff;\"><div class=\"ds-phase-header-content\"><div class=\"ds-phase-header-num\">Phase 3</div><div class=\"ds-phase-header-title\">The Infinity Saga</div></div></div>",
+      "css": ".ds-phase-header { width: min(22rem, 90%); margin: 0 auto; background: #ffffff; border: 1px solid rgba(15,23,42,0.12); border-top: 4px solid var(--phase-color, #a673ff); border-radius: 20px; padding: 20px 24px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; } .ds-phase-header-content { display: flex; align-items: baseline; gap: 12px; } .ds-phase-header-num { font-size: 12px; font-weight: 600; color: var(--phase-color, #a673ff); letter-spacing: 0.02em; } .ds-phase-header-title { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 700; color: #0f172a; letter-spacing: -0.01em; line-height: 1.2; }"
+    },
+    {
+      "name": "Year Spine Pill",
+      "kind": "custom",
+      "refersTo": "chip-filter",
+      "description": "Year marker on the timeline spine in release-date view.",
+      "html": "<span class=\"ds-year-pill\">2012</span>",
+      "css": ".ds-year-pill { display: inline-block; padding: 4px 12px; border: 1px solid rgba(15,23,42,0.12); border-radius: 9999px; background: #ffffff; font-size: 14px; font-weight: 700; color: #0f172a; font-variant-numeric: tabular-nums; box-shadow: 0 4px 12px rgba(0,0,0,0.12); font-family: Inter, ui-sans-serif, system-ui, sans-serif; position: relative; z-index: 10; }"
+    },
+    {
+      "name": "Episode Row",
+      "kind": "custom",
+      "refersTo": "card-timeline-node",
+      "description": "Single episode row inside the detail modal season list.",
+      "html": "<li class=\"ds-ep-row\"><button class=\"ds-ep-check\" aria-pressed=\"false\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"><polyline points=\"20 6 9 17 4 12\"></polyline></svg></button><span class=\"ds-ep-num\">1.</span><span class=\"ds-ep-title\">Glorious Purpose</span><span class=\"ds-ep-date\">2021-06-09</span><a class=\"ds-ep-tmdb\" href=\"#\" target=\"_blank\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"></path><polyline points=\"15 3 21 3 21 9\"></polyline><line x1=\"10\" y1=\"14\" x2=\"21\" y2=\"3\"></line></svg></a></li>",
+      "css": ".ds-ep-row { display: flex; align-items: center; gap: 10px; padding: 8px 12px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 14px; border-bottom: 1px solid rgba(15,23,42,0.08); } .ds-ep-row:last-child { border-bottom: none; } .ds-ep-check { width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid rgba(15,23,42,0.2); background: transparent; display: grid; place-items: center; cursor: pointer; color: transparent; flex-shrink: 0; transition: background 0.15s, border-color 0.15s, color 0.15s; } .ds-ep-check[aria-pressed=\"true\"] { background: #b8860b; border-color: #b8860b; color: #ffffff; } .ds-ep-check:hover { border-color: #b8860b; } .ds-ep-num { color: #4b5563; width: 20px; flex-shrink: 0; font-variant-numeric: tabular-nums; } .ds-ep-title { flex: 1; min-width: 0; color: #0f172a; } .ds-ep-date { color: #9aa3b2; font-size: 12px; font-variant-numeric: tabular-nums; flex-shrink: 0; } .ds-ep-tmdb { color: #9aa3b2; flex-shrink: 0; display: grid; place-items: center; } .ds-ep-tmdb:hover { color: #b8860b; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Cinematic Universe",
+    "overview": "A living map of an expanding universe — each phase a new era, each title a coordinate in something vast. The design doesn't perform importance; it reflects it. Deep-space backgrounds in dark mode. Crisp, editorial clarity in light mode. Phase colors are the primary identity device: six eras, six distinct palettes, each carrying the emotional register of what Marvel built in that chapter.\n\nThe system is cinematic and restrained. Components earn their place by staying quiet so content leads. The crimson primary and gold accent are Marvel's own colors — authoritative, used sparingly. Phase milestone headers are the loudest element on the page; everything else recedes.\n\nThis system explicitly rejects generic SaaS grey and fan-wiki information overload. No muted neutrals-for-safety, no navbar-everything. Curated, designed, every pixel earns its place.",
+    "keyCharacteristics": [
+      "Phase identity colors are the primary brand differentiator — six distinct eras, each with a named hue",
+      "Dark mode is the cinematic default; light mode is editorial clarity",
+      "Tonal depth: surfaces layer from background → surface → raised — no drop shadows",
+      "Typography is single-family (Inter), differentiated by weight and size only",
+      "Poster art and backdrop images do the visual heavy lifting",
+      "The timeline spine is a structural element, not a decoration"
+    ],
+    "rules": [
+      { "name": "The Phase Color Rule", "body": "Phase accent colors are used exclusively for phase-related UI: milestone header borders, spine dots, card left-accent borders. Never repurposed for generic action states, links, or decorative fills.", "section": "colors" },
+      { "name": "The One Crimson Rule", "body": "Crimson primary appears on ≤15% of any given screen. It marks watched state, primary CTAs, and focus rings. Its rarity is what makes it register as significant.", "section": "colors" },
+      { "name": "The Weight Rule", "body": "Never use font-weight 300 (light). The floor is 400.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. The only elevation signal is background color. If an element needs to feel 'above' the page, its background changes — it does not gain a shadow.", "section": "elevation" },
+      { "name": "The Segment Pill Rule", "body": "Filter chips live inside a parent pill border. They never have individual borders; containment comes from the parent only.", "section": "components" },
+      { "name": "The Milestone Rule", "body": "Phase headers are the only full-bleed-width conceptual break. Nothing else on the page anchors to center and grows to that width.", "section": "components" }
+    ],
+    "dos": [
+      "Do use phase accent colors only for phase-identity UI (header borders, spine dots, card left accents).",
+      "Do keep body text at minimum #4b5563 on white and #9aa3b2 on #14182b — verify ≥4.5:1 contrast.",
+      "Do let poster art carry the visual weight. Cards are display cases, not design features.",
+      "Do keep the timeline spine continuous and unbroken.",
+      "Do use tonal background shifts to signal hover and elevation — never shadows.",
+      "Do apply text-wrap: balance on milestone/display headings.",
+      "Do use tabular nums for all dates, runtimes, and progress counts.",
+      "Do respect prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't introduce grey-neutral backgrounds for safety. Void and Parchment are the only large-surface neutrals.",
+      "Don't turn this into a fan wiki by piling on metadata. Each card shows poster, title, phase accent, watched state at rest.",
+      "Don't use border-left greater than 1px as a colored accent anywhere except the card's phase accent (3px).",
+      "Don't use gradient text (background-clip: text).",
+      "Don't use glassmorphism as a default — backdrop-filter only on the sticky nav.",
+      "Don't add numbered section eyebrows or tiny all-caps tracked labels above headings.",
+      "Don't put phase accent colors on generic interactive states outside phase-themed components.",
+      "Don't use font-weight 300.",
+      "Don't animate layout properties. Transitions are color, background-color, opacity, transform only."
+    ]
+  }
+}
