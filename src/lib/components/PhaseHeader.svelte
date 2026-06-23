@@ -62,7 +62,7 @@
 				"
 			>
 				<span
-					class="block text-2xl sm:text-3xl lg:text-4xl"
+					class="block text-2xl sm:text-3xl lg:text-4xl text-wrap-balance"
 					style="font-family: var(--font-display); font-weight: 700; letter-spacing: -0.01em"
 				>
 					<span style="font-weight: 500; opacity: 0.75">{$t('phase.label')}</span>

@@ -90,7 +90,7 @@
 		aria-label={$t('sort.label')}
 	>
 		<button
-			class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {$sortMode ===
+			class="flex items-center gap-1.5 rounded-full px-3 py-2 transition-colors {$sortMode ===
 			'chronological'
 				? 'bg-primary text-on-primary'
 				: 'text-muted-foreground hover:text-foreground'}"
@@ -101,7 +101,7 @@
 			<span>{$t('sort.chronological')}</span>
 		</button>
 		<button
-			class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {$sortMode ===
+			class="flex items-center gap-1.5 rounded-full px-3 py-2 transition-colors {$sortMode ===
 			'release'
 				? 'bg-primary text-on-primary'
 				: 'text-muted-foreground hover:text-foreground'}"
@@ -117,7 +117,7 @@
 	<div class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm">
 		{#each filters as f (f.key)}
 			<button
-				class="flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors {mediaFilter ===
+				class="flex items-center gap-1.5 rounded-full px-3 py-2 transition-colors {mediaFilter ===
 				f.key
 					? 'bg-primary text-on-primary'
 					: 'text-muted-foreground hover:text-foreground'}"
@@ -132,7 +132,7 @@
 
 	{#if signedIn}
 		<button
-			class="flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition-colors {hideWatched
+			class="flex items-center gap-1.5 rounded-full border px-3 py-2 text-sm transition-colors {hideWatched
 				? 'border-accent bg-accent text-on-accent'
 				: 'border-border bg-surface text-muted-foreground hover:text-foreground'}"
 			aria-pressed={hideWatched}
@@ -154,17 +154,18 @@
 						class="border-b border-border px-4 py-2"
 						style="background-color: color-mix(in srgb, {saga.color} 8%, var(--color-surface))"
 					>
-						<span class="text-xs font-semibold" style="color: {saga.color}">{saga[$locale]}</span>
+						<span class="text-xs font-semibold tracking-wide" style="font-family: var(--font-display); color: {saga.color}">{saga[$locale]}</span>
 					</div>
 					<div class="flex gap-1 p-2">
 						{#each saga.phases as phase}
 							<button
-								class="flex flex-1 items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-semibold transition-colors hover:bg-muted"
+								class="flex flex-1 items-center justify-center gap-1.5 rounded-xl py-2 text-xs font-semibold transition-colors hover:bg-muted sm:text-sm"
 								style="color: {PHASE_COLORS[phase]}"
 								onclick={() => jumpToPhase(phase)}
 							>
-								<span class="size-1.5 shrink-0 rounded-full" style="background-color: {PHASE_COLORS[phase]}"></span>
-								<span>{$t('phase.label')} {phase}</span>
+								<span class="hidden size-1.5 shrink-0 rounded-full sm:inline-block" style="background-color: {PHASE_COLORS[phase]}"></span>
+								<span class="hidden sm:inline">{$t('phase.label')} {phase}</span>
+								<span class="sm:hidden">{phase}</span>
 							</button>
 						{/each}
 					</div>
@@ -190,7 +191,8 @@
 	<button
 		in:fly={{ y: 12, duration: 200 }}
 		out:fly={{ y: 12, duration: 150 }}
-		class="fixed bottom-6 right-6 z-40 grid size-11 place-items-center rounded-full border border-border bg-surface shadow-lg transition-colors hover:bg-muted"
+		class="fixed z-40 grid size-11 place-items-center rounded-full border border-border bg-surface shadow-lg transition-colors hover:bg-muted"
+		style="bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px)); right: calc(1.5rem + env(safe-area-inset-right, 0px))"
 		aria-label="Back to top"
 		onclick={backToTop}
 	>

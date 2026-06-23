@@ -155,7 +155,7 @@
               >{/if}
           </div>
 
-          <h2 class="text-2xl font-bold tracking-tight">{item.title}</h2>
+          <h2 class="text-2xl tracking-tight text-wrap-balance" style="font-family: var(--font-display); font-weight: 700">{item.title}</h2>
 
           <!-- Ratings row -->
           {#if item.ratings?.imdb || item.ratings?.rt}
