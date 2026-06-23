@@ -23,41 +23,49 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Das ist nicht das Ende",
         "airDate": "2015-01-06"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Brücke und Tunnel",
         "airDate": "2015-01-06"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Agent im Kreuzfeuer!",
         "airDate": "2015-01-13"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Brutstätte",
         "airDate": "2015-01-27"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Im Feindesland",
         "airDate": "2015-02-03"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Auf der Flucht",
         "airDate": "2015-02-10"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Kein guter Tag",
         "airDate": "2015-02-17"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Das ist erst der Anfang",
         "airDate": "2015-02-24"
@@ -77,51 +85,61 @@
     "season": 2,
     "episodes": [
       {
+        "season": 2,
         "number": 1,
         "title": "Die Dame im See",
         "airDate": "2016-01-19"
       },
       {
+        "season": 2,
         "number": 2,
         "title": "Nullmaterie",
         "airDate": "2016-01-19"
       },
       {
+        "season": 2,
         "number": 3,
         "title": "Der Arena Club",
         "airDate": "2016-01-26"
       },
       {
+        "season": 2,
         "number": 4,
         "title": "Was immer du willst",
         "airDate": "2016-02-02"
       },
       {
+        "season": 2,
         "number": 5,
         "title": "Ein explosiver Job",
         "airDate": "2016-02-09"
       },
       {
+        "season": 2,
         "number": 6,
         "title": "Der Feind muss helfen",
         "airDate": "2016-02-16"
       },
       {
+        "season": 2,
         "number": 7,
         "title": "Monster",
         "airDate": "2016-02-16"
       },
       {
+        "season": 2,
         "number": 8,
         "title": "Seitenwechsel",
         "airDate": "2016-02-23"
       },
       {
+        "season": 2,
         "number": 9,
         "title": "Schwere Entscheidungen",
         "airDate": "2016-02-23"
       },
       {
+        "season": 2,
         "number": 10,
         "title": "Der Riss in der Welt",
         "airDate": "2016-03-01"
@@ -240,111 +258,133 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Aus großer Kraft folgt...",
         "airDate": "2013-09-24"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "0–8–4",
         "airDate": "2013-10-01"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Anziehungskräfte",
         "airDate": "2013-10-08"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Augen-Blick",
         "airDate": "2013-10-15"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Die lebende Fackel",
         "airDate": "2013-10-22"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Tödliches Souvenir",
         "airDate": "2013-11-05"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Der Hub",
         "airDate": "2013-11-12"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Götterdämmerung",
         "airDate": "2013-11-19"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Der Geist in der Maschine",
         "airDate": "2013-11-26"
       },
       {
+        "season": 1,
         "number": 10,
         "title": "Der Wolf im Schafspelz",
         "airDate": "2013-12-10"
       },
       {
+        "season": 1,
         "number": 11,
         "title": "Die Auferstehung",
         "airDate": "2014-01-07"
       },
       {
+        "season": 1,
         "number": 12,
         "title": "Eiskalt",
         "airDate": "2014-01-14"
       },
       {
+        "season": 1,
         "number": 13,
         "title": "Zug um Zug",
         "airDate": "2014-02-04"
       },
       {
+        "season": 1,
         "number": 14,
         "title": "Tahiti",
         "airDate": "2014-03-04"
       },
       {
+        "season": 1,
         "number": 15,
         "title": "Widerstand ist zwecklos!",
         "airDate": "2014-03-11"
       },
       {
+        "season": 1,
         "number": 16,
         "title": "Die Köpfe der Hydra",
         "airDate": "2014-04-01"
       },
       {
+        "season": 1,
         "number": 17,
         "title": "Der Feind an unserer Seite",
         "airDate": "2014-04-08"
       },
       {
+        "season": 1,
         "number": 18,
         "title": "Das Odyssee-Protokoll",
         "airDate": "2014-04-15"
       },
       {
+        "season": 1,
         "number": 19,
         "title": "Die Stunde der Wahrheit",
         "airDate": "2014-04-22"
       },
       {
+        "season": 1,
         "number": 20,
         "title": "Die dunkelste Stunde",
         "airDate": "2014-04-29"
       },
       {
+        "season": 1,
         "number": 21,
         "title": "Krieg der HYDRA!",
         "airDate": "2014-05-06"
       },
       {
+        "season": 1,
         "number": 22,
         "title": "Der Anfang vom Ende",
         "airDate": "2014-05-13"
@@ -386,66 +426,79 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Im Ring",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Cutman",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Hase im Schneesturm",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Im Blut",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Eine Welt in Flammen",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Reingelegt",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Stick",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Schatten im Glas",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Wenn man vom Teufel spricht",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 10,
         "title": "Nelson und Murdock",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 11,
         "title": "Der rechte Pfad",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 12,
         "title": "Blut ist dicker",
         "airDate": "2015-04-10"
       },
       {
+        "season": 1,
         "number": 13,
         "title": "Daredevil",
         "airDate": "2015-04-10"
@@ -465,66 +518,79 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Ladies’ Night",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Crush-Syndrom",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Es heißt Whisky",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "99 Freunde",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Das Sandwich hat mich gerettet",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Du bist ein Gewinner!",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Die schlimmsten Perversen",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "W.W.J.D.",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Die Strafecke",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 10,
         "title": "1000 Schnitte",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 11,
         "title": "Die Blauen",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 12,
         "title": "Hinten anstellen",
         "airDate": "2015-11-20"
       },
       {
+        "season": 1,
         "number": 13,
         "title": "Lächeln",
         "airDate": "2015-11-20"
@@ -665,31 +731,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Glorreiches Ansinnen",
         "airDate": "2021-06-09"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Die Variante",
         "airDate": "2021-06-16"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Lamentis",
         "airDate": "2021-06-23"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Der Nexus-Vorfall",
         "airDate": "2021-06-30"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Reise ins Unbekannte",
         "airDate": "2021-07-07"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Für alle Zeit. Immer.",
         "airDate": "2021-07-14"
@@ -709,31 +781,37 @@
     "season": 2,
     "episodes": [
       {
+        "season": 2,
         "number": 1,
         "title": "Ouroboros",
         "airDate": "2023-10-05"
       },
       {
+        "season": 2,
         "number": 2,
         "title": "Breaking Brad",
         "airDate": "2023-10-12"
       },
       {
+        "season": 2,
         "number": 3,
         "title": "1893",
         "airDate": "2023-10-19"
       },
       {
+        "season": 2,
         "number": 4,
         "title": "Das Herz der TVA",
         "airDate": "2023-10-26"
       },
       {
+        "season": 2,
         "number": 5,
         "title": "Fakt und Fiktion",
         "airDate": "2023-11-02"
       },
       {
+        "season": 2,
         "number": 6,
         "title": "Glorreiches Ansinnen",
         "airDate": "2023-11-09"
@@ -753,46 +831,55 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Was wäre, wenn Captain Carter die Erste der Avengers geworden wäre?",
         "airDate": "2021-08-11"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Was wäre, wenn T'Challa zu Star Lord geworden wäre?",
         "airDate": "2021-08-18"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Was wäre, wenn die Welt ihre mächtigsten Helden verloren hätte?",
         "airDate": "2021-08-25"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Was wäre, wenn Doctor Strange statt seiner Hände sein Herz verloren hätte?",
         "airDate": "2021-09-01"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Was wäre, wenn ... Zombies?!",
         "airDate": "2021-09-08"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Was wäre, wenn Killmonger Tony Stark gerettet hätte?",
         "airDate": "2021-09-15"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Was wäre, wenn Thor ein Einzelkind gewesen wäre?",
         "airDate": "2021-09-22"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Was wäre, wenn Ultron gewonnen hätte?",
         "airDate": "2021-09-29"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Was wäre, wenn der Watcher seinen Schwur gebrochen hätte?",
         "airDate": "2021-10-06"
@@ -812,46 +899,55 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Mit einem Live-Publikum gefilmt",
         "airDate": "2021-01-15"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Nicht umschalten!",
         "airDate": "2021-01-15"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Jetzt in Farbe",
         "airDate": "2021-01-22"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Wir unterbrechen dieses Programm",
         "airDate": "2021-01-29"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "In dieser ganz besonderen Folge...",
         "airDate": "2021-02-05"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Ein brandneues Halloween-Spuktakel",
         "airDate": "2021-02-12"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Durchbrechung der vierten Wand",
         "airDate": "2021-02-19"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Was bisher geschah",
         "airDate": "2021-02-26"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Serien-Finale",
         "airDate": "2021-03-05"
@@ -871,31 +967,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Eine neue Welt",
         "airDate": "2021-03-19"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Der Sternenbanner-Mann",
         "airDate": "2021-03-26"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Power Broker",
         "airDate": "2021-04-02"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Die gesamte Welt sieht zu",
         "airDate": "2021-04-09"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Wahrheit",
         "airDate": "2021-04-16"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Eine Welt, alle geeint",
         "airDate": "2021-04-23"
@@ -948,31 +1050,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Triff niemals deinen Helden",
         "airDate": "2021-11-24"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Versteckspiel",
         "airDate": "2021-11-24"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Echos",
         "airDate": "2021-12-01"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Wir sind Partner, oder?",
         "airDate": "2021-12-08"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Ronin",
         "airDate": "2021-12-15"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Ist es Weihnachten?",
         "airDate": "2021-12-22"
@@ -1014,31 +1122,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Das Goldfisch-Problem",
         "airDate": "2022-03-30"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Beschwöre den Anzug",
         "airDate": "2022-04-06"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Von der netten Sorte",
         "airDate": "2022-04-13"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Das Grab",
         "airDate": "2022-04-20"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Die Psychiatrie",
         "airDate": "2022-04-27"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Götter und Monster",
         "airDate": "2022-05-04"
@@ -1058,31 +1172,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Avengercon",
         "airDate": "2022-06-08"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Volltreffer",
         "airDate": "2022-06-15"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Bestimmung",
         "airDate": "2022-06-22"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Rot sehen",
         "airDate": "2022-06-29"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Aber und abermals",
         "airDate": "2022-07-06"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Nicht normal",
         "airDate": "2022-07-13"
@@ -1113,46 +1233,55 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "'Ne normale Menge an Wut",
         "airDate": "2022-08-18"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Supermenschenrecht",
         "airDate": "2022-08-25"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Das Volk gegen Emil Blonsky",
         "airDate": "2022-09-01"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Ist das keine echte Magie?",
         "airDate": "2022-09-08"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Grün, fies, und der Hammer in 'ner Jeans",
         "airDate": "2022-09-15"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Nur Jen",
         "airDate": "2022-09-22"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Das Retreat",
         "airDate": "2022-09-29"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Quak und zack",
         "airDate": "2022-10-06"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Wessen Serie ist das nochmal?",
         "airDate": "2022-10-13"
@@ -1227,31 +1356,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Auferstehung",
         "airDate": "2023-06-21"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Versprechen",
         "airDate": "2023-06-28"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Betrogen",
         "airDate": "2023-07-05"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Geliebt",
         "airDate": "2023-07-12"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Ernte",
         "airDate": "2023-07-19"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Zuhause",
         "airDate": "2023-07-26"
@@ -1282,26 +1417,31 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Chafa",
         "airDate": "2024-01-09"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Lowak",
         "airDate": "2024-01-09"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Tuklo",
         "airDate": "2024-01-09"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Taloa",
         "airDate": "2024-01-09"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Maya",
         "airDate": "2024-01-09"
@@ -1321,46 +1461,55 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Sucht ihr nach dem Weg",
         "airDate": "2024-09-18"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Gib dein Rätsel preis O schicksalshafter Kreis",
         "airDate": "2024-09-18"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Und wer sich naht den prüft der Pfad",
         "airDate": "2024-09-25"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Kannst du mich hören Mein Lied soll schwören",
         "airDate": "2024-10-02"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Dunkle Nacht weck die Macht",
         "airDate": "2024-10-09"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Mein Freund, steh mir bereit",
         "airDate": "2024-10-16"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Den Tod an meiner Hand",
         "airDate": "2024-10-23"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Folge mir, mein Freund bis uns der Ruhm vereint",
         "airDate": "2024-10-30"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Jungfrau, Mutter, Weib",
         "airDate": "2024-10-30"
@@ -1402,46 +1551,55 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Eine halbe Stunde im Himmel",
         "airDate": "2025-03-04"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Außenwirkung",
         "airDate": "2025-03-04"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Seine schützende Hand",
         "airDate": "2025-03-11"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Sic Semper Systema",
         "airDate": "2025-03-18"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Zinsen",
         "airDate": "2025-03-25"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Mit Gewalt",
         "airDate": "2025-03-25"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Kunst um der Kunst Willen",
         "airDate": "2025-04-01"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Insel des Glücks",
         "airDate": "2025-04-08"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Ab in die Hölle",
         "airDate": "2025-04-15"
@@ -1472,31 +1630,37 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Nächster Halt: Chicago",
         "airDate": "2025-06-24"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Natalie, bist du's?",
         "airDate": "2025-06-24"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Süße, wir sind in Gefahr",
         "airDate": "2025-06-24"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Schlechte Magie",
         "airDate": "2025-07-01"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Karma ist'n Glitch",
         "airDate": "2025-07-01"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Die Vergangenheit ist vergangen",
         "airDate": "2025-07-01"
@@ -1527,51 +1691,61 @@
     "season": 1,
     "episodes": [
       {
+        "season": 1,
         "number": 1,
         "title": "Zu mir, meine X-Men",
         "airDate": "2024-03-20"
       },
       {
+        "season": 1,
         "number": 2,
         "title": "Hoffnung für Mutanten",
         "airDate": "2024-03-20"
       },
       {
+        "season": 1,
         "number": 3,
         "title": "Eine rätselhafte Begegnung",
         "airDate": "2024-03-27"
       },
       {
+        "season": 1,
         "number": 4,
         "title": "Motendo/Leben und Tod (1)",
         "airDate": "2024-04-03"
       },
       {
+        "season": 1,
         "number": 5,
         "title": "Erinnere dich",
         "airDate": "2024-04-10"
       },
       {
+        "season": 1,
         "number": 6,
         "title": "Leben und Tod (2)",
         "airDate": "2024-04-17"
       },
       {
+        "season": 1,
         "number": 7,
         "title": "Hinters Licht geführt",
         "airDate": "2024-04-24"
       },
       {
+        "season": 1,
         "number": 8,
         "title": "Toleranz bedeutet Auslöschung (1)",
         "airDate": "2024-05-01"
       },
       {
+        "season": 1,
         "number": 9,
         "title": "Toleranz bedeutet Auslöschung (2)",
         "airDate": "2024-05-08"
       },
       {
+        "season": 1,
         "number": 10,
         "title": "Toleranz bedeutet Auslöschung (3)",
         "airDate": "2024-05-15"

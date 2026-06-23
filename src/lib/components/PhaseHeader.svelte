@@ -25,7 +25,7 @@
 
 	onMount(() => {
 		const io = new IntersectionObserver(([e]) => (stuck = !e.isIntersecting), {
-			rootMargin: '-64px 0px 0px 0px',
+			rootMargin: '-76px 0px 0px 0px',
 			threshold: 0
 		});
 		io.observe(sentinel);
@@ -36,7 +36,7 @@
 <!-- sentinel: when it scrolls under the nav, the header is "stuck" -->
 <div bind:this={sentinel} class="h-px w-px" aria-hidden="true"></div>
 
-<div class="sticky top-14 z-30 flex justify-center">
+<div class="sticky top-[72px] z-30 flex justify-center">
 	<div
 		class="overflow-hidden border-2 bg-surface/95 text-center shadow-xl backdrop-blur transition-all duration-300 {stuck
 			? 'flex items-center gap-3 rounded-full px-5 py-2'

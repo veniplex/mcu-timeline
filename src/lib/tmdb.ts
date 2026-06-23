@@ -11,3 +11,7 @@ export function backdropUrl(path: string | null, size: 'w780' | 'w1280' = 'w1280
 export function tmdbPageUrl(type: 'movie' | 'tv', id: number): string {
 	return `https://www.themoviedb.org/${type}/${id}`;
 }
+
+export function tmdbEpisodeUrl(showId: number, season: number, episode: number): string {
+	return `https://www.themoviedb.org/tv/${showId}/season/${season}/episode/${episode}`;
+}

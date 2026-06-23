@@ -29,7 +29,7 @@ export interface TimelineItem {
 	eraTag?: string;
 	/** Season numbers covered (series only). */
 	seasons: number[];
-	episodes: { number: number; title: string; airDate: string | null }[];
+	episodes: { season: number; number: number; title: string; airDate: string | null }[];
 	episodeCount: number;
 }
 
@@ -134,3 +134,26 @@ export function buildTimeline(sort: SortMode, locale: Locale): PhaseBand[] {
 }
 
 export const TOTAL_ENTRIES = chronology.length;
+
+/** Stable per-episode watched key (independent of sort/merge). */
+export function episodeKey(tmdbId: number, season: number, episode: number): string {
+	return `ep:${tmdbId}:${season}:${episode}`;
+}
+
+/** The watch units that define "fully watched": episode keys for a series with
+ * episode data, otherwise the entry ids (movies, or series lacking episodes). */
+export function itemUnits(item: TimelineItem): string[] {
+	if (item.isSeries && item.episodes.length) {
+		return item.episodes.map((e) => episodeKey(item.tmdbId, e.season, e.number));
+	}
+	return item.entryIds;
+}
+
+export function isFullyWatched(item: TimelineItem, set: Set<string>): boolean {
+	const units = itemUnits(item);
+	return units.length > 0 && units.every((u) => set.has(u));
+}
+
+export function watchedUnitCount(item: TimelineItem, set: Set<string>): number {
+	return itemUnits(item).filter((u) => set.has(u)).length;
+}

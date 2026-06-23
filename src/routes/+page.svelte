@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Film, Tv, LayoutGrid, EyeOff, Clock, CalendarDays } from 'lucide-svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
-	import { buildTimeline, TOTAL_ENTRIES, type PhaseBand } from '$lib/data/timeline';
+	import { buildTimeline, isFullyWatched, type PhaseBand } from '$lib/data/timeline';
 	import { sortMode } from '$lib/stores/sortMode';
 	import { locale } from '$lib/stores/locale';
 	import { watched } from '$lib/stores/watched';
@@ -32,7 +32,13 @@
 			.filter((band) => band.items.length > 0);
 	});
 
-	const totalWatched = $derived($watched.size);
+	const totalItems = $derived(allBands.reduce((sum, band) => sum + band.items.length, 0));
+	const totalWatched = $derived(
+		allBands.reduce(
+			(sum, band) => sum + band.items.filter((i) => isFullyWatched(i, $watched)).length,
+			0
+		)
+	);
 
 	const filters: { key: MediaFilter; label: () => string; icon: typeof Film }[] = [
 		{ key: 'all', label: () => $t('filter.all'), icon: LayoutGrid },
@@ -50,11 +56,11 @@
 			<div class="h-2 flex-1 overflow-hidden rounded-full bg-muted">
 				<div
 					class="h-full rounded-full bg-accent transition-[width] duration-300"
-					style="width: {(totalWatched / TOTAL_ENTRIES) * 100}%"
+					style="width: {totalItems ? (totalWatched / totalItems) * 100 : 0}%"
 				></div>
 			</div>
 			<span class="shrink-0 text-sm tabular-nums text-muted-foreground">
-				{$t('watched.progress', { done: totalWatched, total: TOTAL_ENTRIES })}
+				{$t('watched.progress', { done: totalWatched, total: totalItems })}
 			</span>
 		</div>
 	{:else if firebaseEnabled}

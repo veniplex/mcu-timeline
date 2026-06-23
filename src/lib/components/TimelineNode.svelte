@@ -1,7 +1,12 @@
 <script lang="ts">
 	import { Check, Film, Tv, Clock } from 'lucide-svelte';
 	import { posterUrl } from '$lib/tmdb';
-	import type { TimelineItem } from '$lib/data/timeline';
+	import {
+		isFullyWatched,
+		watchedUnitCount,
+		itemUnits,
+		type TimelineItem
+	} from '$lib/data/timeline';
 	import { watched, setWatchedMany } from '$lib/stores/watched';
 	import { firebaseEnabled } from '$lib/firebase';
 	import { auth } from '$lib/stores/auth';
@@ -13,14 +18,22 @@
 		onopen
 	}: { item: TimelineItem; color: string; onopen: (item: TimelineItem) => void } = $props();
 
-	const isWatched = $derived(item.entryIds.every((id) => $watched.has(id)));
-	const isPartial = $derived(!isWatched && item.entryIds.some((id) => $watched.has(id)));
+	const isWatched = $derived(isFullyWatched(item, $watched));
+	const done = $derived(watchedUnitCount(item, $watched));
+	const total = $derived(itemUnits(item).length);
+	const isPartial = $derived(done > 0 && !isWatched);
 	const canTrack = $derived(firebaseEnabled && !!$auth.user);
 	const poster = $derived(posterUrl(item.poster, 'w342'));
+	const showRing = $derived(item.isSeries && total > 1);
+
+	// ring geometry
+	const R = 9;
+	const C = 2 * Math.PI * R;
+	const dashoffset = $derived(C * (1 - (total ? done / total : 0)));
 
 	function toggle(e: MouseEvent) {
 		e.stopPropagation();
-		setWatchedMany(item.entryIds, !isWatched);
+		setWatchedMany(itemUnits(item), !isWatched);
 	}
 
 	function onKey(e: KeyboardEvent) {
@@ -80,18 +93,46 @@
 		{/if}
 
 		{#if canTrack}
-			<button
-				class="absolute bottom-2 right-2 grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
-					? 'border-accent bg-accent text-on-accent'
-					: isPartial
-						? 'border-accent bg-surface/90 text-accent'
+			{#if showRing}
+				<!-- series: ring fills with episodes watched; click toggles all -->
+				<button
+					class="absolute bottom-2 right-2 grid size-8 place-items-center rounded-full bg-surface/90 lg:size-9"
+					aria-pressed={isWatched}
+					aria-label="{done}/{total} {$t('detail.episodes')}"
+					title="{done}/{total}"
+					onclick={toggle}
+				>
+					<svg viewBox="0 0 24 24" class="size-8 -rotate-90 lg:size-9">
+						<circle cx="12" cy="12" r={R} fill="none" stroke="var(--color-muted)" stroke-width="3" />
+						<circle
+							cx="12"
+							cy="12"
+							r={R}
+							fill="none"
+							stroke="var(--color-accent)"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-dasharray={C}
+							stroke-dashoffset={dashoffset}
+						/>
+					</svg>
+					{#if isWatched}
+						<Check class="absolute size-4 text-accent" aria-hidden="true" />
+					{/if}
+				</button>
+			{:else}
+				<!-- movie / single: plain check toggle -->
+				<button
+					class="absolute bottom-2 right-2 grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
+						? 'border-accent bg-accent text-on-accent'
 						: 'border-border bg-surface/90 text-muted-foreground hover:text-foreground'}"
-				aria-pressed={isWatched}
-				aria-label={isWatched ? $t('watched.unmark') : $t('watched.mark')}
-				onclick={toggle}
-			>
-				<Check class="size-4" aria-hidden="true" />
-			</button>
+					aria-pressed={isWatched}
+					aria-label={isWatched ? $t('watched.unmark') : $t('watched.mark')}
+					onclick={toggle}
+				>
+					<Check class="size-4" aria-hidden="true" />
+				</button>
+			{/if}
 		{/if}
 	</div>
 </div>

@@ -61,7 +61,7 @@ export interface CatalogItem {
 	backdrop: string | null;
 	/** Season / episode context for tv entries. */
 	season?: number;
-	episodes?: { number: number; title: string; airDate: string | null }[];
+	episodes?: { season: number; number: number; title: string; airDate: string | null }[];
 }
 
 export type Catalog = Record<string, CatalogItem>;

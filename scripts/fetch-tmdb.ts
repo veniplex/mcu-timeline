@@ -76,6 +76,7 @@ async function buildItem(
 	const seasonNo = season ?? 1;
 	const s = await tmdb(`/tv/${tmdbId}/season/${seasonNo}`, { language: lang });
 	const episodes = (s.episodes ?? []).map((e: any) => ({
+		season: seasonNo,
 		number: e.episode_number,
 		title: e.name ?? '',
 		airDate: e.air_date ?? null

@@ -1,9 +1,15 @@
 <script lang="ts">
 	import { X, Check, Film, Tv, ExternalLink } from 'lucide-svelte';
-	import { backdropUrl, posterUrl, tmdbPageUrl } from '$lib/tmdb';
-	import type { TimelineItem } from '$lib/data/timeline';
+	import { backdropUrl, posterUrl, tmdbPageUrl, tmdbEpisodeUrl } from '$lib/tmdb';
+	import {
+		episodeKey,
+		itemUnits,
+		isFullyWatched,
+		watchedUnitCount,
+		type TimelineItem
+	} from '$lib/data/timeline';
 	import { PHASE_LABELS } from '$lib/data/types';
-	import { watched, setWatchedMany } from '$lib/stores/watched';
+	import { watched, setWatchedMany, toggleWatched } from '$lib/stores/watched';
 	import { firebaseEnabled } from '$lib/firebase';
 	import { auth } from '$lib/stores/auth';
 	import { locale } from '$lib/stores/locale';
@@ -11,8 +17,22 @@
 
 	let { item, onclose }: { item: TimelineItem | null; onclose: () => void } = $props();
 
-	const isWatched = $derived(!!item && item.entryIds.every((id) => $watched.has(id)));
+	const isWatched = $derived(!!item && isFullyWatched(item, $watched));
 	const canTrack = $derived(firebaseEnabled && !!$auth.user);
+
+	// group episodes by season for display
+	const seasons = $derived.by(() => {
+		if (!item?.isSeries) return [];
+		const map = new Map<number, typeof item.episodes>();
+		for (const ep of item.episodes) {
+			const list = map.get(ep.season) ?? [];
+			list.push(ep);
+			map.set(ep.season, list);
+		}
+		return [...map.entries()]
+			.sort((a, b) => a[0] - b[0])
+			.map(([season, episodes]) => ({ season, episodes }));
+	});
 
 	function onKey(e: KeyboardEvent) {
 		if (e.key === 'Escape') onclose();
@@ -87,10 +107,14 @@
 								? 'border-accent bg-accent text-on-accent'
 								: 'border-border hover:bg-muted'}"
 							aria-pressed={isWatched}
-							onclick={() => setWatchedMany(item!.entryIds, !isWatched)}
+							onclick={() => setWatchedMany(itemUnits(item!), !isWatched)}
 						>
 							<Check class="size-4" aria-hidden="true" />
-							{isWatched ? $t('watched.unmark') : $t('watched.mark')}
+							{item.isSeries
+								? `${watchedUnitCount(item, $watched)}/${itemUnits(item).length} ${$t('detail.episodes')}`
+								: isWatched
+									? $t('watched.unmark')
+									: $t('watched.mark')}
 						</button>
 					{/if}
 					<a
@@ -103,24 +127,54 @@
 					</a>
 				</div>
 
-				{#if item.isSeries && item.episodes.length}
-					<div>
-						<h3 class="mb-2 text-sm font-semibold">
-							{item.episodeCount} {$t('detail.episodes')}
-						</h3>
-						<ol class="divide-y divide-border rounded-lg border border-border">
-							{#each item.episodes as ep (ep.number + ep.title)}
-								<li class="flex items-baseline gap-3 px-3 py-2 text-sm">
-									<span class="w-6 shrink-0 tabular-nums text-muted-foreground">{ep.number}</span>
-									<span class="flex-1">{ep.title}</span>
-									{#if ep.airDate}
-										<span class="shrink-0 text-xs tabular-nums text-muted-foreground">
-											{ep.airDate}
-										</span>
-									{/if}
-								</li>
-							{/each}
-						</ol>
+				{#if item.isSeries && seasons.length}
+					<div class="space-y-4">
+						{#each seasons as s (s.season)}
+							<div>
+								<h3 class="mb-2 text-sm font-semibold">
+									{$t('detail.season')}
+									{s.season}
+									<span class="font-normal text-muted-foreground">· {s.episodes.length} {$t('detail.episodes')}</span>
+								</h3>
+								<ol class="divide-y divide-border rounded-lg border border-border">
+									{#each s.episodes as ep (ep.season + '-' + ep.number)}
+										{@const key = episodeKey(item.tmdbId, ep.season, ep.number)}
+										{@const epWatched = $watched.has(key)}
+										<li class="flex items-center gap-3 px-3 py-2 text-sm">
+											{#if canTrack}
+												<button
+													class="grid size-6 shrink-0 place-items-center rounded-full border transition-colors {epWatched
+														? 'border-accent bg-accent text-on-accent'
+														: 'border-border text-transparent hover:border-accent'}"
+													aria-pressed={epWatched}
+													aria-label={ep.title}
+													onclick={() => toggleWatched(key)}
+												>
+													<Check class="size-3.5" aria-hidden="true" />
+												</button>
+											{:else}
+												<span class="w-6 shrink-0 tabular-nums text-muted-foreground">{ep.number}</span>
+											{/if}
+											<span class="flex-1">{ep.number}. {ep.title}</span>
+											{#if ep.airDate}
+												<span class="hidden shrink-0 text-xs tabular-nums text-muted-foreground sm:block">
+													{ep.airDate}
+												</span>
+											{/if}
+											<a
+												href={tmdbEpisodeUrl(item.tmdbId, ep.season, ep.number)}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="shrink-0 text-muted-foreground hover:text-accent"
+												aria-label="TMDB"
+											>
+												<ExternalLink class="size-4" aria-hidden="true" />
+											</a>
+										</li>
+									{/each}
+								</ol>
+							</div>
+						{/each}
 					</div>
 				{/if}
 			</div>

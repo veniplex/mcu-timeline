@@ -31,6 +31,7 @@ export const messages = {
 		'phase.label': 'Phase',
 		'detail.viewTmdb': 'View on TMDB',
 		'detail.episodes': 'Episodes',
+		'detail.season': 'Season',
 		'empty.title': 'Nothing here yet',
 		'empty.body': 'The timeline data is being assembled.',
 		'timeline.end': 'To be continued…'
@@ -60,6 +61,7 @@ export const messages = {
 		'phase.label': 'Phase',
 		'detail.viewTmdb': 'Auf TMDB ansehen',
 		'detail.episodes': 'Episoden',
+		'detail.season': 'Staffel',
 		'empty.title': 'Noch nichts vorhanden',
 		'empty.body': 'Die Zeitleisten-Daten werden gerade zusammengestellt.',
 		'timeline.end': 'Fortsetzung folgt …'
