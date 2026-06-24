@@ -9,7 +9,9 @@
     ExternalLink,
     Star,
     Database,
+    CalendarClock,
   } from "lucide-svelte";
+  import RottenTomato from "./RottenTomato.svelte";
   import {
     backdropUrl,
     posterUrl,
@@ -168,6 +170,14 @@
               {item.phase}
             </span>
             <span class="rounded-full bg-muted px-2 py-0.5">{sagaName}</span>
+            {#if item.upcoming}
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-primary px-2 py-0.5 font-medium text-on-primary"
+              >
+                <CalendarClock class="size-3" aria-hidden="true" />
+                {$t("status.upcoming")}
+              </span>
+            {/if}
             {#if item.eraTag}<span class="rounded-full bg-muted px-2 py-0.5"
                 >{item.eraTag}</span
               >{/if}
@@ -176,7 +186,12 @@
               >{/if}
           </div>
 
-          <h2 class="text-2xl tracking-tight text-wrap-balance" style="font-family: var(--font-display); font-weight: 700">{item.title}</h2>
+          <h2
+            class="text-2xl tracking-tight text-wrap-balance"
+            style="font-family: var(--font-display); font-weight: 700"
+          >
+            {item.title}
+          </h2>
 
           <!-- Ratings row -->
           {#if item.ratings?.imdb || item.ratings?.rt}
@@ -193,9 +208,7 @@
               {/if}
               {#if item.ratings.rt}
                 <span class="flex items-center gap-1.5 font-medium">
-                  <span class="text-base leading-none" aria-hidden="true"
-                    >🍅</span
-                  >
+                  <RottenTomato score={item.ratings.rt} class="size-4" />
                   <span class="tabular-nums">{item.ratings.rt}%</span>
                   <span class="text-xs text-muted-foreground">RT</span>
                 </span>
@@ -227,14 +240,21 @@
               </button>
             {/if}
             <a
-              href={tmdbPageUrl(item.isSeries ? "tv" : "movie", item.tmdbId, item.title)}
+              href={tmdbPageUrl(
+                item.isSeries ? "tv" : "movie",
+                item.tmdbId,
+                item.title,
+              )}
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
             >
               <Database class="size-4 text-[#01b4e4]" aria-hidden="true" />
               TMDB
-              <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
+              <ExternalLink
+                class="size-4 text-muted-foreground"
+                aria-hidden="true"
+              />
             </a>
             {#if imdbUrl(item.imdbId)}
               <a
@@ -248,7 +268,10 @@
                   aria-hidden="true"
                 />
                 IMDb
-                <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
+                <ExternalLink
+                  class="size-4 text-muted-foreground"
+                  aria-hidden="true"
+                />
               </a>
             {/if}
             <a
@@ -257,9 +280,12 @@
               rel="noopener noreferrer"
               class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
             >
-              <span class="text-base leading-none" aria-hidden="true">🍅</span>
+              <RottenTomato score={item.ratings?.rt ?? null} class="size-4" />
               Rotten Tomatoes
-              <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
+              <ExternalLink
+                class="size-4 text-muted-foreground"
+                aria-hidden="true"
+              />
             </a>
           </div>
 
@@ -286,15 +312,13 @@
                   target={item.watchLink ? "_blank" : undefined}
                   rel={item.watchLink ? "noopener noreferrer" : undefined}
                   title={p.name}
-                  class="block size-7 overflow-hidden rounded-md border border-border bg-surface transition-transform hover:scale-105"
+                  class="block size-10 sm:size-14 overflow-hidden rounded-md border border-border bg-surface transition-transform hover:scale-105"
                 >
                   {#if logo}
                     <img
                       src={logo}
                       alt={p.name}
-                      width="28"
-                      height="28"
-                      class="size-full object-cover"
+                      class="size-10 sm:size-14 object-cover"
                       loading="lazy"
                     />
                   {:else}
@@ -374,7 +398,7 @@
                                 >{/if}
                             </a>
                           {/if}
-                          {#if rtEpisodeUrl(item.rtSlug, ep.season, ep.number)}
+                          {#if ep.rt && rtEpisodeUrl(item.rtSlug, ep.season, ep.number)}
                             <a
                               href={rtEpisodeUrl(
                                 item.rtSlug,
@@ -383,10 +407,11 @@
                               )}
                               target="_blank"
                               rel="noopener noreferrer"
-                              class="flex items-center text-base leading-none transition-opacity hover:opacity-70"
+                              class="flex items-center gap-1 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
                               aria-label="Rotten Tomatoes"
                             >
-                              🍅
+                              <RottenTomato score={ep.rt} class="size-3.5" />
+                              <span class="tabular-nums">{ep.rt}%</span>
                             </a>
                           {/if}
                         </span>

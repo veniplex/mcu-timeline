@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { Check, Film, Tv, Clock, Star } from "lucide-svelte";
+  import { Check, Film, Tv, Clock, Star, CalendarClock } from "lucide-svelte";
   import { posterUrl } from "$lib/tmdb";
+  import RottenTomato from "./RottenTomato.svelte";
   import {
     isFullyWatched,
     watchedUnitCount,
@@ -90,7 +91,11 @@
         src={poster}
         alt=""
         loading="lazy"
-        class="h-full w-full object-cover {isWatched ? '' : 'opacity-95'}"
+        class="h-full w-full object-cover {item.upcoming
+          ? 'opacity-60 grayscale-[0.3]'
+          : isWatched
+            ? ''
+            : 'opacity-95'}"
       />
     {:else}
       <div class="grid h-full w-full place-items-center text-muted-foreground">
@@ -98,6 +103,14 @@
             class="size-6"
           />{/if}
       </div>
+    {/if}
+    {#if item.upcoming}
+      <span
+        class="absolute left-0 top-0 flex items-center gap-1 rounded-br-lg bg-primary/90 px-1.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-on-primary backdrop-blur-sm"
+      >
+        <CalendarClock class="size-3" aria-hidden="true" />
+        {$t("status.upcoming")}
+      </span>
     {/if}
   </div>
 
@@ -140,7 +153,7 @@
         {/if}
         {#if item.ratings?.rt}
           <span class="inline-flex items-center gap-1">
-            <span aria-hidden="true" class="leading-none">🍅</span>
+            <RottenTomato score={item.ratings.rt} class="size-3.5" />
             <span class="tabular-nums font-medium">{item.ratings.rt}%</span>
           </span>
         {/if}

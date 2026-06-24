@@ -5142,5 +5142,47 @@
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=DE"
+  },
+  "spider-man-brand-new-day": {
+    "id": "spider-man-brand-new-day",
+    "tmdbId": 969681,
+    "imdbId": "tt22084616",
+    "tmdbType": "movie",
+    "title": "Spider-Man: Brand New Day",
+    "overview": "Vier Jahre sind seit den Ereignissen von „No Way Home“ vergangen. Peter ist nun erwachsen und lebt für sich allein, nachdem er sich freiwillig aus dem Leben und den Erinnerungen derer, die er liebt, ausgelöscht hat. Er bekämpft Verbrechen in einem New York, das ihn und seinen Namen nicht mehr kennt, und widmet sich ganz dem Schutz seiner Stadt: Spider-Man in Vollzeit. Doch mit den steigenden Anforderungen löst der Druck eine überraschende körperliche Veränderung aus, die seine Existenz bedroht – gerade als eine seltsame neue Art von Verbrechen eine der mächtigsten Bedrohungen hervorbringt, denen er je gegenüberstand.",
+    "releaseDate": "2026-07-29",
+    "runtime": 150,
+    "poster": "/1AsrB0n7X2xE30RA0S5fagr545g.jpg",
+    "backdrop": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+    "providers": [],
+    "watchLink": null
+  },
+  "avengers-doomsday": {
+    "id": "avengers-doomsday",
+    "tmdbId": 1003596,
+    "imdbId": "tt21357150",
+    "tmdbType": "movie",
+    "title": "Avengers: Doomsday",
+    "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+    "releaseDate": "2026-12-16",
+    "runtime": 0,
+    "poster": "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
+    "backdrop": "/4OZznMYFmQPP4orKgbLaWRyYmBb.jpg",
+    "providers": [],
+    "watchLink": null
+  },
+  "avengers-secret-wars": {
+    "id": "avengers-secret-wars",
+    "tmdbId": 1003598,
+    "imdbId": "tt21361444",
+    "tmdbType": "movie",
+    "title": "Avengers: Secret Wars",
+    "overview": "An upcoming film in Phase Six of the Marvel Cinematic Universe (MCU) and the finale of The Multiverse Saga. Plot TBA.",
+    "releaseDate": "2027-12-16",
+    "runtime": 0,
+    "poster": "/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
+    "backdrop": "/rytc6Lf4447C0CDncwFa4gxe0vY.jpg",
+    "providers": [],
+    "watchLink": null
   }
 }

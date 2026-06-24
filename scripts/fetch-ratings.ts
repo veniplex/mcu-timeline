@@ -39,6 +39,7 @@ const CATALOG_PATH = resolve(DATA_DIR, 'catalog.en.json');
 const IMDB_DATASET = 'https://datasets.imdbws.com/title.ratings.tsv.gz';
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+const pad2 = (n: number) => String(n).padStart(2, '0');
 
 type CatalogEpisode = { season: number; number: number };
 type CatalogEntry = { imdbId?: string | null; episodes?: CatalogEpisode[] };
@@ -118,6 +119,7 @@ async function main() {
 
 	let updated = 0;
 	let epWithImdb = 0;
+	let epWithRt = 0;
 	let epTotal = 0;
 
 	for (const entry of chronology) {
@@ -170,7 +172,16 @@ async function main() {
 					if (!epId) continue;
 					const epImdb = imdbData.get(epId);
 					if (epImdb) epWithImdb++;
-					epMap[key] = { imdb: epImdb, imdbId: epId };
+					// RT publishes a per-episode Tomatometer — scrape the episode page.
+					let epRt: string | undefined;
+					if (slug) {
+						epRt = await scrapeRt(
+							`${slug}/s${pad2(ep.season)}/e${pad2(ep.number)}`
+						);
+						if (epRt) epWithRt++;
+						await sleep(250);
+					}
+					epMap[key] = { imdb: epImdb, rt: epRt, imdbId: epId };
 				}
 				if (Object.keys(epMap).length) ratings.episodes = epMap;
 			}
@@ -191,7 +202,9 @@ async function main() {
 	}
 
 	await writeFile(RATINGS_PATH, JSON.stringify(result, null, 2));
-	console.log(`\nDone. Updated ${updated} entries. Episodes with IMDb: ${epWithImdb}/${epTotal}.`);
+	console.log(
+		`\nDone. Updated ${updated} entries. Episodes IMDb ${epWithImdb}/${epTotal}, RT ${epWithRt}/${epTotal}.`
+	);
 }
 
 main().catch((e) => {

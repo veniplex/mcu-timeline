@@ -71,6 +71,7 @@ export interface ChronologyEntry {
 /** Per-episode rating + IMDb id (populated by scripts/fetch-ratings.ts). */
 export interface EpisodeRating {
 	imdb?: string; // e.g. "8.5"
+	rt?: string; // e.g. "93" — RT publishes a Tomatometer per episode
 	imdbId?: string; // e.g. "tt4667540" — for a direct episode IMDb link
 }
 

@@ -937,5 +937,32 @@ export const chronology: ChronologyEntry[] = [
 		query: { type: 'movie', title: 'Morbius', year: 2022 },
 		eraTag: 'Sony tie-in',
 		source: 'Sony SSU; post-credits ties to Vulture via the No Way Home multiverse rift'
+	},
+
+	/* ---- Announced, not yet released. No ratings / episodes yet — flagged
+	   "upcoming" at runtime from the (future or missing) TMDB release date. ---- */
+	{
+		id: 'spider-man-brand-new-day',
+		order: 900,
+		phase: 6,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Spider-Man: Brand New Day', year: 2026, tmdbId: 969681 },
+		source: 'Announced theatrical release'
+	},
+	{
+		id: 'avengers-doomsday',
+		order: 910,
+		phase: 6,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Avengers: Doomsday', year: 2026, tmdbId: 1003596 },
+		source: 'Announced theatrical release'
+	},
+	{
+		id: 'avengers-secret-wars',
+		order: 920,
+		phase: 6,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Avengers: Secret Wars', year: 2027, tmdbId: 1003598 },
+		source: 'Announced theatrical release'
 	}
 ];

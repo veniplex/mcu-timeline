@@ -47,6 +47,8 @@ export interface TimelineItem {
 		airDate: string | null;
 		/** Per-episode IMDb rating (e.g. "8.5"), when known. */
 		imdb?: string;
+		/** Per-episode Rotten Tomatoes score (e.g. "93"), when known. */
+		rt?: string;
 		/** Per-episode IMDb id (e.g. "tt4667540"), for a direct episode link. */
 		imdbId?: string | null;
 	}[];
@@ -56,6 +58,8 @@ export interface TimelineItem {
 	providers: StreamingProvider[];
 	/** JustWatch deep link for the region. */
 	watchLink?: string | null;
+	/** Announced but not yet released (no release date, or it lies in the future). */
+	upcoming: boolean;
 }
 
 export interface PhaseBand {
@@ -78,8 +82,10 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 	const epRatings = entryRatings?.episodes ?? {};
 	const episodes = (item.episodes ?? []).map((e) => {
 		const r = epRatings[`${e.season}-${e.number}`];
-		return { ...e, imdb: r?.imdb, imdbId: r?.imdbId ?? null };
+		return { ...e, imdb: r?.imdb, rt: r?.rt, imdbId: r?.imdbId ?? null };
 	});
+	const today = new Date().toISOString().slice(0, 10);
+	const upcoming = !item.releaseDate || item.releaseDate > today;
 	return {
 		key: entry.id,
 		entryIds: [entry.id],
@@ -102,7 +108,8 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 		episodeCount: episodes.length,
 		ratings: entryRatings,
 		providers: item.providers ?? [],
-		watchLink: item.watchLink ?? null
+		watchLink: item.watchLink ?? null,
+		upcoming
 	};
 }
 
