@@ -9,7 +9,7 @@ across all six Phases — with watched-tracking, release-date sorting, and rich
 detail pages. Live at **[mcu.guide](https://www.mcu.guide)**.
 
 [![Stars](https://img.shields.io/github/stars/veniplex/mcu-timeline?style=flat&logo=github&color=e0a82e)](https://github.com/veniplex/mcu-timeline/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-b11313.svg)](./LICENSE)
+[![License: Non-Commercial](https://img.shields.io/badge/License-Non--Commercial-b11313.svg)](./LICENSE)
 [![SvelteKit](https://img.shields.io/badge/SvelteKit-Svelte%205-ff3e00?logo=svelte&logoColor=white)](https://kit.svelte.dev)
 
 </div>
@@ -212,5 +212,12 @@ remain the property of their respective owners.
 
 ## License
 
-This project's own source code is released under the **[MIT License](./LICENSE)**.
+This project is released under a **custom non-commercial license** — see
+**[LICENSE](./LICENSE)**. In short:
+
+- **No commercial use** of any kind.
+- Any copy, fork, or deployment **must show a clearly visible, clickable
+  attribution link** back to [this project](https://github.com/veniplex/mcu-timeline)
+  on **every page**.
+
 © 2026 veniplex.

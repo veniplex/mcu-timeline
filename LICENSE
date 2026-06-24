@@ -1,35 +1,53 @@
-MIT License
+MCU Timeline License (Non-Commercial, Attribution-Required)
 
 Copyright (c) 2026 veniplex
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Source project: https://github.com/veniplex/mcu-timeline
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Grant
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated files (the "Software"), to use, copy, modify,
+   merge, and distribute the Software, subject to the conditions below.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Non-Commercial Use Only
+   Commercial use of the Software is strictly prohibited. You may NOT sell,
+   license, sublicense, or otherwise use the Software or any derivative of it,
+   in whole or in part, for monetary or other commercial gain. This includes,
+   without limitation, paid products or services, advertising-supported
+   deployments, and any use intended primarily for commercial advantage.
+
+3. Mandatory Attribution
+   Any copy, fork, deployment, or derivative work — including any hosted or
+   distributed version — MUST display a clear, visible, and clickable
+   attribution notice that links to the original project at
+   https://github.com/veniplex/mcu-timeline. This notice MUST be present and
+   readily visible on EVERY page of any web interface (for example, in a footer)
+   and MUST NOT be hidden, obscured, or removed.
+
+4. Preservation
+   This license and the copyright notice above must be included in all copies or
+   substantial portions of the Software.
+
+5. No Warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
 
 —
 
-This project is a non-commercial, open-source fan project. It is not affiliated
-with, endorsed, sponsored, or approved by The Walt Disney Company, Marvel
-Studios, Netflix, Sony Pictures, or any of their subsidiaries. "Marvel", "Marvel Cinematic Universe",
-all character names, titles, and related logos are trademarks of their
-respective owners.
+This is a non-commercial, open-source fan project. It is not affiliated with,
+endorsed, sponsored, or approved by The Walt Disney Company, Marvel Studios,
+Netflix, Sony Pictures, or any of their subsidiaries. "Marvel", "Marvel
+Cinematic Universe", all character names, titles, and related logos are
+trademarks of their respective owners.
 
 Film and series metadata, posters, and backdrops are provided by The Movie
 Database (TMDB). This product uses the TMDB API but is not endorsed or certified
-by TMDB. Ratings are sourced from IMDb and Rotten Tomatoes via the OMDb API.
-All such data and imagery remain the property of their respective owners. The
-MIT license above applies to this project's own source code only.
+by TMDB. Ratings are sourced from IMDb and Rotten Tomatoes via the OMDb API and
+IMDb's public datasets. All such data and imagery remain the property of their
+respective owners. The license terms above apply to this project's own source
+code only.

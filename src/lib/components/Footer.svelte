@@ -10,9 +10,19 @@
   <div
     class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 sm:px-6 items-center"
   >
-    <!-- Brand + source — the pill lives in the nav on ≥sm; here on small screens -->
+    <!-- Brand + source — the pill lives in the nav on ≥sm; here on small screens.
+         Required by the license: a visible, clickable link to the project on
+         every page. -->
     <div class="flex flex-col items-center gap-3">
       <GithubPill class="inline-flex sm:hidden" />
+      <a
+        href={GITHUB_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-sm font-medium underline-offset-2 hover:underline"
+      >
+        {$t("footer.builtBy")}
+      </a>
       <p class="text-xs text-muted-foreground text-center">
         © {year} ·
         <a

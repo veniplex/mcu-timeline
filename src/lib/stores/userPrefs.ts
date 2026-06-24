@@ -4,6 +4,8 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { auth } from './auth';
 import { locale } from './locale';
 import { theme } from './theme';
+import { sortMode } from './sortMode';
+import { filters, normalizeFilters } from './filters';
 
 let currentUid: string | null = null;
 let prefsLoaded = false;
@@ -18,6 +20,8 @@ async function load(uid: string) {
 		const d = snap.data();
 		if (d.locale === 'en' || d.locale === 'de') locale.set(d.locale);
 		if (d.theme === 'light' || d.theme === 'dark') theme.set(d.theme);
+		if (d.sortMode === 'chronological' || d.sortMode === 'release') sortMode.set(d.sortMode);
+		if (d.filters) filters.set(normalizeFilters(d.filters));
 	} catch {
 		// ignore
 	} finally {
@@ -40,6 +44,8 @@ export function initUserPrefs() {
 
 	let skipLocale = true;
 	let skipTheme = true;
+	let skipSort = true;
+	let skipFilters = true;
 
 	auth.subscribe(async (state) => {
 		if (state.loading) return;
@@ -58,5 +64,15 @@ export function initUserPrefs() {
 	theme.subscribe((val) => {
 		if (skipTheme) { skipTheme = false; return; }
 		save({ theme: val });
+	});
+
+	sortMode.subscribe((val) => {
+		if (skipSort) { skipSort = false; return; }
+		save({ sortMode: val });
+	});
+
+	filters.subscribe((val) => {
+		if (skipFilters) { skipFilters = false; return; }
+		save({ filters: val });
 	});
 }
