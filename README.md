@@ -53,14 +53,14 @@ It is a **non-commercial, open-source fan project** — see [Legal](#legal).
 
 ## Tech stack
 
-| Area      | Choice |
-|-----------|--------|
-| Framework | [SvelteKit](https://kit.svelte.dev) + [Svelte 5](https://svelte.dev) (runes) |
-| Styling   | [TailwindCSS v4](https://tailwindcss.com) (CSS-first config via `@theme` / `@custom-variant`) |
-| Auth & DB | [Firebase](https://firebase.google.com) Authentication (Google / GitHub) + Firestore |
+| Area      | Choice                                                                                                      |
+| --------- | ----------------------------------------------------------------------------------------------------------- |
+| Framework | [SvelteKit](https://kit.svelte.dev) + [Svelte 5](https://svelte.dev) (runes)                                |
+| Styling   | [TailwindCSS v4](https://tailwindcss.com) (CSS-first config via `@theme` / `@custom-variant`)               |
+| Auth & DB | [Firebase](https://firebase.google.com) Authentication (Google / GitHub) + Firestore                        |
 | Data      | [TMDB](https://www.themoviedb.org) (metadata, posters), [OMDb](https://www.omdbapi.com) (IMDb / RT ratings) |
-| Icons     | [lucide-svelte](https://lucide.dev) |
-| Hosting   | [Vercel](https://vercel.com) (`@sveltejs/adapter-vercel`) + Analytics & Speed Insights |
+| Icons     | [lucide-svelte](https://lucide.dev)                                                                         |
+| Hosting   | [Vercel](https://vercel.com) (`@sveltejs/adapter-vercel`) + Analytics & Speed Insights                      |
 
 ## Getting started
 
@@ -78,11 +78,11 @@ npm run dev
 
 ### Environment variables (`.env`)
 
-| Key | Purpose |
-|-----|---------|
-| `TMDB_API_KEY` | TMDB v3 key — **build-time only**, never shipped to the client. |
-| `OMDB_API_KEY` | OMDb key for IMDb/RT ratings ([free key](https://www.omdbapi.com/apikey.aspx)). |
-| `PUBLIC_FIREBASE_*` | Firebase web-app config (API key, auth domain, project id, …). |
+| Key                 | Purpose                                                                         |
+| ------------------- | ------------------------------------------------------------------------------- |
+| `TMDB_API_KEY`      | TMDB v3 key — **build-time only**, never shipped to the client.                 |
+| `OMDB_API_KEY`      | OMDb key for IMDb/RT ratings ([free key](https://www.omdbapi.com/apikey.aspx)). |
+| `PUBLIC_FIREBASE_*` | Firebase web-app config (API key, auth domain, project id, …).                  |
 
 ## How the data works
 
@@ -92,7 +92,7 @@ app never needs an API key and stays fully static.
 1. **`src/lib/data/chronology.ts`** — the hand-curated source of truth. Each entry
    declares its `phase`, a `query` (resolved to a TMDB id), an `order` (sparse, so
    inserts don't renumber), a `source` note, and optionally a pinned `tmdbId`
-   (for ambiguous titles like *Daredevil*) and a Rotten Tomatoes `rtSlug`.
+   (for ambiguous titles like _Daredevil_) and a Rotten Tomatoes `rtSlug`.
 2. **`npm run build:data`** (`scripts/fetch-tmdb.ts`) — resolves each entry against
    TMDB (or its pinned id), pulls EN + DE metadata, season/episode lists, and the
    real **IMDb id** (via `external_ids`), and writes `catalog.{en,de}.json`. It logs
@@ -132,13 +132,13 @@ mobile and launches in standalone display mode.
 
 ## Scripts
 
-| Script | Purpose |
-|--------|---------|
-| `npm run dev` | Dev server |
-| `npm run build:data` | Regenerate TMDB catalogs (EN + DE) + IMDb ids |
-| `npm run build:ratings` | Regenerate IMDb / Rotten Tomatoes ratings |
-| `npm run check` | Typecheck + svelte-check |
-| `npm run build` | Production build (Vercel) |
+| Script                  | Purpose                                       |
+| ----------------------- | --------------------------------------------- |
+| `npm run dev`           | Dev server                                    |
+| `npm run build:data`    | Regenerate TMDB catalogs (EN + DE) + IMDb ids |
+| `npm run build:ratings` | Regenerate IMDb / Rotten Tomatoes ratings     |
+| `npm run check`         | Typecheck + svelte-check                      |
+| `npm run build`         | Production build (Vercel)                     |
 
 ## Contributing
 
@@ -175,6 +175,7 @@ Each template asks for the one thing that actually settles these debates: a
      rtSlug: 'm/black_panther'        // optional Rotten Tomatoes path
    }
    ```
+
    - `order` is **sparse on purpose** (steps of ~10). To slot a title between two
      others, pick any number in the gap (e.g. `215` between `210` and `220`) — no
      renumbering needed.
@@ -200,13 +201,13 @@ Each template asks for the one thing that actually settles these debates: a
 
 This is an **open-source, non-commercial fan project**. It is **not affiliated
 with, endorsed, sponsored, or approved by** The Walt Disney Company, Marvel
-Studios, Netflix, Sony Pictures, or any of their subsidiaries. *Marvel*,
-*Marvel Cinematic Universe*, all character names, titles, and related logos are
+Studios, Netflix, Sony Pictures, or any of their subsidiaries. _Marvel_,
+_Marvel Cinematic Universe_, all character names, titles, and related logos are
 trademarks of their respective owners.
 
 Film and series metadata, posters and backdrops are provided by
-**[The Movie Database (TMDB)](https://www.themoviedb.org)**. *This product uses the
-TMDB API but is not endorsed or certified by TMDB.* Ratings are sourced from
+**[The Movie Database (TMDB)](https://www.themoviedb.org)**. _This product uses the
+TMDB API but is not endorsed or certified by TMDB._ Ratings are sourced from
 **IMDb** and **Rotten Tomatoes** via the **OMDb API**. All such data and imagery
 remain the property of their respective owners.
 
@@ -220,4 +221,4 @@ This project is released under a **custom non-commercial license** — see
   attribution link** back to [this project](https://github.com/veniplex/mcu-timeline)
   on **every page**.
 
-© 2026 veniplex.
+<p align="center">Made with <a href="https://wikipedia.org/wiki/Love"><img src="https://api.iconify.design/heroicons-solid:heart.svg?color=%23ff0000" /></a> by <a href="https://github.com/veniplex">@veniplex</a></p>

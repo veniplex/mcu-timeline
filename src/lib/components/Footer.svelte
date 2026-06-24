@@ -15,14 +15,14 @@
          every page. -->
     <div class="flex flex-col items-center gap-3">
       <GithubPill class="inline-flex sm:hidden" />
-      <a
+      <!-- <a
         href={GITHUB_URL}
         target="_blank"
         rel="noopener noreferrer"
         class="text-sm font-medium underline-offset-2 hover:underline"
       >
         {$t("footer.builtBy")}
-      </a>
+      </a> -->
       <p class="text-xs text-muted-foreground text-center">
         © {year} ·
         <a
