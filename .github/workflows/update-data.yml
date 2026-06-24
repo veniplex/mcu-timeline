@@ -1,0 +1,75 @@
+name: Update data
+
+on:
+  schedule:
+    # Ratings: daily at 03:00 UTC
+    - cron: '0 3 * * *'
+    # Full TMDB catalog: weekly on Monday at 03:30 UTC
+    - cron: '30 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'What to update'
+        required: true
+        default: ratings
+        type: choice
+        options:
+          - ratings
+          - data
+          - all
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+
+      # Determine which scripts to run.
+      # On a manual dispatch: use the input.
+      # On the daily cron (03:00):   only ratings.
+      # On the weekly cron (03:30):  full data + ratings.
+      - name: Resolve target
+        id: target
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "target=${{ inputs.target }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "30 3 * * 1" ]; then
+            echo "target=all" >> "$GITHUB_OUTPUT"
+          else
+            echo "target=ratings" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch TMDB catalog
+        if: steps.target.outputs.target == 'data' || steps.target.outputs.target == 'all'
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+        run: npm run build:data
+
+      - name: Fetch ratings
+        if: steps.target.outputs.target == 'ratings' || steps.target.outputs.target == 'all'
+        env:
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+        run: npm run build:ratings
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/lib/data/catalog.en.json src/lib/data/catalog.de.json src/lib/data/ratings.json
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit."
+          else
+            git commit -m "chore(data): automated data refresh [skip ci]"
+            git push
+          fi
