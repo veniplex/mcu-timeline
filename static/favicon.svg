@@ -1,11 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <title>MCU Timeline</title>
   <rect width="64" height="64" rx="14" fill="#0f172a"/>
-  <!-- filmstrip: vertical = a timeline, perforated = cinema -->
   <rect x="18" y="6" width="28" height="52" rx="5" fill="#d11f1f"/>
-  <!-- gold frame divider (brand accent) -->
   <rect x="18" y="30" width="28" height="3.2" fill="#e0a82e"/>
-  <!-- sprocket perforations -->
   <g fill="#0f172a">
     <rect x="20.5" y="11" width="4" height="5" rx="1.4"/>
     <rect x="39.5" y="11" width="4" height="5" rx="1.4"/>

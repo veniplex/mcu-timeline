@@ -4,6 +4,7 @@
   import { injectAnalytics } from "@vercel/analytics/sveltekit";
   import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
   import Nav from "$lib/components/Nav.svelte";
+  import Footer from "$lib/components/Footer.svelte";
   import { initUserPrefs } from "$lib/stores/userPrefs";
 
   injectAnalytics();
@@ -20,4 +21,5 @@
   <main class="mx-auto w-full max-w-7xl flex-1 px-4 pb-8 sm:px-6">
     {@render children()}
   </main>
+  <Footer />
 </div>

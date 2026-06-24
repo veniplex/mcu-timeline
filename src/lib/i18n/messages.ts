@@ -35,6 +35,14 @@ export const messages = {
     "empty.title": "Nothing here yet",
     "empty.body": "Try adjusting your filters.",
     "timeline.end": "To be continued…",
+    "footer.source": "GitHub",
+    "footer.stars": "stars",
+    "footer.dataBy": "Data by {tmdb}. Ratings via IMDb & Rotten Tomatoes.",
+    "footer.tmdbDisclaimer":
+      "This product uses the TMDB API but is not endorsed or certified by TMDB.",
+    "footer.fanProject":
+      "An open-source, non-commercial fan project. Not affiliated with or endorsed by Marvel Studios or The Walt Disney Company. All trademarks and imagery belong to their respective owners.",
+    "footer.license": "MIT licensed",
   },
   de: {
     "app.title": "MCU-Zeitleiste",
@@ -66,6 +74,15 @@ export const messages = {
     "empty.title": "Noch nichts vorhanden",
     "empty.body": "Versuche, deine Filter anzupassen.",
     "timeline.end": "Fortsetzung folgt …",
+    "footer.source": "GitHub",
+    "footer.stars": "Sterne",
+    "footer.dataBy":
+      "Daten von {tmdb}. Bewertungen via IMDb & Rotten Tomatoes.",
+    "footer.tmdbDisclaimer":
+      "Dieses Produkt nutzt die TMDB-API, ist aber nicht von TMDB unterstützt oder zertifiziert.",
+    "footer.fanProject":
+      "Ein quelloffenes, nicht-kommerzielles Fan-Projekt. Nicht mit Marvel Studios oder The Walt Disney Company verbunden oder von ihnen unterstützt. Alle Marken und Bilder gehören ihren jeweiligen Eigentümern.",
+    "footer.license": "MIT-lizenziert",
   },
 } as const;
 
