@@ -32,6 +32,7 @@
     let done = 0;
     let total = 0;
     for (const item of items) {
+      if (item.upcoming) continue; // can't be watched
       total += itemUnits(item).length;
       done += watchedUnitCount(item, $watched);
     }

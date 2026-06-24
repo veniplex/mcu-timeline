@@ -176,7 +176,7 @@
       </span>
     {/if}
 
-    {#if canTrack}
+    {#if canTrack && !item.upcoming}
       <div class="absolute bottom-2 right-2 flex items-center gap-1.5">
         {#if watchedDate}
           <span

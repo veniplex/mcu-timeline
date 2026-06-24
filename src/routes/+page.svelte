@@ -95,17 +95,26 @@
   });
 
   // Progress counts watch UNITS (each series episode counts on its own; movies = 1).
+  // Upcoming items can't be watched, so they're excluded from the totals.
   const totalItems = $derived(
     allBands.reduce(
       (sum, band) =>
-        sum + band.items.reduce((s, i) => s + itemUnits(i).length, 0),
+        sum +
+        band.items.reduce(
+          (s, i) => s + (i.upcoming ? 0 : itemUnits(i).length),
+          0,
+        ),
       0,
     ),
   );
   const totalWatched = $derived(
     allBands.reduce(
       (sum, band) =>
-        sum + band.items.reduce((s, i) => s + watchedUnitCount(i, $watched), 0),
+        sum +
+        band.items.reduce(
+          (s, i) => s + (i.upcoming ? 0 : watchedUnitCount(i, $watched)),
+          0,
+        ),
       0,
     ),
   );

@@ -226,7 +226,7 @@
           {/if}
 
           <div class="flex flex-wrap items-center gap-3">
-            {#if canTrack}
+            {#if canTrack && !item.upcoming}
               <button
                 class="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition-colors {isWatched
                   ? 'border-accent bg-accent text-on-accent'
