@@ -34,6 +34,12 @@ jobs:
 
       - run: npm ci
 
+      - name: Write .env
+        run: |
+          printf 'TMDB_API_KEY=%s\nOMDB_API_KEY=%s\n' \
+            "${{ secrets.TMDB_API_KEY }}" \
+            "${{ secrets.OMDB_API_KEY }}" > .env
+
       # Determine which scripts to run.
       # On a manual dispatch: use the input.
       # On the daily cron (03:00):   only ratings.
