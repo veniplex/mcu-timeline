@@ -1,11 +1,13 @@
 <script lang="ts">
-	import { LogIn, LogOut, ChevronDown } from 'lucide-svelte';
+	import { LogIn, LogOut, ChevronDown, RotateCcw } from 'lucide-svelte';
 	import { firebaseEnabled } from '$lib/firebase';
 	import { auth, signInWithGoogle, signInWithGithub, signOut } from '$lib/stores/auth';
+	import { resetWatched } from '$lib/stores/watched';
 	import { t } from '$lib/i18n/messages';
 
 	let open = $state(false);
 	let error = $state<string | null>(null);
+	let confirmReset = $state(false);
 
 	async function run(fn: () => Promise<void>) {
 		error = null;
@@ -16,6 +18,21 @@
 			error = e instanceof Error ? e.message : 'Sign-in failed';
 		}
 	}
+
+	// Two-step: first click arms, second click wipes. Resets when menu closes.
+	async function onReset() {
+		if (!confirmReset) {
+			confirmReset = true;
+			return;
+		}
+		await resetWatched();
+		confirmReset = false;
+		open = false;
+	}
+
+	$effect(() => {
+		if (!open) confirmReset = false;
+	});
 </script>
 
 <svelte:window onclick={(e) => { if (!(e.target as Element).closest('[data-auth-dropdown]')) open = false; }} />
@@ -44,9 +61,20 @@
 		</button>
 		{#if open}
 			<div
-				class="absolute right-0 mt-2 w-44 rounded-xl border border-border bg-surface p-1 shadow-lg"
+				class="absolute right-0 mt-2 w-56 rounded-xl border border-border bg-surface p-1 shadow-lg"
 				role="menu"
 			>
+				<button
+					class="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm transition-colors {confirmReset
+						? 'bg-destructive/10 text-destructive'
+						: 'text-muted-foreground hover:bg-muted hover:text-foreground'}"
+					role="menuitem"
+					onclick={onReset}
+				>
+					<RotateCcw class="size-4 shrink-0" aria-hidden="true" />
+					{confirmReset ? $t('watched.resetConfirm') : $t('watched.reset')}
+				</button>
+				<div class="my-1 border-t border-border"></div>
 				<button
 					class="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-muted"
 					role="menuitem"

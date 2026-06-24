@@ -9,7 +9,14 @@
     "releaseDate": "2011-07-22",
     "runtime": 124,
     "poster": "/osELOHV9IVKCIflUpJ60cN7mgP8.jpg",
-    "backdrop": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg"
+    "backdrop": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger/watch?locale=DE"
   },
   "agent-carter-s1": {
     "id": "agent-carter-s1",
@@ -72,7 +79,14 @@
         "title": "Das ist erst der Anfang",
         "airDate": "2015-02-24"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/61550-marvel-s-agent-carter/watch?locale=DE"
   },
   "agent-carter-s2": {
     "id": "agent-carter-s2",
@@ -147,7 +161,14 @@
         "title": "Der Riss in der Welt",
         "airDate": "2016-03-01"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/61550-marvel-s-agent-carter/watch?locale=DE"
   },
   "captain-marvel": {
     "id": "captain-marvel",
@@ -159,7 +180,14 @@
     "releaseDate": "2019-03-06",
     "runtime": 124,
     "poster": "/A7wZNpzhgS6mnER16YWrmvOHPiZ.jpg",
-    "backdrop": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg"
+    "backdrop": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/299537-captain-marvel/watch?locale=DE"
   },
   "iron-man": {
     "id": "iron-man",
@@ -171,7 +199,30 @@
     "releaseDate": "2008-04-30",
     "runtime": 125,
     "poster": "/ueGAjn2cR1nc1f2i8VjIhpiP73E.jpg",
-    "backdrop": "/cyecB7godJ6kNHGONFjUyVN9OX5.jpg"
+    "backdrop": "/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      },
+      {
+        "name": "Joyn Plus",
+        "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/1726-iron-man/watch?locale=DE"
   },
   "iron-man-2": {
     "id": "iron-man-2",
@@ -183,7 +234,30 @@
     "releaseDate": "2010-04-28",
     "runtime": 125,
     "poster": "/nAhGVbqwWXjUMAaZvlmPr6nJOfR.jpg",
-    "backdrop": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg"
+    "backdrop": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      },
+      {
+        "name": "Joyn Plus",
+        "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/10138-iron-man-2/watch?locale=DE"
   },
   "the-incredible-hulk": {
     "id": "the-incredible-hulk",
@@ -195,7 +269,22 @@
     "releaseDate": "2008-06-12",
     "runtime": 112,
     "poster": "/bwCgRJRq6WUjhXIvBZjSI1lglRv.jpg",
-    "backdrop": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg"
+    "backdrop": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg",
+    "providers": [
+      {
+        "name": "Joyn",
+        "logo": "/3tKojIkk9QpkDUeU8HgpHQ9Jb2v.jpg"
+      },
+      {
+        "name": "Filmtastic Amazon Channel",
+        "logo": "/ni0t0Bj4HRAQ9f6zSv1Bl9MDjLK.jpg"
+      },
+      {
+        "name": "Filmtastic",
+        "logo": "/eptSSZPhXJllBI8QywFDmgOMNkU.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/1724-the-incredible-hulk/watch?locale=DE"
   },
   "thor": {
     "id": "thor",
@@ -207,7 +296,14 @@
     "releaseDate": "2011-04-21",
     "runtime": 115,
     "poster": "/wtHxoL3zFjIrjZBCGlRTb8ao1IW.jpg",
-    "backdrop": "/jWAJlgICJbn2kyohrokteRoD3cZ.jpg"
+    "backdrop": "/jWAJlgICJbn2kyohrokteRoD3cZ.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/10195-thor/watch?locale=DE"
   },
   "the-avengers": {
     "id": "the-avengers",
@@ -219,7 +315,14 @@
     "releaseDate": "2012-04-25",
     "runtime": 143,
     "poster": "/3wfcxLkMrcm4HHZ56hLhzoWFiTC.jpg",
-    "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg"
+    "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/24428-the-avengers/watch?locale=DE"
   },
   "iron-man-3": {
     "id": "iron-man-3",
@@ -231,7 +334,30 @@
     "releaseDate": "2013-04-18",
     "runtime": 140,
     "poster": "/h0vJ6sTYWQmqenNqRa1IiW1t0Ys.jpg",
-    "backdrop": "/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg"
+    "backdrop": "/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      },
+      {
+        "name": "Joyn Plus",
+        "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/68721-iron-man-3/watch?locale=DE"
   },
   "thor-the-dark-world": {
     "id": "thor-the-dark-world",
@@ -243,7 +369,14 @@
     "releaseDate": "2013-10-30",
     "runtime": 112,
     "poster": "/7a3za75dP6UPviHXNKIxzZNEwyx.jpg",
-    "backdrop": "/5QEOy0QEpad9QsXeMxuGHPXMale.jpg"
+    "backdrop": "/5QEOy0QEpad9QsXeMxuGHPXMale.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/76338-thor-the-dark-world/watch?locale=DE"
   },
   "captain-america-the-winter-soldier": {
     "id": "captain-america-the-winter-soldier",
@@ -255,7 +388,14 @@
     "releaseDate": "2014-03-20",
     "runtime": 128,
     "poster": "/14vWmCoZHXajYmtqSsswWpSOdrd.jpg",
-    "backdrop": "/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg"
+    "backdrop": "/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/100402-captain-america-the-winter-soldier/watch?locale=DE"
   },
   "agents-of-shield-s1": {
     "id": "agents-of-shield-s1",
@@ -402,7 +542,14 @@
         "title": "Der Anfang vom Ende",
         "airDate": "2014-05-13"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "agents-of-shield-s2": {
     "id": "agents-of-shield-s2",
@@ -549,7 +696,14 @@
         "title": "Schachmatt (2)",
         "airDate": "2015-05-12"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "guardians-of-the-galaxy": {
     "id": "guardians-of-the-galaxy",
@@ -561,7 +715,14 @@
     "releaseDate": "2014-07-30",
     "runtime": 122,
     "poster": "/9pbW0r2YIkyWCOieSAUPrmS9cDp.jpg",
-    "backdrop": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg"
+    "backdrop": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/118340-guardians-of-the-galaxy/watch?locale=DE"
   },
   "guardians-of-the-galaxy-vol-2": {
     "id": "guardians-of-the-galaxy-vol-2",
@@ -573,7 +734,14 @@
     "releaseDate": "2017-04-25",
     "runtime": 137,
     "poster": "/ckujEWphKR2NG3vLLhUaLzJEGny.jpg",
-    "backdrop": "/bW93ycPSSi3Hxx1NvlMX5qm2mQu.jpg"
+    "backdrop": "/bW93ycPSSi3Hxx1NvlMX5qm2mQu.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/283995-guardians-of-the-galaxy-vol-2/watch?locale=DE"
   },
   "daredevil-s1": {
     "id": "daredevil-s1",
@@ -666,7 +834,14 @@
         "title": "Daredevil",
         "airDate": "2015-04-10"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/61889-marvel-s-daredevil/watch?locale=DE"
   },
   "jessica-jones-s1": {
     "id": "jessica-jones-s1",
@@ -759,7 +934,14 @@
         "title": "Lächeln",
         "airDate": "2015-11-20"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/38472-marvel-s-jessica-jones/watch?locale=DE"
   },
   "avengers-age-of-ultron": {
     "id": "avengers-age-of-ultron",
@@ -771,7 +953,14 @@
     "releaseDate": "2015-04-22",
     "runtime": 141,
     "poster": "/woAP8YaiVIuo7YXTeqVQEhXBdfz.jpg",
-    "backdrop": "/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg"
+    "backdrop": "/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/99861-avengers-age-of-ultron/watch?locale=DE"
   },
   "ant-man": {
     "id": "ant-man",
@@ -783,7 +972,14 @@
     "releaseDate": "2015-07-14",
     "runtime": 117,
     "poster": "/myC8VQDoWIFq2WAnu9AAyJVTQRH.jpg",
-    "backdrop": "/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg"
+    "backdrop": "/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/102899-ant-man/watch?locale=DE"
   },
   "captain-america-civil-war": {
     "id": "captain-america-civil-war",
@@ -795,7 +991,14 @@
     "releaseDate": "2016-04-27",
     "runtime": 147,
     "poster": "/7iB1ow4vPLRJ9UOnIwvEFQwRHHr.jpg",
-    "backdrop": "/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg"
+    "backdrop": "/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/271110-captain-america-civil-war/watch?locale=DE"
   },
   "black-panther": {
     "id": "black-panther",
@@ -807,7 +1010,14 @@
     "releaseDate": "2018-02-13",
     "runtime": 134,
     "poster": "/l6y476RPWK35Y7zmiMPcih4uU7A.jpg",
-    "backdrop": "/19Ed4XgjahPm4U8JT7SnntERIlt.jpg"
+    "backdrop": "/19Ed4XgjahPm4U8JT7SnntERIlt.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/284054-black-panther/watch?locale=DE"
   },
   "black-widow": {
     "id": "black-widow",
@@ -819,7 +1029,14 @@
     "releaseDate": "2021-07-07",
     "runtime": 133,
     "poster": "/gkyoYo9d6g98xjScnZwh3nL2Yfp.jpg",
-    "backdrop": "/6azpBJGcLx9SKif8h9VMnflBfa.jpg"
+    "backdrop": "/6azpBJGcLx9SKif8h9VMnflBfa.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/497698-black-widow/watch?locale=DE"
   },
   "spider-man-homecoming": {
     "id": "spider-man-homecoming",
@@ -831,7 +1048,9 @@
     "releaseDate": "2017-07-05",
     "runtime": 133,
     "poster": "/elU7H73qN3WEQmmfdn0CdH3q8H8.jpg",
-    "backdrop": "/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg"
+    "backdrop": "/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg",
+    "providers": [],
+    "watchLink": "https://www.themoviedb.org/movie/315635-spider-man-homecoming/watch?locale=DE"
   },
   "doctor-strange": {
     "id": "doctor-strange",
@@ -843,7 +1062,14 @@
     "releaseDate": "2016-10-25",
     "runtime": 115,
     "poster": "/mzPnP190YLV4KFL3ZgsP7AsPEd2.jpg",
-    "backdrop": "/3zvZ699gMW2RhWc0GisIukzq0Ls.jpg"
+    "backdrop": "/3zvZ699gMW2RhWc0GisIukzq0Ls.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/284052-doctor-strange/watch?locale=DE"
   },
   "thor-ragnarok": {
     "id": "thor-ragnarok",
@@ -855,7 +1081,14 @@
     "releaseDate": "2017-10-02",
     "runtime": 131,
     "poster": "/8etFULS6CRN39vvXykQH1mUD1yB.jpg",
-    "backdrop": "/wBzMnQ01R9w58W6ucltdYfOyP4j.jpg"
+    "backdrop": "/wBzMnQ01R9w58W6ucltdYfOyP4j.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/284053-thor-ragnarok/watch?locale=DE"
   },
   "ant-man-and-the-wasp": {
     "id": "ant-man-and-the-wasp",
@@ -867,7 +1100,14 @@
     "releaseDate": "2018-07-04",
     "runtime": 118,
     "poster": "/41imUCjSKoBjPUrfeCqib8KAvHS.jpg",
-    "backdrop": "/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg"
+    "backdrop": "/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/363088-ant-man-and-the-wasp/watch?locale=DE"
   },
   "avengers-infinity-war": {
     "id": "avengers-infinity-war",
@@ -879,7 +1119,14 @@
     "releaseDate": "2018-04-25",
     "runtime": 150,
     "poster": "/uoXC8LdLIjF3wyXNGVSwQ6JMaDb.jpg",
-    "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg"
+    "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/299536-avengers-infinity-war/watch?locale=DE"
   },
   "avengers-endgame": {
     "id": "avengers-endgame",
@@ -891,7 +1138,14 @@
     "releaseDate": "2019-04-24",
     "runtime": 181,
     "poster": "/ibO8Pj0aA1nwj3Q9FMpMcYZkdCA.jpg",
-    "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg"
+    "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/299534-avengers-endgame/watch?locale=DE"
   },
   "loki-s1": {
     "id": "loki-s1",
@@ -942,7 +1196,14 @@
         "title": "Für alle Zeit. Immer.",
         "airDate": "2021-07-14"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/84958-loki/watch?locale=DE"
   },
   "loki-s2": {
     "id": "loki-s2",
@@ -993,7 +1254,14 @@
         "title": "Glorreiches Ansinnen",
         "airDate": "2023-11-09"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/84958-loki/watch?locale=DE"
   },
   "what-if-s1": {
     "id": "what-if-s1",
@@ -1062,7 +1330,14 @@
         "title": "Was wäre, wenn der Watcher seinen Schwur gebrochen hätte?",
         "airDate": "2021-10-06"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/91363-what-if/watch?locale=DE"
   },
   "wandavision": {
     "id": "wandavision",
@@ -1131,7 +1406,14 @@
         "title": "Serien-Finale",
         "airDate": "2021-03-05"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/85271-wandavision/watch?locale=DE"
   },
   "the-falcon-and-the-winter-soldier": {
     "id": "the-falcon-and-the-winter-soldier",
@@ -1182,7 +1464,14 @@
         "title": "Eine Welt, alle geeint",
         "airDate": "2021-04-23"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/88396-the-falcon-and-the-winter-soldier/watch?locale=DE"
   },
   "shang-chi": {
     "id": "shang-chi",
@@ -1194,7 +1483,14 @@
     "releaseDate": "2021-09-01",
     "runtime": 132,
     "poster": "/AjXzHBNlmCXZnvpONbUhGtgiUiA.jpg",
-    "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg"
+    "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/566525-shang-chi-and-the-legend-of-the-ten-rings/watch?locale=DE"
   },
   "eternals": {
     "id": "eternals",
@@ -1206,7 +1502,14 @@
     "releaseDate": "2021-11-03",
     "runtime": 149,
     "poster": "/sVvtzCxk4wowhU1g4fS6AG2MWg5.jpg",
-    "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg"
+    "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/524434-eternals/watch?locale=DE"
   },
   "spider-man-far-from-home": {
     "id": "spider-man-far-from-home",
@@ -1218,7 +1521,9 @@
     "releaseDate": "2019-06-28",
     "runtime": 130,
     "poster": "/mp2rchOm2nchJ3E3fPzTFzkuLd3.jpg",
-    "backdrop": "/34jW8LvjRplM8Pv06cBFDpLlenR.jpg"
+    "backdrop": "/34jW8LvjRplM8Pv06cBFDpLlenR.jpg",
+    "providers": [],
+    "watchLink": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=DE"
   },
   "hawkeye": {
     "id": "hawkeye",
@@ -1269,7 +1574,14 @@
         "title": "Ist es Weihnachten?",
         "airDate": "2021-12-22"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/88329-hawkeye/watch?locale=DE"
   },
   "spider-man-no-way-home": {
     "id": "spider-man-no-way-home",
@@ -1281,7 +1593,9 @@
     "releaseDate": "2021-12-15",
     "runtime": 159,
     "poster": "/iNKf4D0AzOj9GLq8ZyG3WZaqibL.jpg",
-    "backdrop": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg"
+    "backdrop": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg",
+    "providers": [],
+    "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
   },
   "doctor-strange-multiverse-of-madness": {
     "id": "doctor-strange-multiverse-of-madness",
@@ -1293,7 +1607,14 @@
     "releaseDate": "2022-05-04",
     "runtime": 126,
     "poster": "/eMMK2IZ2kWCOO9OwUOhwORkrpOw.jpg",
-    "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg"
+    "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness/watch?locale=DE"
   },
   "moon-knight": {
     "id": "moon-knight",
@@ -1344,7 +1665,14 @@
         "title": "Götter und Monster",
         "airDate": "2022-05-04"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/92749-moon-knight/watch?locale=DE"
   },
   "ms-marvel": {
     "id": "ms-marvel",
@@ -1395,7 +1723,14 @@
         "title": "Nicht normal",
         "airDate": "2022-07-13"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/92782-ms-marvel/watch?locale=DE"
   },
   "thor-love-and-thunder": {
     "id": "thor-love-and-thunder",
@@ -1407,7 +1742,14 @@
     "releaseDate": "2022-07-06",
     "runtime": 119,
     "poster": "/1YvsQrN6RWDjxfaI8YMpACLM3HI.jpg",
-    "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg"
+    "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/616037-thor-love-and-thunder/watch?locale=DE"
   },
   "she-hulk": {
     "id": "she-hulk",
@@ -1476,7 +1818,14 @@
         "title": "Wessen Serie ist das nochmal?",
         "airDate": "2022-10-13"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/watch?locale=DE"
   },
   "werewolf-by-night": {
     "id": "werewolf-by-night",
@@ -1488,7 +1837,14 @@
     "releaseDate": "2022-09-25",
     "runtime": 60,
     "poster": "/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
-    "backdrop": "/pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg"
+    "backdrop": "/pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/894205-werewolf-by-night/watch?locale=DE"
   },
   "black-panther-wakanda-forever": {
     "id": "black-panther-wakanda-forever",
@@ -1500,7 +1856,14 @@
     "releaseDate": "2022-11-09",
     "runtime": 155,
     "poster": "/vo9QISNKYtDN40VKfQkPxbMOO9j.jpg",
-    "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg"
+    "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=DE"
   },
   "guardians-holiday-special": {
     "id": "guardians-holiday-special",
@@ -1512,7 +1875,14 @@
     "releaseDate": "2022-11-24",
     "runtime": 45,
     "poster": "/i2eCryA93yXGLtXoZY6I30qNQEj.jpg",
-    "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg"
+    "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/774752-the-guardians-of-the-galaxy-holiday-special/watch?locale=DE"
   },
   "agents-of-shield-s7": {
     "id": "agents-of-shield-s7",
@@ -1605,7 +1975,14 @@
         "title": "Wofür wir kämpfen",
         "airDate": "2020-08-12"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "helstrom": {
     "id": "helstrom",
@@ -1680,7 +2057,14 @@
         "title": "Höllensturm",
         "airDate": "2020-10-16"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/88987-helstrom/watch?locale=DE"
   },
   "ant-man-quantumania": {
     "id": "ant-man-quantumania",
@@ -1692,7 +2076,14 @@
     "releaseDate": "2023-02-15",
     "runtime": 125,
     "poster": "/j3C9sEaEmqFqoZmnzQMFzKbLuNQ.jpg",
-    "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg"
+    "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/640146-ant-man-and-the-wasp-quantumania/watch?locale=DE"
   },
   "guardians-of-the-galaxy-vol-3": {
     "id": "guardians-of-the-galaxy-vol-3",
@@ -1704,7 +2095,14 @@
     "releaseDate": "2023-05-03",
     "runtime": 150,
     "poster": "/jrz8nDZH6u3Xfpl74q2xeaS33RL.jpg",
-    "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg"
+    "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/447365-guardians-of-the-galaxy-vol-3/watch?locale=DE"
   },
   "secret-invasion": {
     "id": "secret-invasion",
@@ -1755,7 +2153,14 @@
         "title": "Zuhause",
         "airDate": "2023-07-26"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/114472-secret-invasion/watch?locale=DE"
   },
   "the-marvels": {
     "id": "the-marvels",
@@ -1767,7 +2172,14 @@
     "releaseDate": "2023-11-08",
     "runtime": 105,
     "poster": "/9wweUjCitucpqiPVYisxEV2vKC6.jpg",
-    "backdrop": "/w4pRLYYbhHn3sh9kqRgPZM6GjyS.jpg"
+    "backdrop": "/w4pRLYYbhHn3sh9kqRgPZM6GjyS.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/609681-the-marvels/watch?locale=DE"
   },
   "echo": {
     "id": "echo",
@@ -1812,7 +2224,14 @@
         "title": "Maya",
         "airDate": "2024-01-09"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/122226-echo/watch?locale=DE"
   },
   "agatha-all-along": {
     "id": "agatha-all-along",
@@ -1881,7 +2300,14 @@
         "title": "Jungfrau, Mutter, Weib",
         "airDate": "2024-10-30"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/138501-agatha-all-along/watch?locale=DE"
   },
   "deadpool-and-wolverine": {
     "id": "deadpool-and-wolverine",
@@ -1893,7 +2319,14 @@
     "releaseDate": "2024-07-24",
     "runtime": 127,
     "poster": "/h34b8gn6m1fzNpEhSpMZAgknwjX.jpg",
-    "backdrop": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg"
+    "backdrop": "/cOoVcVQ3i1m5b2xtqKBtoTSbxC1.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/533535-deadpool-wolverine/watch?locale=DE"
   },
   "captain-america-brave-new-world": {
     "id": "captain-america-brave-new-world",
@@ -1905,7 +2338,14 @@
     "releaseDate": "2025-02-12",
     "runtime": 118,
     "poster": "/b8c6rRVmDBV7TxaCloYGUMcWpNf.jpg",
-    "backdrop": "/8eifdha9GQeZAkexgtD45546XKx.jpg"
+    "backdrop": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/822119-captain-america-brave-new-world/watch?locale=DE"
   },
   "daredevil-born-again-s1": {
     "id": "daredevil-born-again-s1",
@@ -1974,7 +2414,14 @@
         "title": "Ab in die Hölle",
         "airDate": "2025-04-15"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/202555-daredevil-born-again/watch?locale=DE"
   },
   "thunderbolts": {
     "id": "thunderbolts",
@@ -1986,7 +2433,14 @@
     "releaseDate": "2025-04-30",
     "runtime": 126,
     "poster": "/7valL7vfG9nB3nwlNhPsrodceBp.jpg",
-    "backdrop": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg"
+    "backdrop": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/986056-thunderbolts/watch?locale=DE"
   },
   "ironheart": {
     "id": "ironheart",
@@ -2037,7 +2491,14 @@
         "title": "Die Vergangenheit ist vergangen",
         "airDate": "2025-07-01"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/114471-ironheart/watch?locale=DE"
   },
   "the-fantastic-four-first-steps": {
     "id": "the-fantastic-four-first-steps",
@@ -2049,7 +2510,14 @@
     "releaseDate": "2025-07-23",
     "runtime": 114,
     "poster": "/qerflS8AU23XopttgDFBsbe1L0D.jpg",
-    "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg"
+    "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/617126-the-fantastic-4-first-steps/watch?locale=DE"
   },
   "agents-of-shield-s3": {
     "id": "agents-of-shield-s3",
@@ -2196,7 +2664,14 @@
         "title": "Himmelfahrtskommando",
         "airDate": "2016-05-17"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "daredevil-s2": {
     "id": "daredevil-s2",
@@ -2289,7 +2764,14 @@
         "title": "Ein kalter Tag in Hell's Kitchen",
         "airDate": "2016-03-18"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/61889-marvel-s-daredevil/watch?locale=DE"
   },
   "agents-of-shield-s4": {
     "id": "agents-of-shield-s4",
@@ -2436,7 +2918,14 @@
         "title": "Das Ende der Welt",
         "airDate": "2017-05-16"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "luke-cage-s1": {
     "id": "luke-cage-s1",
@@ -2529,7 +3018,14 @@
         "title": "You Know My Steez",
         "airDate": "2016-09-30"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/62126-marvel-s-luke-cage/watch?locale=DE"
   },
   "iron-fist-s1": {
     "id": "iron-fist-s1",
@@ -2622,7 +3118,14 @@
         "title": "Ein Kind, vom Feuer geküsst",
         "airDate": "2017-03-17"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/62127-marvel-s-iron-fist/watch?locale=DE"
   },
   "the-defenders": {
     "id": "the-defenders",
@@ -2685,7 +3188,14 @@
         "title": "The Defenders",
         "airDate": "2017-08-18"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/62285-marvel-s-the-defenders/watch?locale=DE"
   },
   "inhumans": {
     "id": "inhumans",
@@ -2748,7 +3258,14 @@
         "title": "Der König von Attilan",
         "airDate": "2017-11-10"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/68716-marvel-s-inhumans/watch?locale=DE"
   },
   "the-punisher-s1": {
     "id": "the-punisher-s1",
@@ -2841,7 +3358,14 @@
         "title": "Memento Mori",
         "airDate": "2017-11-17"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/67178-marvel-s-the-punisher/watch?locale=DE"
   },
   "runaways-s1": {
     "id": "runaways-s1",
@@ -2916,7 +3440,9 @@
         "title": "Verfeindet",
         "airDate": "2018-01-09"
       }
-    ]
+    ],
+    "providers": [],
+    "watchLink": "https://www.themoviedb.org/tv/67466-marvel-s-runaways/watch?locale=DE"
   },
   "agents-of-shield-s5": {
     "id": "agents-of-shield-s5",
@@ -3063,7 +3589,14 @@
         "title": "Das Ende",
         "airDate": "2018-05-18"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "jessica-jones-s2": {
     "id": "jessica-jones-s2",
@@ -3156,7 +3689,14 @@
         "title": "Freizeitpark",
         "airDate": "2018-03-08"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/38472-marvel-s-jessica-jones/watch?locale=DE"
   },
   "cloak-and-dagger-s1": {
     "id": "cloak-and-dagger-s1",
@@ -3231,7 +3771,14 @@
         "title": "Zerstörung",
         "airDate": "2018-08-02"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/66190-marvel-s-cloak-dagger/watch?locale=DE"
   },
   "luke-cage-s2": {
     "id": "luke-cage-s2",
@@ -3324,7 +3871,14 @@
         "title": "They Reminisce Over You",
         "airDate": "2018-06-22"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/62126-marvel-s-luke-cage/watch?locale=DE"
   },
   "iron-fist-s2": {
     "id": "iron-fist-s2",
@@ -3399,7 +3953,14 @@
         "title": "Ein eisernes Duell",
         "airDate": "2018-09-07"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/62127-marvel-s-iron-fist/watch?locale=DE"
   },
   "daredevil-s3": {
     "id": "daredevil-s3",
@@ -3492,7 +4053,14 @@
         "title": "Eine neue Serviette",
         "airDate": "2018-10-19"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/61889-marvel-s-daredevil/watch?locale=DE"
   },
   "runaways-s2": {
     "id": "runaways-s2",
@@ -3585,7 +4153,9 @@
         "title": "Getrennt",
         "airDate": "2018-12-21"
       }
-    ]
+    ],
+    "providers": [],
+    "watchLink": "https://www.themoviedb.org/tv/67466-marvel-s-runaways/watch?locale=DE"
   },
   "the-punisher-s2": {
     "id": "the-punisher-s2",
@@ -3678,7 +4248,14 @@
         "title": "Der Wirbelwind",
         "airDate": "2019-01-18"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/67178-marvel-s-the-punisher/watch?locale=DE"
   },
   "cloak-and-dagger-s2": {
     "id": "cloak-and-dagger-s2",
@@ -3753,7 +4330,14 @@
         "title": "Der Showdown",
         "airDate": "2019-05-30"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/66190-marvel-s-cloak-dagger/watch?locale=DE"
   },
   "agents-of-shield-s6": {
     "id": "agents-of-shield-s6",
@@ -3846,7 +4430,14 @@
         "title": "Ein neues Leben",
         "airDate": "2019-08-02"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
   },
   "jessica-jones-s3": {
     "id": "jessica-jones-s3",
@@ -3939,7 +4530,14 @@
         "title": "Einfach alles",
         "airDate": "2019-06-14"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/38472-marvel-s-jessica-jones/watch?locale=DE"
   },
   "runaways-s3": {
     "id": "runaways-s3",
@@ -4014,7 +4612,9 @@
         "title": "Dem Tod entgangen",
         "airDate": "2019-12-13"
       }
-    ]
+    ],
+    "providers": [],
+    "watchLink": "https://www.themoviedb.org/tv/67466-marvel-s-runaways/watch?locale=DE"
   },
   "what-if-s2": {
     "id": "what-if-s2",
@@ -4083,7 +4683,14 @@
         "title": "Was wäre, wenn Strange Supreme einschreiten würde?",
         "airDate": "2023-12-30"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/91363-what-if/watch?locale=DE"
   },
   "what-if-s3": {
     "id": "what-if-s3",
@@ -4146,7 +4753,14 @@
         "title": "Was wäre, wenn?",
         "airDate": "2024-12-29"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/91363-what-if/watch?locale=DE"
   },
   "x-men-97-s1": {
     "id": "x-men-97-s1",
@@ -4221,7 +4835,14 @@
         "title": "Toleranz bedeutet Auslöschung (3)",
         "airDate": "2024-05-15"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/138502-x-men-97/watch?locale=DE"
   },
   "your-friendly-neighborhood-spider-man-s1": {
     "id": "your-friendly-neighborhood-spider-man-s1",
@@ -4296,7 +4917,14 @@
         "title": "Wenn dies mein Schicksal ist...",
         "airDate": "2025-02-19"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/138503-your-friendly-neighborhood-spider-man/watch?locale=DE"
   },
   "marvel-zombies": {
     "id": "marvel-zombies",
@@ -4335,7 +4963,14 @@
         "title": "Episode 4",
         "airDate": "2025-09-24"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/138505-marvel-zombies/watch?locale=DE"
   },
   "eyes-of-wakanda": {
     "id": "eyes-of-wakanda",
@@ -4374,7 +5009,14 @@
         "title": "Der letzte Panther",
         "airDate": "2025-08-01"
       }
-    ]
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/241388-eyes-of-wakanda/watch?locale=DE"
   },
   "venom": {
     "id": "venom",
@@ -4386,7 +5028,38 @@
     "releaseDate": "2018-09-28",
     "runtime": 112,
     "poster": "/e8XOhZTizIl4vTzOYqaUWIhI5iC.jpg",
-    "backdrop": "/hNsYUryiwxcdeTMkaBcPF3iEg0p.jpg"
+    "backdrop": "/hNsYUryiwxcdeTMkaBcPF3iEg0p.jpg",
+    "providers": [
+      {
+        "name": "RTL+",
+        "logo": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg"
+      },
+      {
+        "name": "RTL+ Max Amazon Channel",
+        "logo": "/8o737RzF49I8kOHe9ua3tLORIEf.jpg"
+      },
+      {
+        "name": "WOW",
+        "logo": "/9r5zFWuYnwjzO1JrNjSbLQwUc3P.jpg"
+      },
+      {
+        "name": "Sky Go",
+        "logo": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg"
+      },
+      {
+        "name": "AXN Black Amazon Channel",
+        "logo": "/bh0e83QEvjzttsj8FJcQaYxPR43.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
+      },
+      {
+        "name": "Wow Fiction Amazon Channel",
+        "logo": "/35XbldCPO3ztCREajGbfhf7827w.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/335983-venom/watch?locale=DE"
   },
   "venom-let-there-be-carnage": {
     "id": "venom-let-there-be-carnage",
@@ -4398,7 +5071,38 @@
     "releaseDate": "2021-09-30",
     "runtime": 97,
     "poster": "/ztoy8TiHu9qa22bW1DkhdNIzeF9.jpg",
-    "backdrop": "/eENEf62tMXbhyVvdcXlnQz2wcuT.jpg"
+    "backdrop": "/eENEf62tMXbhyVvdcXlnQz2wcuT.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      },
+      {
+        "name": "RTL+",
+        "logo": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg"
+      },
+      {
+        "name": "RTL+ Max Amazon Channel",
+        "logo": "/8o737RzF49I8kOHe9ua3tLORIEf.jpg"
+      },
+      {
+        "name": "Sky Go",
+        "logo": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg"
+      },
+      {
+        "name": "Filmtastic Amazon Channel",
+        "logo": "/ni0t0Bj4HRAQ9f6zSv1Bl9MDjLK.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
+      },
+      {
+        "name": "Wow Fiction Amazon Channel",
+        "logo": "/35XbldCPO3ztCREajGbfhf7827w.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/580489-venom-let-there-be-carnage/watch?locale=DE"
   },
   "morbius": {
     "id": "morbius",
@@ -4410,6 +5114,33 @@
     "releaseDate": "2022-03-30",
     "runtime": 105,
     "poster": "/bSV2fyGY9ce6OfUV47xEJdNsQNY.jpg",
-    "backdrop": "/jzWT0zd8U77fqWg5WgUfYaMzSFz.jpg"
+    "backdrop": "/jzWT0zd8U77fqWg5WgUfYaMzSFz.jpg",
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      },
+      {
+        "name": "WOW",
+        "logo": "/9r5zFWuYnwjzO1JrNjSbLQwUc3P.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
+      },
+      {
+        "name": "Wow Fiction Amazon Channel",
+        "logo": "/35XbldCPO3ztCREajGbfhf7827w.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=DE"
   }
 }

@@ -12,7 +12,12 @@ import { writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { chronology } from '../src/lib/data/chronology.ts';
-import type { Catalog, CatalogItem, ChronologyEntry } from '../src/lib/data/types.ts';
+import type {
+	Catalog,
+	CatalogItem,
+	ChronologyEntry,
+	StreamingProvider
+} from '../src/lib/data/types.ts';
 
 const API_KEY = process.env.TMDB_API_KEY;
 if (!API_KEY) {
@@ -23,6 +28,10 @@ if (!API_KEY) {
 const BASE = 'https://api.themoviedb.org/3';
 const here = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = resolve(here, '../src/lib/data');
+
+/** Watch-provider region (ISO-3166-1). Providers are region-specific; DE is the
+ * project's primary audience. Change here to retarget. */
+const PROVIDER_REGION = 'DE';
 
 type Lang = 'en-US' | 'de-DE';
 
@@ -58,6 +67,33 @@ async function fetchImdbId(type: 'movie' | 'tv', tmdbId: number): Promise<string
 		return (data.imdb_id as string) || null;
 	} catch {
 		return null;
+	}
+}
+
+/** Streaming providers (subscription + free/ads, deduped, priority-ordered) and
+ * the JustWatch link for PROVIDER_REGION. Region-independent of UI language. */
+async function fetchProviders(
+	type: 'movie' | 'tv',
+	tmdbId: number
+): Promise<{ providers: StreamingProvider[]; watchLink: string | null }> {
+	try {
+		const data = await tmdb(`/${type}/${tmdbId}/watch/providers`);
+		const region = data.results?.[PROVIDER_REGION];
+		if (!region) return { providers: [], watchLink: null };
+		const raw = [...(region.flatrate ?? []), ...(region.free ?? []), ...(region.ads ?? [])] as {
+			provider_id: number;
+			provider_name: string;
+			logo_path: string | null;
+			display_priority: number;
+		}[];
+		const seen = new Set<number>();
+		const providers = raw
+			.sort((a, b) => a.display_priority - b.display_priority)
+			.filter((p) => (seen.has(p.provider_id) ? false : seen.add(p.provider_id)))
+			.map((p) => ({ name: p.provider_name, logo: p.logo_path ?? null }));
+		return { providers, watchLink: region.link ?? null };
+	} catch {
+		return { providers: [], watchLink: null };
 	}
 }
 
@@ -131,9 +167,17 @@ async function main() {
 			// de overview/title can be empty on TMDB — fall back to en.
 			if (!de[entry.id].overview) de[entry.id].overview = en[entry.id].overview;
 			if (!de[entry.id].title) de[entry.id].title = en[entry.id].title;
+			// Providers are region- not language-specific — fetch once, share.
+			const { providers, watchLink } = await fetchProviders(entry.query.type, id);
+			en[entry.id].providers = providers;
+			en[entry.id].watchLink = watchLink;
+			de[entry.id].providers = providers;
+			de[entry.id].watchLink = watchLink;
 			resolved++;
 			// Log resolved title so wrong matches are easy to spot in the run output.
-			console.log(`ok (tmdb ${id}, imdb ${imdbId ?? '–'}) → "${en[entry.id].title}"`);
+			console.log(
+				`ok (tmdb ${id}, imdb ${imdbId ?? '–'}, prov ${providers.length}) → "${en[entry.id].title}"`
+			);
 		} catch (err) {
 			console.log(`FAILED: ${(err as Error).message}`);
 		}

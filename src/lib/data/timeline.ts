@@ -1,5 +1,5 @@
-import { chronology, categoryOf } from './chronology';
-import type { Category, CatalogItem, Phase, Ratings } from './types';
+import { chronology, categoryOf, rtSlugOf } from './chronology';
+import type { Category, CatalogItem, Phase, Ratings, StreamingProvider } from './types';
 import catalogEn from './catalog.en.json';
 import catalogDe from './catalog.de.json';
 import ratingsData from './ratings.json';
@@ -40,9 +40,22 @@ export interface TimelineItem {
 	eraTag?: string;
 	/** Season numbers covered (series only). */
 	seasons: number[];
-	episodes: { season: number; number: number; title: string; airDate: string | null }[];
+	episodes: {
+		season: number;
+		number: number;
+		title: string;
+		airDate: string | null;
+		/** Per-episode IMDb rating (e.g. "8.5"), when known. */
+		imdb?: string;
+		/** Per-episode IMDb id (e.g. "tt4667540"), for a direct episode link. */
+		imdbId?: string | null;
+	}[];
 	episodeCount: number;
 	ratings?: Ratings;
+	/** Streaming providers for the configured region. */
+	providers: StreamingProvider[];
+	/** JustWatch deep link for the region. */
+	watchLink?: string | null;
 }
 
 export interface PhaseBand {
@@ -61,12 +74,18 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 	const item = catalogs[locale][entryId] ?? catalogs.en[entryId];
 	if (!entry || !item) return null;
 	const isSeries = item.tmdbType === 'tv';
+	const entryRatings = ratings[entry.id];
+	const epRatings = entryRatings?.episodes ?? {};
+	const episodes = (item.episodes ?? []).map((e) => {
+		const r = epRatings[`${e.season}-${e.number}`];
+		return { ...e, imdb: r?.imdb, imdbId: r?.imdbId ?? null };
+	});
 	return {
 		key: entry.id,
 		entryIds: [entry.id],
 		tmdbId: item.tmdbId,
 		imdbId: item.imdbId ?? null,
-		rtSlug: entry.rtSlug,
+		rtSlug: rtSlugOf(entry),
 		isSeries,
 		phase: entry.phase,
 		category: categoryOf(entry.id),
@@ -79,9 +98,11 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 		backdrop: item.backdrop,
 		eraTag: entry.eraTag,
 		seasons: item.season != null ? [item.season] : [],
-		episodes: item.episodes ?? [],
-		episodeCount: item.episodes?.length ?? 0,
-		ratings: ratings[entry.id]
+		episodes,
+		episodeCount: episodes.length,
+		ratings: entryRatings,
+		providers: item.providers ?? [],
+		watchLink: item.watchLink ?? null
 	};
 }
 
@@ -176,4 +197,26 @@ export function isFullyWatched(item: TimelineItem, set: Set<string>): boolean {
 
 export function watchedUnitCount(item: TimelineItem, set: Set<string>): number {
 	return itemUnits(item).filter((u) => set.has(u)).length;
+}
+
+/**
+ * Timestamp (ms) at which an item became fully watched — the latest watchedAt
+ * across its units. Returns null unless every unit is watched (i.e. the item is
+ * fully watched and we know when it was completed).
+ */
+export function itemWatchedDate(item: TimelineItem, dates: Map<string, number>): number | null {
+	const units = itemUnits(item);
+	if (!units.length) return null;
+	let max = 0;
+	for (const u of units) {
+		const t = dates.get(u);
+		if (t == null) return null;
+		if (t > max) max = t;
+	}
+	return max || null;
+}
+
+/** Format a watched timestamp as a localized date without time. */
+export function formatWatchedDate(ms: number, locale: string): string {
+	return new Intl.DateTimeFormat(locale, { dateStyle: 'medium' }).format(new Date(ms));
 }

@@ -1,25 +1,41 @@
 <script lang="ts">
   import { fly, fade } from "svelte/transition";
   import { browser } from "$app/environment";
-  import { X, Check, Film, Tv, ExternalLink, Star } from "lucide-svelte";
+  import {
+    X,
+    Check,
+    Film,
+    Tv,
+    ExternalLink,
+    Star,
+    Database,
+  } from "lucide-svelte";
   import {
     backdropUrl,
     posterUrl,
     tmdbPageUrl,
-    tmdbEpisodeUrl,
     imdbUrl,
     rtUrl,
+    rtEpisodeUrl,
+    providerLogoUrl,
   } from "$lib/tmdb";
   import {
     episodeKey,
     itemUnits,
     isFullyWatched,
     watchedUnitCount,
+    itemWatchedDate,
+    formatWatchedDate,
     sagaOf,
     type TimelineItem,
   } from "$lib/data/timeline";
   import { SAGAS } from "$lib/data/types";
-  import { watched, setWatchedMany, toggleWatched } from "$lib/stores/watched";
+  import {
+    watched,
+    watchedAt,
+    setWatchedMany,
+    toggleWatched,
+  } from "$lib/stores/watched";
   import { firebaseEnabled } from "$lib/firebase";
   import { auth } from "$lib/stores/auth";
   import { locale } from "$lib/stores/locale";
@@ -29,6 +45,9 @@
     $props();
 
   const isWatched = $derived(!!item && isFullyWatched(item, $watched));
+  const watchedDate = $derived(
+    item && isWatched ? itemWatchedDate(item, $watchedAt) : null,
+  );
   const canTrack = $derived(firebaseEnabled && !!$auth.user);
 
   // Scroll lock: prevent body scroll while modal is open
@@ -211,10 +230,11 @@
               href={tmdbPageUrl(item.isSeries ? "tv" : "movie", item.tmdbId, item.title)}
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-muted"
+              class="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
             >
+              <Database class="size-4 text-[#01b4e4]" aria-hidden="true" />
               TMDB
-              <ExternalLink class="size-4" aria-hidden="true" />
+              <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
             </a>
             {#if imdbUrl(item.imdbId)}
               <a
@@ -242,6 +262,51 @@
               <ExternalLink class="size-4 text-muted-foreground" aria-hidden="true" />
             </a>
           </div>
+
+          {#if watchedDate}
+            <p class="flex items-center gap-1.5 text-xs text-muted-foreground">
+              <Check class="size-3.5 text-accent" aria-hidden="true" />
+              {$t("watched.on", {
+                date: formatWatchedDate(watchedDate, $locale),
+              })}
+            </p>
+          {/if}
+
+          <!-- Streaming providers (region-specific, via TMDB / JustWatch) -->
+          {#if item.providers.length}
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs font-medium text-muted-foreground"
+                >{$t("watch.providers")}</span
+              >
+              {#each item.providers as p (p.name)}
+                {@const logo = providerLogoUrl(p.logo)}
+                <svelte:element
+                  this={item.watchLink ? "a" : "span"}
+                  href={item.watchLink ?? undefined}
+                  target={item.watchLink ? "_blank" : undefined}
+                  rel={item.watchLink ? "noopener noreferrer" : undefined}
+                  title={p.name}
+                  class="block size-7 overflow-hidden rounded-md border border-border bg-surface transition-transform hover:scale-105"
+                >
+                  {#if logo}
+                    <img
+                      src={logo}
+                      alt={p.name}
+                      width="28"
+                      height="28"
+                      class="size-full object-cover"
+                      loading="lazy"
+                    />
+                  {:else}
+                    <span
+                      class="grid size-full place-items-center text-[10px] font-semibold text-muted-foreground"
+                      >{p.name.charAt(0)}</span
+                    >
+                  {/if}
+                </svelte:element>
+              {/each}
+            </div>
+          {/if}
 
           {#if item.isSeries && seasons.length}
             <div class="space-y-4">
@@ -290,19 +355,41 @@
                             {ep.airDate}
                           </span>
                         {/if}
-                        <a
-                          href={tmdbEpisodeUrl(
-                            item.tmdbId,
-                            ep.season,
-                            ep.number,
-                          )}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="shrink-0 text-muted-foreground hover:text-accent"
-                          aria-label="TMDB"
-                        >
-                          <ExternalLink class="size-4" aria-hidden="true" />
-                        </a>
+                        <!-- Per-episode ratings / links -->
+                        <span class="flex shrink-0 items-center gap-2">
+                          {#if imdbUrl(ep.imdbId)}
+                            <a
+                              href={imdbUrl(ep.imdbId)}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="flex items-center gap-1 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+                              aria-label="IMDb"
+                            >
+                              <Star
+                                class="size-3.5 fill-[#f5c518] text-[#f5c518]"
+                                aria-hidden="true"
+                              />
+                              {#if ep.imdb}<span class="tabular-nums"
+                                  >{ep.imdb}</span
+                                >{/if}
+                            </a>
+                          {/if}
+                          {#if rtEpisodeUrl(item.rtSlug, ep.season, ep.number)}
+                            <a
+                              href={rtEpisodeUrl(
+                                item.rtSlug,
+                                ep.season,
+                                ep.number,
+                              )}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="flex items-center text-base leading-none transition-opacity hover:opacity-70"
+                              aria-label="Rotten Tomatoes"
+                            >
+                              🍅
+                            </a>
+                          {/if}
+                        </span>
                       </li>
                     {/each}
                   </ol>

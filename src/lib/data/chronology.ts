@@ -58,6 +58,56 @@ export function categoryOf(id: string): Category {
 }
 
 /**
+ * Rotten Tomatoes show path (after rottentomatoes.com/) per series id. RT has no
+ * API and OMDb returns no RT score for TV, so these hand-curated slugs drive both
+ * the show link AND the build-time RT-score scrape (scripts/fetch-ratings.ts), as
+ * well as per-episode RT links (…/sNN/eNN). One slug per show, applied to every
+ * season entry of that show.
+ */
+const RT_TV_SLUG: Record<string, string> = {
+	'agent-carter': 'tv/marvels_agent_carter',
+	'agents-of-shield': 'tv/marvels_agents_of_shield',
+	daredevil: 'tv/daredevil',
+	'jessica-jones': 'tv/marvels_jessica_jones',
+	'luke-cage': 'tv/luke_cage',
+	'iron-fist': 'tv/marvels_iron_fist',
+	'the-defenders': 'tv/marvels_the_defenders',
+	'the-punisher': 'tv/marvels_the_punisher',
+	inhumans: 'tv/marvels_inhumans',
+	runaways: 'tv/marvels_runaways',
+	'cloak-and-dagger': 'tv/marvels_cloak_and_dagger',
+	helstrom: 'tv/marvels_helstrom',
+	loki: 'tv/loki',
+	wandavision: 'tv/wandavision',
+	'what-if': 'tv/what_if',
+	'the-falcon-and-the-winter-soldier': 'tv/the_falcon_and_the_winter_soldier',
+	hawkeye: 'tv/hawkeye',
+	'moon-knight': 'tv/moon_knight',
+	'ms-marvel': 'tv/ms_marvel',
+	'she-hulk': 'tv/she_hulk_attorney_at_law',
+	'secret-invasion': 'tv/secret_invasion',
+	echo: 'tv/echo',
+	'agatha-all-along': 'tv/agatha_all_along',
+	'daredevil-born-again': 'tv/daredevil_born_again',
+	ironheart: 'tv/ironheart',
+	'x-men-97': 'tv/x_men_97',
+	'your-friendly-neighborhood-spider-man': 'tv/your_friendly_neighborhood_spider_man',
+	'marvel-zombies': 'tv/marvel_zombies',
+	'eyes-of-wakanda': 'tv/eyes_of_wakanda'
+};
+
+/**
+ * RT slug for any chronology entry: an explicit per-entry `rtSlug` (movies) wins,
+ * otherwise the show-level TV slug derived from the entry id (strips a trailing
+ * `-sN` season suffix). Returns undefined when none is known.
+ */
+export function rtSlugOf(entry: ChronologyEntry): string | undefined {
+	if (entry.rtSlug) return entry.rtSlug;
+	const base = entry.id.replace(/-s\d+$/, '');
+	return RT_TV_SLUG[base] ?? RT_TV_SLUG[entry.id];
+}
+
+/**
  * Curated in-universe chronology of the Marvel Cinematic Universe.
  *
  * Ordering authority is HYBRID: Marvel's official timeline (Disney+ "Timeline
@@ -617,7 +667,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Fantastic Four: First Steps', year: 2025 },
 		eraTag: 'Alternate universe (Earth-828)',
-		source: 'Official timeline (opens Phase 6)'
+		source: 'Official timeline (opens Phase 6)',
+		rtSlug: 'm/the_fantastic_four_first_steps'
 	},
 
 	/* ---- Legacy Marvel Television: Defenders Saga (Netflix) + ABC/Hulu/Freeform,

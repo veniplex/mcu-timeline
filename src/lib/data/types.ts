@@ -68,10 +68,18 @@ export interface ChronologyEntry {
 	rtSlug?: string;
 }
 
+/** Per-episode rating + IMDb id (populated by scripts/fetch-ratings.ts). */
+export interface EpisodeRating {
+	imdb?: string; // e.g. "8.5"
+	imdbId?: string; // e.g. "tt4667540" — for a direct episode IMDb link
+}
+
 /** IMDB + Rotten Tomatoes rating snapshot (populated by scripts/fetch-ratings.ts). */
 export interface Ratings {
 	imdb?: string; // e.g. "7.4"
 	rt?: string; // e.g. "78" (percentage, without %)
+	/** Per-episode ratings, keyed "season-number" (e.g. "3-1"). Series only. */
+	episodes?: Record<string, EpisodeRating>;
 }
 
 /** Localized display payload, produced by the build script per entry id. */
@@ -90,6 +98,16 @@ export interface CatalogItem {
 	/** Season / episode context for tv entries. */
 	season?: number;
 	episodes?: { season: number; number: number; title: string; airDate: string | null }[];
+	/** Streaming providers (flatrate/free) for the configured region, TMDB-sourced. */
+	providers?: StreamingProvider[];
+	/** JustWatch deep link for the region (TMDB watch/providers `link`). */
+	watchLink?: string | null;
+}
+
+/** A streaming provider available for a title (name + TMDB logo path). */
+export interface StreamingProvider {
+	name: string;
+	logo: string | null; // TMDB logo path, e.g. /abc.jpg
 }
 
 export type Catalog = Record<string, CatalogItem>;

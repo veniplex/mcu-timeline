@@ -5,11 +5,14 @@
     isFullyWatched,
     watchedUnitCount,
     itemUnits,
+    itemWatchedDate,
+    formatWatchedDate,
     type TimelineItem,
   } from "$lib/data/timeline";
-  import { watched, setWatchedMany } from "$lib/stores/watched";
+  import { watched, watchedAt, setWatchedMany } from "$lib/stores/watched";
   import { firebaseEnabled } from "$lib/firebase";
   import { auth } from "$lib/stores/auth";
+  import { locale } from "$lib/stores/locale";
   import { t } from "$lib/i18n/messages";
 
   let {
@@ -23,6 +26,9 @@
   } = $props();
 
   const isWatched = $derived(isFullyWatched(item, $watched));
+  const watchedDate = $derived(
+    isWatched ? itemWatchedDate(item, $watchedAt) : null,
+  );
   const done = $derived(watchedUnitCount(item, $watched));
   const total = $derived(itemUnits(item).length);
   const isPartial = $derived(done > 0 && !isWatched);
@@ -158,10 +164,18 @@
     {/if}
 
     {#if canTrack}
-      {#if showRing}
+      <div class="absolute bottom-2 right-2 flex items-center gap-1.5">
+        {#if watchedDate}
+          <span
+            class="rounded bg-surface/85 px-1.5 py-0.5 text-[11px] font-medium tabular-nums text-muted-foreground backdrop-blur-sm"
+          >
+            {formatWatchedDate(watchedDate, $locale)}
+          </span>
+        {/if}
+        {#if showRing}
         <!-- Series with progress: arc ring fills with episodes watched -->
         <button
-          class="absolute bottom-2 right-2 grid size-8 place-items-center rounded-full bg-surface/90 lg:size-9"
+          class="grid size-8 place-items-center rounded-full bg-surface/90 lg:size-9"
           aria-pressed={isWatched}
           aria-label="{done}/{total} {$t('detail.episodes')}"
           title="{done}/{total}"
@@ -196,7 +210,7 @@
       {:else}
         <!-- Movie or series with no progress: plain check toggle (consistent) -->
         <button
-          class="absolute bottom-2 right-2 grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
+          class="grid size-7 place-items-center rounded-full border transition-colors lg:size-8 {isWatched
             ? 'border-accent bg-accent text-on-accent'
             : 'border-border bg-surface/90 text-muted-foreground hover:text-foreground'}"
           aria-pressed={isWatched}
@@ -205,7 +219,8 @@
         >
           <Check class="size-4" aria-hidden="true" />
         </button>
-      {/if}
+        {/if}
+      </div>
     {/if}
   </div>
 </div>
