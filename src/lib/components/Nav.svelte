@@ -4,6 +4,7 @@
   import { locale, LOCALES } from "$lib/stores/locale";
   import { t } from "$lib/i18n/messages";
   import AuthButton from "./AuthButton.svelte";
+  import GithubPill from "./GithubPill.svelte";
 
   let langOpen = $state(false);
 
@@ -32,6 +33,9 @@
       <Clapperboard class="size-5 text-primary" aria-hidden="true" />
       <span>{$t("app.title")}</span>
     </a>
+
+    <!-- GitHub — moves to the footer on small screens -->
+    <GithubPill class="hidden sm:inline-flex" />
 
     <!-- Language dropdown -->
     <div class="relative" data-lang-dropdown>

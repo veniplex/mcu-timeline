@@ -142,16 +142,67 @@ mobile and launches in standalone display mode.
 
 ## Contributing
 
-Issues and PRs are welcome — especially chronology corrections (with a source),
-missing titles, and translations. Run `npm run check` before opening a PR.
+Issues and PRs are welcome — especially chronology corrections, missing titles,
+and translations. Run `npm run check` before opening a PR.
+
+### Fixing or extending the chronology
+
+The whole timeline is driven by one hand-curated file:
+**[`src/lib/data/chronology.ts`](src/lib/data/chronology.ts)**. You don't need to
+touch any component to change what's shown or in what order.
+
+**No setup? Just open an issue.** Pick the right template at
+[**New issue**](https://github.com/veniplex/mcu-timeline/issues/new/choose):
+
+- 🕓 **Chronology correction** — a title is in the wrong place or the wrong Phase.
+- ➕ **Missing title** — a film/series/special that should be listed isn't.
+- 🐞 **Bug report** — something's broken in the app.
+
+Each template asks for the one thing that actually settles these debates: a
+**source** (Marvel's official timeline / the timeline book / a primary interview).
+
+**Sending a PR?** Edit `chronology.ts` directly:
+
+1. **Add or move an entry.** Each entry is one object:
+   ```ts
+   {
+     id: 'unique-kebab-id',           // stable; used as the watched-tracking key
+     order: 215,                      // sort index — pick a value BETWEEN neighbours
+     phase: 3,                        // 1–6, the canonical Marvel Studios Phase
+     kind: 'movie',                   // or 'series-block'
+     query: { type: 'movie', title: 'Exact TMDB Title', year: 2016 },
+     source: 'Official timeline (2016, ~1 week after Civil War)',
+     rtSlug: 'm/black_panther'        // optional Rotten Tomatoes path
+   }
+   ```
+   - `order` is **sparse on purpose** (steps of ~10). To slot a title between two
+     others, pick any number in the gap (e.g. `215` between `210` and `220`) — no
+     renumbering needed.
+   - For an ambiguous TV title (multiple *Daredevil*s, etc.) pin the exact match
+     with `query.tmdbId` so the build script doesn't grab the wrong show.
+   - `source` is **required in spirit** — a one-line provenance note is what makes
+     a re-ordering reviewable.
+2. **Set its category** (optional). New titles default to **Marvel Studios**. If
+   the entry is Netflix / legacy ABC-Hulu-Freeform TV / animated / Sony, add its
+   `id` to the matching list in `CATEGORY_BY_ID` at the top of the same file.
+3. **Regenerate the data** so metadata, posters, IMDb ids and ratings are filled
+   in (needs `TMDB_API_KEY` + `OMDB_API_KEY` in `.env`):
+   ```bash
+   npm run build:data      # logs the resolved TMDB title per entry — check matches
+   npm run build:ratings
+   ```
+   No API keys handy? Open a PR editing only `chronology.ts` and note it in the
+   description — a maintainer will run the scripts.
+4. **Verify** with `npm run check`, then open the PR describing what moved and why,
+   with your source.
 
 ## Legal
 
 This is an **open-source, non-commercial fan project**. It is **not affiliated
 with, endorsed, sponsored, or approved by** The Walt Disney Company, Marvel
-Studios, or any of their subsidiaries. *Marvel*, *Marvel Cinematic Universe*, all
-character names, titles, and related logos are trademarks of their respective
-owners.
+Studios, Netflix, Sony Pictures, or any of their subsidiaries. *Marvel*,
+*Marvel Cinematic Universe*, all character names, titles, and related logos are
+trademarks of their respective owners.
 
 Film and series metadata, posters and backdrops are provided by
 **[The Movie Database (TMDB)](https://www.themoviedb.org)**. *This product uses the

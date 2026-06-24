@@ -1,0 +1,59 @@
+name: ➕ Missing title
+description: A film, series or special that should be in the timeline isn't listed.
+title: "[Missing]: "
+labels: ["missing-title"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Scope is **MCU-connected** titles: the theatrical slate, Marvel Studios
+        Disney+ originals, the legacy Marvel Television run, the animated slate,
+        and the loosely-connected Sony tie-ins. Unconnected adaptations are out.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      placeholder: "Marvel's Agent Carter"
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Release year
+      placeholder: "2015"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Movie / special
+        - Series (one or more seasons)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Marvel Studios
+        - Netflix (Defenders Saga)
+        - Legacy TV (ABC / Hulu / Freeform)
+        - Animated
+        - Sony
+    validations:
+      required: true
+  - type: input
+    id: tmdb
+    attributes:
+      label: TMDB link or id (optional)
+      description: Helps the build script resolve the exact title.
+      placeholder: "https://www.themoviedb.org/tv/61458"
+  - type: textarea
+    id: placement
+    attributes:
+      label: Where should it go?
+      description: Phase, and roughly between which existing titles — with a source if it's an in-universe placement.
+    validations:
+      required: true

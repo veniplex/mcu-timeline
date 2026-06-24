@@ -25,6 +25,16 @@ export function sagaOf(phase: Phase): SagaId {
 
 export type EntryKind = 'movie' | 'series-block' | 'episode-range' | 'episode';
 
+/**
+ * Production/source bucket a title belongs to — drives the catalogue filter.
+ * `studios` is the default (Marvel Studios theatrical + Disney+ originals);
+ * everything else is pinned by id in chronology.ts (`CATEGORY_BY_ID`).
+ */
+export type Category = 'studios' | 'netflix' | 'legacy-tv' | 'animated' | 'sony';
+
+/** All categories, in display order. */
+export const CATEGORIES: Category[] = ['studios', 'netflix', 'legacy-tv', 'animated', 'sony'];
+
 /** TMDB lookup descriptor — resolved to an id by the build script. */
 export interface TmdbQuery {
 	type: 'movie' | 'tv';

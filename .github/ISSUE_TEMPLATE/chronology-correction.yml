@@ -1,0 +1,58 @@
+name: 🕓 Chronology correction
+description: A title is in the wrong order, the wrong Phase, or the wrong category.
+title: "[Chronology]: "
+labels: ["chronology"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the timeline accurate! The one thing that settles
+        ordering debates is a **source** — please include one below.
+  - type: input
+    id: title
+    attributes:
+      label: Title affected
+      description: The film, series or special that's placed wrong.
+      placeholder: "Black Panther"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - Wrong position in the order
+        - Wrong Phase (1–6)
+        - Wrong category (Studios / Netflix / Legacy TV / Animated / Sony)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current placement
+      description: Where it sits now (e.g. "after Spider-Man: Homecoming, Phase 3").
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Correct placement
+      description: Where it should be, and relative to which neighbours.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: >
+        Marvel's official timeline, the official timeline book, a primary
+        interview, etc. Link it if you can. "It feels right" isn't enough.
+    validations:
+      required: true
+  - type: input
+    id: entry-id
+    attributes:
+      label: Entry id (optional)
+      description: The `id` in src/lib/data/chronology.ts, if you know it.
+      placeholder: "black-panther"

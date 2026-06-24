@@ -1,5 +1,5 @@
-import { chronology } from './chronology';
-import type { CatalogItem, Phase, Ratings } from './types';
+import { chronology, categoryOf } from './chronology';
+import type { Category, CatalogItem, Phase, Ratings } from './types';
 import catalogEn from './catalog.en.json';
 import catalogDe from './catalog.de.json';
 import ratingsData from './ratings.json';
@@ -28,6 +28,8 @@ export interface TimelineItem {
 	rtSlug?: string;
 	isSeries: boolean;
 	phase: Phase;
+	/** Production/source bucket (Marvel Studios, Netflix, legacy TV, …). */
+	category: Category;
 	title: string;
 	overview: string;
 	releaseDate: string;
@@ -67,6 +69,7 @@ function toItem(entryId: string, locale: Locale): TimelineItem | null {
 		rtSlug: entry.rtSlug,
 		isSeries,
 		phase: entry.phase,
+		category: categoryOf(entry.id),
 		title: item.title,
 		overview: item.overview,
 		releaseDate: item.releaseDate,

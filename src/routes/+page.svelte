@@ -7,6 +7,8 @@
     Clock,
     CalendarDays,
     ArrowUp,
+    ListFilter,
+    Check,
   } from "lucide-svelte";
   import { fly } from "svelte/transition";
   import Timeline from "$lib/components/Timeline.svelte";
@@ -15,7 +17,8 @@
     isFullyWatched,
     type PhaseBand,
   } from "$lib/data/timeline";
-  import { PHASE_COLORS, SAGAS } from "$lib/data/types";
+  import { PHASE_COLORS, SAGAS, CATEGORIES, type Category } from "$lib/data/types";
+  import type { MessageKey } from "$lib/i18n/messages";
   import { sortMode } from "$lib/stores/sortMode";
   import { locale } from "$lib/stores/locale";
   import { watched } from "$lib/stores/watched";
@@ -39,6 +42,33 @@
   let mediaFilter = $state<MediaFilter>("all");
   let hideWatched = $state(false);
 
+  // Category filter — all enabled by default.
+  let categoryOn = $state<Record<Category, boolean>>(
+    Object.fromEntries(CATEGORIES.map((c) => [c, true])) as Record<
+      Category,
+      boolean
+    >,
+  );
+  let catOpen = $state(false);
+  const activeCount = $derived(CATEGORIES.filter((c) => categoryOn[c]).length);
+  const allCategories = $derived(activeCount === CATEGORIES.length);
+  const catKey = (c: Category) => `category.${c}` as MessageKey;
+  function toggleCategory(c: Category) {
+    // Never allow an empty selection — re-selecting the last one resets to all.
+    if (categoryOn[c] && activeCount === 1) {
+      categoryOn = Object.fromEntries(
+        CATEGORIES.map((x) => [x, true]),
+      ) as Record<Category, boolean>;
+      return;
+    }
+    categoryOn = { ...categoryOn, [c]: !categoryOn[c] };
+  }
+  function resetCategories() {
+    categoryOn = Object.fromEntries(
+      CATEGORIES.map((c) => [c, true]),
+    ) as Record<Category, boolean>;
+  }
+
   const signedIn = $derived(firebaseEnabled && !!$auth.user);
 
   const allBands = $derived(buildTimeline($sortMode, $locale));
@@ -50,6 +80,7 @@
         items: band.items.filter((item) => {
           if (mediaFilter === "films" && item.isSeries) return false;
           if (mediaFilter === "series" && !item.isSeries) return false;
+          if (!categoryOn[item.category]) return false;
           if (hideWatched && signedIn && isFullyWatched(item, $watched))
             return false;
           return true;
@@ -81,7 +112,12 @@
   ];
 </script>
 
-<svelte:window bind:scrollY />
+<svelte:window
+  bind:scrollY
+  onclick={(e) => {
+    if (!(e.target as Element).closest("[data-cat-dropdown]")) catOpen = false;
+  }}
+/>
 
 <!-- Sticky progress bar — full-width strip that stays below the nav when scrolling -->
 {#if signedIn}
@@ -112,7 +148,7 @@
     aria-label={$t("sort.label")}
   >
     <button
-      class="flex items-center gap-1.5 rounded-full px-3 py-2 transition-colors {$sortMode ===
+      class="flex items-center gap-1.5 rounded-full px-3 py-2 whitespace-nowrap transition-colors {$sortMode ===
       'chronological'
         ? 'bg-primary text-on-primary'
         : 'text-muted-foreground hover:text-foreground'}"
@@ -123,7 +159,7 @@
       <span>{$t("sort.chronological")}</span>
     </button>
     <button
-      class="flex items-center gap-1.5 rounded-full px-3 py-2 transition-colors {$sortMode ===
+      class="flex items-center gap-1.5 rounded-full px-3 py-2 whitespace-nowrap transition-colors {$sortMode ===
       'release'
         ? 'bg-primary text-on-primary'
         : 'text-muted-foreground hover:text-foreground'}"
@@ -152,6 +188,65 @@
         <span>{f.label()}</span>
       </button>
     {/each}
+  </div>
+
+  <!-- Category -->
+  <div class="relative" data-cat-dropdown>
+    <button
+      class="flex items-center gap-1.5 rounded-full border px-3 py-2.5 text-sm transition-colors {allCategories
+        ? 'border-border bg-surface text-muted-foreground hover:text-foreground'
+        : 'border-primary bg-primary text-on-primary'}"
+      aria-haspopup="true"
+      aria-expanded={catOpen}
+      onclick={() => (catOpen = !catOpen)}
+    >
+      <ListFilter class="size-4" aria-hidden="true" />
+      <span
+        >{allCategories
+          ? $t("filter.categories")
+          : $t("filter.categoriesCount", { n: activeCount })}</span
+      >
+    </button>
+    {#if catOpen}
+      <div
+        class="absolute left-1/2 z-30 mt-2 w-56 -translate-x-1/2 rounded-xl border border-border bg-surface p-1 shadow-lg"
+        role="group"
+        aria-label={$t("filter.categories")}
+      >
+        {#each CATEGORIES as c (c)}
+          <button
+            class="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-muted {categoryOn[
+              c
+            ]
+              ? 'text-foreground font-medium'
+              : 'text-muted-foreground'}"
+            aria-pressed={categoryOn[c]}
+            onclick={() => toggleCategory(c)}
+          >
+            <span
+              class="grid size-4 shrink-0 place-items-center rounded border transition-colors {categoryOn[
+                c
+              ]
+                ? 'border-primary bg-primary text-on-primary'
+                : 'border-border'}"
+            >
+              {#if categoryOn[c]}
+                <Check class="size-3" aria-hidden="true" />
+              {/if}
+            </span>
+            {$t(catKey(c))}
+          </button>
+        {/each}
+        {#if !allCategories}
+          <button
+            class="mt-1 w-full rounded-lg border-t border-border px-3 py-2 text-left text-sm text-muted-foreground transition-colors hover:text-foreground"
+            onclick={resetCategories}
+          >
+            {$t("filter.allCategories")}
+          </button>
+        {/if}
+      </div>
+    {/if}
   </div>
 
   {#if signedIn}

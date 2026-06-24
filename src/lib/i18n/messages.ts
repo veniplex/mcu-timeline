@@ -28,6 +28,14 @@ export const messages = {
     "filter.films": "Films",
     "filter.series": "Series",
     "filter.hideWatched": "Hide watched",
+    "filter.categories": "Categories",
+    "filter.allCategories": "All categories",
+    "filter.categoriesCount": "{n} categories",
+    "category.studios": "Marvel Studios",
+    "category.netflix": "Netflix (Defenders)",
+    "category.legacy-tv": "Legacy TV",
+    "category.animated": "Animated",
+    "category.sony": "Sony",
     "phase.label": "Phase",
     "detail.viewTmdb": "View on TMDB",
     "detail.episodes": "Episodes",
@@ -41,7 +49,7 @@ export const messages = {
     "footer.tmdbDisclaimer":
       "This product uses the TMDB API but is not endorsed or certified by TMDB.",
     "footer.fanProject":
-      "An open-source, non-commercial fan project. Not affiliated with or endorsed by Marvel Studios or The Walt Disney Company. All trademarks and imagery belong to their respective owners.",
+      "An open-source, non-commercial fan project. Not affiliated with or endorsed by Marvel Studios, The Walt Disney Company, Netflix, or Sony Pictures. All trademarks and imagery belong to their respective owners.",
     "footer.license": "MIT licensed",
   },
   de: {
@@ -67,6 +75,14 @@ export const messages = {
     "filter.films": "Filme",
     "filter.series": "Serien",
     "filter.hideWatched": "Gesehene ausblenden",
+    "filter.categories": "Kategorien",
+    "filter.allCategories": "Alle Kategorien",
+    "filter.categoriesCount": "{n} Kategorien",
+    "category.studios": "Marvel Studios",
+    "category.netflix": "Netflix (Defenders)",
+    "category.legacy-tv": "Legacy-TV",
+    "category.animated": "Animation",
+    "category.sony": "Sony",
     "phase.label": "Phase",
     "detail.viewTmdb": "Auf TMDB ansehen",
     "detail.episodes": "Episoden",
@@ -81,7 +97,7 @@ export const messages = {
     "footer.tmdbDisclaimer":
       "Dieses Produkt nutzt die TMDB-API, ist aber nicht von TMDB unterstützt oder zertifiziert.",
     "footer.fanProject":
-      "Ein quelloffenes, nicht-kommerzielles Fan-Projekt. Nicht mit Marvel Studios oder The Walt Disney Company verbunden oder von ihnen unterstützt. Alle Marken und Bilder gehören ihren jeweiligen Eigentümern.",
+      "Ein quelloffenes, nicht-kommerzielles Fan-Projekt. Nicht mit Marvel Studios, The Walt Disney Company, Netflix oder Sony Pictures verbunden oder von ihnen unterstützt. Alle Marken und Bilder gehören ihren jeweiligen Eigentümern.",
     "footer.license": "MIT-lizenziert",
   },
 } as const;

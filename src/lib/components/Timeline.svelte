@@ -77,11 +77,17 @@
         />
       {/if}
 
-      <ol class="space-y-8 lg:space-y-12 {grouped ? 'pt-14 lg:pt-20' : 'pt-2'}">
+      <ol class={grouped ? "pt-14 lg:pt-20" : "pt-2"}>
         {#each band.items as item, i (item.key)}
-          {#if !grouped && item.year !== band.items[i - 1]?.year}
+          {@const newYear = !grouped && item.year !== band.items[i - 1]?.year}
+          <!-- Cards alternate sides on md+; pull each up so neighbours interlock
+               vertically. Skipped on the first card and right after a year marker. -->
+          {@const overlap = i > 0 && !newYear}
+          {#if newYear}
             <!-- year marker on the spine (release view) -->
-            <li class="relative flex justify-center py-1">
+            <li
+              class="relative flex justify-center py-1 mt-8 lg:mt-12 first:mt-0"
+            >
               <span
                 class="relative z-10 rounded-full border border-border bg-primary text-on-primary px-5 py-1 text-base font-bold tabular-nums shadow-md"
               >
@@ -90,7 +96,9 @@
             </li>
           {/if}
           <li
-            class="relative grid grid-cols-1 md:grid-cols-2"
+            class="relative grid grid-cols-1 md:grid-cols-2 first:mt-0 {overlap
+              ? 'mt-8 md:-mt-8 lg:-mt-16'
+              : 'mt-8 lg:mt-12'}"
             use:reveal={{
               from: i % 2 === 0 ? "left" : "right",
               delay: Math.min(i, 4) * 40,
@@ -106,7 +114,7 @@
               aria-hidden="true"
             ></span>
             <div
-              class="flex {i % 2 === 0
+              class="relative flex transition-[z-index] hover:z-20 {i % 2 === 0
                 ? 'md:col-start-1 md:pr-10 lg:pr-14'
                 : 'md:col-start-2 md:pl-10 lg:pl-14'}"
             >

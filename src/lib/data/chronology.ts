@@ -1,4 +1,61 @@
-import type { ChronologyEntry } from './types';
+import type { Category, ChronologyEntry } from './types';
+
+/**
+ * Catalogue category per entry id. Only non-`studios` titles are listed here —
+ * anything absent defaults to `studios` (Marvel Studios theatrical + Disney+
+ * originals, incl. Daredevil: Born Again). Keeping it as one map (rather than a
+ * field on every entry) means contributors touch a single, readable list.
+ */
+const CATEGORY_BY_ID: Record<string, Category> = {
+	// Defenders Saga (Netflix)
+	'daredevil-s1': 'netflix',
+	'daredevil-s2': 'netflix',
+	'daredevil-s3': 'netflix',
+	'jessica-jones-s1': 'netflix',
+	'jessica-jones-s2': 'netflix',
+	'jessica-jones-s3': 'netflix',
+	'luke-cage-s1': 'netflix',
+	'luke-cage-s2': 'netflix',
+	'iron-fist-s1': 'netflix',
+	'iron-fist-s2': 'netflix',
+	'the-defenders': 'netflix',
+	'the-punisher-s1': 'netflix',
+	'the-punisher-s2': 'netflix',
+	// Legacy ABC / Hulu / Freeform TV
+	'agent-carter-s1': 'legacy-tv',
+	'agent-carter-s2': 'legacy-tv',
+	'agents-of-shield-s1': 'legacy-tv',
+	'agents-of-shield-s2': 'legacy-tv',
+	'agents-of-shield-s3': 'legacy-tv',
+	'agents-of-shield-s4': 'legacy-tv',
+	'agents-of-shield-s5': 'legacy-tv',
+	'agents-of-shield-s6': 'legacy-tv',
+	'agents-of-shield-s7': 'legacy-tv',
+	inhumans: 'legacy-tv',
+	'runaways-s1': 'legacy-tv',
+	'runaways-s2': 'legacy-tv',
+	'runaways-s3': 'legacy-tv',
+	'cloak-and-dagger-s1': 'legacy-tv',
+	'cloak-and-dagger-s2': 'legacy-tv',
+	helstrom: 'legacy-tv',
+	// Animation (alternate continuities)
+	'what-if-s1': 'animated',
+	'what-if-s2': 'animated',
+	'what-if-s3': 'animated',
+	'x-men-97-s1': 'animated',
+	'your-friendly-neighborhood-spider-man-s1': 'animated',
+	'marvel-zombies': 'animated',
+	'eyes-of-wakanda': 'animated',
+	// Sony tie-ins (SSU)
+	venom: 'sony',
+	'venom-let-there-be-carnage': 'sony',
+	morbius: 'sony'
+};
+
+/** Category for a chronology entry id (defaults to `studios`). */
+export function categoryOf(id: string): Category {
+	return CATEGORY_BY_ID[id] ?? 'studios';
+}
 
 /**
  * Curated in-universe chronology of the Marvel Cinematic Universe.
