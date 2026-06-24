@@ -11,14 +11,18 @@
     Check,
   } from "lucide-svelte";
   import { fly } from "svelte/transition";
+  import { get } from "svelte/store";
   import Timeline from "$lib/components/Timeline.svelte";
   import {
     buildTimeline,
     isFullyWatched,
+    itemUnits,
+    watchedUnitCount,
     type PhaseBand,
   } from "$lib/data/timeline";
   import { PHASE_COLORS, SAGAS, CATEGORIES, type Category } from "$lib/data/types";
   import type { MessageKey } from "$lib/i18n/messages";
+  import { filters, type MediaFilter } from "$lib/stores/filters";
   import { sortMode } from "$lib/stores/sortMode";
   import { locale } from "$lib/stores/locale";
   import { watched } from "$lib/stores/watched";
@@ -38,36 +42,37 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  type MediaFilter = "all" | "films" | "series";
-  let mediaFilter = $state<MediaFilter>("all");
-  let hideWatched = $state(false);
+  // Filters live in a persisted store (localStorage + per-user Firestore sync).
+  const mediaFilter = $derived($filters.media);
+  const hideWatched = $derived($filters.hideWatched);
+  const categoryOn = $derived($filters.categories);
 
-  // Category filter — all enabled by default.
-  let categoryOn = $state<Record<Category, boolean>>(
-    Object.fromEntries(CATEGORIES.map((c) => [c, true])) as Record<
-      Category,
-      boolean
-    >,
-  );
   let catOpen = $state(false);
   const activeCount = $derived(CATEGORIES.filter((c) => categoryOn[c]).length);
   const allCategories = $derived(activeCount === CATEGORIES.length);
   const catKey = (c: Category) => `category.${c}` as MessageKey;
+  const allCatsOn = () =>
+    Object.fromEntries(CATEGORIES.map((c) => [c, true])) as Record<
+      Category,
+      boolean
+    >;
+
+  const setMedia = (m: MediaFilter) =>
+    filters.update((s) => ({ ...s, media: m }));
+  const toggleHideWatched = () =>
+    filters.update((s) => ({ ...s, hideWatched: !s.hideWatched }));
   function toggleCategory(c: Category) {
-    // Never allow an empty selection — re-selecting the last one resets to all.
-    if (categoryOn[c] && activeCount === 1) {
-      categoryOn = Object.fromEntries(
-        CATEGORIES.map((x) => [x, true]),
-      ) as Record<Category, boolean>;
-      return;
-    }
-    categoryOn = { ...categoryOn, [c]: !categoryOn[c] };
+    filters.update((s) => {
+      const on = s.categories[c];
+      // Never allow an empty selection — re-selecting the last one resets to all.
+      if (on && CATEGORIES.filter((x) => s.categories[x]).length === 1) {
+        return { ...s, categories: allCatsOn() };
+      }
+      return { ...s, categories: { ...s.categories, [c]: !on } };
+    });
   }
-  function resetCategories() {
-    categoryOn = Object.fromEntries(
-      CATEGORIES.map((c) => [c, true]),
-    ) as Record<Category, boolean>;
-  }
+  const resetCategories = () =>
+    filters.update((s) => ({ ...s, categories: allCatsOn() }));
 
   const signedIn = $derived(firebaseEnabled && !!$auth.user);
 
@@ -89,19 +94,72 @@
       .filter((band) => band.items.length > 0);
   });
 
+  // Progress counts watch UNITS (each series episode counts on its own; movies = 1).
   const totalItems = $derived(
-    allBands.reduce((sum, band) => sum + band.items.length, 0),
+    allBands.reduce(
+      (sum, band) =>
+        sum + band.items.reduce((s, i) => s + itemUnits(i).length, 0),
+      0,
+    ),
   );
   const totalWatched = $derived(
     allBands.reduce(
       (sum, band) =>
-        sum + band.items.filter((i) => isFullyWatched(i, $watched)).length,
+        sum + band.items.reduce((s, i) => s + watchedUnitCount(i, $watched), 0),
       0,
     ),
   );
   const watchPct = $derived(totalItems ? (totalWatched / totalItems) * 100 : 0);
 
-  const filters: {
+  // Filter-aware catalogue stats (counts what's currently displayed).
+  const nf = $derived(new Intl.NumberFormat($locale));
+  const stats = $derived.by(() => {
+    const series = new Set<number>();
+    let films = 0;
+    let seasons = 0;
+    let episodes = 0;
+    let minutes = 0;
+    for (const band of bands) {
+      for (const it of band.items) {
+        if (it.isSeries) {
+          series.add(it.tmdbId);
+          seasons += it.seasons.length || 1;
+          episodes += it.episodeCount;
+          if (it.runtime) minutes += it.episodeCount * it.runtime;
+        } else {
+          films++;
+          if (it.runtime) minutes += it.runtime;
+        }
+      }
+    }
+    return { films, series: series.size, seasons, episodes, minutes };
+  });
+
+  // On sign-in, jump to the last watched item in the current timeline order.
+  let scrolledForUid: string | null = null;
+  $effect(() => {
+    if (!signedIn) {
+      scrolledForUid = null;
+      return;
+    }
+    const uid = $auth.user?.uid ?? null;
+    if (!uid || uid === scrolledForUid) return;
+    scrolledForUid = uid; // one-shot per sign-in
+    const timer = setTimeout(() => {
+      const w = get(watched);
+      let lastKey: string | null = null;
+      for (const band of bands)
+        for (const it of band.items)
+          if (watchedUnitCount(it, w) > 0) lastKey = it.key;
+      if (!lastKey) return;
+      document
+        .querySelector(`[data-item-key="${CSS.escape(lastKey)}"]`)
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 800);
+    return () => clearTimeout(timer);
+  });
+
+  const mediaFilters: {
     key: MediaFilter;
     label: () => string;
     icon: typeof Film;
@@ -175,14 +233,14 @@
   <div
     class="flex items-center rounded-full border border-border bg-surface p-0.5 text-sm"
   >
-    {#each filters as f (f.key)}
+    {#each mediaFilters as f (f.key)}
       <button
         class="flex items-center gap-1.5 rounded-full px-3 py-2 transition-colors {mediaFilter ===
         f.key
           ? 'bg-primary text-on-primary'
           : 'text-muted-foreground hover:text-foreground'}"
         aria-pressed={mediaFilter === f.key}
-        onclick={() => (mediaFilter = f.key)}
+        onclick={() => setMedia(f.key)}
       >
         <f.icon class="size-4" aria-hidden="true" />
         <span>{f.label()}</span>
@@ -255,13 +313,26 @@
         ? 'border-accent bg-accent text-on-accent'
         : 'border-border bg-surface text-muted-foreground hover:text-foreground'}"
       aria-pressed={hideWatched}
-      onclick={() => (hideWatched = !hideWatched)}
+      onclick={toggleHideWatched}
     >
       <EyeOff class="size-4" aria-hidden="true" />
       <span>{$t("filter.hideWatched")}</span>
     </button>
   {/if}
 </div>
+
+<!-- Filter-aware catalogue stats -->
+<p
+  class="-mt-3 mb-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-xs text-muted-foreground tabular-nums"
+>
+  {#each [{ n: stats.films, label: $t("stats.films") }, { n: stats.series, label: $t("stats.series") }, { n: stats.seasons, label: $t("stats.seasons") }, { n: stats.episodes, label: $t("stats.episodes") }, { n: stats.minutes, label: $t("stats.runtime") }] as stat, i (stat.label)}
+    {#if i > 0}<span class="opacity-40" aria-hidden="true">·</span>{/if}
+    <span
+      ><span class="font-semibold text-foreground">{nf.format(stat.n)}</span>
+      {stat.label}</span
+    >
+  {/each}
+</p>
 
 <!-- Phase navigation tab bar — only in story order mode -->
 {#if $sortMode === "chronological"}

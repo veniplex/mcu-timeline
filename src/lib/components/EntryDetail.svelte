@@ -119,13 +119,15 @@
       aria-label={item.title}
       tabindex="-1"
     >
-      <!-- Non-scrolling image header — close button lives here, always visible -->
+      <!-- Non-scrolling image header — close button lives here, always visible.
+           Capped to a fraction of the viewport so short/landscape screens keep
+           room for the (scrollable) content below. -->
       <div class="relative shrink-0">
         {#if backdropUrl(item.backdrop)}
           <img
             src={backdropUrl(item.backdrop)}
             alt=""
-            class="aspect-video w-full object-cover"
+            class="max-h-[40dvh] aspect-video w-full object-cover"
             width="1280"
             height="720"
           />
@@ -133,7 +135,7 @@
           <img
             src={posterUrl(item.poster, "w500")}
             alt=""
-            class="aspect-video w-full object-cover"
+            class="max-h-[40dvh] aspect-video w-full object-cover"
           />
         {:else}
           <div
@@ -157,8 +159,9 @@
         </button>
       </div>
 
-      <!-- Scrollable content area -->
-      <div class="overflow-y-auto">
+      <!-- Scrollable content area — flex-1 + min-h-0 so it actually shrinks and
+           scrolls inside the clipped panel (esp. short/landscape viewports). -->
+      <div class="min-h-0 flex-1 overflow-y-auto">
         <div class="space-y-4 p-5 sm:p-6">
           <div
             class="flex flex-wrap items-center gap-2 text-xs text-muted-foreground"

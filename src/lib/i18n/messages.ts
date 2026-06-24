@@ -30,6 +30,11 @@ export const messages = {
     "watch.providers": "Streaming Providers",
     "status.upcoming": "Upcoming",
     "status.notReleased": "Not yet released",
+    "stats.films": "films",
+    "stats.series": "series",
+    "stats.seasons": "seasons",
+    "stats.episodes": "episodes",
+    "stats.runtime": "min total",
     "filter.all": "All",
     "filter.films": "Films",
     "filter.series": "Series",
@@ -56,7 +61,8 @@ export const messages = {
       "This product uses the TMDB API but is not endorsed or certified by TMDB.",
     "footer.fanProject":
       "An open-source, non-commercial fan project. Not affiliated with or endorsed by Marvel Studios, The Walt Disney Company, Netflix, or Sony Pictures. All trademarks and imagery belong to their respective owners.",
-    "footer.license": "MIT licensed",
+    "footer.license": "Non-commercial license",
+    "footer.builtBy": "MCU Timeline — an open-source project by veniplex",
   },
   de: {
     "app.title": "MCU-Zeitleiste",
@@ -83,6 +89,11 @@ export const messages = {
     "watch.providers": "Streaming Provider",
     "status.upcoming": "Demnächst",
     "status.notReleased": "Noch nicht veröffentlicht",
+    "stats.films": "Filme",
+    "stats.series": "Serien",
+    "stats.seasons": "Staffeln",
+    "stats.episodes": "Episoden",
+    "stats.runtime": "Min. gesamt",
     "filter.all": "Alle",
     "filter.films": "Filme",
     "filter.series": "Serien",
@@ -110,7 +121,8 @@ export const messages = {
       "Dieses Produkt nutzt die TMDB-API, ist aber nicht von TMDB unterstützt oder zertifiziert.",
     "footer.fanProject":
       "Ein quelloffenes, nicht-kommerzielles Fan-Projekt. Nicht mit Marvel Studios, The Walt Disney Company, Netflix oder Sony Pictures verbunden oder von ihnen unterstützt. Alle Marken und Bilder gehören ihren jeweiligen Eigentümern.",
-    "footer.license": "MIT-lizenziert",
+    "footer.license": "Nicht-kommerzielle Lizenz",
+    "footer.builtBy": "MCU Timeline — ein Open-Source-Projekt von veniplex",
   },
 } as const;
 

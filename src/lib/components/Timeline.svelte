@@ -1,6 +1,8 @@
 <script lang="ts">
   import {
     isFullyWatched,
+    itemUnits,
+    watchedUnitCount,
     sagaOf,
     type PhaseBand,
     type TimelineItem,
@@ -24,9 +26,15 @@
   const showProgress = $derived(firebaseEnabled && !!$auth.user);
   const isItemWatched = (item: TimelineItem) => isFullyWatched(item, $watched);
 
+  // Phase progress counts watch units (episodes individually), matching the
+  // overall progress bar.
   function progress(items: TimelineItem[]) {
-    const done = items.filter(isItemWatched).length;
-    const total = items.length;
+    let done = 0;
+    let total = 0;
+    for (const item of items) {
+      total += itemUnits(item).length;
+      done += watchedUnitCount(item, $watched);
+    }
     return { done, total, pct: total ? (done / total) * 100 : 0 };
   }
 
@@ -96,7 +104,8 @@
             </li>
           {/if}
           <li
-            class="relative grid grid-cols-1 md:grid-cols-2 first:mt-0 {overlap
+            data-item-key={item.key}
+            class="pointer-events-none relative grid grid-cols-1 md:grid-cols-2 first:mt-0 {overlap
               ? 'mt-8 md:-mt-8 lg:-mt-16'
               : 'mt-8 lg:mt-12'}"
             use:reveal={{
@@ -113,8 +122,10 @@
                 : 'var(--color-background)'}"
               aria-hidden="true"
             ></span>
+            <!-- pointer-events-auto: only the card itself is interactive, so the
+                 overlapping empty half of the next row never steals clicks. -->
             <div
-              class="relative flex transition-[z-index] hover:z-20 {i % 2 === 0
+              class="pointer-events-auto relative flex transition-[z-index] hover:z-10 {i % 2 === 0
                 ? 'md:col-start-1 md:pr-10 lg:pr-14'
                 : 'md:col-start-2 md:pl-10 lg:pl-14'}"
             >
