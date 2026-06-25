@@ -96,7 +96,8 @@ const RT_TV_SLUG: Record<string, string> = {
 	'your-friendly-neighborhood-spider-man': 'tv/your_friendly_neighborhood_spider_man',
 	'marvel-zombies': 'tv/marvel_zombies',
 	'eyes-of-wakanda': 'tv/eyes_of_wakanda',
-	'i-am-groot': 'tv/i_am_groot'
+	'i-am-groot': 'tv/i_am_groot',
+	'wonder-man': 'tv/wonder_man'
 };
 
 /**
@@ -396,15 +397,17 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Black Panther', year: 2018 },
-		source: 'Official timeline (2016, ~one week after Civil War — precedes Homecoming)'
+		source: 'Official timeline (2016, ~one week after Civil War — precedes Homecoming)',
+		rtSlug: 'm/black_panther_2018'
 	},
 	{
 		id: 'black-widow',
-		order: 210,
+		order: 202,
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Black Widow', year: 2021 },
-		source: 'Official timeline (2016, immediately after Civil War)'
+		source: 'Official timeline (2016, immediately after Civil War — precedes Black Panther)',
+		rtSlug: 'm/black_widow_2021'
 	},
 	{
 		id: 'spider-man-homecoming',
@@ -421,7 +424,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Doctor Strange', year: 2016 },
-		source: 'Official timeline (2016-2017)'
+		source: 'Official timeline (2016-2017)',
+		rtSlug: 'm/doctor_strange_2016'
 	},
 	{
 		id: 'thor-ragnarok',
@@ -599,7 +603,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Werewolf by Night', year: 2022 },
-		source: 'Disney+ special presentation'
+		source: 'Disney+ special presentation',
+		rtSlug: 'm/werewolf_by_night'
 	},
 	{
 		id: 'black-panther-wakanda-forever',
@@ -617,7 +622,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Guardians of the Galaxy Holiday Special', year: 2022 },
 		eraTag: 'Christmas',
-		source: 'Disney+ special presentation'
+		source: 'Disney+ special presentation',
+		rtSlug: 'm/the_guardians_of_the_galaxy_holiday_special'
 	},
 	{
 		id: 'agents-of-shield-s7',
@@ -669,7 +675,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Marvels', year: 2023 },
-		source: 'Official timeline (after Ms. Marvel)'
+		source: 'Official timeline (after Ms. Marvel)',
+		rtSlug: 'm/the_marvels'
 	},
 	{
 		id: 'echo',
@@ -703,7 +710,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Captain America: Brave New World', year: 2025 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/captain_america_brave_new_world'
 	},
 	{
 		id: 'daredevil-born-again-s1',
@@ -714,12 +722,21 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Official timeline'
 	},
 	{
+		id: 'daredevil-born-again-s2',
+		order: 585,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Daredevil: Born Again', year: 2025, season: 2, tmdbId: 202555 },
+		source: 'Official timeline; continues directly from S1, aired 2026 (Phase 6 era)'
+	},
+	{
 		id: 'thunderbolts',
 		order: 560,
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Thunderbolts*', year: 2025 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/thunderbolts'
 	},
 	{
 		id: 'ironheart',
@@ -738,6 +755,14 @@ export const chronology: ChronologyEntry[] = [
 		eraTag: 'Alternate universe (Earth-828)',
 		source: 'Official timeline (opens Phase 6)',
 		rtSlug: 'm/the_fantastic_four_first_steps'
+	},
+	{
+		id: 'wonder-man',
+		order: 590,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Wonder Man', year: 2026, season: 1, tmdbId: 198178 },
+		source: 'Marvel Studios Disney+ series; present-day, aired Jan 2026 (Phase 6 era)'
 	},
 
 	/* ---- Legacy Marvel Television: Defenders Saga (Netflix) + ABC/Hulu/Freeform,
@@ -987,7 +1012,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Venom', year: 2018 },
 		eraTag: 'Sony tie-in',
-		source: 'Sony SSU; loose MCU connection, grouped by release era'
+		source: 'Sony SSU; loose MCU connection, grouped by release era',
+		rtSlug: 'm/venom_2018'
 	},
 	{
 		id: 'venom-let-there-be-carnage',
@@ -996,7 +1022,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Venom: Let There Be Carnage', year: 2021 },
 		eraTag: 'Sony tie-in',
-		source: 'Sony SSU; mid-credits crosses into MCU (No Way Home)'
+		source: 'Sony SSU; mid-credits crosses into MCU (No Way Home)',
+		rtSlug: 'm/venom_let_there_be_carnage'
 	},
 	{
 		id: 'morbius',
@@ -1005,7 +1032,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Morbius', year: 2022 },
 		eraTag: 'Sony tie-in',
-		source: 'Sony SSU; post-credits ties to Vulture via the No Way Home multiverse rift'
+		source: 'Sony SSU; post-credits ties to Vulture via the No Way Home multiverse rift',
+		rtSlug: 'm/morbius'
 	},
 
 	/* ---- Announced, not yet released. No ratings / episodes yet — flagged
