@@ -13,6 +13,10 @@ export const messages = {
       "This project is in an early stage — the timeline may be incomplete or not yet fully correct.",
     "banner.cta": "Anyone can help improve it on GitHub.",
     "banner.dismiss": "Dismiss notice",
+    "cookie.text":
+      "We use local storage for preferences & watch history, and privacy-first anonymous analytics (Vercel). Sign-in uses Firebase (Google).",
+    "cookie.link": "Privacy Policy",
+    "cookie.accept": "Got it",
     "sort.chronological": "Story Order",
     "sort.release": "Release date",
     "sort.label": "Sort by",
@@ -66,6 +70,7 @@ export const messages = {
     "footer.fanProject":
       "An open-source, non-commercial fan project. Not affiliated with or endorsed by Marvel Studios, The Walt Disney Company, Netflix, or Sony Pictures. All trademarks and imagery belong to their respective owners.",
     "footer.license": "Non-commercial license",
+    "footer.privacy": "Privacy Policy",
     "footer.builtBy": "MCU Timeline — an open-source project by veniplex",
   },
   de: {
@@ -76,6 +81,10 @@ export const messages = {
       "Dieses Projekt befindet sich in einer frühen Phase — die Zeitleiste ist möglicherweise unvollständig oder noch nicht vollständig korrekt.",
     "banner.cta": "Jeder kann auf GitHub mithelfen, es zu verbessern.",
     "banner.dismiss": "Hinweis schließen",
+    "cookie.text":
+      "Wir nutzen Local Storage für Einstellungen & Verlauf sowie datenschutzfreundliche anonyme Analysedaten (Vercel). Die Anmeldung erfolgt über Firebase (Google).",
+    "cookie.link": "Datenschutzerklärung",
+    "cookie.accept": "Verstanden",
     "sort.chronological": "Story-Reihenfolge",
     "sort.release": "Veröffentlichung",
     "sort.label": "Sortieren nach",
@@ -130,6 +139,7 @@ export const messages = {
     "footer.fanProject":
       "Ein quelloffenes, nicht-kommerzielles Fan-Projekt. Nicht mit Marvel Studios, The Walt Disney Company, Netflix oder Sony Pictures verbunden oder von ihnen unterstützt. Alle Marken und Bilder gehören ihren jeweiligen Eigentümern.",
     "footer.license": "Nicht-kommerzielle Lizenz",
+    "footer.privacy": "Datenschutzerklärung",
     "footer.builtBy": "MCU Timeline — ein Open-Source-Projekt von veniplex",
   },
 } as const;

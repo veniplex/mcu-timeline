@@ -5,6 +5,7 @@
   import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
   import Nav from "$lib/components/Nav.svelte";
   import Banner from "$lib/components/Banner.svelte";
+  import CookieBanner from "$lib/components/CookieBanner.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import { initUserPrefs } from "$lib/stores/userPrefs";
 
@@ -24,4 +25,5 @@
     {@render children()}
   </main>
   <Footer />
+  <CookieBanner />
 </div>

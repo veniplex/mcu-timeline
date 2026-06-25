@@ -1,6 +1,7 @@
 <script lang="ts">
   import { GITHUB_URL } from "$lib/stores/githubStars";
   import { t } from "$lib/i18n/messages";
+  import { locale } from "$lib/stores/locale";
   import GithubPill from "./GithubPill.svelte";
 
   const year = 2026;
@@ -30,6 +31,10 @@
           target="_blank"
           rel="noopener noreferrer"
           class="underline-offset-2 hover:underline">{$t("footer.license")}</a
+        >
+        ·
+        <a href="/privacy" class="underline-offset-2 hover:underline"
+          >{$t("footer.privacy")}</a
         >
       </p>
     </div>
