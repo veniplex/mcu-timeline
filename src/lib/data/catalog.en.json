@@ -18,6 +18,25 @@
     ],
     "watchLink": "https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger/watch?locale=DE"
   },
+  "agent-carter-one-shot": {
+    "id": "agent-carter-one-shot",
+    "tmdbId": 211387,
+    "imdbId": "tt3067038",
+    "tmdbType": "movie",
+    "title": "Marvel One-Shot: Agent Carter",
+    "overview": "Agent Peggy Carter is relegated to a desk job and frustrated at her male boss and comrades' sexist dismissal of her place in the SSR. Ordered to work late one night, Carter gets an alert that the villain Zodiac has been spotted and decides to take care of it herself.",
+    "releaseDate": "2013-10-04",
+    "runtime": 15,
+    "poster": "/4vFKKWPvCVDJTOWiwReBfpAMScP.jpg",
+    "backdrop": "/kv8KDbi2I4F4MNBbBMCR4LDqP6H.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/211387-marvel-one-shot-agent-carter/watch?locale=DE"
+  },
   "agent-carter-s1": {
     "id": "agent-carter-s1",
     "tmdbId": 61550,
@@ -286,6 +305,44 @@
     ],
     "watchLink": "https://www.themoviedb.org/movie/1724-the-incredible-hulk/watch?locale=DE"
   },
+  "the-consultant": {
+    "id": "the-consultant",
+    "tmdbId": 76122,
+    "imdbId": "tt2011118",
+    "tmdbType": "movie",
+    "title": "Marvel One-Shot: The Consultant",
+    "overview": "Agent Coulson informs Agent Sitwell that the World Security Council wishes Emil Blonsky to be released from prison to join the Avengers Initiative. As Nick Fury doesn't want to release Blonsky, the two agents decide to send a patsy to sabotage the meeting...",
+    "releaseDate": "2011-09-13",
+    "runtime": 4,
+    "poster": "/xqNLXUUvBnfVk6m3QFGGU0Grgs7.jpg",
+    "backdrop": "/r1Q3jyOpfbF3VDU52w8RzkTPbfe.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/76122-marvel-one-shot-the-consultant/watch?locale=DE"
+  },
+  "a-funny-thing-happened-thors-hammer": {
+    "id": "a-funny-thing-happened-thors-hammer",
+    "tmdbId": 76535,
+    "imdbId": "tt2011109",
+    "tmdbType": "movie",
+    "title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+    "overview": "Agent Coulson stops at a convenience store and deals with a coincidental robbery during his visit.",
+    "releaseDate": "2011-10-25",
+    "runtime": 4,
+    "poster": "/ugrdgmZlSuiavH0NFurhlUPIRD0.jpg",
+    "backdrop": "/yuIsNfHZTn3nkSsatzM0298wA67.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/76535-marvel-one-shot-a-funny-thing-happened-on-the-way-to-thor-s-hammer/watch?locale=DE"
+  },
   "thor": {
     "id": "thor",
     "tmdbId": 10195,
@@ -324,6 +381,25 @@
     ],
     "watchLink": "https://www.themoviedb.org/movie/24428-the-avengers/watch?locale=DE"
   },
+  "item-47": {
+    "id": "item-47",
+    "tmdbId": 119569,
+    "imdbId": "tt2247732",
+    "tmdbType": "movie",
+    "title": "Marvel One-Shot: Item 47",
+    "overview": "Benny and Claire, a down-on-their-luck couple, find a discarded Chitauri weapon referred to as 'Item 47'.",
+    "releaseDate": "2012-08-29",
+    "runtime": 12,
+    "poster": "/hnSxG8clwLuAXEkp9emc8HCUcHD.jpg",
+    "backdrop": "/pC36ONAaKMXStlvutYFcAbMemCM.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/119569-marvel-one-shot-item-47/watch?locale=DE"
+  },
   "iron-man-3": {
     "id": "iron-man-3",
     "tmdbId": 68721,
@@ -358,6 +434,25 @@
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/68721-iron-man-3/watch?locale=DE"
+  },
+  "all-hail-the-king": {
+    "id": "all-hail-the-king",
+    "tmdbId": 253980,
+    "imdbId": "tt3438640",
+    "tmdbType": "movie",
+    "title": "Marvel One-Shot: All Hail the King",
+    "overview": "A documentary filmmaker interviews the now-famous Trevor Slattery from behind bars.",
+    "releaseDate": "2014-02-04",
+    "runtime": 14,
+    "poster": "/y0QYZPWgeGKOvyrzi6Oz3aJPxJa.jpg",
+    "backdrop": "/yoigAFjhEhJM6O6hQT9TiKH6EL7.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/253980-marvel-one-shot-all-hail-the-king/watch?locale=DE"
   },
   "thor-the-dark-world": {
     "id": "thor-the-dark-world",
@@ -743,6 +838,110 @@
     ],
     "watchLink": "https://www.themoviedb.org/movie/283995-guardians-of-the-galaxy-vol-2/watch?locale=DE"
   },
+  "i-am-groot-s1": {
+    "id": "i-am-groot-s1",
+    "tmdbId": 232125,
+    "imdbId": "tt13623148",
+    "tmdbType": "tv",
+    "title": "I Am Groot",
+    "overview": "Marvel Studios’ “I Am Groot” is a collection of five original shorts starring Baby Groot, everyone’s favorite little tree, and features several new and unusual characters.",
+    "releaseDate": "2022-08-10",
+    "runtime": null,
+    "poster": "/oZmqHnWJVQLOKOibDa34W4iGBZU.jpg",
+    "backdrop": "/bAnHzJ6AMhOhnV3C0kTxkpCqpgM.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Groot's First Steps",
+        "airDate": "2022-08-10"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "The Little Guy",
+        "airDate": "2022-08-10"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Groot's Pursuit",
+        "airDate": "2022-08-10"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Groot Takes a Bath",
+        "airDate": "2022-08-10"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Magnum Opus",
+        "airDate": "2022-08-10"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/232125-i-am-groot/watch?locale=DE"
+  },
+  "i-am-groot-s2": {
+    "id": "i-am-groot-s2",
+    "tmdbId": 232125,
+    "imdbId": "tt13623148",
+    "tmdbType": "tv",
+    "title": "I Am Groot",
+    "overview": "The troublemaking twig returns to mischief in the second season of “I Am Groot.” This time, Baby Groot finds himself exploring the universe and beyond aboard the Guardians' spaceships, coming face-to-face—or nose-to-nose—with new and colorful creatures and environments.",
+    "releaseDate": "2023-09-06",
+    "runtime": null,
+    "poster": "/7b4qBnExIjuANVDKWyVN8gVVOXS.jpg",
+    "backdrop": "/bAnHzJ6AMhOhnV3C0kTxkpCqpgM.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Are You My Groot?",
+        "airDate": "2023-09-06"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Groot Noses Around",
+        "airDate": "2023-09-06"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Groot's Snow Day",
+        "airDate": "2023-09-06"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Groot's Sweet Treat",
+        "airDate": "2023-09-06"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "Groot and the Great Prophecy",
+        "airDate": "2023-09-06"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/232125-i-am-groot/watch?locale=DE"
+  },
   "daredevil-s1": {
     "id": "daredevil-s1",
     "tmdbId": 61889,
@@ -962,6 +1161,53 @@
     ],
     "watchLink": "https://www.themoviedb.org/movie/99861-avengers-age-of-ultron/watch?locale=DE"
   },
+  "whih-newsfront": {
+    "id": "whih-newsfront",
+    "tmdbId": 69069,
+    "imdbId": "tt5296048",
+    "tmdbType": "tv",
+    "title": "WHIH Newsfront",
+    "overview": "WHIH Newsfront is a television program presented by Christine Everhart in the WHIH World News network, informing about major events from political, scientific, and entertainment news, in the Marvel Cinematic Universe.",
+    "releaseDate": "2015-07-02",
+    "runtime": null,
+    "poster": "/uF1TusdraRmlJzrI61INuXBEZl7.jpg",
+    "backdrop": "/v4SPk4N5JXxy6EMyJazdCRKf1AE.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "WHIH Newsfront Promo",
+        "airDate": "2015-07-02"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "WHIH Newsfront Top Stories",
+        "airDate": "2015-07-07"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "WHIH EXCLUSIVE: 2012 VistaCorp break-in security footage involving cyber-criminal Scott Lang",
+        "airDate": "2015-07-11"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "WIRED Insider Interviews Darren Cross, CEO of Pym Technologies",
+        "airDate": "2015-07-13"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "WHIH Exclusive: Scott Lang Interview",
+        "airDate": "2015-07-16"
+      }
+    ],
+    "providers": [],
+    "watchLink": null
+  },
   "ant-man": {
     "id": "ant-man",
     "tmdbId": 102899,
@@ -1052,6 +1298,44 @@
     "providers": [],
     "watchLink": "https://www.themoviedb.org/movie/315635-spider-man-homecoming/watch?locale=DE"
   },
+  "team-thor": {
+    "id": "team-thor",
+    "tmdbId": 413279,
+    "imdbId": "tt6016776",
+    "tmdbType": "movie",
+    "title": "Team Thor",
+    "overview": "Discover what Thor was up to during the events of Captain America: Civil War.",
+    "releaseDate": "2016-08-28",
+    "runtime": 3,
+    "poster": "/hpHvGuMc46pppwpcW0Xk7eys3L4.jpg",
+    "backdrop": "/rmsj3O1e1fFmIKIuFjkN572s7xQ.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/413279-team-thor/watch?locale=DE"
+  },
+  "team-thor-part-2": {
+    "id": "team-thor-part-2",
+    "tmdbId": 441829,
+    "imdbId": "tt6599818",
+    "tmdbType": "movie",
+    "title": "Team Thor: Part 2",
+    "overview": "A continuation of the documentary spoof of what Thor and his roommate Darryl were up to during the events of \"Captain America: Civil War\". While Cap and Iron Man duke it out, Thor tries to pay Darryl his rent in Asgardian coins.",
+    "releaseDate": "2017-02-14",
+    "runtime": 5,
+    "poster": "/2jmP71A5Un0jDNqBesDPQSN8hjJ.jpg",
+    "backdrop": "/cz8m8AS8MOD1x4RAjYgYMHf13xB.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/441829-team-thor-part-2/watch?locale=DE"
+  },
   "doctor-strange": {
     "id": "doctor-strange",
     "tmdbId": 284052,
@@ -1089,6 +1373,25 @@
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/284053-thor-ragnarok/watch?locale=DE"
+  },
+  "team-darryl": {
+    "id": "team-darryl",
+    "tmdbId": 505945,
+    "imdbId": "tt8023090",
+    "tmdbType": "movie",
+    "title": "Team Darryl",
+    "overview": "Fresh off being unseated as the ruler of Sakaar, the Grandmaster makes his way to Earth to start a new life. It's been over a year since Thor left Australia and Darryl has been struggling to pay his rent. Now Darryl needs a new roommate to help make the monthly payments. Unfortunately for Darryl, the Grandmaster was the only one who answered Darryl's \"Roommate Needed\" ad and with no viable options, the Grandmaster moves in.",
+    "releaseDate": "2018-02-20",
+    "runtime": 6,
+    "poster": "/edroTAeTEM9ILyAnumA0ALxRSne.jpg",
+    "backdrop": "/wL56346BF1eMElIGtqWLiILcfbU.jpg",
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/505945-team-darryl/watch?locale=DE"
   },
   "ant-man-and-the-wasp": {
     "id": "ant-man-and-the-wasp",
@@ -1596,6 +1899,20 @@
     "backdrop": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg",
     "providers": [],
     "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
+  },
+  "the-daily-bugle": {
+    "id": "the-daily-bugle",
+    "tmdbId": 1716846,
+    "imdbId": null,
+    "tmdbType": "movie",
+    "title": "The Daily Bugle",
+    "overview": "The Daily Bugle follows J. Jonah Jameson’s news outlet as it reports on superhero events and controversies. Season 1 covers Spider-Man’s identity crisis after Far From Home, Season 2 explores the chaos of No Way Home, Season 3 focuses on Morbius’ emergence, and Season 4 deals with the aftermath of the multiverse events and Spider-Man’s uncertain future.",
+    "releaseDate": "2019-10-29",
+    "runtime": 29,
+    "poster": "/pFFharD8VjXh9iFZJq7EYSgTkj7.jpg",
+    "backdrop": "/pZ58oqaYXYOjoGxpTqDgTHWW4he.jpg",
+    "providers": [],
+    "watchLink": null
   },
   "doctor-strange-multiverse-of-madness": {
     "id": "doctor-strange-multiverse-of-madness",
@@ -2423,6 +2740,76 @@
     ],
     "watchLink": "https://www.themoviedb.org/tv/202555-daredevil-born-again/watch?locale=DE"
   },
+  "daredevil-born-again-s2": {
+    "id": "daredevil-born-again-s2",
+    "tmdbId": 202555,
+    "imdbId": "tt18923754",
+    "tmdbType": "tv",
+    "title": "Daredevil: Born Again",
+    "overview": "Mayor Wilson Fisk crushes New York City underfoot as he hunts down public enemy number one, the Hell's Kitchen vigilante known as Daredevil. But beneath the horned mask, Matt Murdock will try to fight back from the shadows to tear down the Kingpin's corrupt empire and redeem his home. Resist. Rebel. Rebuild.",
+    "releaseDate": "2026-03-24",
+    "runtime": null,
+    "poster": "/timvsedxh5ce795tsv6EDTZmmXW.jpg",
+    "backdrop": "/v2cTiLNlviotwugnDKqY21xGmSv.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "The Northern Star",
+        "airDate": "2026-03-24"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "Shoot the Moon",
+        "airDate": "2026-03-31"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "The Scales & the Sword",
+        "airDate": "2026-03-31"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Gloves Off",
+        "airDate": "2026-04-07"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "The Grand Design",
+        "airDate": "2026-04-14"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "Requiem",
+        "airDate": "2026-04-21"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "The Hateful Darkness",
+        "airDate": "2026-04-28"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "The Southern Cross",
+        "airDate": "2026-05-05"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/202555-daredevil-born-again/watch?locale=DE"
+  },
   "thunderbolts": {
     "id": "thunderbolts",
     "tmdbId": 986056,
@@ -2518,6 +2905,141 @@
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/617126-the-fantastic-4-first-steps/watch?locale=DE"
+  },
+  "wonder-man": {
+    "id": "wonder-man",
+    "tmdbId": 198178,
+    "imdbId": "tt21066182",
+    "tmdbType": "tv",
+    "title": "Wonder Man",
+    "overview": "Aspiring Hollywood actor Simon Williams is struggling to get his career off the ground. During a chance meeting with Trevor Slattery, an actor whose biggest roles may be well behind him, Simon learns that legendary director Von Kovak is remaking the superhero film \"Wonder Man.\" These two actors at opposite ends of their careers doggedly pursue life-changing roles in this film as audiences get a peek behind the curtain of the entertainment industry.",
+    "releaseDate": "2026-01-26",
+    "runtime": null,
+    "poster": "/z5xlxga7oc2eGVpS9vw38ULA9nr.jpg",
+    "backdrop": "/ldz9THIHaV4orMsUrPT1nlQF51T.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Matinee",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Self-Tape",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Pacoima",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Doorman",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Found Footage",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Callback",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Kathy Friedman",
+        "airDate": "2026-01-27"
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Yucca Valley",
+        "airDate": "2026-01-27"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/198178-wonder-man/watch?locale=DE"
+  },
+  "visionquest": {
+    "id": "visionquest",
+    "tmdbId": 213375,
+    "imdbId": "tt23112594",
+    "tmdbType": "tv",
+    "title": "VisionQuest",
+    "overview": "After the events of WandaVision, White Vision struggles to connect with the memories given to him as he lacks the emotions or feelings associated with them.",
+    "releaseDate": "2026-10-14",
+    "runtime": null,
+    "poster": "/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg",
+    "backdrop": "/hgo15B8eUnbEjszVV1qdV8sGz9S.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Episode 1",
+        "airDate": "2026-10-14"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "Episode 2",
+        "airDate": null
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Episode 3",
+        "airDate": null
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Episode 4",
+        "airDate": null
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Episode 5",
+        "airDate": null
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Episode 6",
+        "airDate": null
+      },
+      {
+        "season": 1,
+        "number": 7,
+        "title": "Episode 7",
+        "airDate": null
+      },
+      {
+        "season": 1,
+        "number": 8,
+        "title": "Episode 8",
+        "airDate": null
+      }
+    ],
+    "providers": [],
+    "watchLink": null
   },
   "agents-of-shield-s3": {
     "id": "agents-of-shield-s3",
@@ -2926,6 +3448,59 @@
       }
     ],
     "watchLink": "https://www.themoviedb.org/tv/1403-marvel-s-agents-of-s-h-i-e-l-d/watch?locale=DE"
+  },
+  "aos-slingshot": {
+    "id": "aos-slingshot",
+    "tmdbId": 69088,
+    "imdbId": "tt6313900",
+    "tmdbType": "tv",
+    "title": "Marvel's Agents of S.H.I.E.L.D.: Slingshot",
+    "overview": "Elena \"Yo-Yo\" Rodriguez, an Inhuman with the ability to move at super-speed, is required to sign the Sokovia Accords. However, the restrictions of the Accords are in direct conflict with a personal mission she's desperate to fulfill, one that will test her abilities and will include tense encounters with S.H.I.E.L.D. team members.",
+    "releaseDate": "2016-12-13",
+    "runtime": 5,
+    "poster": "/kbS1aQMNUUam4NWdXws98bKEBVV.jpg",
+    "backdrop": "/pvqasfLg6ALyTV1bAlg4hkrCdVu.jpg",
+    "season": 1,
+    "episodes": [
+      {
+        "season": 1,
+        "number": 1,
+        "title": "Vendetta",
+        "airDate": "2016-12-13"
+      },
+      {
+        "season": 1,
+        "number": 2,
+        "title": "John Hancock",
+        "airDate": "2016-12-13"
+      },
+      {
+        "season": 1,
+        "number": 3,
+        "title": "Progress",
+        "airDate": "2016-12-13"
+      },
+      {
+        "season": 1,
+        "number": 4,
+        "title": "Reunion",
+        "airDate": "2016-12-13"
+      },
+      {
+        "season": 1,
+        "number": 5,
+        "title": "Deal Breaker",
+        "airDate": "2016-12-13"
+      },
+      {
+        "season": 1,
+        "number": 6,
+        "title": "Justicia",
+        "airDate": "2016-12-13"
+      }
+    ],
+    "providers": [],
+    "watchLink": null
   },
   "luke-cage-s1": {
     "id": "luke-cage-s1",
@@ -4844,6 +5419,82 @@
     ],
     "watchLink": "https://www.themoviedb.org/tv/138502-x-men-97/watch?locale=DE"
   },
+  "x-men-97-s2": {
+    "id": "x-men-97-s2",
+    "tmdbId": 138502,
+    "imdbId": "tt16026746",
+    "tmdbType": "tv",
+    "title": "X-Men '97",
+    "overview": "Season 2 continues with the heroic mutant team of X-Men, divided and thrown across different eras in time as they struggle to navigate their return home. Meanwhile, back in the 1990s, suspicious foes and new strains of mutant intolerance are on the rise in the wake of the X-Men's absence.",
+    "releaseDate": "2026-07-01",
+    "runtime": null,
+    "poster": "/sRFe730EPeE3naEMvtRhqixCzrq.jpg",
+    "backdrop": "/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    "season": 2,
+    "episodes": [
+      {
+        "season": 2,
+        "number": 1,
+        "title": "Days of Past Future",
+        "airDate": "2026-07-01"
+      },
+      {
+        "season": 2,
+        "number": 2,
+        "title": "A Force to Be Reckoned With",
+        "airDate": "2026-07-01"
+      },
+      {
+        "season": 2,
+        "number": 3,
+        "title": "Rise of Apocalypse (1)",
+        "airDate": "2026-07-01"
+      },
+      {
+        "season": 2,
+        "number": 4,
+        "title": "Rise of Apocalypse (2)",
+        "airDate": "2026-07-08"
+      },
+      {
+        "season": 2,
+        "number": 5,
+        "title": "Weapon X, Lies, and DVDs",
+        "airDate": "2026-07-15"
+      },
+      {
+        "season": 2,
+        "number": 6,
+        "title": "Danger.Exe",
+        "airDate": "2026-07-22"
+      },
+      {
+        "season": 2,
+        "number": 7,
+        "title": "Strange Land, Savage Heart",
+        "airDate": "2026-07-29"
+      },
+      {
+        "season": 2,
+        "number": 8,
+        "title": "The Dead Man's Hand",
+        "airDate": "2026-08-05"
+      },
+      {
+        "season": 2,
+        "number": 9,
+        "title": "Survival of the Fittest",
+        "airDate": "2026-08-12"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Disney Plus",
+        "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/tv/138502-x-men-97/watch?locale=DE"
+  },
   "your-friendly-neighborhood-spider-man-s1": {
     "id": "your-friendly-neighborhood-spider-man-s1",
     "tmdbId": 138503,
@@ -5142,6 +5793,75 @@
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=DE"
+  },
+  "madame-web": {
+    "id": "madame-web",
+    "tmdbId": 634492,
+    "imdbId": "tt11057302",
+    "tmdbType": "movie",
+    "title": "Madame Web",
+    "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
+    "releaseDate": "2024-02-14",
+    "runtime": 117,
+    "poster": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+    "backdrop": "/pwGmXVKUgKN13psUjlhC9zBcq1o.jpg",
+    "providers": [
+      {
+        "name": "RTL+",
+        "logo": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg"
+      },
+      {
+        "name": "RTL+ Max Amazon Channel",
+        "logo": "/8o737RzF49I8kOHe9ua3tLORIEf.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/634492-madame-web/watch?locale=DE"
+  },
+  "venom-the-last-dance": {
+    "id": "venom-the-last-dance",
+    "tmdbId": 912649,
+    "imdbId": "tt16366836",
+    "tmdbType": "movie",
+    "title": "Venom: The Last Dance",
+    "overview": "Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
+    "releaseDate": "2024-10-22",
+    "runtime": 109,
+    "poster": "/vGXptEdgZIhPg3cGlc7e8sNPC2e.jpg",
+    "backdrop": "/3V4kLQg0kSqPLctI5ziYWabAZYF.jpg",
+    "providers": [
+      {
+        "name": "RTL+",
+        "logo": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg"
+      },
+      {
+        "name": "RTL+ Max Amazon Channel",
+        "logo": "/8o737RzF49I8kOHe9ua3tLORIEf.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/912649-venom-the-last-dance/watch?locale=DE"
+  },
+  "kraven-the-hunter": {
+    "id": "kraven-the-hunter",
+    "tmdbId": 539972,
+    "imdbId": "tt8790086",
+    "tmdbType": "movie",
+    "title": "Kraven the Hunter",
+    "overview": "Kraven Kravinoff's complex relationship with his ruthless gangster father, Nikolai, starts him down a path of vengeance with brutal consequences, motivating him to become not only the greatest hunter in the world, but also one of its most feared.",
+    "releaseDate": "2024-12-11",
+    "runtime": 127,
+    "poster": "/1GvBhRxY6MELDfxFrete6BNhBB5.jpg",
+    "backdrop": "/bGGjyPqtNc8hhGkPo8W8D8t90bW.jpg",
+    "providers": [
+      {
+        "name": "RTL+",
+        "logo": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg"
+      },
+      {
+        "name": "RTL+ Max Amazon Channel",
+        "logo": "/8o737RzF49I8kOHe9ua3tLORIEf.jpg"
+      }
+    ],
+    "watchLink": "https://www.themoviedb.org/movie/539972-kraven-the-hunter/watch?locale=DE"
   },
   "spider-man-brand-new-day": {
     "id": "spider-man-brand-new-day",
