@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This project is new. Chronological order might not be 100% correct! Feel free to support by opening issues or pull requests.
+
 <div align="center">
 
 # MCU Timeline
