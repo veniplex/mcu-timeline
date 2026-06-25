@@ -31,11 +31,12 @@ It is a **non-commercial, open-source fan project** — see [Legal](#legal).
 
 ## Features
 
-- 🎬 **Complete catalogue** — the full theatrical slate (Phases 1–6), every Marvel
-  Studios Disney+ series & special, the entire legacy Marvel Television run
-  (Agents of S.H.I.E.L.D. S1–7, the Netflix Defenders Saga, Inhumans, Runaways,
-  Cloak & Dagger, Helstrom), the animated slate (What If…?, X-Men ’97, and more),
-  and the loosely-connected Sony tie-ins.
+- 🎬 **Complete catalogue** — the full theatrical slate (Phases 1–6), all five
+  Marvel One-Shots, every Marvel Studios Disney+ series, special & short (incl.
+  I Am Groot), the entire legacy Marvel Television run (Agents of S.H.I.E.L.D.
+  S1–7, the Netflix Defenders Saga, Inhumans, Runaways, Cloak & Dagger, Helstrom),
+  the animated slate (What If…?, X-Men ’97, and more), and the loosely-connected
+  Sony tie-ins.
 - 🧭 **Two sort modes** — curated in-universe **chronological** order (hybrid of
   Marvel's official timeline + fan consensus, with a per-entry `source` note) or
   global **release-date** order, which merges consecutive same-series seasons into
