@@ -43,6 +43,7 @@ const CATEGORY_BY_ID: Record<string, Category> = {
 	'what-if-s2': 'animated',
 	'what-if-s3': 'animated',
 	'x-men-97-s1': 'animated',
+	'x-men-97-s2': 'animated',
 	'your-friendly-neighborhood-spider-man-s1': 'animated',
 	'marvel-zombies': 'animated',
 	'eyes-of-wakanda': 'animated',
@@ -764,6 +765,14 @@ export const chronology: ChronologyEntry[] = [
 		query: { type: 'tv', title: 'Wonder Man', year: 2026, season: 1, tmdbId: 198178 },
 		source: 'Marvel Studios Disney+ series; present-day, aired Jan 2026 (Phase 6 era)'
 	},
+	{
+		id: 'visionquest',
+		order: 595,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'VisionQuest', year: 2026, season: 1, tmdbId: 213375 },
+		source: 'Marvel Studios Disney+ series; WandaVision/Agatha follow-up, due Oct 2026 (Phase 6)'
+	},
 
 	/* ---- Legacy Marvel Television: Defenders Saga (Netflix) + ABC/Hulu/Freeform,
 	   Phase 3 release era. Ordered by premiere date; no official in-universe dates,
@@ -975,6 +984,15 @@ export const chronology: ChronologyEntry[] = [
 		query: { type: 'tv', title: 'X-Men \'97', year: 2024, season: 1 },
 		eraTag: 'Alternate universe',
 		source: 'Animated revival; separate continuity, grouped by Phase 5 release'
+	},
+	{
+		id: 'x-men-97-s2',
+		order: 752,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'X-Men \'97', year: 2024, season: 2, tmdbId: 138502 },
+		eraTag: 'Alternate universe',
+		source: 'Animated; continues S1, aired 2026 (Phase 6 release era)'
 	},
 	{
 		id: 'your-friendly-neighborhood-spider-man-s1',
