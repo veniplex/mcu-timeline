@@ -38,18 +38,26 @@ const CATEGORY_BY_ID: Record<string, Category> = {
 	'cloak-and-dagger-s1': 'legacy-tv',
 	'cloak-and-dagger-s2': 'legacy-tv',
 	helstrom: 'legacy-tv',
+	'aos-slingshot': 'legacy-tv',
+	'whih-newsfront': 'legacy-tv',
 	// Animation (alternate continuities)
 	'what-if-s1': 'animated',
 	'what-if-s2': 'animated',
 	'what-if-s3': 'animated',
 	'x-men-97-s1': 'animated',
+	'x-men-97-s2': 'animated',
 	'your-friendly-neighborhood-spider-man-s1': 'animated',
 	'marvel-zombies': 'animated',
 	'eyes-of-wakanda': 'animated',
+	'i-am-groot-s1': 'animated',
+	'i-am-groot-s2': 'animated',
 	// Sony tie-ins (SSU)
 	venom: 'sony',
 	'venom-let-there-be-carnage': 'sony',
-	morbius: 'sony'
+	morbius: 'sony',
+	'madame-web': 'sony',
+	'venom-the-last-dance': 'sony',
+	'kraven-the-hunter': 'sony'
 };
 
 /** Category for a chronology entry id (defaults to `studios`). */
@@ -93,7 +101,9 @@ const RT_TV_SLUG: Record<string, string> = {
 	'x-men-97': 'tv/x_men_97',
 	'your-friendly-neighborhood-spider-man': 'tv/your_friendly_neighborhood_spider_man',
 	'marvel-zombies': 'tv/marvel_zombies',
-	'eyes-of-wakanda': 'tv/eyes_of_wakanda'
+	'eyes-of-wakanda': 'tv/eyes_of_wakanda',
+	'i-am-groot': 'tv/i_am_groot',
+	'wonder-man': 'tv/wonder_man'
 };
 
 /**
@@ -124,10 +134,14 @@ export function rtSlugOf(entry: ChronologyEntry): string | undefined {
  * Series are single season-blocks. `order` for legacy TV reflects premiere date
  * so seasons stay consecutive and read in airing order within their phase band.
  *
- * Coverage: complete theatrical slate (Phases 1-6) + all Marvel Studios Disney+
- * series & specials + full legacy Marvel Television run (Agents of S.H.I.E.L.D.
- * S1-7, the Netflix Defenders Saga, Inhumans, Runaways, Cloak & Dagger, Helstrom),
- * the animated slate, and the loosely-connected Sony tie-ins.
+ * Coverage is maximal — everything watchable that fits the timeline, even
+ * loosely: the complete theatrical slate (Phases 1-6), all five Marvel One-Shots,
+ * the Team Thor mockumentary shorts, every Marvel Studios Disney+ series, special
+ * & short (incl. I Am Groot, Wonder Man, VisionQuest), the full legacy Marvel
+ * Television run (Agents of S.H.I.E.L.D. S1-7 + the Slingshot digital series, the
+ * Netflix Defenders Saga, Inhumans, Runaways, Cloak & Dagger, Helstrom, the WHIH
+ * Newsfront viral series), the animated slate, and the full Sony SSU live-action
+ * slate (Venom trilogy, Morbius, Madame Web, Kraven).
  */
 export const chronology: ChronologyEntry[] = [
 	{
@@ -139,6 +153,15 @@ export const chronology: ChronologyEntry[] = [
 		eraTag: 'WWII',
 		source: 'Official timeline (1943-45)',
 		rtSlug: 'm/captain_america_the_first_avenger'
+	},
+	{
+		id: 'agent-carter-one-shot',
+		order: 15,
+		phase: 2,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Marvel One-Shot: Agent Carter', year: 2013, tmdbId: 211387 },
+		eraTag: '1946',
+		source: 'Marvel One-Shot (2013); set 1946, foreshadows S.H.I.E.L.D. & the Agent Carter series'
 	},
 	{
 		id: 'agent-carter-s1',
@@ -197,6 +220,27 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/incredible_hulk'
 	},
 	{
+		id: 'the-consultant',
+		order: 72,
+		phase: 1,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Marvel One-Shot: The Consultant', year: 2011, tmdbId: 76122 },
+		source: 'Marvel One-Shot (2011); set after The Incredible Hulk — its Stark/Ross bar scene'
+	},
+	{
+		id: 'a-funny-thing-happened-thors-hammer',
+		order: 75,
+		phase: 1,
+		kind: 'movie',
+		query: {
+			type: 'movie',
+			title: "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+			year: 2011,
+			tmdbId: 76535
+		},
+		source: "Marvel One-Shot (2011); Coulson en route to the New Mexico crater, just before Thor"
+	},
+	{
 		id: 'thor',
 		order: 80,
 		phase: 1,
@@ -216,6 +260,15 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/marvels_the_avengers'
 	},
 	{
+		id: 'item-47',
+		order: 95,
+		phase: 2,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Marvel One-Shot: Item 47', year: 2012, tmdbId: 119569 },
+		eraTag: 'Battle of New York',
+		source: 'Marvel One-Shot (2012); weeks after the Battle of New York, salvaged Chitauri tech'
+	},
+	{
 		id: 'iron-man-3',
 		order: 100,
 		phase: 2,
@@ -223,6 +276,14 @@ export const chronology: ChronologyEntry[] = [
 		query: { type: 'movie', title: 'Iron Man 3', year: 2013 },
 		source: 'Official timeline (2012, Christmas)',
 		rtSlug: 'm/iron_man_3'
+	},
+	{
+		id: 'all-hail-the-king',
+		order: 105,
+		phase: 2,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Marvel One-Shot: All Hail the King', year: 2014, tmdbId: 253980 },
+		source: 'Marvel One-Shot (2014); after Iron Man 3 — Trevor Slattery & the real Ten Rings'
 	},
 	{
 		id: 'thor-the-dark-world',
@@ -277,6 +338,24 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/guardians_of_the_galaxy_vol_2'
 	},
 	{
+		id: 'i-am-groot-s1',
+		order: 152,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'I Am Groot', year: 2022, season: 1, tmdbId: 232125 },
+		eraTag: 'Baby Groot',
+		source: 'Animated Disney+ shorts; Baby Groot, placed in-universe after Guardians Vol. 2'
+	},
+	{
+		id: 'i-am-groot-s2',
+		order: 154,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'I Am Groot', year: 2022, season: 2, tmdbId: 232125 },
+		eraTag: 'Baby Groot',
+		source: 'Animated Disney+ shorts; continues the Vol. 2-era Groot shorts'
+	},
+	{
 		id: 'daredevil-s1',
 		order: 160,
 		phase: 2,
@@ -304,6 +383,14 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/avengers_age_of_ultron'
 	},
 	{
+		id: 'whih-newsfront',
+		order: 185,
+		phase: 2,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'WHIH Newsfront', year: 2015, season: 1, tmdbId: 69069 },
+		source: 'Viral MCU news web series (Christine Everhart); 2015, around Age of Ultron / Ant-Man'
+	},
+	{
 		id: 'ant-man',
 		order: 190,
 		phase: 2,
@@ -327,15 +414,17 @@ export const chronology: ChronologyEntry[] = [
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Black Panther', year: 2018 },
-		source: 'Official timeline (2016, ~one week after Civil War — precedes Homecoming)'
+		source: 'Official timeline (2016, ~one week after Civil War — precedes Homecoming)',
+		rtSlug: 'm/black_panther_2018'
 	},
 	{
 		id: 'black-widow',
-		order: 210,
+		order: 202,
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Black Widow', year: 2021 },
-		source: 'Official timeline (2016, immediately after Civil War)'
+		source: 'Official timeline (2016, immediately after Civil War — precedes Black Panther)',
+		rtSlug: 'm/black_widow_2021'
 	},
 	{
 		id: 'spider-man-homecoming',
@@ -347,12 +436,29 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/spider_man_homecoming'
 	},
 	{
+		id: 'team-thor',
+		order: 232,
+		phase: 3,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Team Thor', year: 2016, tmdbId: 413279 },
+		source: 'Marvel mockumentary short; Thor in Australia during Civil War (non-canon comedy)'
+	},
+	{
+		id: 'team-thor-part-2',
+		order: 234,
+		phase: 3,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Team Thor: Part 2', year: 2017, tmdbId: 441829 },
+		source: 'Marvel mockumentary short; Thor & roommate Darryl (non-canon comedy)'
+	},
+	{
 		id: 'doctor-strange',
 		order: 240,
 		phase: 3,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Doctor Strange', year: 2016 },
-		source: 'Official timeline (2016-2017)'
+		source: 'Official timeline (2016-2017)',
+		rtSlug: 'm/doctor_strange_2016'
 	},
 	{
 		id: 'thor-ragnarok',
@@ -362,6 +468,14 @@ export const chronology: ChronologyEntry[] = [
 		query: { type: 'movie', title: 'Thor: Ragnarok', year: 2017 },
 		source: 'Official timeline (2017)',
 		rtSlug: 'm/thor_ragnarok'
+	},
+	{
+		id: 'team-darryl',
+		order: 252,
+		phase: 3,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Team Darryl', year: 2018, tmdbId: 505945 },
+		source: 'Marvel mockumentary short; the Grandmaster on Earth after Ragnarok (non-canon comedy)'
 	},
 	{
 		id: 'ant-man-and-the-wasp',
@@ -483,6 +597,14 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/spider_man_no_way_home'
 	},
 	{
+		id: 'the-daily-bugle',
+		order: 378,
+		phase: 4,
+		kind: 'movie',
+		query: { type: 'movie', title: 'The Daily Bugle', year: 2019, tmdbId: 1716846 },
+		source: 'MCU viral series (J.J. Jameson); bridges Far From Home\'s reveal into No Way Home'
+	},
+	{
 		id: 'doctor-strange-multiverse-of-madness',
 		order: 390,
 		phase: 4,
@@ -530,7 +652,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 4,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Werewolf by Night', year: 2022 },
-		source: 'Disney+ special presentation'
+		source: 'Disney+ special presentation',
+		rtSlug: 'm/werewolf_by_night'
 	},
 	{
 		id: 'black-panther-wakanda-forever',
@@ -548,7 +671,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Guardians of the Galaxy Holiday Special', year: 2022 },
 		eraTag: 'Christmas',
-		source: 'Disney+ special presentation'
+		source: 'Disney+ special presentation',
+		rtSlug: 'm/the_guardians_of_the_galaxy_holiday_special'
 	},
 	{
 		id: 'agents-of-shield-s7',
@@ -600,7 +724,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'The Marvels', year: 2023 },
-		source: 'Official timeline (after Ms. Marvel)'
+		source: 'Official timeline (after Ms. Marvel)',
+		rtSlug: 'm/the_marvels'
 	},
 	{
 		id: 'echo',
@@ -634,7 +759,8 @@ export const chronology: ChronologyEntry[] = [
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Captain America: Brave New World', year: 2025 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/captain_america_brave_new_world'
 	},
 	{
 		id: 'daredevil-born-again-s1',
@@ -645,12 +771,21 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Official timeline'
 	},
 	{
+		id: 'daredevil-born-again-s2',
+		order: 585,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Daredevil: Born Again', year: 2025, season: 2, tmdbId: 202555 },
+		source: 'Official timeline; continues directly from S1, aired 2026 (Phase 6 era)'
+	},
+	{
 		id: 'thunderbolts',
 		order: 560,
 		phase: 5,
 		kind: 'movie',
 		query: { type: 'movie', title: 'Thunderbolts*', year: 2025 },
-		source: 'Official timeline'
+		source: 'Official timeline',
+		rtSlug: 'm/thunderbolts'
 	},
 	{
 		id: 'ironheart',
@@ -669,6 +804,22 @@ export const chronology: ChronologyEntry[] = [
 		eraTag: 'Alternate universe (Earth-828)',
 		source: 'Official timeline (opens Phase 6)',
 		rtSlug: 'm/the_fantastic_four_first_steps'
+	},
+	{
+		id: 'wonder-man',
+		order: 590,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Wonder Man', year: 2026, season: 1, tmdbId: 198178 },
+		source: 'Marvel Studios Disney+ series; present-day, aired Jan 2026 (Phase 6 era)'
+	},
+	{
+		id: 'visionquest',
+		order: 595,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'VisionQuest', year: 2026, season: 1, tmdbId: 213375 },
+		source: 'Marvel Studios Disney+ series; WandaVision/Agatha follow-up, due Oct 2026 (Phase 6)'
 	},
 
 	/* ---- Legacy Marvel Television: Defenders Saga (Netflix) + ABC/Hulu/Freeform,
@@ -698,6 +849,14 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'series-block',
 		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.', year: 2013, season: 4 },
 		source: 'Legacy ABC TV; aired 2016-17, Phase 3 release era'
+	},
+	{
+		id: 'aos-slingshot',
+		order: 612,
+		phase: 3,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'Marvel\'s Agents of S.H.I.E.L.D.: Slingshot', year: 2016, season: 1, tmdbId: 69088 },
+		source: 'Legacy digital series; Yo-Yo tie-in to Agents of S.H.I.E.L.D. S4 (2016)'
 	},
 	{
 		id: 'luke-cage-s1',
@@ -883,6 +1042,15 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Animated revival; separate continuity, grouped by Phase 5 release'
 	},
 	{
+		id: 'x-men-97-s2',
+		order: 752,
+		phase: 6,
+		kind: 'series-block',
+		query: { type: 'tv', title: 'X-Men \'97', year: 2024, season: 2, tmdbId: 138502 },
+		eraTag: 'Alternate universe',
+		source: 'Animated; continues S1, aired 2026 (Phase 6 release era)'
+	},
+	{
 		id: 'your-friendly-neighborhood-spider-man-s1',
 		order: 755,
 		phase: 5,
@@ -910,7 +1078,8 @@ export const chronology: ChronologyEntry[] = [
 		source: 'Animated; aired 2025, Phase 6 release era'
 	},
 
-	/* ---- Sony tie-ins (SSU — loose/contested canon, MCU-connected entries only) ---- */
+	/* ---- Sony tie-ins (the full SSU live-action slate — loose/contested canon,
+	   grouped at the tail by release era) ---- */
 	{
 		id: 'venom',
 		order: 800,
@@ -918,7 +1087,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Venom', year: 2018 },
 		eraTag: 'Sony tie-in',
-		source: 'Sony SSU; loose MCU connection, grouped by release era'
+		source: 'Sony SSU; loose MCU connection, grouped by release era',
+		rtSlug: 'm/venom_2018'
 	},
 	{
 		id: 'venom-let-there-be-carnage',
@@ -927,7 +1097,8 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Venom: Let There Be Carnage', year: 2021 },
 		eraTag: 'Sony tie-in',
-		source: 'Sony SSU; mid-credits crosses into MCU (No Way Home)'
+		source: 'Sony SSU; mid-credits crosses into MCU (No Way Home)',
+		rtSlug: 'm/venom_let_there_be_carnage'
 	},
 	{
 		id: 'morbius',
@@ -936,7 +1107,38 @@ export const chronology: ChronologyEntry[] = [
 		kind: 'movie',
 		query: { type: 'movie', title: 'Morbius', year: 2022 },
 		eraTag: 'Sony tie-in',
-		source: 'Sony SSU; post-credits ties to Vulture via the No Way Home multiverse rift'
+		source: 'Sony SSU; post-credits ties to Vulture via the No Way Home multiverse rift',
+		rtSlug: 'm/morbius'
+	},
+	{
+		id: 'madame-web',
+		order: 825,
+		phase: 5,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Madame Web', year: 2024, tmdbId: 634492 },
+		eraTag: 'Sony tie-in',
+		source: 'Sony SSU; loosely connected, grouped by release era',
+		rtSlug: 'm/madame_web'
+	},
+	{
+		id: 'venom-the-last-dance',
+		order: 830,
+		phase: 5,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Venom: The Last Dance', year: 2024, tmdbId: 912649 },
+		eraTag: 'Sony tie-in',
+		source: 'Sony SSU; closes the Venom trilogy, grouped by release era',
+		rtSlug: 'm/venom_the_last_dance'
+	},
+	{
+		id: 'kraven-the-hunter',
+		order: 835,
+		phase: 5,
+		kind: 'movie',
+		query: { type: 'movie', title: 'Kraven the Hunter', year: 2024, tmdbId: 539972 },
+		eraTag: 'Sony tie-in',
+		source: 'Sony SSU; final SSU film, grouped by release era',
+		rtSlug: 'm/kraven_the_hunter'
 	},
 
 	/* ---- Announced, not yet released. No ratings / episodes yet — flagged
