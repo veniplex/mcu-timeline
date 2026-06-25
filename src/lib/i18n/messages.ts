@@ -9,6 +9,10 @@ export const messages = {
   en: {
     "app.title": "MCU Timeline",
     "app.tagline": "Explore the Marvel Cinematic Universe in order",
+    "banner.text":
+      "This project is in an early stage — the timeline may be incomplete or not yet fully correct.",
+    "banner.cta": "Anyone can help improve it on GitHub.",
+    "banner.dismiss": "Dismiss notice",
     "sort.chronological": "Story Order",
     "sort.release": "Release date",
     "sort.label": "Sort by",
@@ -68,6 +72,10 @@ export const messages = {
     "app.title": "MCU-Zeitleiste",
     "app.tagline":
       "Erkunde das Marvel Cinematic Universe in der richtigen Reihenfolge",
+    "banner.text":
+      "Dieses Projekt befindet sich in einer frühen Phase — die Zeitleiste ist möglicherweise unvollständig oder noch nicht vollständig korrekt.",
+    "banner.cta": "Jeder kann auf GitHub mithelfen, es zu verbessern.",
+    "banner.dismiss": "Hinweis schließen",
     "sort.chronological": "Story-Reihenfolge",
     "sort.release": "Veröffentlichung",
     "sort.label": "Sortieren nach",
