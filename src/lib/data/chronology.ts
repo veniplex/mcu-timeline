@@ -597,6 +597,14 @@ export const chronology: ChronologyEntry[] = [
 		rtSlug: 'm/spider_man_no_way_home'
 	},
 	{
+		id: 'the-daily-bugle',
+		order: 378,
+		phase: 4,
+		kind: 'movie',
+		query: { type: 'movie', title: 'The Daily Bugle', year: 2019, tmdbId: 1716846 },
+		source: 'MCU viral series (J.J. Jameson); bridges Far From Home\'s reveal into No Way Home'
+	},
+	{
 		id: 'doctor-strange-multiverse-of-madness',
 		order: 390,
 		phase: 4,
