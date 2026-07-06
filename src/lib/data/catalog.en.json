@@ -262,6 +262,18 @@
       {
         "name": "Joyn Plus",
         "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/10138-iron-man-2/watch?locale=DE"
@@ -278,10 +290,6 @@
     "poster": "/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
     "backdrop": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg",
     "providers": [
-      {
-        "name": "Joyn",
-        "logo": "/3tKojIkk9QpkDUeU8HgpHQ9Jb2v.jpg"
-      },
       {
         "name": "Filmtastic Amazon Channel",
         "logo": "/ni0t0Bj4HRAQ9f6zSv1Bl9MDjLK.jpg"
@@ -360,7 +368,7 @@
     "releaseDate": "2012-04-25",
     "runtime": 143,
     "poster": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-    "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+    "backdrop": "/pGFQCp12a8andfPlpnmXz44IIvY.jpg",
     "providers": [
       {
         "name": "Disney Plus",
@@ -407,6 +415,18 @@
       {
         "name": "Joyn Plus",
         "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/68721-iron-man-3/watch?locale=DE"
@@ -875,7 +895,7 @@
     "overview": "The troublemaking twig returns to mischief in the second season of “I Am Groot.” This time, Baby Groot finds himself exploring the universe and beyond aboard the Guardians' spaceships, coming face-to-face—or nose-to-nose—with new and colorful creatures and environments.",
     "releaseDate": "2023-09-06",
     "runtime": null,
-    "poster": "/7b4qBnExIjuANVDKWyVN8gVVOXS.jpg",
+    "poster": "/ght21pnksGKYcwvTFBasNIPIBqv.jpg",
     "backdrop": "/bAnHzJ6AMhOhnV3C0kTxkpCqpgM.jpg",
     "season": 2,
     "episodes": [
@@ -1872,8 +1892,13 @@
     "releaseDate": "2021-12-15",
     "runtime": 148,
     "poster": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    "backdrop": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg",
-    "providers": [],
+    "backdrop": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    "providers": [
+      {
+        "name": "ZDF",
+        "logo": "/ugus0p8BGGhE8sxhwAjJz2o8jyy.jpg"
+      }
+    ],
     "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
   },
   "the-daily-bugle": {
@@ -3925,7 +3950,7 @@
     "tmdbType": "tv",
     "title": "Marvel's Runaways",
     "overview": "Every teenager thinks their parents are evil. What if you found out they actually were? Six diverse teenagers who can barely stand each other must unite against a common foe – their parents.",
-    "releaseDate": "2017-11-20",
+    "releaseDate": "2017-11-21",
     "runtime": 50,
     "poster": "/6B2Z1GaKSBezXmsdjavfeqkg56g.jpg",
     "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
@@ -4620,7 +4645,7 @@
     "tmdbType": "tv",
     "title": "Marvel's Runaways",
     "overview": "The Runaways have left their homes (and evil parents) behind and now have to learn to live on their own. As they scavenge for food, search for shelter, and take care of one another, our kids begin to realize that, for better or worse, they’re stuck with each other. And it’s up to them to take down PRIDE once and for all. But someone sent a mysterious message to Jonah… Is there a mole in the Runaways? Meanwhile PRIDE is focused on finding their children, and Jonah has his own dangerous plan in mind.",
-    "releaseDate": "2018-12-20",
+    "releaseDate": "2018-12-21",
     "runtime": 50,
     "poster": "/r2e50wFzTsMgsSVLAyIB8uX1EGu.jpg",
     "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
@@ -5097,7 +5122,7 @@
     "tmdbType": "tv",
     "title": "Marvel's Runaways",
     "overview": "The Runaways frantically search for their captured friends Chase, Gert and Karolina. The kids go head to head with an unstoppable enemy who has targeted Leslie - or more accurately, the child she's carrying. Nico draws them all into a dark realm where its ruler Morgan le Fay, is much more nefarious than anyone the kids have yet to face.",
-    "releaseDate": "2019-12-12",
+    "releaseDate": "2019-12-13",
     "runtime": 50,
     "poster": "/m83skvEvoFQoo1szIMpFQ6kbCe6.jpg",
     "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
@@ -5404,7 +5429,7 @@
     "overview": "Season 2 continues with the heroic mutant team of X-Men, divided and thrown across different eras in time as they struggle to navigate their return home. Meanwhile, back in the 1990s, suspicious foes and new strains of mutant intolerance are on the rise in the wake of the X-Men's absence.",
     "releaseDate": "2026-07-01",
     "runtime": null,
-    "poster": "/sRFe730EPeE3naEMvtRhqixCzrq.jpg",
+    "poster": "/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
     "backdrop": "/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
     "season": 2,
     "episodes": [
@@ -5671,11 +5696,7 @@
       },
       {
         "name": "Sky Go",
-        "logo": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg"
-      },
-      {
-        "name": "AXN Black Amazon Channel",
-        "logo": "/bh0e83QEvjzttsj8FJcQaYxPR43.jpg"
+        "logo": "/vDdk3LyjWkYlfCtkrhkjFKFK1Hg.jpg"
       },
       {
         "name": "Magenta TV+",
@@ -5714,15 +5735,11 @@
       },
       {
         "name": "Sky Go",
-        "logo": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg"
+        "logo": "/vDdk3LyjWkYlfCtkrhkjFKFK1Hg.jpg"
       },
       {
         "name": "Filmtastic Amazon Channel",
         "logo": "/ni0t0Bj4HRAQ9f6zSv1Bl9MDjLK.jpg"
-      },
-      {
-        "name": "Magenta TV+",
-        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
       },
       {
         "name": "Wow Fiction Amazon Channel",
@@ -5847,7 +5864,7 @@
     "title": "Spider-Man: Brand New Day",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "releaseDate": "2026-07-29",
-    "runtime": 0,
+    "runtime": 144,
     "poster": "/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
     "backdrop": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
     "providers": [],

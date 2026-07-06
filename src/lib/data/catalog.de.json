@@ -262,6 +262,18 @@
       {
         "name": "Joyn Plus",
         "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/10138-iron-man-2/watch?locale=DE"
@@ -278,10 +290,6 @@
     "poster": "/bwCgRJRq6WUjhXIvBZjSI1lglRv.jpg",
     "backdrop": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg",
     "providers": [
-      {
-        "name": "Joyn",
-        "logo": "/3tKojIkk9QpkDUeU8HgpHQ9Jb2v.jpg"
-      },
       {
         "name": "Filmtastic Amazon Channel",
         "logo": "/ni0t0Bj4HRAQ9f6zSv1Bl9MDjLK.jpg"
@@ -360,7 +368,7 @@
     "releaseDate": "2012-04-25",
     "runtime": 143,
     "poster": "/3wfcxLkMrcm4HHZ56hLhzoWFiTC.jpg",
-    "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+    "backdrop": "/pGFQCp12a8andfPlpnmXz44IIvY.jpg",
     "providers": [
       {
         "name": "Disney Plus",
@@ -407,6 +415,18 @@
       {
         "name": "Joyn Plus",
         "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+      },
+      {
+        "name": "Kabel Eins Classics Amazon Channel",
+        "logo": "/4H9Cr9iKiKwJkjBqJn4TgHu3ufL.jpg"
+      },
+      {
+        "name": "Seven Entertainment Amazon Channel",
+        "logo": "/91mdl623RUIlQGr3ZlbB6uxKM9W.jpg"
+      },
+      {
+        "name": "Magenta TV+",
+        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/68721-iron-man-3/watch?locale=DE"
@@ -1872,8 +1892,13 @@
     "releaseDate": "2021-12-15",
     "runtime": 159,
     "poster": "/iNKf4D0AzOj9GLq8ZyG3WZaqibL.jpg",
-    "backdrop": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg",
-    "providers": [],
+    "backdrop": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    "providers": [
+      {
+        "name": "ZDF",
+        "logo": "/ugus0p8BGGhE8sxhwAjJz2o8jyy.jpg"
+      }
+    ],
     "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
   },
   "the-daily-bugle": {
@@ -3925,7 +3950,7 @@
     "tmdbType": "tv",
     "title": "Marvel's Runaways",
     "overview": "Sechs unterschiedliche Teenager, die sich gegenseitig kaum riechen können, nehmen darin Reißaus und verschwören sich gegen ihre Eltern, die allesamt zur Verbrecherorganisation The Pride gehören.",
-    "releaseDate": "2017-11-20",
+    "releaseDate": "2017-11-21",
     "runtime": 50,
     "poster": "/6B2Z1GaKSBezXmsdjavfeqkg56g.jpg",
     "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
@@ -4620,7 +4645,7 @@
     "tmdbType": "tv",
     "title": "Marvel's Runaways",
     "overview": "Die Ausreißer haben ihr Zuhause (und ihre bösen Eltern) zurückgelassen und müssen nun lernen, alleine zu leben. Während sie nach Nahrung suchen, Schutz suchen und sich umeinander kümmern, beginnen unsere Kinder zu begreifen, dass sie im Guten wie im Schlechten aneinander festhalten. Und es liegt an ihnen, PRIDE ein für alle Mal zu besiegen. Aber jemand hat Jonah eine mysteriöse Nachricht geschickt ... Gibt es einen Maulwurf in den Runaways? Währenddessen konzentriert sich PRIDE darauf, ihre Kinder zu finden, und Jonah hat seinen eigenen gefährlichen Plan im Sinn.",
-    "releaseDate": "2018-12-20",
+    "releaseDate": "2018-12-21",
     "runtime": 50,
     "poster": "/r2e50wFzTsMgsSVLAyIB8uX1EGu.jpg",
     "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
@@ -5097,7 +5122,7 @@
     "tmdbType": "tv",
     "title": "Marvel's Runaways",
     "overview": "Die Ausreißer suchen verzweifelt nach ihren gefangenen Freunden Chase, Gert und Karolina. Die Kinder liefern sich ein Kopf-an-Kopf-Rennen mit einem unaufhaltsamen Feind, der es auf Leslie abgesehen hat – oder genauer gesagt, auf das Kind, das sie trägt. Nico entführt sie alle in ein dunkles Reich, in dem der Herrscher Morgan le Fay viel ruchloser ist als alle anderen, mit denen die Kinder bisher konfrontiert wurden.",
-    "releaseDate": "2019-12-12",
+    "releaseDate": "2019-12-13",
     "runtime": 50,
     "poster": "/m83skvEvoFQoo1szIMpFQ6kbCe6.jpg",
     "backdrop": "/pHURd96EW167jUd2Jf8XpgTiLJV.jpg",
@@ -5404,32 +5429,32 @@
     "overview": "Eine Gruppe Mutanten beschützt mit ihren erstaunlichen Kräften die Welt, die sie hasst und fürchtet.",
     "releaseDate": "2026-07-01",
     "runtime": null,
-    "poster": "/sRFe730EPeE3naEMvtRhqixCzrq.jpg",
+    "poster": "/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
     "backdrop": "/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
     "season": 2,
     "episodes": [
       {
         "season": 2,
         "number": 1,
-        "title": "Folge 1",
+        "title": "Die Vergangenheit der Zukunft",
         "airDate": "2026-07-01"
       },
       {
         "season": 2,
         "number": 2,
-        "title": "Folge 2",
+        "title": "Eine ernstzunehmende Macht",
         "airDate": "2026-07-01"
       },
       {
         "season": 2,
         "number": 3,
-        "title": "Folge 3",
+        "title": "Der Aufstieg von Apocalypse (1)",
         "airDate": "2026-07-01"
       },
       {
         "season": 2,
         "number": 4,
-        "title": "Folge 4",
+        "title": "Der Aufstieg von Apocalypse (2)",
         "airDate": "2026-07-08"
       },
       {
@@ -5671,11 +5696,7 @@
       },
       {
         "name": "Sky Go",
-        "logo": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg"
-      },
-      {
-        "name": "AXN Black Amazon Channel",
-        "logo": "/bh0e83QEvjzttsj8FJcQaYxPR43.jpg"
+        "logo": "/vDdk3LyjWkYlfCtkrhkjFKFK1Hg.jpg"
       },
       {
         "name": "Magenta TV+",
@@ -5714,15 +5735,11 @@
       },
       {
         "name": "Sky Go",
-        "logo": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg"
+        "logo": "/vDdk3LyjWkYlfCtkrhkjFKFK1Hg.jpg"
       },
       {
         "name": "Filmtastic Amazon Channel",
         "logo": "/ni0t0Bj4HRAQ9f6zSv1Bl9MDjLK.jpg"
-      },
-      {
-        "name": "Magenta TV+",
-        "logo": "/qqTyjCCJuuARytrY7rNRAKka1VF.jpg"
       },
       {
         "name": "Wow Fiction Amazon Channel",
