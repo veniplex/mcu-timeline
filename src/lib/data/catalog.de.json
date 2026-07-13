@@ -1893,12 +1893,7 @@
     "runtime": 159,
     "poster": "/iNKf4D0AzOj9GLq8ZyG3WZaqibL.jpg",
     "backdrop": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
-    "providers": [
-      {
-        "name": "ZDF",
-        "logo": "/ugus0p8BGGhE8sxhwAjJz2o8jyy.jpg"
-      }
-    ],
+    "providers": [],
     "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
   },
   "the-daily-bugle": {
@@ -1907,7 +1902,7 @@
     "imdbId": null,
     "tmdbType": "movie",
     "title": "The Daily Bugle",
-    "overview": "The Daily Bugle follows J. Jonah Jameson’s news outlet as it reports on superhero events and controversies. Season 1 covers Spider-Man’s identity crisis after Far From Home, Season 2 explores the chaos of No Way Home, Season 3 focuses on Morbius’ emergence, and Season 4 deals with the aftermath of the multiverse events and Spider-Man’s uncertain future.",
+    "overview": "The Daily Bugle follows J. Jonah Jameson’s news outlet as it reports on superhero events and controversies. Season 1 covers Spider-Man’s identity crisis after Far From Home Season 2 explores the chaos of No Way Home  Season 3 focuses on Morbius’ emergence.",
     "releaseDate": "2019-10-29",
     "runtime": 29,
     "poster": "/pFFharD8VjXh9iFZJq7EYSgTkj7.jpg",
@@ -2675,7 +2670,7 @@
     "releaseDate": "2025-03-02",
     "runtime": null,
     "poster": "/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
-    "backdrop": "/v2cTiLNlviotwugnDKqY21xGmSv.jpg",
+    "backdrop": "/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
     "season": 1,
     "episodes": [
       {
@@ -2751,7 +2746,7 @@
     "releaseDate": "2026-03-24",
     "runtime": null,
     "poster": "/timvsedxh5ce795tsv6EDTZmmXW.jpg",
-    "backdrop": "/v2cTiLNlviotwugnDKqY21xGmSv.jpg",
+    "backdrop": "/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
     "season": 2,
     "episodes": [
       {
@@ -5345,10 +5340,10 @@
     "tmdbType": "tv",
     "title": "X-Men '97",
     "overview": "Eine Gruppe Mutanten beschützt mit ihren erstaunlichen Kräften die Welt, die sie hasst und fürchtet.",
-    "releaseDate": "2024-03-20",
+    "releaseDate": "2024-03-19",
     "runtime": null,
     "poster": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
-    "backdrop": "/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    "backdrop": "/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
     "season": 1,
     "episodes": [
       {
@@ -5430,7 +5425,7 @@
     "releaseDate": "2026-07-01",
     "runtime": null,
     "poster": "/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-    "backdrop": "/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    "backdrop": "/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
     "season": 2,
     "episodes": [
       {
@@ -5588,7 +5583,7 @@
     "releaseDate": "2025-09-24",
     "runtime": null,
     "poster": "/wofiHMsXxmp0lTafcBrgciSxBVx.jpg",
-    "backdrop": "/lxQMxqao3vs2ehxESrkQU6acU86.jpg",
+    "backdrop": "/kmenKs1yJZT1d3pRVu6T6m3kWCQ.jpg",
     "season": 1,
     "episodes": [
       {
@@ -5880,7 +5875,7 @@
     "releaseDate": "2026-12-16",
     "runtime": 0,
     "poster": "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
-    "backdrop": "/4OZznMYFmQPP4orKgbLaWRyYmBb.jpg",
+    "backdrop": "/kgNXJ0GWNX1D9h9cm1JEchGW5vz.jpg",
     "providers": [],
     "watchLink": null
   },
