@@ -225,8 +225,8 @@
         "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
       },
       {
-        "name": "Joyn Plus",
-        "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+        "name": "Joyn",
+        "logo": "/3tKojIkk9QpkDUeU8HgpHQ9Jb2v.jpg"
       },
       {
         "name": "Kabel Eins Classics Amazon Channel",
@@ -367,7 +367,7 @@
     "overview": "Nick Fury ist der Anführer der Organisation S.H.I.E.L.D., einer internationalen Friedensorganisation. Die Behörde ist ein Who's Who der Marvel Superhelden, mit Iron Man, Thor, Captain America, Hawkeye, dem Unglaublichen Hulk und Black Widow. Als die weltweite Sicherheit von Thors sinistrem Halbbruder Loki und seiner Schar bedroht wird, werden Nick Fury und sein Team all ihre Kräfte brauchen, um die Welt vor einer Katastrophe zu bewahren ...",
     "releaseDate": "2012-04-25",
     "runtime": 143,
-    "poster": "/3wfcxLkMrcm4HHZ56hLhzoWFiTC.jpg",
+    "poster": "/hGTqvK9WaI74szUDPMHXrrHfiH3.jpg",
     "backdrop": "/pGFQCp12a8andfPlpnmXz44IIvY.jpg",
     "providers": [
       {
@@ -1896,20 +1896,6 @@
     "providers": [],
     "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
   },
-  "the-daily-bugle": {
-    "id": "the-daily-bugle",
-    "tmdbId": 1716846,
-    "imdbId": null,
-    "tmdbType": "movie",
-    "title": "The Daily Bugle",
-    "overview": "The Daily Bugle follows J. Jonah Jameson’s news outlet as it reports on superhero events and controversies. Season 1 covers Spider-Man’s identity crisis after Far From Home Season 2 explores the chaos of No Way Home  Season 3 focuses on Morbius’ emergence.",
-    "releaseDate": "2019-10-29",
-    "runtime": 29,
-    "poster": "/pFFharD8VjXh9iFZJq7EYSgTkj7.jpg",
-    "backdrop": "/pZ58oqaYXYOjoGxpTqDgTHWW4he.jpg",
-    "providers": [],
-    "watchLink": null
-  },
   "doctor-strange-multiverse-of-madness": {
     "id": "doctor-strange-multiverse-of-madness",
     "tmdbId": 453395,
@@ -2670,7 +2656,7 @@
     "releaseDate": "2025-03-02",
     "runtime": null,
     "poster": "/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
-    "backdrop": "/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
+    "backdrop": "/m291MEBjhuRqb0nh9ojnm9gzScq.jpg",
     "season": 1,
     "episodes": [
       {
@@ -2746,7 +2732,7 @@
     "releaseDate": "2026-03-24",
     "runtime": null,
     "poster": "/timvsedxh5ce795tsv6EDTZmmXW.jpg",
-    "backdrop": "/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
+    "backdrop": "/m291MEBjhuRqb0nh9ojnm9gzScq.jpg",
     "season": 2,
     "episodes": [
       {
@@ -5340,7 +5326,7 @@
     "tmdbType": "tv",
     "title": "X-Men '97",
     "overview": "Eine Gruppe Mutanten beschützt mit ihren erstaunlichen Kräften die Welt, die sie hasst und fürchtet.",
-    "releaseDate": "2024-03-19",
+    "releaseDate": "2024-03-20",
     "runtime": null,
     "poster": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
     "backdrop": "/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
@@ -5778,6 +5764,10 @@
       {
         "name": "Wow Fiction Amazon Channel",
         "logo": "/35XbldCPO3ztCREajGbfhf7827w.jpg"
+      },
+      {
+        "name": "Sony Pictures Core Amazon Channel",
+        "logo": "/b9HLm1GDP4j3PF9TZQercD0r8kg.jpg"
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=DE"
@@ -5858,7 +5848,7 @@
     "tmdbType": "movie",
     "title": "Spider-Man: Brand New Day",
     "overview": "Vier Jahre sind seit den Ereignissen von „No Way Home“ vergangen. Peter ist nun erwachsen und lebt für sich allein, nachdem er sich freiwillig aus dem Leben und den Erinnerungen derer, die er liebt, ausgelöscht hat. Er bekämpft Verbrechen in einem New York, das ihn und seinen Namen nicht mehr kennt, und widmet sich ganz dem Schutz seiner Stadt: Spider-Man in Vollzeit. Doch mit den steigenden Anforderungen löst der Druck eine überraschende körperliche Veränderung aus, die seine Existenz bedroht – gerade als eine seltsame neue Art von Verbrechen eine der mächtigsten Bedrohungen hervorbringt, denen er je gegenüberstand.",
-    "releaseDate": "2026-07-29",
+    "releaseDate": "2026-07-28",
     "runtime": 150,
     "poster": "/1AsrB0n7X2xE30RA0S5fagr545g.jpg",
     "backdrop": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
@@ -5873,9 +5863,9 @@
     "title": "Avengers: Doomsday",
     "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "releaseDate": "2026-12-16",
-    "runtime": 0,
+    "runtime": 165,
     "poster": "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
-    "backdrop": "/kgNXJ0GWNX1D9h9cm1JEchGW5vz.jpg",
+    "backdrop": "/6KDDoTq8Vq3HuQHULzuvPiCJbMI.jpg",
     "providers": [],
     "watchLink": null
   },

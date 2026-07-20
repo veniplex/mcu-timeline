@@ -225,8 +225,8 @@
         "logo": "/97yvRBw1GzX7fXprcF80er19ot.jpg"
       },
       {
-        "name": "Joyn Plus",
-        "logo": "/5aHLriu21FRDGlxY5zbzyEuoSvA.jpg"
+        "name": "Joyn",
+        "logo": "/3tKojIkk9QpkDUeU8HgpHQ9Jb2v.jpg"
       },
       {
         "name": "Kabel Eins Classics Amazon Channel",
@@ -1896,20 +1896,6 @@
     "providers": [],
     "watchLink": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=DE"
   },
-  "the-daily-bugle": {
-    "id": "the-daily-bugle",
-    "tmdbId": 1716846,
-    "imdbId": null,
-    "tmdbType": "movie",
-    "title": "The Daily Bugle",
-    "overview": "The Daily Bugle follows J. Jonah Jameson’s news outlet as it reports on superhero events and controversies. Season 1 covers Spider-Man’s identity crisis after Far From Home Season 2 explores the chaos of No Way Home  Season 3 focuses on Morbius’ emergence.",
-    "releaseDate": "2019-10-29",
-    "runtime": 29,
-    "poster": "/pFFharD8VjXh9iFZJq7EYSgTkj7.jpg",
-    "backdrop": "/pZ58oqaYXYOjoGxpTqDgTHWW4he.jpg",
-    "providers": [],
-    "watchLink": null
-  },
   "doctor-strange-multiverse-of-madness": {
     "id": "doctor-strange-multiverse-of-madness",
     "tmdbId": 453395,
@@ -2670,7 +2656,7 @@
     "releaseDate": "2025-03-02",
     "runtime": null,
     "poster": "/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
-    "backdrop": "/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
+    "backdrop": "/m291MEBjhuRqb0nh9ojnm9gzScq.jpg",
     "season": 1,
     "episodes": [
       {
@@ -2746,7 +2732,7 @@
     "releaseDate": "2026-03-24",
     "runtime": null,
     "poster": "/timvsedxh5ce795tsv6EDTZmmXW.jpg",
-    "backdrop": "/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
+    "backdrop": "/m291MEBjhuRqb0nh9ojnm9gzScq.jpg",
     "season": 2,
     "episodes": [
       {
@@ -5340,7 +5326,7 @@
     "tmdbType": "tv",
     "title": "X-Men '97",
     "overview": "Picking up where 'X-Men' left off, the X-Men are in a period of transition, struggling with the loss of Professor X. And while their world is in a strained state of calm when it comes to mutant-human relations—everyone knows that's likely temporary.",
-    "releaseDate": "2024-03-19",
+    "releaseDate": "2024-03-20",
     "runtime": null,
     "poster": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
     "backdrop": "/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
@@ -5778,6 +5764,10 @@
       {
         "name": "Wow Fiction Amazon Channel",
         "logo": "/35XbldCPO3ztCREajGbfhf7827w.jpg"
+      },
+      {
+        "name": "Sony Pictures Core Amazon Channel",
+        "logo": "/b9HLm1GDP4j3PF9TZQercD0r8kg.jpg"
       }
     ],
     "watchLink": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=DE"
@@ -5858,10 +5848,10 @@
     "tmdbType": "movie",
     "title": "Spider-Man: Brand New Day",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-    "releaseDate": "2026-07-29",
-    "runtime": 144,
-    "poster": "/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
-    "backdrop": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+    "releaseDate": "2026-07-28",
+    "runtime": 145,
+    "poster": "/x19dchU8e38vQfW4epzOsQNLuZ2.jpg",
+    "backdrop": "/h0M2JTPUlR64jkfXAhZeD9e7ZWF.jpg",
     "providers": [],
     "watchLink": null
   },
@@ -5873,9 +5863,9 @@
     "title": "Avengers: Doomsday",
     "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "releaseDate": "2026-12-16",
-    "runtime": 0,
+    "runtime": 165,
     "poster": "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
-    "backdrop": "/kgNXJ0GWNX1D9h9cm1JEchGW5vz.jpg",
+    "backdrop": "/6KDDoTq8Vq3HuQHULzuvPiCJbMI.jpg",
     "providers": [],
     "watchLink": null
   },
